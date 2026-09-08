@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta name="monetag" content="32074d2969f32059be0cdd10f226e4f2">
+  <script src="https://pl31239012.profitableratecpmnetwork.com/54/a2/70/54a270a28d8922dfbdbcb7f14061f330.js"></script>
+
   <meta charset="UTF-8">
 
   <meta
@@ -324,13 +326,13 @@
         </div>
 
 
-        <button
-          class="watch-button"
-          type="button"
-          data-unlock="jackpot"
-        >
-          WATCH AD
-        </button>
+       <button
+  class="watch-button"
+  type="button"
+  data-unlock="jackpot"
+  onclick="showAllAds()">
+  WATCH AD
+</button>
 
 
         <div
@@ -557,6 +559,21 @@
   <script src="script.js"></script>
 
 </div>
-
+<script>
+  function showAllAds() {
+    // 1. Fire Monetag
+    window._mtag = window._mtag || [];
+    window._mtag.push({zone: '277675'});
+    
+    // 2. Fire Adsterra
+    if(typeof _pop !== 'undefined'){ _pop(); }
+    
+    // 3. Unlock your codes after 3 seconds
+    setTimeout(function(){
+      document.getElementById('jackpotCode').style.display = 'block';
+      document.getElementById('jackpotCode').innerHTML = "BP728391"; // your code here
+    }, 3000);
+  }
+</script>
 </body>
 </html>
