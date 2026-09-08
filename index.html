@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="JACKPOT X ZOOM PREDICT - Football predictions, jackpot predictions, zoom predictions and live predictions."
+  >
+
+  <meta
+    name="theme-color"
+    content="#03101f"
+  >
+
+  <title>JACKPOT X ZOOM PREDICT</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="site-shell">
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a class="brand" href="#home">
+
+        <div class="brand-logo">
+          <span>⚽</span>
+        </div>
+
+        <div class="brand-name">
+          <div>
+            JACKPOT
+            <strong>X</strong>
+            ZOOM
+          </div>
+
+          <small>PREDICT</small>
+        </div>
+
+      </a>
+
+
+      <nav class="desktop-nav">
+
+        <a href="#home">Home</a>
+        <a href="#bet-day">Bet of the Day</a>
+        <a href="#zoom">Zoom</a>
+        <a href="#jackpot">Jackpot</a>
+        <a href="#live">Live</a>
+        <a href="#results">Results</a>
+
+      </nav>
+
+
+      <div class="header-actions">
+
+        <button
+          class="header-icon"
+          type="button"
+          aria-label="Notifications"
+        >
+          ♧
+          <span></span>
+        </button>
+
+        <button
+          class="header-icon menu-button"
+          type="button"
+          aria-label="Menu"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main id="home">
+
+
+    <!-- ================= TOP AD ================= -->
+
+    <div class="ad-space top-ad">
+
+      <span>ADVERTISEMENT</span>
+      <small>Ad space</small>
+
+    </div>
+
+
+
+    <!-- ================= BET OF THE DAY ================= -->
+
+    <section
+      class="prediction-section section-green"
+      id="bet-day"
+    >
+
+      <div class="section-heading">
+
+        <div class="section-heading-left">
+
+          <div class="section-icon">
+            🏆
+          </div>
+
+          <div>
+            <h2>BET OF THE DAY</h2>
+            <small>Today's featured predictions</small>
+          </div>
+
+        </div>
+
+
+        <div class="section-badge">
+          🔥 2 MATCHES
+        </div>
+
+      </div>
+
+
+      <div
+        class="bet-day-grid"
+        id="betDayGrid"
+      ></div>
+
+    </section>
+
+
+
+    <!-- ================= AD ================= -->
+
+    <div class="ad-space">
+
+      <span>ADVERTISEMENT</span>
+      <small>Ad space</small>
+
+    </div>
+
+
+
+    <!-- ================= LIVE ================= -->
+
+    <section
+      class="prediction-section section-red"
+      id="live"
+    >
+
+      <div class="section-heading">
+
+        <div class="section-heading-left">
+
+          <div class="section-icon">
+            ◉
+          </div>
+
+          <div>
+            <h2>LIVE PREDICTION</h2>
+            <small>Prediction currently in progress</small>
+          </div>
+
+        </div>
+
+
+        <div class="live-counter">
+
+          <span>LIVE</span>
+
+          <strong id="liveTimer">
+            01:30:00
+          </strong>
+
+          <small>
+            90 MINUTES LEFT
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div id="liveContainer"></div>
+
+    </section>
+
+
+
+    <!-- ================= ZOOM ================= -->
+
+    <section
+      class="prediction-section section-blue"
+      id="zoom"
+    >
+
+      <div class="section-heading">
+
+        <div class="section-heading-left">
+
+          <div class="section-icon">
+            ϟ
+          </div>
+
+          <div>
+            <h2>ZOOM PREDICTIONS</h2>
+            <small>Fast predictions updated hourly</small>
+          </div>
+
+        </div>
+
+
+        <div class="zoom-update">
+
+          <span>◷</span>
+
+          <div>
+            <strong id="zoomTimer">
+              42:18
+            </strong>
+
+            <small>
+              Updates every 1 hour
+            </small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="zoom-grid"
+        id="zoomGrid"
+      ></div>
+
+    </section>
+
+
+
+    <!-- ================= AD ================= -->
+
+    <div class="ad-space">
+
+      <span>ADVERTISEMENT</span>
+      <small>Ad space</small>
+
+    </div>
+
+
+
+    <!-- ================= JACKPOT ================= -->
+
+    <section
+      class="prediction-section section-purple"
+      id="jackpot"
+    >
+
+      <div class="section-heading">
+
+        <div class="section-heading-left">
+
+          <div class="section-icon">
+            🏆
+          </div>
+
+          <div>
+            <h2>JACKPOT PREDICTIONS</h2>
+            <small>16 selections per bookmaker</small>
+          </div>
+
+        </div>
+
+
+        <div class="section-badge">
+          ♛ 16 SELECTIONS EACH
+        </div>
+
+      </div>
+
+
+      <div
+        class="bookmaker-tabs"
+        id="bookmakerTabs"
+      ></div>
+
+
+      <div id="jackpotContent"></div>
+
+
+      <div class="code-unlock">
+
+        <div class="unlock-icon">
+          ▶
+        </div>
+
+
+        <div class="unlock-copy">
+
+          <strong>
+            WATCH AD &amp; GET CODE
+          </strong>
+
+          <small>
+            Watch the advertisement to reveal your code
+          </small>
+
+        </div>
+
+
+        <button
+          class="watch-button"
+          type="button"
+          data-unlock="jackpot"
+        >
+          WATCH AD
+        </button>
+
+
+        <div
+          class="locked-code"
+          id="jackpotCode"
+        >
+          Your code will appear here
+        </div>
+
+
+        <button
+          class="copy-button"
+          id="jackpotCopy"
+          type="button"
+          disabled
+        >
+          COPY CODE
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= RESULTS ================= -->
+
+    <section
+      class="prediction-section section-results"
+      id="results"
+    >
+
+      <div class="section-heading">
+
+        <div class="section-heading-left">
+
+          <div class="section-icon">
+            ✓
+          </div>
+
+          <div>
+            <h2>RECENT RESULTS</h2>
+            <small>Latest prediction results</small>
+          </div>
+
+        </div>
+
+
+        <a
+          href="#results"
+          class="view-all"
+        >
+          View All →
+        </a>
+
+      </div>
+
+
+      <div
+        class="results-grid"
+        id="resultsGrid"
+      ></div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-brand">
+      JACKPOT <strong>X</strong> ZOOM
+      <span>PREDICT</span>
+    </div>
+
+    <p>
+      Football • Jackpot • Zoom Predictions
+    </p>
+
+    <small>
+      18+ | Gamble responsibly. Predictions are not guarantees.
+    </small>
+
+
+    <div class="footer-links">
+
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Affiliate Disclosure</a>
+      <a href="#">Responsible Gambling</a>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= MOBILE NAV ================= -->
+
+  <nav class="mobile-nav">
+
+    <a
+      href="#home"
+      class="active"
+    >
+      <span>⌂</span>
+      <small>Home</small>
+    </a>
+
+    <a href="#bet-day">
+      <span>♜</span>
+      <small>Bet of the Day</small>
+    </a>
+
+    <a href="#zoom">
+      <span>ϟ</span>
+      <small>Zoom</small>
+    </a>
+
+    <a href="#jackpot">
+      <span>♛</span>
+      <small>Jackpot</small>
+    </a>
+
+    <a href="#live">
+      <span>◉</span>
+      <small>Live</small>
+    </a>
+
+    <a href="#results">
+      <span>▥</span>
+      <small>Results</small>
+    </a>
+
+  </nav>
+
+
+
+  <!-- ================= DEMO AD ================= -->
+
+  <div
+    class="ad-modal hidden"
+    id="adModal"
+  >
+
+    <div class="ad-modal-card">
+
+      <button
+        class="modal-close"
+        id="closeAd"
+        type="button"
+      >
+        ×
+      </button>
+
+
+      <div class="demo-ad-label">
+        DEVELOPMENT AD DEMO
+      </div>
+
+
+      <div class="demo-ad-content">
+
+        <div class="demo-ad-text">
+
+          <small>
+            ADVERTISEMENT
+          </small>
+
+          <strong>
+            BET SMART
+          </strong>
+
+          <b>
+            PLAY BIG
+          </b>
+
+        </div>
+
+
+        <div class="demo-ball">
+          ⚽
+        </div>
+
+      </div>
+
+
+      <p>
+        This is only a development placeholder.
+        No real advertisement is being served.
+      </p>
+
+
+      <button
+        class="demo-complete"
+        id="completeAd"
+        type="button"
+      >
+        COMPLETE DEMO AD
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ================= TOAST ================= -->
+
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+
+  <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
