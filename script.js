@@ -251,37 +251,24 @@ var BOOKMAKER_META = {
     return null;
   }
 
-  function renderAccumulators(list) {
-    var grid = document.getElementById("accumulatorGrid");
-    if (!grid) return;
 
-    grid.innerHTML = list
-      .map(function (a) {
-        var matches = a.matchIds.map(findPredictionById).filter(Boolean);
-        var combinedOdds = matches.reduce(function (total, m) { return total * m.odds; }, 1);
+function renderAccumulators(list) {
+  var grid = document.getElementById("accumulatorGrid");
+  if (!grid) return;
+  grid.innerHTML = list.map(function (a) {
+    var matches = a.matchIds.map(findPredictionById).filter(Boolean);
+    var combinedOdds = matches.reduce(function (total, m) { 
+      var avgOdds = m.bookmakers.reduce(function(sum, b){ return sum + b.odds; }, 0) / m.bookmakers.length;
+      return total * avgOdds; 
+    }, 1);
+    var matchesHTML = matches.map(function (m) {
+      var avgOdds = m.bookmakers.reduce(function(sum, b){ return sum + b.odds; }, 0) / m.bookmakers.length;
+      return "<div class=\"accumulator-card_match\"><span class=\"accumulator-card_match-teams\">" + m.match + "</span><span class=\"accumulator-card_match-pick\">" + m.pick + " @ " + avgOdds.toFixed(2) + "</span></div>";
+    }).join("");
+    return "<div class=\"accumulator-card " + a.themeClass + "\"><div class=\"accumulator-card_odds\">" + a.odds.toUpperCase() + "</div><div class=\"accumulator-card_desc\">" + matches.length + " Selections - Combined " + combinedOdds.toFixed(2) + "</div><div class=\"accumulator-card_matches\">" + matchesHTML + "</div><div class=\"accumulator-card_code\"><b>Code:</b> " + a.combinedCode + "</div><button class=\"accumulator-card_btn\" onclick=\"navigator.clipboard.writeText('" + a.combinedCode + "')\">Copy Code</button></div>";
+  }).join("");
+}
 
-        var matchesHTML = matches
-          .map(function (m) {
-            return (
-              '<div class="accumulator-card__match">' +
-                '<span class="accumulator-card__match-teams">' + m.match + "</span>" +
-                '<span class="accumulator-card__match-pick">' + m.pick + " @ " + m.odds.toFixed(2) + "</span>" +
-              "</div>"
-            );
-          })
-          .join("");
-
-        return (
-          '<div class="accumulator-card ' + a.themeClass + '">' +
-            '<div class="accumulator-card__odds">🎯 ' + a.odds.toUpperCase() + "</div>" +
-            '<div class="accumulator-card__desc">' + matches.length + " Selections • Combined " + combinedOdds.toFixed(2) + "</div>" +
-            '<div class="accumulator-card__matches">' + matchesHTML + "</div>" +
-            '<a href="#" class="accumulator-card__cta">View Slip →</a>' +
-          "</div>"
-        );
-      })
-      .join("");
-  }
 
   function renderResults(results) {
     var grid = document.getElementById("resultsGrid");
