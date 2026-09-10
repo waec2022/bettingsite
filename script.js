@@ -120,10 +120,10 @@ predictions: [
   if (!tbody) return;
   
   tbody.innerHTML = predictions.map(function (p, index) {
-    var oddsBadges = p.bookmakers.map(function(b){
-      var meta = BOOKMAKER_META[b.name];
-      return '<span class="odds-cell ' + meta.className + '">' + meta.label + ': ' + b.odds.toFixed(2) + '</span>';
-    }).join(" ");
+   oddsBadges = p.bookmakers.map(function(b){
+  var meta = BOOKMAKER_META[b.name];
+  return '<span class="odds-cell ' + meta.className + '">' + meta.label + ': ' + b.odds.toFixed(2) + '</span>';
+}).join(" "),
     
     return (
       '<tr data-id="' + p.id + '">' +
