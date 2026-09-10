@@ -10,18 +10,22 @@
      1. CONFIG — affiliate links (insert real URLs here)
      ======================================================= */
   var AFFILIATE_LINKS = {
-    bet9ja: "BET9JA_AFFILIATE_URL",
-    sportybet: "SPORTYBET_AFFILIATE_URL",
-    betpawa: "BETPAWA_AFFILIATE_URL",
-    betway: "BETWAY_AFFILIATE_URL"
-  };
+  bet9ja: "BET9JA_AFFILIATE_URL",
+  sportybet: "SPORTYBET_AFFILIATE_URL",
+  betpawa: "BETPAWA_AFFILIATE_URL",
+  betway: "BETWAY_AFFILIATE_URL",
+  "football.com": "FOOTBALL_AFFILIATE_URL",
+  "1xbet": "1XBET_AFFILIATE_URL"
+};
 
-  var BOOKMAKER_META = {
-    bet9ja: { label: "bet9ja", className: "bet9ja" },
-    sportybet: { label: "SportyBet", className: "sportybet" },
-    betpawa: { label: "betPawa", className: "betpawa" },
-    betway: { label: "betway", className: "betway" }
-  };
+var BOOKMAKER_META = {
+  bet9ja: { label: "Bet9ja", className: "bet9ja" },
+  sportybet: { label: "SportyBet", className: "sportybet" },
+  betpawa: { label: "BetPawa", className: "betpawa" },
+  betway: { label: "Betway", className: "betway" },
+  "football.com": { label: "Football.com", className: "football" },
+  "1xbet": { label: "1xBet", className: "1xbet" }
+};
 
   /* =======================================================
      2. DATA — update this every day
