@@ -1,6 +1,6 @@
 /* =========================================================
    NaijaBetTools.ng — script.js
-   Central data + rendering. Edit the DATA section daily.
+   Centryggal data + rendering. Edit the DATA section daily.
    ========================================================= */
 
 (function () {
