@@ -56,7 +56,7 @@
     ],
 
     predictions: [
-      { id: 1, match: "Arsenal vs Man City", pick: "Over 1.5 Goals", odds: 1.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
+      { id: 1, match: "man uttd vs Man City", pick: "Over 4.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
       { id: 2, match: "Chelsea vs Newcastle", pick: "Chelsea Win", odds: 1.72, bookmakers: ["betpawa", "betway"], code: "SP-9213-CN", category: "Match Winner" },
       { id: 3, match: "Barcelona vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68, bookmakers: ["sportybet", "bet9ja"], code: "BP-3345-BS", category: "Over/Under" },
       { id: 4, match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80, bookmakers: ["betpawa", "sportybet"], code: "BW-7712-IA", category: "BTTS" },
