@@ -186,12 +186,18 @@
     revealCode(button, code);
   }
 
-  function revealCode(button, code) {
-    button.classList.add("reveal-btn--revealed");
-    button.innerHTML =
-      '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>' +
-      '<span class="reveal-btn__code">' + code + "</span>";
-    button.disabled = true;
+  function revealCode(button, p_id) {
+  button.classList.add("reveal-btn--revealed");
+  var p = findPredictionById(parseInt(p_id));
+  
+  var codesHTML = p.bookmakers.map(function(b){
+    var meta = BOOKMAKER_META[b.name];
+    return '<div style="margin:4px 0;"><b>' + meta.label + '</b>: ' + b.code + ' @ ' + b.odds + '</div>';
+  }).join("");
+  
+  button.innerHTML = codesHTML;
+  button.disabled = true;
+  button.style.cursor = "default";
   }
 
   function renderFilters(predictions) {
