@@ -35,12 +35,13 @@ var BOOKMAKER_META = {
     date: "Sep 9, 2026",
     resultsDate: "Sep 8, 2026",
 
-    overview: {
-      totalSelections: 25,
-      winnersYesterday: 12,
-      losersYesterday: 13,
-      hitRateYesterday: 48
-    },
+
+     overview: {
+  totalSelections: 20,
+  winnersYesterday: 12,
+  losersYesterday: 6,
+  hitRateYesterday: 66.7
+},
 
     yesterdayResults: {
       won: 14,
@@ -51,14 +52,17 @@ var BOOKMAKER_META = {
 
     /* category counts shown on the filter chips */
     categories: [
-      { key: "All", label: "All", count: 25 },
-      { key: "Over/Under", label: "Over/Under", count: 8 },
-      { key: "BTTS", label: "BTTS", count: 5 },
-      { key: "Match Winner", label: "Match Winner", count: 4 },
-      { key: "Double Chance", label: "Double Chance", count: 4 },
-      { key: "Other", label: "Other", count: 4 }
-    ],
+  { key: "All", label: "All", count: 20 },
+  { key: "Over/Under", label: "Over/Under", count: 5 },
+  { key: "BTTS", label: "BTTS", count: 4 },
+  { key: "Match Winner", label: "Match Winner", count: 7 },
+  { key: "Double Chance", label: "Double Chance", count: 2 },
+  { key: "Other", label: "Other", count: 2 }
+],
 
+
+
+     
 predictions: [
   { id: 1, match: "Man Utd vs Man City", pick: "Over 4.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.85, code: "9J-MU185" },{ name: "football.com", odds: 1.83, code: "FC-MU183" },{ name: "1xbet", odds: 1.86, code: "1X-MU186" },{ name: "betpawa", odds: 1.84, code: "BP-MU184" },{ name: "sportybet", odds: 1.85, code: "SB-MU185" },{ name: "betway", odds: 1.82, code: "BW-MU182" }] },
   { id: 2, match: "Chelsea vs Newcastle", pick: "Chelsea Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.72, code: "9J-CHL172" },{ name: "football.com", odds: 1.70, code: "FC-CHL170" },{ name: "1xbet", odds: 1.73, code: "1X-CHL173" },{ name: "betpawa", odds: 1.71, code: "BP-CHL171" },{ name: "sportybet", odds: 1.72, code: "SB-CHL172" },{ name: "betway", odds: 1.69, code: "BW-CHL169" }] },
