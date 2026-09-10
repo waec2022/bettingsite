@@ -116,11 +116,10 @@ predictions: [
   function renderPicksTable(predictions) {
   var tbody = document.getElementById("picksTableBody");
   if (!tbody) return;
-  
-  tbody.innerHTML = predictions.map(function (p, index) {
-   oddsBadges = p.bookmakers.map(function(b){
+     
+  oddsBadges = p.bookmakers.map(function(b){
   var meta = BOOKMAKER_META[b.name];
-  return '<span class="odds-cell ' + meta.className + '">' + meta.label + ': ' + b.odds.toFixed(2) + '</span>';
+  return "<span class=\"odds-cell " + meta.className + "\">" + meta.label + ": " + b.odds.toFixed(2) + "</span>";
 }).join(" "),
     
     return (
