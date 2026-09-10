@@ -263,8 +263,7 @@ function renderAccumulators(list) {
     }).join("");
     return "<div class=\"accumulator-card " + a.themeClass + "\"><div class=\"accumulator-card_odds\">" + a.odds.toUpperCase() + "</div><div class=\"accumulator-card_desc\">" + matches.length + " Selections - Combined " + combinedOdds.toFixed(2) + "</div><div class=\"accumulator-card_matches\">" + matchesHTML + "</div><div class=\"accumulator-card_code\"><b>Code:</b> " + a.combinedCode + "</div><button class=\"accumulator-card_btn\" onclick=\"navigator.clipboard.writeText('" + a.combinedCode + "')\">Copy Code</button></div>";
   }).join("");
-}
-
+                                          }
 
   function renderResults(results) {
     var grid = document.getElementById("resultsGrid");
