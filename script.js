@@ -117,10 +117,14 @@ predictions: [
   var tbody = document.getElementById("picksTableBody");
   if (!tbody) return;
      
-  oddsBadges = p.bookmakers.map(function(b){
-  var meta = BOOKMAKER_META[b.name];
-  return "<span class=\"odds-cell " + meta.className + "\">" + meta.label + ": " + b.odds.toFixed(2) + "</span>";
-}).join(" "),
+  var BOOKMAKER_META = {
+  bet9ja: { label: "Bet9ja", className: "bet9ja" },
+  sportybet: { label: "SportyBet", className: "sportybet" },
+  betpawa: { label: "BetPawa", className: "betpawa" },
+  betway: { label: "Betway", className: "betway" },
+  "football.com": { label: "Football.com", className: "football" },
+  "1xbet": { label: "1xBet", className: "1xbet" }
+};
     
     return (
       '<tr data-id="' + p.id + '">' +
