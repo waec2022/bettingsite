@@ -226,9 +226,9 @@ predictions: [
   var p = findPredictionById(parseInt(p_id));
   
   var codesHTML = p.bookmakers.map(function(b){
-    var meta = BOOKMAKER_META[b.name];
-    return '<div style="margin:4px 0;"><b>' + meta.label + '</b>: ' + b.code + ' @ ' + b.odds + '</div>';
-  }).join("");
+  var meta = BOOKMAKER_META[b.name];
+  return '<div style="margin:4px 0;"><b>' + meta.label + ':</b> ' + b.code + ' @ ' + b.odds.toFixed(2) + '</div>';
+}).join("");
   
   button.innerHTML = codesHTML;
   button.disabled = true;
