@@ -59,30 +59,33 @@ var BOOKMAKER_META = {
       { key: "Other", label: "Other", count: 4 }
     ],
 
-    { 
-  id: 1, 
-  match: "Man Utd vs Man City", 
-  pick: "Over 4.5 Goals", 
-  bookmakers: [
-    { name: "bet9ja", odds: 1.85, code: "9J-MU185" },
-    { name: "football.com", odds: 1.83, code: "FC-MU183" },
-    { name: "1xbet", odds: 1.86, code: "1X-MU186" },
-    { name: "betpawa", odds: 1.84, code: "BP-MU184" },
-    { name: "sportybet", odds: 1.85, code: "SB-MU185" },
-    { name: "betway", odds: 1.82, code: "BW-MU182" }
-  ] 
-},
-
-    /* Each accumulator references match IDs from `predictions` above,
-       so the actual matches/picks/odds shown always stay in sync with
-       today's picks — edit predictions and these slips update too. */
-    accumulators: [
-  { key: "3", odds: "3 Odds", matchIds: [1, 2, 3], themeClass: "accumulator-card-3", combinedCode: "ACC3-9J-111" },
-  { key: "5", odds: "5 Odds", matchIds: [4, 5, 6, 7, 8], themeClass: "accumulator-card-5", combinedCode: "ACC5-9J-222" },
-  { key: "10", odds: "10 Odds", matchIds: [1,2,3,4,5,6,7,8,9,10], themeClass: "accumulator-card-10", combinedCode: "ACC10-9J-333" },
-  { key: "20", odds: "20+ Odds", matchIds: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], themeClass: "accumulator-card-20", combinedCode: "ACC20-9J-444" }
+predictions: [
+  { id: 1, match: "Man Utd vs Man City", pick: "Over 4.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.85, code: "9J-MU185" },{ name: "football.com", odds: 1.83, code: "FC-MU183" },{ name: "1xbet", odds: 1.86, code: "1X-MU186" },{ name: "betpawa", odds: 1.84, code: "BP-MU184" },{ name: "sportybet", odds: 1.85, code: "SB-MU185" },{ name: "betway", odds: 1.82, code: "BW-MU182" }] },
+  { id: 2, match: "Chelsea vs Newcastle", pick: "Chelsea Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.72, code: "9J-CHL172" },{ name: "football.com", odds: 1.70, code: "FC-CHL170" },{ name: "1xbet", odds: 1.73, code: "1X-CHL173" },{ name: "betpawa", odds: 1.71, code: "BP-CHL171" },{ name: "sportybet", odds: 1.72, code: "SB-CHL172" },{ name: "betway", odds: 1.69, code: "BW-CHL169" }] },
+  { id: 3, match: "Liverpool vs Bournemouth", pick: "Liverpool Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.55, code: "9J-LIV155" },{ name: "football.com", odds: 1.53, code: "FC-LIV153" },{ name: "1xbet", odds: 1.56, code: "1X-LIV156" },{ name: "betpawa", odds: 1.54, code: "BP-LIV154" },{ name: "sportybet", odds: 1.55, code: "SB-LIV155" },{ name: "betway", odds: 1.52, code: "BW-LIV152" }] },
+  { id: 4, match: "Arsenal vs Fulham", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.80, code: "9J-ARS180" },{ name: "football.com", odds: 1.78, code: "FC-ARS178" },{ name: "1xbet", odds: 1.81, code: "1X-ARS181" },{ name: "betpawa", odds: 1.79, code: "BP-ARS179" },{ name: "sportybet", odds: 1.80, code: "SB-ARS180" },{ name: "betway", odds: 1.77, code: "BW-ARS177" }] },
+  { id: 5, match: "Barcelona vs Real Madrid", pick: "Over 2.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.65, code: "9J-BAR165" },{ name: "football.com", odds: 1.63, code: "FC-BAR163" },{ name: "1xbet", odds: 1.66, code: "1X-BAR166" },{ name: "betpawa", odds: 1.64, code: "BP-BAR164" },{ name: "sportybet", odds: 1.65, code: "SB-BAR165" },{ name: "betway", odds: 1.62, code: "BW-BAR162" }] },
+  { id: 6, match: "Bayern vs Dortmund", pick: "Bayern Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.50, code: "9J-BAY150" },{ name: "football.com", odds: 1.48, code: "FC-BAY148" },{ name: "1xbet", odds: 1.51, code: "1X-BAY151" },{ name: "betpawa", odds: 1.49, code: "BP-BAY149" },{ name: "sportybet", odds: 1.50, code: "SB-BAY150" },{ name: "betway", odds: 1.47, code: "BW-BAY147" }] },
+  { id: 7, match: "PSG vs Marseille", pick: "Double Chance: PSG or Draw", category: "Double Chance", bookmakers: [{ name: "bet9ja", odds: 1.25, code: "9J-PSG125" },{ name: "football.com", odds: 1.23, code: "FC-PSG123" },{ name: "1xbet", odds: 1.26, code: "1X-PSG126" },{ name: "betpawa", odds: 1.24, code: "BP-PSG124" },{ name: "sportybet", odds: 1.25, code: "SB-PSG125" },{ name: "betway", odds: 1.22, code: "BW-PSG122" }] },
+  { id: 8, match: "Inter vs AC Milan", pick: "Under 3.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.90, code: "9J-INT190" },{ name: "football.com", odds: 1.88, code: "FC-INT188" },{ name: "1xbet", odds: 1.91, code: "1X-INT191" },{ name: "betpawa", odds: 1.89, code: "BP-INT189" },{ name: "sportybet", odds: 1.90, code: "SB-INT190" },{ name: "betway", odds: 1.87, code: "BW-INT187" }] },
+  { id: 9, match: "Juventus vs Napoli", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.75, code: "9J-JUV175" },{ name: "football.com", odds: 1.73, code: "FC-JUV173" },{ name: "1xbet", odds: 1.76, code: "1X-JUV176" },{ name: "betpawa", odds: 1.74, code: "BP-JUV174" },{ name: "sportybet", odds: 1.75, code: "SB-JUV175" },{ name: "betway", odds: 1.72, code: "BW-JUV172" }] },
+  { id: 10, match: "Atletico vs Sevilla", pick: "Other: Over 9.5 Corners", category: "Other", bookmakers: [{ name: "bet9ja", odds: 2.10, code: "9J-ATL210" },{ name: "football.com", odds: 2.08, code: "FC-ATL208" },{ name: "1xbet", odds: 2.11, code: "1X-ATL211" },{ name: "betpawa", odds: 2.09, code: "BP-ATL209" },{ name: "sportybet", odds: 2.10, code: "SB-ATL210" },{ name: "betway", odds: 2.07, code: "BW-ATL207" }] },
+  { id: 11, match: "Real Sociedad vs Valencia", pick: "Real Sociedad Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.68, code: "9J-RS168" },{ name: "football.com", odds: 1.66, code: "FC-RS166" },{ name: "1xbet", odds: 1.69, code: "1X-RS169" },{ name: "betpawa", odds: 1.67, code: "BP-RS167" },{ name: "sportybet", odds: 1.68, code: "SB-RS168" },{ name: "betway", odds: 1.65, code: "BW-RS165" }] },
+  { id: 12, match: "Tottenham vs West Ham", pick: "Over 3.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 2.05, code: "9J-TOT205" },{ name: "football.com", odds: 2.03, code: "FC-TOT203" },{ name: "1xbet", odds: 2.06, code: "1X-TOT206" },{ name: "betpawa", odds: 2.04, code: "BP-TOT204" },{ name: "sportybet", odds: 2.05, code: "SB-TOT205" },{ name: "betway", odds: 2.02, code: "BW-TOT202" }] },
+  { id: 13, match: "Leicester vs Brighton", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.70, code: "9J-LEI170" },{ name: "football.com", odds: 1.68, code: "FC-LEI168" },{ name: "1xbet", odds: 1.71, code: "1X-LEI171" },{ name: "betpawa", odds: 1.69, code: "BP-LEI169" },{ name: "sportybet", odds: 1.70, code: "SB-LEI170" },{ name: "betway", odds: 1.67, code: "BW-LEI167" }] },
+  { id: 14, match: "Aston Villa vs Brentford", pick: "Aston Villa Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.60, code: "9J-AV160" },{ name: "football.com", odds: 1.58, code: "FC-AV158" },{ name: "1xbet", odds: 1.61, code: "1X-AV161" },{ name: "betpawa", odds: 1.59, code: "BP-AV159" },{ name: "sportybet", odds: 1.60, code: "SB-AV160" },{ name: "betway", odds: 1.57, code: "BW-AV157" }] },
+  { id: 15, match: "Everton vs Wolves", pick: "Double Chance: Draw or Wolves", category: "Double Chance", bookmakers: [{ name: "bet9ja", odds: 1.40, code: "9J-EVE140" },{ name: "football.com", odds: 1.38, code: "FC-EVE138" },{ name: "1xbet", odds: 1.41, code: "1X-EVE141" },{ name: "betpawa", odds: 1.39, code: "BP-EVE139" },{ name: "sportybet", odds: 1.40, code: "SB-EVE140" },{ name: "betway", odds: 1.37, code: "BW-EVE137" }] },
+  { id: 16, match: "Palace vs Forest", pick: "Other: Over 10.5 Corners", category: "Other", bookmakers: [{ name: "bet9ja", odds: 1.95, code: "9J-CRY195" },{ name: "football.com", odds: 1.93, code: "FC-CRY193" },{ name: "1xbet", odds: 1.96, code: "1X-CRY196" },{ name: "betpawa", odds: 1.94, code: "BP-CRY194" },{ name: "sportybet", odds: 1.95, code: "SB-CRY195" },{ name: "betway", odds: 1.92, code: "BW-CRY192" }] },
+  { id: 17, match: "Leeds vs Southampton", pick: "Leeds Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.75, code: "9J-LEE175" },{ name: "football.com", odds: 1.73, code: "FC-LEE173" },{ name: "1xbet", odds: 1.76, code: "1X-LEE176" },{ name: "betpawa", odds: 1.74, code: "BP-LEE174" },{ name: "sportybet", odds: 1.75, code: "SB-LEE175" },{ name: "betway", odds: 1.72, code: "BW-LEE172" }] },
+  { id: 18, match: "Burnley vs Luton", pick: "Over 2.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.88, code: "9J-BUR188" },{ name: "football.com", odds: 1.86, code: "FC-BUR186" },{ name: "1xbet", odds: 1.89, code: "1X-BUR189" },{ name: "betpawa", odds: 1.87, code: "BP-BUR187" },{ name: "sportybet", odds: 1.88, code: "SB-BUR188" },{ name: "betway", odds: 1.85, code: "BW-BUR185" }] },
+  { id: 19, match: "Sheffield vs Fulham", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.65, code: "9J-SHU165" },{ name: "football.com", odds: 1.63, code: "FC-SHU163" },{ name: "1xbet", odds: 1.66, code: "1X-SHU166" },{ name: "betpawa", odds: 1.64, code: "BP-SHU164" },{ name: "sportybet", odds: 1.65, code: "SB-SHU165" },{ name: "betway", odds: 1.62, code: "BW-SHU162" }] },
+  { id: 20, match: "Bournemouth vs Luton", pick: "Bournemouth Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.55, code: "9J-BOU155" },{ name: "football.com", odds: 1.53, code: "FC-BOU153" },{ name: "1xbet", odds: 1.56, code: "1X-BOU156" },{ name: "betpawa", odds: 1.54, code: "BP-BOU154" },{ name: "sportybet", odds: 1.55, code: "SB-BOU155" },{ name: "betway", odds: 1.52, code: "BW-BOU152" }] }
 ],
 
+
+
+
+       
     bookmakers: ["bet9ja", "sportybet", "betpawa", "betway"],
 
     news: [
