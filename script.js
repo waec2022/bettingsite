@@ -99,24 +99,28 @@
   }
 
   function renderPicksTable(predictions) {
-    var tbody = document.getElementById("picksTableBody");
-    if (!tbody) return;
-
-    tbody.innerHTML = predictions
-      .map(function (p, index) {
-        return (
-          '<tr data-id="' + p.id + '">' +
-            '<td class="col-num">' + (index + 1) + "</td>" +
-            '<td class="col-match"><span class="match-cell"><span class="match-cell__icon">⚽</span>' + p.match + "</span></td>" +
-            '<td class="col-pick"><span class="pick-cell">' + p.pick + "</span></td>" +
-            '<td class="col-odds"><span class="odds-cell">' + p.odds.toFixed(2) + "</span></td>" +
-            '<td class="col-books"><span class="books-cell">' + p.bookmakers.map(bookPill).join("") + "</span></td>" +
-            '<td class="col-code">' + revealButtonHTML(p) + "</td>" +
-          "</tr>"
-        );
-      })
-      .join("");
-
+  var tbody = document.getElementById("picksTableBody");
+  if (!tbody) return;
+  
+  tbody.innerHTML = predictions.map(function (p, index) {
+    var bookmakerBadges = p.bookmakers.map(function(b){
+      var meta = BOOKMAKER_META[b.name];
+      return '<span class="odds-cell ' + meta.className + '">' + meta.label + ': ' + b.odds.toFixed(2) + '</span>';
+    }).join(" ");
+    
+    return (
+      '<tr data-id="' + p.id + '">' +
+      '<td class="col-num"><span class="hatch-cell">' + (index + 1) + "</span></td>" +
+      '<td class="col-match"><span class="hatch-cell"></span>' + p.match + "</td>" +
+      '<td class="col-pick"><span class="pick-cell"></span>' + p.pick + "</td>" +
+      '<td class="col-odds">' + bookmakerBadges + '</td>' +
+      '<td class="col-code">' + revealButtonHTML(p) + "</td>" +
+      "</tr>"
+    );
+  }).join("");
+  
+  attachRevealHandlers(tbody);
+       }
     attachRevealHandlers(tbody);
   }
 
