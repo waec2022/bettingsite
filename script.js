@@ -9,7 +9,7 @@
   /* =======================================================
      1. CONFIG — affiliate links (insert real URLs here)
      ======================================================= */
-  var AFFILIATE_LINKS = {
+var AFFILIATE_LINKS = {
   bet9ja: "BET9JA_AFFILIATE_URL",
   sportybet: "SPORTYBET_AFFILIATE_URL",
   betpawa: "BETPAWA_AFFILIATE_URL",
