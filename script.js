@@ -77,11 +77,11 @@ var BOOKMAKER_META = {
        so the actual matches/picks/odds shown always stay in sync with
        today's picks — edit predictions and these slips update too. */
     accumulators: [
-      { key: "3", odds: "3 Odds", matchIds: [1, 2, 6], themeClass: "accumulator-card--3" },
-      { key: "5", odds: "5 Odds", matchIds: [3, 4, 5, 7, 8], themeClass: "accumulator-card--5" },
-      { key: "10", odds: "10 Odds", matchIds: [9, 10, 1, 2, 3, 6, 7], themeClass: "accumulator-card--10" },
-      { key: "20", odds: "20+ Odds", matchIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], themeClass: "accumulator-card--20" }
-    ],
+  { key: "3", odds: "3 Odds", matchIds: [1, 2, 3], themeClass: "accumulator-card-3", combinedCode: "ACC3-9J-111" },
+  { key: "5", odds: "5 Odds", matchIds: [4, 5, 6, 7, 8], themeClass: "accumulator-card-5", combinedCode: "ACC5-9J-222" },
+  { key: "10", odds: "10 Odds", matchIds: [1,2,3,4,5,6,7,8,9,10], themeClass: "accumulator-card-10", combinedCode: "ACC10-9J-333" },
+  { key: "20", odds: "20+ Odds", matchIds: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], themeClass: "accumulator-card-20", combinedCode: "ACC20-9J-444" }
+],
 
     bookmakers: ["bet9ja", "sportybet", "betpawa", "betway"],
 
