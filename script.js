@@ -1,4 +1,4 @@
-/* =========================================================
+rt/* =========================================================
    NaijaBetTools.ng — script.js
    Google Sheets Integration + Rendering
    =============================================g============ */
@@ -70,8 +70,8 @@
       { id: 1, match: "Arsenal vs crystal palace", pick: "Over 6.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
       { id: 2, match: "man utd vs Newcastle", pick: "Chelsea Win", odds: 1.72, bookmakers: ["betpawa", "betway"], code: "SP-9213-CN", category: "Match Winner" },
       { id: 3, match: "Barcelona vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68, bookmakers: ["sportybet", "bet9ja"], code: "BP-3345-BS", category: "Over/Under" },
-      { id: 4, match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80, bookmakers: ["betpawa", "sportybet"], code: "BW-7712-IA", category: "BTTS" },
-      { id: 5, match: "Liverpool vs Bournemouth", pick: "Liverpool Win", odds: 1.55, bookmakers: ["bet9ja", "betway"], code: "BJ-5561-LB", category: "Match Winner" },
+      { id: 4, match: " Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80, bookmakers: ["betpawa", "sportybet"], code: "BW-7712-IA", category: "BTTS" },
+      { id: 5, match: "porto vs Bournemouth", pick: "Liverpool Win", odds: 1.55, bookmakers: ["bet9ja", "betway"], code: "BJ-5561-LB", category: "Match Winner" },
       { id: 6, match: "PSG vs Marseille", pick: "Over 1.5 Goals", odds: 1.40, bookmakers: ["sportybet", "betpawa"], code: "SP-2290-PM", category: "Over/Under" },
       { id: 7, match: "Man United vs Burnley", pick: "Man United Win", odds: 1.65, bookmakers: ["betway", "bet9ja"], code: "BW-8834-MB", category: "Double Chance" },
       { id: 8, match: "Juventus vs Lazio", pick: "BTTS - Yes", odds: 1.75, bookmakers: ["betpawa", "sportybet"], code: "BP-6620-JL", category: "BTTS" },
