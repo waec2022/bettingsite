@@ -67,7 +67,7 @@
     ],
 
     predictions: [
-      { id: 1, match: "Arsenal vs crystal palace", pick: "Over 4.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
+      { id: 1, match: "Arsenal vs crystal palace", pick: "Over 6.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
       { id: 2, match: "man utd vs Newcastle", pick: "Chelsea Win", odds: 1.72, bookmakers: ["betpawa", "betway"], code: "SP-9213-CN", category: "Match Winner" },
       { id: 3, match: "Barcelona vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68, bookmakers: ["sportybet", "bet9ja"], code: "BP-3345-BS", category: "Over/Under" },
       { id: 4, match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80, bookmakers: ["betpawa", "sportybet"], code: "BW-7712-IA", category: "BTTS" },
@@ -80,7 +80,7 @@
     ],
 
     accumulators: [
-      { key: "3", odds: "3 Odds", matchIds: [1, 2, 6], themeClass: "accumulator-card--3" },
+      { key: "3", odds: "8 Odds", matchIds: [1, 2, 6], themeClass: "accumulator-card--3" },
       { key: "5", odds: "5 Odds", matchIds: [3, 4, 5, 7, 8], themeClass: "accumulator-card--5" },
       { key: "10", odds: "10 Odds", matchIds: [9, 10, 1, 2, 3, 6, 7], themeClass: "accumulator-card--10" },
       { key: "20", odds: "20+ Odds", matchIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], themeClass: "accumulator-card--20" }
