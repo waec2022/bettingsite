@@ -1,22 +1,10 @@
 /* =========================================================
    NaijaBetTools.ng — script.js
-   Google Sheets Integration + Rendering
+   Local Data + Rendering
    ========================================================= */
 
 (function () {
   "use strict";
-
-  /* =======================================================
-     0. GOOGLE SHEETS CONFIGURATION
-     ======================================================= */
-  
-  var GOOGLE_SHEET_ID = "1dv1LoV1vxCetGbik5_0BmVQjvcybVD4znE4GeDvQA8M";
-  
-  function getSheetUrl(sheetName) {
-    return "https://docs.google.com/spreadsheets/d/" + GOOGLE_SHEET_ID + 
-           "/gviz/tq?tqx=out:json&sheet=" + encodeURIComponent(sheetName) +
-           "&_cb=" + Date.now();
-  }
 
   /* =======================================================
      1. CONFIG — affiliate links (insert real URLs here)
@@ -36,10 +24,11 @@
   };
 
   /* =======================================================
-     2. FALLBACK DATA — used if Google Sheets unavailable
+     2. SITE DATA — edit predictions, accumulators, results,
+     news, etc. directly here. This is the active data source.
      ======================================================= */
 
-  var FALLBACK_SITE_DATA = {
+  var SITE_DATA = {
     date: "Sep 9, 2026",
     resultsDate: "Sep 8, 2026",
 
@@ -96,407 +85,8 @@
     ]
   };
 
-  var SITE_DATA = JSON.parse(JSON.stringify(FALLBACK_SITE_DATA));
-
   /* =======================================================
-     3. GOOGLE SHEETS DATA LOADING
-     ======================================================= */
-
-  function parseGoogleSheetResponse(response) {
-    try {
-      var text = response;
-      var prefix = ")]}'\n";
-      if (text.substring(0, prefix.length) === prefix) {
-        text = text.substring(prefix.length);
-      }
-      return JSON.parse(text);
-    } catch (e) {
-      console.error("Failed to parse Google Sheet response:", e);
-      return null;
-    }
-  }
-
-  function extractSheetData(parsedResponse) {
-    if (!parsedResponse || !parsedResponse.table || !parsedResponse.table.rows) {
-      return [];
-    }
-    var rows = [];
-    parsedResponse.table.rows.forEach(function (row) {
-      var cells = [];
-      if (row.c) {
-        row.c.forEach(function (cell) {
-          cells.push(cell ? cell.v : "");
-        });
-      }
-      rows.push(cells);
-    });
-    return rows;
-  }
-
-  function fetchSheetData(sheetName) {
-    return fetch(getSheetUrl(sheetName), { cache: "no-store" })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status + " for " + sheetName);
-        }
-        return response.text();
-      })
-      .then(function (text) {
-        var parsed = parseGoogleSheetResponse(text);
-        if (!parsed) {
-          throw new Error("Invalid response for " + sheetName);
-        }
-        return extractSheetData(parsed);
-      })
-      .catch(function (error) {
-        console.error("Error loading sheet '" + sheetName + "':", error);
-        return null;
-      });
-  }
-
-  function parsePredictions(rows) {
-    if (!rows || rows.length === 0) {
-      console.error("No predictions data found");
-      return null;
-    }
-
-    var predictions = [];
-    var seenIds = {};
-
-    for (var i = 0; i < rows.length; i++) {
-      var row = rows[i];
-      if (!row || row.length < 7) continue;
-
-      var id = parseInt(row[0], 10);
-      var match = String(row[1] || "").trim();
-      var pick = String(row[2] || "").trim();
-      var odds = parseFloat(row[3]);
-      var bookmakerStr = String(row[4] || "").trim();
-      var code = String(row[5] || "").trim();
-      var category = String(row[6] || "").trim();
-
-      if (!id || isNaN(odds) || !match || !pick || !code || !category) {
-        continue;
-      }
-
-      if (seenIds[id]) {
-        console.warn("Duplicate prediction ID:", id);
-        continue;
-      }
-      seenIds[id] = true;
-
-      var bookmakers = bookmakerStr.split(",").map(function (b) {
-        return b.trim().toLowerCase();
-      }).filter(function (b) {
-        return b && BOOKMAKER_META[b];
-      });
-
-      predictions.push({
-        id: id,
-        match: match,
-        pick: pick,
-        odds: odds,
-        bookmakers: bookmakers,
-        code: code,
-        category: category
-      });
-    }
-
-    return predictions.length > 0 ? predictions : null;
-  }
-
-  function parseAccumulators(rows, predictions) {
-    if (!rows || rows.length === 0 || !predictions) {
-      console.error("No accumulators data found");
-      return null;
-    }
-
-    var predictionIds = {};
-    predictions.forEach(function (p) {
-      predictionIds[p.id] = true;
-    });
-
-    var accumulators = [];
-
-    for (var i = 0; i < rows.length; i++) {
-      var row = rows[i];
-      if (!row || row.length < 4) continue;
-
-      var key = String(row[0] || "").trim();
-      var odds = String(row[1] || "").trim();
-      var matchIdStr = String(row[2] || "").trim();
-      var themeClass = String(row[3] || "").trim();
-
-      if (!key || !odds || !matchIdStr || !themeClass) {
-        continue;
-      }
-
-      var matchIds = matchIdStr.split(",").map(function (id) {
-        return parseInt(id.trim(), 10);
-      }).filter(function (id) {
-        return !isNaN(id) && predictionIds[id];
-      });
-
-      if (matchIds.length === 0) {
-        console.warn("Accumulator '" + key + "' has no valid prediction IDs");
-        continue;
-      }
-
-      accumulators.push({
-        key: key,
-        odds: odds,
-        matchIds: matchIds,
-        themeClass: themeClass
-      });
-    }
-
-    return accumulators;
-  }
-
-  function parseResults(rows) {
-    if (!rows || rows.length === 0) {
-      console.error("No results data found");
-      return null;
-    }
-
-    var row = rows[0];
-    if (!row || row.length < 5) {
-      return null;
-    }
-
-    var won = parseInt(row[0], 10);
-    var lost = parseInt(row[1], 10);
-    var hitRate = parseFloat(row[2]);
-    var avgOdds = parseFloat(row[3]);
-    var resultsDate = String(row[4] || "").trim();
-
-    if (isNaN(won) || isNaN(lost) || isNaN(hitRate) || isNaN(avgOdds) || !resultsDate) {
-      console.error("Invalid results data");
-      return null;
-    }
-
-    return {
-      yesterdayResults: {
-        won: won,
-        lost: lost,
-        hitRate: hitRate,
-        avgOdds: avgOdds
-      },
-      resultsDate: resultsDate
-    };
-  }
-
-  function parseNews(rows) {
-    if (!rows || rows.length === 0) {
-      console.error("No news data found");
-      return null;
-    }
-
-    var news = [];
-
-    for (var i = 0; i < rows.length; i++) {
-      var row = rows[i];
-      if (!row || row.length < 3) continue;
-
-      var icon = String(row[0] || "").trim();
-      var headline = String(row[1] || "").trim();
-      var date = String(row[2] || "").trim();
-
-      if (!icon || !headline || !date) {
-        continue;
-      }
-
-      news.push({
-        icon: icon,
-        headline: headline,
-        date: date
-      });
-    }
-
-    return news.length > 0 ? news : null;
-  }
-
-  function parseSettings(rows) {
-    if (!rows || rows.length === 0) {
-      console.error("No settings data found");
-      return null;
-    }
-
-    var settings = {};
-
-    for (var i = 0; i < rows.length; i++) {
-      var row = rows[i];
-      if (!row || row.length < 2) continue;
-
-      var key = String(row[0] || "").trim();
-      var value = row[1];
-
-      if (!key) continue;
-
-      if (typeof value === "number") {
-        settings[key] = value;
-      } else if (typeof value === "string") {
-        var trimmed = value.trim();
-        var asNum = parseFloat(trimmed);
-        settings[key] = isNaN(asNum) ? trimmed : asNum;
-      }
-    }
-
-    return Object.keys(settings).length > 0 ? settings : null;
-  }
-
-  function buildCategories(predictions) {
-    var counts = {};
-    var total = predictions.length;
-
-    predictions.forEach(function (p) {
-      if (p.category) {
-        counts[p.category] = (counts[p.category] || 0) + 1;
-      }
-    });
-
-    var categories = [
-      { key: "All", label: "All", count: total }
-    ];
-
-    Object.keys(counts).forEach(function (cat) {
-      categories.push({
-        key: cat,
-        label: cat,
-        count: counts[cat]
-      });
-    });
-
-    return categories;
-  }
-
-  function validateData(data) {
-    if (!data.predictions || data.predictions.length === 0) {
-      console.error("Validation: No predictions");
-      return false;
-    }
-
-    if (!data.accumulators) {
-      data.accumulators = [];
-    }
-
-    var predictionIds = {};
-    data.predictions.forEach(function (p) {
-      if (predictionIds[p.id]) {
-        console.error("Validation: Duplicate prediction ID:", p.id);
-        return false;
-      }
-      predictionIds[p.id] = true;
-    });
-
-    for (var i = 0; i < data.accumulators.length; i++) {
-      var acc = data.accumulators[i];
-      for (var j = 0; j < acc.matchIds.length; j++) {
-        if (!predictionIds[acc.matchIds[j]]) {
-          console.error("Validation: Accumulator '" + acc.key + "' references missing prediction ID:", acc.matchIds[j]);
-          return false;
-        }
-      }
-    }
-
-    return true;
-  }
-
-  function loadDataFromGoogleSheets() {
-    return Promise.all([
-      fetchSheetData("Predictions"),
-      fetchSheetData("Accumulators"),
-      fetchSheetData("Results"),
-      fetchSheetData("News"),
-      fetchSheetData("Settings")
-    ]).then(function (results) {
-      var predictionsRows = results[0];
-      var accumulatorsRows = results[1];
-      var resultsRows = results[2];
-      var newsRows = results[3];
-      var settingsRows = results[4];
-
-      if (!predictionsRows) {
-        console.error("Google Sheets: Critical data missing");
-        return null;
-      }
-
-      var predictions = parsePredictions(predictionsRows);
-      if (!predictions) {
-        console.error("Google Sheets: Failed to parse predictions");
-        return null;
-      }
-
-      var accumulators = accumulatorsRows ? parseAccumulators(accumulatorsRows, predictions) : [];
-      if (!accumulators) {
-        console.warn("Google Sheets: No valid accumulators, continuing without them");
-        accumulators = [];
-      }
-
-      var data = {
-        predictions: predictions,
-        accumulators: accumulators,
-        categories: buildCategories(predictions),
-        bookmakers: ["bet9ja", "sportybet", "betpawa", "betway"],
-        date: "Sep 9, 2026",
-        resultsDate: "Sep 8, 2026",
-        overview: {
-          totalSelections: predictions.length,
-          winnersYesterday: 0,
-          losersYesterday: 0,
-          hitRateYesterday: 0
-        },
-        yesterdayResults: {
-          won: 0,
-          lost: 0,
-          hitRate: 0,
-          avgOdds: 0
-        },
-        news: []
-      };
-
-      if (resultsRows) {
-        var resultsData = parseResults(resultsRows);
-        if (resultsData) {
-          data.yesterdayResults = resultsData.yesterdayResults;
-          data.resultsDate = resultsData.resultsDate;
-        }
-      }
-
-      if (newsRows) {
-        var news = parseNews(newsRows);
-        if (news) {
-          data.news = news;
-        }
-      }
-
-      if (settingsRows) {
-        var settings = parseSettings(settingsRows);
-        if (settings) {
-          if (settings.date) data.date = settings.date;
-          if (settings.resultsDate) data.resultsDate = settings.resultsDate;
-          if (settings.totalSelections) data.overview.totalSelections = settings.totalSelections;
-          if (settings.winnersYesterday) data.overview.winnersYesterday = settings.winnersYesterday;
-          if (settings.losersYesterday) data.overview.losersYesterday = settings.losersYesterday;
-          if (settings.hitRateYesterday) data.overview.hitRateYesterday = settings.hitRateYesterday;
-        }
-      }
-
-      if (!validateData(data)) {
-        console.error("Google Sheets: Data validation failed");
-        return null;
-      }
-
-      console.log("Google Sheets data loaded successfully");
-      return data;
-    }).catch(function (error) {
-      console.error("Google Sheets: Load error:", error);
-      return null;
-    });
-  }
-
-  /* =======================================================
-     4. RENDER HELPERS
+     3. RENDER HELPERS
      ======================================================= */
 
   function bookPill(key) {
@@ -722,7 +312,7 @@
   }
 
   /* =======================================================
-     5. NAV INTERACTIONS (live search + bottom nav)
+     4. NAV INTERACTIONS (live search + bottom nav)
      ======================================================= */
 
   function escapeHTML(str) {
@@ -892,7 +482,7 @@
   }
 
   /* =======================================================
-     6. INITIALIZATION
+     5. INITIALIZATION
      ======================================================= */
 
   function init() {
@@ -923,25 +513,9 @@
     initBottomNav();
   }
 
-  function startApp() {
-    loadDataFromGoogleSheets().then(function (sheetData) {
-      if (sheetData) {
-        SITE_DATA = sheetData;
-      } else {
-        console.log("Using fallback data");
-        SITE_DATA = JSON.parse(JSON.stringify(FALLBACK_SITE_DATA));
-      }
-      init();
-    }).catch(function (error) {
-      console.error("Failed to load data:", error);
-      SITE_DATA = JSON.parse(JSON.stringify(FALLBACK_SITE_DATA));
-      init();
-    });
-  }
-
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", startApp);
+    document.addEventListener("DOMContentLoaded", init);
   } else {
-    startApp();
+    init();
   }
 })();
