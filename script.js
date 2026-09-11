@@ -1,6 +1,6 @@
 /* =========================================================
    NaijaBetTools.ng — script.js
-   Centryggal data + rendering. Edit the DATA section daily.
+   Central data + rendering. Edit the DATA section daily.
    ========================================================= */
 
 (function () {
@@ -10,18 +10,22 @@
      1. CONFIG — affiliate links (insert real URLs here)
      ======================================================= */
   var AFFILIATE_LINKS = {
-    bet9ja: "BET9JA_AFFILIATE_URL",
-    sportybet: "SPORTYBET_AFFILIATE_URL",
-    betpawa: "BETPAWA_AFFILIATE_URL",
-    betway: "BETWAY_AFFILIATE_URL"
-  };
+  bet9ja: "BET9JA_AFFILIATE_URL",
+  sportybet: "SPORTYBET_AFFILIATE_URL",
+  betpawa: "BETPAWA_AFFILIATE_URL",
+  betway: "BETWAY_AFFILIATE_URL",
+  "football.com": "FOOTBALL_AFFILIATE_URL",
+  "1xbet": "1XBET_AFFILIATE_URL"
+};
 
-  var BOOKMAKER_META = {
-    bet9ja: { label: "bet9ja", className: "bet9ja" },
-    sportybet: { label: "SportyBet", className: "sportybet" },
-    betpawa: { label: "betPawa", className: "betpawa" },
-    betway: { label: "betway", className: "betway" }
-  };
+var BOOKMAKER_META = {
+  bet9ja: { label: "Bet9ja", className: "bet9ja" },
+  sportybet: { label: "SportyBet", className: "sportybet" },
+  betpawa: { label: "BetPawa", className: "betpawa" },
+  betway: { label: "Betway", className: "betway" },
+  "football.com": { label: "Football.com", className: "football" },
+  "1xbet": { label: "1xBet", className: "1xbet" }
+};
 
   /* =======================================================
      2. DATA — update this every day
@@ -31,12 +35,13 @@
     date: "Sep 9, 2026",
     resultsDate: "Sep 8, 2026",
 
-    overview: {
-      totalSelections: 25,
-      winnersYesterday: 12,
-      losersYesterday: 13,
-      hitRateYesterday: 48
-    },
+
+     overview: {
+  totalSelections: 20,
+  winnersYesterday: 12,
+  losersYesterday: 6,
+  hitRateYesterday: 66.7
+},
 
     yesterdayResults: {
       won: 14,
@@ -47,37 +52,33 @@
 
     /* category counts shown on the filter chips */
     categories: [
-      { key: "All", label: "All", count: 25 },
-      { key: "Over/Under", label: "Over/Under", count: 8 },
-      { key: "BTTS", label: "BTTS", count: 5 },
-      { key: "Match Winner", label: "Match Winner", count: 4 },
-      { key: "Double Chance", label: "Double Chance", count: 4 },
-      { key: "Other", label: "Other", count: 4 }
-    ],
+  { key: "All", label: "All", count: 20 },
+  { key: "Over/Under", label: "Over/Under", count: 5 },
+  { key: "BTTS", label: "BTTS", count: 4 },
+  { key: "Match Winner", label: "Match Winner", count: 7 },
+  { key: "Double Chance", label: "Double Chance", count: 2 },
+  { key: "Other", label: "Other", count: 2 }
+],
 
-    predictions: [
-      { id: 1, match: "Liverpool td vs Man City", pick: "Over 4.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
-      { id: 2, match: "Chelsea vs Newcastle", pick: "Chelsea Win", odds: 1.72, bookmakers: ["betpawa", "betway"], code: "SP-9213-CN", category: "Match Winner" },
-      { id: 3, match: "Barcelona vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68, bookmakers: ["sportybet", "bet9ja"], code: "BP-3345-BS", category: "Over/Under" },
-      { id: 4, match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80, bookmakers: ["betpawa", "sportybet"], code: "BW-7712-IA", category: "BTTS" },
-      { id: 5, match: "Liverpool vs Bournemouth", pick: "Liverpool Win", odds: 1.55, bookmakers: ["bet9ja", "betway"], code: "BJ-5561-LB", category: "Match Winner" },
-      { id: 6, match: "PSG vs Marseille", pick: "Over 1.5 Goals", odds: 1.40, bookmakers: ["sportybet", "betpawa"], code: "SP-2290-PM", category: "Over/Under" },
-      { id: 7, match: "Man United vs Burnley", pick: "Man United Win", odds: 1.65, bookmakers: ["betway", "bet9ja"], code: "BW-8834-MB", category: "Double Chance" },
-      { id: 8, match: "Juventus vs Lazio", pick: "BTTS - Yes", odds: 1.75, bookmakers: ["betpawa", "sportybet"], code: "BP-6620-JL", category: "BTTS" },
-      { id: 9, match: "Real Madrid vs Espanyol", pick: "Over 2.5 Goals", odds: 1.60, bookmakers: ["bet9ja", "betway"], code: "BJ-1187-RE", category: "Over/Under" },
-      { id: 10, match: "Bayern Munich vs Leverkusen", pick: "Bayern Win", odds: 1.48, bookmakers: ["sportybet", "betpawa"], code: "SP-4456-BL", category: "Double Chance" }
-    ],
 
-    /* Each accumulator references match IDs from `predictions` above,
-       so the actual matches/picks/odds shown always stay in sync with
-       today's picks — edit predictions and these slips update too. */
-    accumulators: [
-      { key: "3", odds: "3 Odds", matchIds: [1, 2, 6], themeClass: "accumulator-card--3" },
-      { key: "5", odds: "5 Odds", matchIds: [3, 4, 5, 7, 8], themeClass: "accumulator-card--5" },
-      { key: "10", odds: "10 Odds", matchIds: [9, 10, 1, 2, 3, 6, 7], themeClass: "accumulator-card--10" },
-      { key: "20", odds: "20+ Odds", matchIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], themeClass: "accumulator-card--20" }
-    ],
 
+     
+
+
+predictions: [
+  { id: 1, match: "Man Utd vs Man City", pick: "Over 4.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.85, code: "9J-MU185" },{ name: "football.com", odds: 1.83, code: "FC-MU183" },{ name: "1xbet", odds: 1.86, code: "1X-MU186" },{ name: "betpawa", odds: 1.84, code: "BP-MU184" },{ name: "sportybet", odds: 1.85, code: "SB-MU185" },{ name: "betway", odds: 1.82, code: "BW-MU182" }] },
+  { id: 2, match: "Chelsea vs Newcastle", pick: "Chelsea Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.72, code: "9J-CHL172" },{ name: "football.com", odds: 1.70, code: "FC-CHL170" },{ name: "1xbet", odds: 1.73, code: "1X-CHL173" },{ name: "betpawa", odds: 1.71, code: "BP-CHL171" },{ name: "sportybet", odds: 1.72, code: "SB-CHL172" },{ name: "betway", odds: 1.69, code: "BW-CHL169" }] },
+  { id: 3, match: "Liverpool vs Bournemouth", pick: "Liverpool Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.55, code: "9J-LIV155" },{ name: "football.com", odds: 1.53, code: "FC-LIV153" },{ name: "1xbet", odds: 1.56, code: "1X-LIV156" },{ name: "betpawa", odds: 1.54, code: "BP-LIV154" },{ name: "sportybet", odds: 1.55, code: "SB-LIV155" },{ name: "betway", odds: 1.52, code: "BW-LIV152" }] },
+  { id: 4, match: "Arsenal vs Fulham", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.80, code: "9J-ARS180" },{ name: "football.com", odds: 1.78, code: "FC-ARS178" },{ name: "1xbet", odds: 1.81, code: "1X-ARS181" },{ name: "betpawa", odds: 1.79, code: "BP-ARS179" },{ name: "sportybet", odds: 1.80, code: "SB-ARS180" },{ name: "betway", odds: 1.77, code: "BW-ARS177" }] },
+  { id: 5, match: "Barcelona vs Real Madrid", pick: "Over 2.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.65, code: "9J-BAR165" },{ name: "football.com", odds: 1.63, code: "FC-BAR163" },{ name: "1xbet", odds: 1.66, code: "1X-BAR166" },{ name: "betpawa", odds: 1.64, code: "BP-BAR164" },{ name: "sportybet", odds: 1.65, code: "SB-BAR165" },{ name: "betway", odds: 1.62, code: "BW-BAR162" }] },
+  { id: 6, match: "Bayern vs Dortmund", pick: "Bayern Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.50, code: "9J-BAY150" },{ name: "football.com", odds: 1.48, code: "FC-BAY148" },{ name: "1xbet", odds: 1.51, code: "1X-BAY151" },{ name: "betpawa", odds: 1.49, code: "BP-BAY149" },{ name: "sportybet", odds: 1.50, code: "SB-BAY150" },{ name: "betway", odds: 1.47, code: "BW-BAY147" }] },
+  { id: 7, match: "PSG vs Marseille", pick: "Double Chance: PSG or Draw", category: "Double Chance", bookmakers: [{ name: "bet9ja", odds: 1.25, code: "9J-PSG125" },{ name: "football.com", odds: 1.23, code: "FC-PSG123" },{ name: "1xbet", odds: 1.26, code: "1X-PSG126" },{ name: "betpawa", odds: 1.24, code: "BP-PSG124" },{ name: "sportybet", odds: 1.25, code: "SB-PSG125" },{ name: "betway", odds: 1.22, code: "BW-PSG122" }] },
+  { id: 8, match: "Inter vs AC Milan", pick: "Under 3.5 Goals", category: "Over/Under", bookmakers: [{ name: "bet9ja", odds: 1.90, code: "9J-INT190" },{ name: "football.com", odds: 1.88, code: "FC-INT188" },{ name: "1xbet", odds: 1.91, code: "1X-INT191" },{ name: "betpawa", odds: 1.89, code: "BP-INT189" },{ name: "sportybet", odds: 1.90, code: "SB-INT190" },{ name: "betway", odds: 1.87, code: "BW-INT187" }] },
+  { id: 9, match: "Juventus vs Napoli", pick: "Both Teams To Score", category: "BTTS", bookmakers: [{ name: "bet9ja", odds: 1.75, code: "9J-JUV175" },{ name: "football.com", odds: 1.73, code: "FC-JUV173" },{ name: "1xbet", odds: 1.76, code: "1X-JUV176" },{ name: "betpawa", odds: 1.74, code: "BP-JUV174" },{ name: "sportybet", odds: 1.75, code: "SB-JUV175" },{ name: "betway", odds: 1.72, code: "BW-JUV172" }] },
+  { id: 10, match: "Atletico vs Sevilla", pick: "Other: Over 9.5 Corners", category: "Other", bookmakers: [{ name: "bet9ja", odds: 2.10, code: "9J-ATL210" },{ name: "football.com", odds: 2.08, code: "FC-ATL208" },{ name: "1xbet", odds: 2.11, code: "1X-ATL211" },{ name: "betpawa", odds: 2.09, code: "BP-ATL209" },{ name: "sportybet", odds: 2.10, code: "SB-ATL210" },{ name: "betway", odds: 2.07, code: "BW-ATL207" }] },
+  { id: 11, match: "Real Sociedad vs Valencia", pick: "Real Sociedad Win", category: "Match Winner", bookmakers: [{ name: "bet9ja", odds: 1.68, code: "9J-RS168" },{ name: "football.com", odds: 1.66, code: "FC-RS166" },{ name: "1xbet", odds: 1.69, code: "1X-RS169" },{ name: "betpawa", odds: 1.67, code: "BP-RS167" },{ name: "sportybet", odds: 1.68, code: "SB-RS168" },{ name: "betway", odds: 1.65, code: "BW
+
+       
     bookmakers: ["bet9ja", "sportybet", "betpawa", "betway"],
 
     news: [
@@ -99,24 +100,42 @@
   }
 
   function renderPicksTable(predictions) {
-    var tbody = document.getElementById("picksTableBody");
-    if (!tbody) return;
-
-    tbody.innerHTML = predictions
-      .map(function (p, index) {
-        return (
-          '<tr data-id="' + p.id + '">' +
-            '<td class="col-num">' + (index + 1) + "</td>" +
-            '<td class="col-match"><span class="match-cell"><span class="match-cell__icon">⚽</span>' + p.match + "</span></td>" +
-            '<td class="col-pick"><span class="pick-cell">' + p.pick + "</span></td>" +
-            '<td class="col-odds"><span class="odds-cell">' + p.odds.toFixed(2) + "</span></td>" +
-            '<td class="col-books"><span class="books-cell">' + p.bookmakers.map(bookPill).join("") + "</span></td>" +
-            '<td class="col-code">' + revealButtonHTML(p) + "</td>" +
-          "</tr>"
-        );
-      })
-      .join("");
-
+  var tbody = document.getElementById("picksTableBody");
+  if (!tbody) return;
+  
+  tbody.innerHTML = predictions.map(function (p, index) {
+    var oddsBadges = p.bookmakers.map(function(b){
+      var meta = BOOKMAKER_META[b.name];
+      return '<span class="odds-cell ' + meta.className + '">' + meta.label + ': ' + b.odds.toFixed(2) + '</span>';
+    }).join(" ");
+    
+    return (
+      '<tr data-id="' + p.id + '">' +
+      '<td class="col-num"><span class="hatch-cell">' + (index + 1) + "</span></td>" +
+      '<td class="col-match"><span class="hatch-cell"></span>' + p.match + "</td>" +
+      '<td class="col-pick"><span class="pick-cell"></span>' + p.pick + "</td>" +
+      '<td class="col-odds">' + oddsBadges + '</td>' +
+      '<td class="col-code">' + revealButtonHTML(p) + "</td>" +
+      "</tr>"
+    );
+  }).join("");
+  
+  attachRevealHandlers(tbody);
+       }
+    
+    return (
+      '<tr data-id="' + p.id + '">' +
+      '<td class="col-num"><span class="hatch-cell">' + (index + 1) + "</span></td>" +
+      '<td class="col-match"><span class="hatch-cell"></span>' + p.match + "</td>" +
+      '<td class="col-pick"><span class="pick-cell"></span>' + p.pick + "</td>" +
+      '<td class="col-odds">' + bookmakerBadges + '</td>' +
+      '<td class="col-code">' + revealButtonHTML(p) + "</td>" +
+      "</tr>"
+    );
+  }).join("");
+  
+  attachRevealHandlers(tbody);
+       }
     attachRevealHandlers(tbody);
   }
 
@@ -186,12 +205,18 @@
     revealCode(button, code);
   }
 
-  function revealCode(button, code) {
-    button.classList.add("reveal-btn--revealed");
-    button.innerHTML =
-      '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>' +
-      '<span class="reveal-btn__code">' + code + "</span>";
-    button.disabled = true;
+  function revealCode(button, p_id) {
+  button.classList.add("reveal-btn--revealed");
+  var p = findPredictionById(parseInt(p_id));
+  
+  var codesHTML = p.bookmakers.map(function(b){
+    var meta = BOOKMAKER_META[b.name];
+    return '<div style="margin:4px 0;"><b>' + meta.label + '</b>: ' + b.code + ' @ ' + b.odds + '</div>';
+  }).join("");
+  
+  button.innerHTML = codesHTML;
+  button.disabled = true;
+  button.style.cursor = "default";
   }
 
   function renderFilters(predictions) {
@@ -222,37 +247,24 @@
     return null;
   }
 
-  function renderAccumulators(list) {
-    var grid = document.getElementById("accumulatorGrid");
-    if (!grid) return;
 
-    grid.innerHTML = list
-      .map(function (a) {
-        var matches = a.matchIds.map(findPredictionById).filter(Boolean);
-        var combinedOdds = matches.reduce(function (total, m) { return total * m.odds; }, 1);
+function renderAccumulators(list) {
+  var grid = document.getElementById("accumulatorGrid");
+  if (!grid) return;
+  grid.innerHTML = list.map(function (a) {
+    var matches = a.matchIds.map(findPredictionById).filter(Boolean);
+    var combinedOdds = matches.reduce(function (total, m) { 
+      var avgOdds = m.bookmakers.reduce(function(sum, b){ return sum + b.odds; }, 0) / m.bookmakers.length;
+      return total * avgOdds; 
+    }, 1);
+    var matchesHTML = matches.map(function (m) {
+      var avgOdds = m.bookmakers.reduce(function(sum, b){ return sum + b.odds; }, 0) / m.bookmakers.length;
+      return "<div class=\"accumulator-card_match\"><span class=\"accumulator-card_match-teams\">" + m.match + "</span><span class=\"accumulator-card_match-pick\">" + m.pick + " @ " + avgOdds.toFixed(2) + "</span></div>";
+    }).join("");
+    return "<div class=\"accumulator-card " + a.themeClass + "\"><div class=\"accumulator-card_odds\">" + a.odds.toUpperCase() + "</div><div class=\"accumulator-card_desc\">" + matches.length + " Selections - Combined " + combinedOdds.toFixed(2) + "</div><div class=\"accumulator-card_matches\">" + matchesHTML + "</div><div class=\"accumulator-card_code\"><b>Code:</b> " + a.combinedCode + "</div><button class=\"accumulator-card_btn\" onclick=\"navigator.clipboard.writeText('" + a.combinedCode + "')\">Copy Code</button></div>";
+  }).join("");
+}
 
-        var matchesHTML = matches
-          .map(function (m) {
-            return (
-              '<div class="accumulator-card__match">' +
-                '<span class="accumulator-card__match-teams">' + m.match + "</span>" +
-                '<span class="accumulator-card__match-pick">' + m.pick + " @ " + m.odds.toFixed(2) + "</span>" +
-              "</div>"
-            );
-          })
-          .join("");
-
-        return (
-          '<div class="accumulator-card ' + a.themeClass + '">' +
-            '<div class="accumulator-card__odds">🎯 ' + a.odds.toUpperCase() + "</div>" +
-            '<div class="accumulator-card__desc">' + matches.length + " Selections • Combined " + combinedOdds.toFixed(2) + "</div>" +
-            '<div class="accumulator-card__matches">' + matchesHTML + "</div>" +
-            '<a href="#" class="accumulator-card__cta">View Slip →</a>' +
-          "</div>"
-        );
-      })
-      .join("");
-  }
 
   function renderResults(results) {
     var grid = document.getElementById("resultsGrid");
@@ -500,4 +512,41 @@
     });
   }
 
-  
+  /* =======================================================
+     5. INIT
+     ======================================================= */
+
+  function init() {
+    document.getElementById("overviewDate") &&
+      (document.getElementById("overviewDate").lastChild.textContent = " " + SITE_DATA.date);
+
+    var statTotal = document.getElementById("statTotal");
+    var statWinners = document.getElementById("statWinners");
+    var statLosers = document.getElementById("statLosers");
+    var statHitRate = document.getElementById("statHitRate");
+    if (statTotal) statTotal.textContent = SITE_DATA.overview.totalSelections;
+    if (statWinners) statWinners.textContent = SITE_DATA.overview.winnersYesterday;
+    if (statLosers) statLosers.textContent = SITE_DATA.overview.losersYesterday;
+    if (statHitRate) statHitRate.textContent = SITE_DATA.overview.hitRateYesterday + "%";
+
+    var pickCountBadge = document.getElementById("pickCountBadge");
+    if (pickCountBadge) pickCountBadge.textContent = SITE_DATA.overview.totalSelections + " Selections";
+
+    renderPicksTable(SITE_DATA.predictions);
+    renderPicksCards(SITE_DATA.predictions);
+    renderFilters(SITE_DATA.predictions);
+    renderAccumulators(SITE_DATA.accumulators);
+    renderResults(SITE_DATA.yesterdayResults);
+    renderBookmakerSidebar(SITE_DATA.bookmakers);
+    renderNews(SITE_DATA.news);
+    applyBookmakerAffiliateLinks();
+    initNav();
+    initBottomNav();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
