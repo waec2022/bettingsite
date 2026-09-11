@@ -14,7 +14,8 @@
   
   function getSheetUrl(sheetName) {
     return "https://docs.google.com/spreadsheets/d/" + GOOGLE_SHEET_ID + 
-           "/gviz/tq?tqx=out:json&sheet=" + encodeURIComponent(sheetName);
+           "/gviz/tq?tqx=out:json&sheet=" + encodeURIComponent(sheetName) +
+           "&_cb=" + Date.now();
   }
 
   /* =======================================================
@@ -133,7 +134,7 @@
   }
 
   function fetchSheetData(sheetName) {
-    return fetch(getSheetUrl(sheetName))
+    return fetch(getSheetUrl(sheetName), { cache: "no-store" })
       .then(function (response) {
         if (!response.ok) {
           throw new Error("HTTP " + response.status + " for " + sheetName);
@@ -493,7 +494,7 @@
       console.error("Google Sheets: Load error:", error);
       return null;
     });
-  }
+       }
 
   /* =======================================================
      4. RENDER HELPERS
@@ -945,3 +946,6 @@
     startApp();
   }
 })();
+ 
+   
+       
