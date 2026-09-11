@@ -250,7 +250,7 @@
       });
     }
 
-    return accumulators.length > 0 ? accumulators : null;
+    return accumulators;
   }
 
   function parseResults(rows) {
@@ -376,9 +376,8 @@
       return false;
     }
 
-    if (!data.accumulators || data.accumulators.length === 0) {
-      console.error("Validation: No accumulators");
-      return false;
+    if (!data.accumulators) {
+      data.accumulators = [];
     }
 
     var predictionIds = {};
@@ -417,7 +416,7 @@
       var newsRows = results[3];
       var settingsRows = results[4];
 
-      if (!predictionsRows || !accumulatorsRows) {
+      if (!predictionsRows) {
         console.error("Google Sheets: Critical data missing");
         return null;
       }
@@ -428,10 +427,10 @@
         return null;
       }
 
-      var accumulators = parseAccumulators(accumulatorsRows, predictions);
+      var accumulators = accumulatorsRows ? parseAccumulators(accumulatorsRows, predictions) : [];
       if (!accumulators) {
-        console.error("Google Sheets: Failed to parse accumulators");
-        return null;
+        console.warn("Google Sheets: No valid accumulators, continuing without them");
+        accumulators = [];
       }
 
       var data = {
@@ -494,8 +493,9 @@
       console.error("Google Sheets: Load error:", error);
       return null;
     });
-       }
+}
 
+ 
   /* =======================================================
      4. RENDER HELPERS
      ======================================================= */
@@ -946,6 +946,4 @@
     startApp();
   }
 })();
- 
-   
-       
+           
