@@ -46,7 +46,7 @@
     },
 
     categories: [
-      { key: "All", label: "All", count: 25 },
+      { key: "All", label: "All", count: 2 },
       { key: "Over/Under", label: "Over/Under", count: 8 },
       { key: "BTTS", label: "BTTS", count: 5 },
       { key: "Match Winner", label: "Match Winner", count: 4 },
