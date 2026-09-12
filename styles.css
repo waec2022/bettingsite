@@ -1,4 +1,5 @@
 
+
 /* =========================================================
    NaijaBetTools.ng — stylesheet
    ========================================================= */
@@ -31,6 +32,7 @@
   --bm-sportybet: #e2091c;
   --bm-betpawa: #93d500;
   --bm-betway: #000000;
+  --bm-1xbet: #1c3c72;
 
   /* Layout */
   --radius-sm: 6px;
@@ -909,6 +911,8 @@ h1, h2, h3, p {
 .book-pill--sportybet { background: var(--bm-sportybet); font-style: normal; }
 .book-pill--betpawa { background: var(--bm-betpawa); color: var(--color-navy); font-style: normal; }
 .book-pill--betway { background: var(--bm-betway); font-style: normal; }
+.book-pill--1xbet { background: var(--bm-1xbet); font-style: normal; }
+.book-pill--default { background: var(--color-text-soft); font-style: normal; }
 
 .reveal-btn {
   display: inline-flex;
@@ -936,6 +940,29 @@ h1, h2, h3, p {
 .reveal-btn__code {
   font-family: "SFMono-Regular", Consolas, monospace;
   letter-spacing: 0.02em;
+}
+
+/* Reveal button when a prediction has more than one bookmaker code:
+   stack the code lines instead of the default single-line row. No
+   animation — just a layout change from row to column. */
+.reveal-btn--multi {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+}
+
+.reveal-btn__code-line {
+  display: block;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.02em;
+  font-size: 11.5px;
+}
+
+.reveal-btn__code-line strong {
+  font-family: var(--font-base);
+  font-weight: 700;
+  margin-right: 3px;
 }
 
 /* Mobile card list — hidden on desktop */
@@ -1709,4 +1736,126 @@ h1, h2, h3, p {
   font-weight: 600;
   margin-top: -6px;
   margin-bottom: 12px;
+}
+
+/* =========================================================
+   VIEW SLIP MODAL (accumulator booking codes)
+   No animation/transition by design — instant show/hide only.
+   ========================================================= */
+
+.slip-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.slip-modal--open {
+  display: block;
+}
+
+.slip-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 18, 32, 0.6);
+}
+
+.slip-modal__panel {
+  position: relative;
+  z-index: 1;
+  max-width: 420px;
+  margin: 12vh auto 0;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  box-shadow: var(--shadow-card);
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+.slip-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.slip-modal__title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.slip-modal__close {
+  background: var(--color-border-soft);
+  border: none;
+  border-radius: var(--radius-sm);
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  color: var(--color-text-soft);
+}
+
+.slip-modal__selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: 13px;
+}
+
+.slip-modal__selection-match {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.slip-modal__selection-pick {
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.slip-modal__codes {
+  margin-top: 14px;
+}
+
+.slip-modal__code-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.slip-modal__code-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.slip-modal__code-bookmaker {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.slip-modal__code-value {
+  font-size: 12.5px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  color: var(--color-text-soft);
+}
+
+.slip-modal__copy-btn {
+  background: var(--color-navy-card);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
 }
