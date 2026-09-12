@@ -38,15 +38,8 @@
       hitRateYesterday: 48
     },
 
-    yesterdayResults: {
-      won: 14,
-      lost: 9,
-      hitRate: 60.9,
-      avgOdds: 2.45
-    },
-
     categories: [
-      { key: "All", label: "All", count: 2 },
+      { key: "All", label: "All", count: 25 },
       { key: "Over/Under", label: "Over/Under", count: 8 },
       { key: "BTTS", label: "BTTS", count: 5 },
       { key: "Match Winner", label: "Match Winner", count: 4 },
@@ -54,6 +47,12 @@
       { key: "Other", label: "Other", count: 4 }
     ],
 
+    // ===============================
+    // DAILY PREDICTIONS — EDIT HERE
+    // Each prediction is fully independent: its own bookmakers[] and
+    // its own code. Nothing here is shared with accumulators or
+    // correct scores below.
+    // ===============================
     predictions: [
       { id: 1, match: "fulham vs Man City", pick: "Over 4.5 Goals", odds: 5.45, bookmakers: ["bet9ja", "sportybet"], code: "BJ-4821-AC", category: "Over/Under" },
       { id: 2, match: "lipzig vs Newcastle", pick: "Chelsea Win", odds: 1.72, bookmakers: ["betpawa", "betway"], code: "SP-9213-CN", category: "Match Winner" },
@@ -67,12 +66,108 @@
       { id: 10, match: "luton town vs Leverkusen", pick: "Bayern Win", odds: 1.48, bookmakers: ["sportybet", "betpawa"], code: "SP-4456-BL", category: "Double Chance" }
     ],
 
+    // ===============================
+    // ACCUMULATOR SLIPS — EDIT HERE
+    // Fully independent from predictions[] above — each slip lists its
+    // own selections (match/pick/odds) and its own bookingCodes
+    // (one code per bookmaker for the whole slip, shown in View Slip).
+    // Editing a prediction above never changes a slip, and editing a
+    // slip here never changes a prediction.
+    // ===============================
     accumulators: [
-      { key: "2", odds: "7 Odds", matchIds: [1, 2, 6], themeClass: "accumulator-card--3" },
-      { key: "5", odds: "5 Odds", matchIds: [3, 4, 5, 7, 8], themeClass: "accumulator-card--5" },
-      { key: "10", odds: "10 Odds", matchIds: [9, 10, 1, 2, 3, 6, 7], themeClass: "accumulator-card--10" },
-      { key: "20", odds: "20+ Odds", matchIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], themeClass: "accumulator-card--20" }
+      {
+        key: "3",
+        title: "3 Odds",
+        themeClass: "accumulator-card--3",
+        selections: [
+          { match: "fulham vs Man City", pick: "Over 4.5 Goals", odds: 5.45 },
+          { match: "lipzig vs Newcastle", pick: "Chelsea Win", odds: 1.72 },
+          { match: "PSG vs Marseille", pick: "Over 1.5 Goals", odds: 1.40 }
+        ],
+        bookingCodes: [
+          { bookmaker: "sportybet", code: "SP-3ACC-001" },
+          { bookmaker: "betpawa", code: "BP-3ACC-001" }
+        ]
+      },
+      {
+        key: "5",
+        title: "5 Odds",
+        themeClass: "accumulator-card--5",
+        selections: [
+          { match: "coma vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68 },
+          { match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80 },
+          { match: "Liverpool vs Bournemouth", pick: "Liverpool Win", odds: 1.55 },
+          { match: "Man United vs Burnley", pick: "Man United Win", odds: 1.65 },
+          { match: "Juventus vs Lazio", pick: "BTTS - Yes", odds: 1.75 }
+        ],
+        bookingCodes: [
+          { bookmaker: "sportybet", code: "SP-5ACC-002" },
+          { bookmaker: "betpawa", code: "BP-5ACC-002" }
+        ]
+      },
+      {
+        key: "10",
+        title: "10 Odds",
+        themeClass: "accumulator-card--10",
+        selections: [
+          { match: "Real Madrid vs Espanyol", pick: "Over 2.5 Goals", odds: 1.60 },
+          { match: "luton town vs Leverkusen", pick: "Bayern Win", odds: 1.48 },
+          { match: "fulham vs Man City", pick: "Over 4.5 Goals", odds: 5.45 },
+          { match: "lipzig vs Newcastle", pick: "Chelsea Win", odds: 1.72 },
+          { match: "coma vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68 },
+          { match: "PSG vs Marseille", pick: "Over 1.5 Goals", odds: 1.40 },
+          { match: "Man United vs Burnley", pick: "Man United Win", odds: 1.65 }
+        ],
+        bookingCodes: [
+          { bookmaker: "sportybet", code: "SP-10ACC-003" },
+          { bookmaker: "betpawa", code: "BP-10ACC-003" }
+        ]
+      },
+      {
+        key: "20",
+        title: "20+ Odds",
+        themeClass: "accumulator-card--20",
+        selections: [
+          { match: "fulham vs Man City", pick: "Over 4.5 Goals", odds: 5.45 },
+          { match: "lipzig vs Newcastle", pick: "Chelsea Win", odds: 1.72 },
+          { match: "coma vs Sevilla", pick: "Over 2.5 Goals", odds: 1.68 },
+          { match: "Inter Milan vs Atalanta", pick: "BTTS - Yes", odds: 1.80 },
+          { match: "Liverpool vs Bournemouth", pick: "Liverpool Win", odds: 1.55 },
+          { match: "PSG vs Marseille", pick: "Over 1.5 Goals", odds: 1.40 },
+          { match: "Man United vs Burnley", pick: "Man United Win", odds: 1.65 },
+          { match: "Juventus vs Lazio", pick: "BTTS - Yes", odds: 1.75 },
+          { match: "Real Madrid vs Espanyol", pick: "Over 2.5 Goals", odds: 1.60 },
+          { match: "luton town vs Leverkusen", pick: "Bayern Win", odds: 1.48 }
+        ],
+        bookingCodes: [
+          { bookmaker: "sportybet", code: "SP-20ACC-004" },
+          { bookmaker: "betpawa", code: "BP-20ACC-004" }
+        ]
+      }
     ],
+
+    // ===============================
+    // CORRECT SCORE — EDIT HERE
+    // Independent section, same shape as predictions but with a
+    // "score" instead of a "pick".
+    // ===============================
+    correctScores: [
+      { id: 1, match: "Arsenal vs Chelsea", score: "2-1", odds: 8.50, bookmakers: ["sportybet"], code: "CS-2201-AC" },
+      { id: 2, match: "Bayern vs Dortmund", score: "3-1", odds: 11.00, bookmakers: ["bet9ja"], code: "CS-3101-BD" },
+      { id: 3, match: "Man City vs Fulham", score: "4-0", odds: 15.00, bookmakers: ["betpawa"], code: "CS-4001-MF" },
+      { id: 4, match: "PSG vs Marseille", score: "2-0", odds: 7.25, bookmakers: ["sportybet", "betway"], code: "CS-2001-PM" },
+      { id: 5, match: "Real Madrid vs Espanyol", score: "3-0", odds: 9.50, bookmakers: ["bet9ja"], code: "CS-3002-RE" }
+    ],
+
+    // ===============================
+    // RESULTS — EDIT HERE
+    // ===============================
+    yesterdayResults: {
+      won: 14,
+      lost: 9,
+      hitRate: 60.9,
+      avgOdds: 2.45
+    },
 
     bookmakers: ["bet9ja", "sportybet", "betpawa", "betway"],
 
@@ -200,28 +295,20 @@
     });
   }
 
-  function findPredictionById(id) {
-    for (var i = 0; i < SITE_DATA.predictions.length; i++) {
-      if (SITE_DATA.predictions[i].id === id) return SITE_DATA.predictions[i];
-    }
-    return null;
-  }
-
   function renderAccumulators(list) {
     var grid = document.getElementById("accumulatorGrid");
     if (!grid) return;
 
     grid.innerHTML = list
       .map(function (a) {
-        var matches = a.matchIds.map(findPredictionById).filter(Boolean);
-        var combinedOdds = matches.reduce(function (total, m) { return total * m.odds; }, 1);
+        var combinedOdds = a.selections.reduce(function (total, s) { return total * s.odds; }, 1);
 
-        var matchesHTML = matches
-          .map(function (m) {
+        var matchesHTML = a.selections
+          .map(function (s) {
             return (
               '<div class="accumulator-card__match">' +
-                '<span class="accumulator-card__match-teams">' + m.match + "</span>" +
-                '<span class="accumulator-card__match-pick">' + m.pick + " @ " + m.odds.toFixed(2) + "</span>" +
+                '<span class="accumulator-card__match-teams">' + s.match + "</span>" +
+                '<span class="accumulator-card__match-pick">' + s.pick + " @ " + s.odds.toFixed(2) + "</span>" +
               "</div>"
             );
           })
@@ -229,14 +316,173 @@
 
         return (
           '<div class="accumulator-card ' + a.themeClass + '">' +
-            '<div class="accumulator-card__odds">🎯 ' + a.odds.toUpperCase() + "</div>" +
-            '<div class="accumulator-card__desc">' + matches.length + " Selections • Combined " + combinedOdds.toFixed(2) + "</div>" +
+            '<div class="accumulator-card__odds">🎯 ' + a.title.toUpperCase() + "</div>" +
+            '<div class="accumulator-card__desc">' + a.selections.length + " Selections • Combined " + combinedOdds.toFixed(2) + "</div>" +
             '<div class="accumulator-card__matches">' + matchesHTML + "</div>" +
-            '<a href="#" class="accumulator-card__cta">View Slip →</a>' +
+            '<button type="button" class="accumulator-card__cta" data-slip-key="' + a.key + '">View Slip →</button>' +
           "</div>"
         );
       })
       .join("");
+
+    attachSlipHandlers(grid);
+  }
+
+  /* =======================================================
+     3b. VIEW SLIP MODAL — shows the booking codes for a slip
+     ======================================================= */
+
+  function findAccumulatorByKey(key) {
+    for (var i = 0; i < SITE_DATA.accumulators.length; i++) {
+      if (SITE_DATA.accumulators[i].key === key) return SITE_DATA.accumulators[i];
+    }
+    return null;
+  }
+
+  function attachSlipHandlers(container) {
+    var buttons = container.querySelectorAll("[data-slip-key]");
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        openSlipModal(btn.getAttribute("data-slip-key"));
+      });
+    });
+  }
+
+  function openSlipModal(key) {
+    var acc = findAccumulatorByKey(key);
+    if (!acc) return;
+
+    var modal = document.getElementById("slipModal");
+    var title = document.getElementById("slipModalTitle");
+    var selectionsBox = document.getElementById("slipModalSelections");
+    var codesBox = document.getElementById("slipModalCodes");
+    if (!modal || !selectionsBox || !codesBox) return;
+
+    if (title) title.textContent = acc.title + " — View Slip";
+
+    selectionsBox.innerHTML = acc.selections
+      .map(function (s) {
+        return (
+          '<div class="slip-modal__selection">' +
+            '<span class="slip-modal__selection-match">⚽ ' + escapeHTML(s.match) + "</span>" +
+            '<span class="slip-modal__selection-pick">' + escapeHTML(s.pick) + " @ " + s.odds.toFixed(2) + "</span>" +
+          "</div>"
+        );
+      })
+      .join("");
+
+    codesBox.innerHTML = acc.bookingCodes
+      .map(function (bc) {
+        var meta = BOOKMAKER_META[bc.bookmaker];
+        var label = meta ? meta.label : bc.bookmaker;
+        return (
+          '<div class="slip-modal__code-row">' +
+            '<div class="slip-modal__code-info">' +
+              '<span class="slip-modal__code-bookmaker">' + escapeHTML(label) + "</span>" +
+              '<span class="slip-modal__code-value">Booking Code: ' + escapeHTML(bc.code) + "</span>" +
+            "</div>" +
+            '<button type="button" class="slip-modal__copy-btn" data-copy-code="' + escapeHTML(bc.code) + '">Copy Code</button>' +
+          "</div>"
+        );
+      })
+      .join("");
+
+    codesBox.querySelectorAll("[data-copy-code]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        copyCodeToClipboard(btn.getAttribute("data-copy-code"), btn);
+      });
+    });
+
+    modal.classList.add("slip-modal--open");
+    modal.setAttribute("aria-hidden", "false");
+  }
+
+  function closeSlipModal() {
+    var modal = document.getElementById("slipModal");
+    if (!modal) return;
+    modal.classList.remove("slip-modal--open");
+    modal.setAttribute("aria-hidden", "true");
+  }
+
+  function copyCodeToClipboard(code, btn) {
+    function onCopied() {
+      var original = btn.textContent;
+      btn.textContent = "Copied!";
+      window.setTimeout(function () {
+        btn.textContent = original;
+      }, 1200);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(onCopied, onCopied);
+    } else {
+      onCopied();
+    }
+  }
+
+  function initSlipModal() {
+    var modal = document.getElementById("slipModal");
+    if (!modal) return;
+    modal.querySelectorAll("[data-slip-close]").forEach(function (el) {
+      el.addEventListener("click", closeSlipModal);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeSlipModal();
+    });
+  }
+
+  /* =======================================================
+     3c. CORRECT SCORE — reuses the same reveal-btn/book-pill
+     pattern as the predictions table above.
+     ======================================================= */
+
+  function renderCorrectScoreTable(list) {
+    var tbody = document.getElementById("correctScoreTableBody");
+    if (!tbody) return;
+
+    tbody.innerHTML = list
+      .map(function (cs, index) {
+        return (
+          '<tr data-id="cs-' + cs.id + '">' +
+            '<td class="col-num">' + (index + 1) + "</td>" +
+            '<td class="col-match"><span class="match-cell"><span class="match-cell__icon">⚽</span>' + cs.match + "</span></td>" +
+            '<td class="col-pick"><span class="pick-cell">' + cs.score + "</span></td>" +
+            '<td class="col-odds"><span class="odds-cell">' + cs.odds.toFixed(2) + "</span></td>" +
+            '<td class="col-books"><span class="books-cell">' + cs.bookmakers.map(bookPill).join("") + "</span></td>" +
+            '<td class="col-code">' + revealButtonHTML(cs) + "</td>" +
+          "</tr>"
+        );
+      })
+      .join("");
+
+    attachRevealHandlers(tbody);
+  }
+
+  function renderCorrectScoreCards(list) {
+    var wrap = document.getElementById("correctScoreCardsList");
+    if (!wrap) return;
+
+    wrap.innerHTML = list
+      .map(function (cs, index) {
+        return (
+          '<div class="pick-card" data-id="cs-' + cs.id + '">' +
+            '<div class="pick-card__top">' +
+              '<span class="pick-card__match"><span class="pick-card__num">#' + (index + 1) + "</span> ⚽ " + cs.match + "</span>" +
+            "</div>" +
+            '<div class="pick-card__mid">' +
+              '<span class="pick-card__pick">' + cs.score + "</span>" +
+              '<span class="pick-card__odds">' + cs.odds.toFixed(2) + "</span>" +
+            "</div>" +
+            '<div class="pick-card__bottom">' +
+              '<span class="pick-card__books">' + cs.bookmakers.map(bookPill).join("") + "</span>" +
+              revealButtonHTML(cs) +
+            "</div>" +
+          "</div>"
+        );
+      })
+      .join("");
+
+    attachRevealHandlers(wrap);
   }
 
   function renderResults(results) {
@@ -507,12 +753,15 @@
     renderPicksCards(SITE_DATA.predictions);
     renderFilters(SITE_DATA.predictions);
     renderAccumulators(SITE_DATA.accumulators);
+    renderCorrectScoreTable(SITE_DATA.correctScores);
+    renderCorrectScoreCards(SITE_DATA.correctScores);
     renderResults(SITE_DATA.yesterdayResults);
     renderBookmakerSidebar(SITE_DATA.bookmakers);
     renderNews(SITE_DATA.news);
     applyBookmakerAffiliateLinks();
     initNav();
     initBottomNav();
+    initSlipModal();
   }
 
   if (document.readyState === "loading") {
