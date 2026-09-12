@@ -31,6 +31,7 @@
   --bm-sportybet: #e2091c;
   --bm-betpawa: #93d500;
   --bm-betway: #000000;
+  --bm-1xbet: #1c3c72;
 
   /* Layout */
   --radius-sm: 6px;
@@ -909,6 +910,8 @@ h1, h2, h3, p {
 .book-pill--sportybet { background: var(--bm-sportybet); font-style: normal; }
 .book-pill--betpawa { background: var(--bm-betpawa); color: var(--color-navy); font-style: normal; }
 .book-pill--betway { background: var(--bm-betway); font-style: normal; }
+.book-pill--1xbet { background: var(--bm-1xbet); font-style: normal; }
+.book-pill--default { background: var(--color-text-soft); font-style: normal; }
 
 .reveal-btn {
   display: inline-flex;
@@ -936,6 +939,29 @@ h1, h2, h3, p {
 .reveal-btn__code {
   font-family: "SFMono-Regular", Consolas, monospace;
   letter-spacing: 0.02em;
+}
+
+/* Reveal button when a prediction has more than one bookmaker code:
+   stack the code lines instead of the default single-line row. No
+   animation — just a layout change from row to column. */
+.reveal-btn--multi {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+}
+
+.reveal-btn__code-line {
+  display: block;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.02em;
+  font-size: 11.5px;
+}
+
+.reveal-btn__code-line strong {
+  font-family: var(--font-base);
+  font-weight: 700;
+  margin-right: 3px;
 }
 
 /* Mobile card list — hidden on desktop */
