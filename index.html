@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>match forecast.online— Daily Football Tips & Bet Codes</title>
 <meta name="description" content="Get 20+ daily football selections, booking codes and odds from Bet9ja, SportyBet, betPawa, Betway and more.">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=4">
 
 <!-- Monetag publisher ad code -->
   <!-- Monetag publisher ad code -->
@@ -18,9 +18,9 @@
 
   <!-- 1. TOP AD BANNER - PROPELLERADS -->
 <div class="ad-slot ad-slot--top" id="ad-top">
-  <!-- Monetag/PropellerAds interstitial tag disabled per request (was causing popups/slowness)
-  <script src="https://quge5.com/88/tag.min.js" data-zone="277675" async data-cfasync="false"></script>
-  -->
+  <!-- MONETAG DISABLED TEMPORARILY (was causing popup/popunder slowdowns on mobile) -->
+  <!-- To re-enable later, remove the comment markers around the line below -->
+  <!-- <script src="https://quge5.com/88/tag.min.js" data-zone="277675" async data-cfasync="false"></script> -->
 </div>
     <img src="assets/images/ad-top-placeholder.svg" alt="Advertisement" loading="lazy">
   </div>
@@ -63,8 +63,6 @@
       <a href="#bookmakers" class="mainnav__link">Bookmakers</a>
       <a href="#accumulators" class="mainnav__link">Accumulators</a>
       <a href="#results" class="mainnav__link">Results</a>
-      <a href="#correct-score" class="mainnav__link">Correct Score</a>
-      <a href="#codes-only" class="mainnav__link">Codes Only</a>
       <a href="#" class="mainnav__link">Blog</a>
     </nav>
 
@@ -235,7 +233,9 @@
                   <th class="col-num">#</th>
                   <th class="col-match">Match</th>
                   <th class="col-pick">Pick</th>
-                  <th class="col-code">Bookmakers &amp; Codes</th>
+                  <th class="col-odds">Odds</th>
+                  <th class="col-books">Bookmakers</th>
+                  <th class="col-code">Code</th>
                 </tr>
               </thead>
               <tbody id="picksTableBody">
@@ -270,22 +270,30 @@
             <h2 class="panel__title">
               <span class="panel__title-icon">🎯</span>
               CORRECT SCORE
+              <span class="panel__badge panel__badge--muted">5 Selections</span>
             </h2>
           </div>
-          <div class="cs-grid" id="correctScoreGrid">
-            <!-- cards injected by script.js -->
-          </div>
-        </div>
 
-        <!-- CODES ONLY -->
-        <div class="panel" id="codes-only">
-          <div class="panel__header">
-            <h2 class="panel__title">
-              <span class="panel__title-icon">🔑</span>
-              CODES ONLY
-            </h2>
+          <div class="picks-table-wrap">
+            <table class="picks-table">
+              <thead>
+                <tr>
+                  <th class="col-num">#</th>
+                  <th class="col-match">Match</th>
+                  <th class="col-pick">Score</th>
+                  <th class="col-odds">Odds</th>
+                  <th class="col-books">Bookmakers</th>
+                  <th class="col-code">Code</th>
+                </tr>
+              </thead>
+              <tbody id="correctScoreTableBody">
+                <!-- rows injected by script.js -->
+              </tbody>
+            </table>
           </div>
-          <div class="codes-only-grid" id="codesOnlyGrid">
+
+          <!-- Mobile card list (shown < 768px) -->
+          <div class="picks-cards" id="correctScoreCardsList">
             <!-- cards injected by script.js -->
           </div>
         </div>
@@ -441,16 +449,29 @@
     <span class="bottom-nav__icon" aria-hidden="true">📊</span>
     <span class="bottom-nav__label">Results</span>
   </a>
-  <a href="#codes-only" class="bottom-nav__item" data-bottom-nav="codes">
-    <span class="bottom-nav__icon" aria-hidden="true">🔑</span>
-    <span class="bottom-nav__label">Codes</span>
-  </a>
   <a href="#" class="bottom-nav__item" data-bottom-nav="blog">
     <span class="bottom-nav__icon" aria-hidden="true">📰</span>
     <span class="bottom-nav__label">Blog</span>
   </a>
 </nav>
 
-<script src="script.js?v=3"></script>
+<!-- VIEW SLIP MODAL — shows the booking code(s) for an accumulator slip -->
+<div class="slip-modal" id="slipModal" aria-hidden="true">
+  <div class="slip-modal__overlay" data-slip-close></div>
+  <div class="slip-modal__panel" role="dialog" aria-modal="true" aria-labelledby="slipModalTitle">
+    <div class="slip-modal__header">
+      <h3 class="slip-modal__title" id="slipModalTitle">View Slip</h3>
+      <button type="button" class="slip-modal__close" data-slip-close aria-label="Close">✕</button>
+    </div>
+    <div class="slip-modal__selections" id="slipModalSelections">
+      <!-- selections injected by script.js -->
+    </div>
+    <div class="slip-modal__codes" id="slipModalCodes">
+      <!-- booking codes injected by script.js -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js?v=4"></script>
 </body>
 </html>
