@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-13T07:01:39.282Z",
+    "lastUpdated": "2026-09-13T07:06:58.240Z",
     "displayDate": "13, sep 2026",
     "resultsDate": "",
     "stats": {
@@ -10,7 +10,32 @@
       "hitRateYesterday": 10
     }
   },
-  "predictions": [],
+  "predictions": [
+    {
+      "match": "Manutd vs Chelsea",
+      "date": "23 sep 2023",
+      "league": "Premium",
+      "market": "Under 4.5",
+      "prediction": "Under 4",
+      "odds": "30d",
+      "status": "pending",
+      "bookmakers": [
+        {
+          "name": "Bet9ja",
+          "odds": "2",
+          "code": "Tgejsjsn",
+          "link": ""
+        },
+        {
+          "name": "SportyBet",
+          "odds": "47272",
+          "code": "Nsnsn",
+          "link": ""
+        }
+      ],
+      "id": "predictions_1789283216769"
+    }
+  ],
   "accumulators": [],
   "correctScores": [],
   "codesOnly": [],
