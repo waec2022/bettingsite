@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "lastUpdated": "",
+    "displayDate": "",
+    "resultsDate": "",
+    "stats": {
+      "totalSelections": 0,
+      "winnersYesterday": 0,
+      "losersYesterday": 0,
+      "hitRateYesterday": 0
+    }
+  },
+  "predictions": [],
+  "accumulators": [],
+  "correctScores": [],
+  "codesOnly": [],
+  "livePredictions": [],
+  "betOfTheDay": [],
+  "results": [],
+  "news": [],
+  "bookmakers": [
+    { "id": "bet9ja", "name": "Bet9ja", "link": "" },
+    { "id": "sportybet", "name": "SportyBet", "link": "" },
+    { "id": "betpawa", "name": "BetPawa", "link": "" },
+    { "id": "betway", "name": "Betway", "link": "" },
+    { "id": "1xbet", "name": "1xBet", "link": "" }
+  ]
+}
