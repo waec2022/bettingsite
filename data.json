@@ -1,13 +1,13 @@
 {
   "meta": {
-    "lastUpdated": "",
-    "displayDate": "",
+    "lastUpdated": "2026-09-13T07:01:39.282Z",
+    "displayDate": "13, sep 2026",
     "resultsDate": "",
     "stats": {
-      "totalSelections": 0,
-      "winnersYesterday": 0,
-      "losersYesterday": 0,
-      "hitRateYesterday": 0
+      "totalSelections": 5,
+      "winnersYesterday": 3,
+      "losersYesterday": 2,
+      "hitRateYesterday": 10
     }
   },
   "predictions": [],
@@ -19,10 +19,30 @@
   "results": [],
   "news": [],
   "bookmakers": [
-    { "id": "bet9ja", "name": "Bet9ja", "link": "" },
-    { "id": "sportybet", "name": "SportyBet", "link": "" },
-    { "id": "betpawa", "name": "BetPawa", "link": "" },
-    { "id": "betway", "name": "Betway", "link": "" },
-    { "id": "1xbet", "name": "1xBet", "link": "" }
+    {
+      "id": "bet9ja",
+      "name": "Bet9ja",
+      "link": ""
+    },
+    {
+      "id": "sportybet",
+      "name": "SportyBet",
+      "link": ""
+    },
+    {
+      "id": "betpawa",
+      "name": "BetPawa",
+      "link": ""
+    },
+    {
+      "id": "betway",
+      "name": "Betway",
+      "link": ""
+    },
+    {
+      "id": "1xbet",
+      "name": "1xBet",
+      "link": ""
+    }
   ]
 }
