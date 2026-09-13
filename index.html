@@ -14,13 +14,19 @@
 </head>
 <body>
 
-<!-- Top ad slot intentionally removed — the previous Monetag script caused
-     disturbing floating popups, and the replacement Adsterra 160x300 banner
-     didn't fit the full-width top container cleanly (it stretched/looked
-     oversized). Leaving this spot empty rather than force a bad fit.
-     To bring back a top ad later, use a banner size that matches this
-     slot's actual width (check styles.css for .ad-slot--top), e.g. a
-     320x50 mobile banner tends to sit cleanly in a full-width top bar. -->
+<!-- 1. TOP AD BANNER - ADSTERRA (300x250, same unit as ad-content-1) -->
+<div class="ad-slot ad-slot--top" id="ad-top">
+<script>
+atOptions = {
+'key' : 'a618835ab25fcc20bacbb53aae3dfa',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+</script>
+<script src="https://www.highrevenueformat.com/a618835ab25fcc20bacbb53aae3dfa/invoke.js"></script>
+</div>
 
 <!-- 2. MAIN NAVIGATION -->
 <header class="navbar">
