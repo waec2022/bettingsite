@@ -1,0 +1,119 @@
+/* Additive styles for data-driven content blocks introduced alongside
+   data.json. Intentionally minimal so it inherits the site's existing
+   panel/card look and only fills in gaps for new element types. */
+
+.empty-state {
+  padding: 18px 12px;
+  text-align: center;
+  color: #8a93a6;
+  font-size: 14px;
+}
+
+.bm-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bm-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f5f8;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.bm-chip__name { font-weight: 600; }
+.bm-chip__odds { color: #171f31; }
+
+.bm-chip__code-btn {
+  background: #171f31;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.bm-chip__code-btn.is-revealed { background: #2ecc58; }
+
+.bm-chip__link {
+  background: #2ecc58;
+  color: #171f31;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.status-won { border-left: 3px solid #2ecc58; }
+.status-lost { border-left: 3px solid #e74c3c; }
+.status-live { border-left: 3px solid #e74c3c; }
+.status-pending { border-left: 3px solid #f1c40f; }
+
+.pick-card {
+  border: 1px solid #e7eaf0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.pick-card__top { display: flex; justify-content: space-between; font-weight: 600; }
+.pick-card__league { font-weight: 400; color: #8a93a6; font-size: 12px; }
+.pick-card__mid { display: flex; justify-content: space-between; margin: 6px 0; }
+.pick-card__odds { font-weight: 700; color: #171f31; }
+
+.botd-card {
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+  padding: 14px;
+  background: linear-gradient(135deg, #171f31, #23304b);
+  color: #fff;
+  margin-bottom: 12px;
+}
+.botd-card__match { font-size: 16px; font-weight: 700; }
+.botd-card__pick { margin: 6px 0; }
+.botd-card__odds { display: inline-block; background: #2ecc58; color: #171f31; border-radius: 4px; padding: 2px 8px; font-weight: 700; margin-bottom: 8px; }
+.botd-card .bm-chip { background: rgba(255,255,255,0.12); color: #fff; }
+.botd-card .bm-chip__odds { color: #fff; }
+
+.accumulator-card {
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.accumulator-card__head { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px; }
+.accumulator-card__odds { color: #2ecc58; }
+.accumulator-card__selections { margin: 0 0 10px 18px; padding: 0; font-size: 13px; color: #444; }
+
+.result-card {
+  border: 1px solid #e7eaf0;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.result-card--win { border-color: #2ecc58; }
+.result-card--loss { border-color: #e74c3c; }
+.result-card__match { font-size: 13px; font-weight: 600; }
+.result-card__score { font-size: 18px; font-weight: 700; margin: 4px 0; }
+.result-card__status { font-size: 11px; letter-spacing: 0.05em; color: #8a93a6; }
+
+.codes-only-list { list-style: none; margin: 0; padding: 0; }
+.codes-only-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eef0f4;
+  font-size: 13px;
+}
+
+.news-item { display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px solid #eef0f4; }
+.news-item__img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
+.news-item__body { display: flex; flex-direction: column; }
+.news-item__title { font-size: 13px; font-weight: 600; }
+.news-item__date { font-size: 11px; color: #8a93a6; }
+.news-item__link { text-decoration: none; color: inherit; }
