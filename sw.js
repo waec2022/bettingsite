@@ -1,19 +1,61 @@
-// This service worker previously loaded third-party (Monetag) ad/push code.
-// That has been disabled. This version's only job is to remove itself and
-// any caches it created from visitors who already had it installed, then
-// stop running, so the site goes back to normal browser networking/caching.
-self.addEventListener('install', () => {
+/* MatchForecast service worker
+   - Caches only the static app shell (HTML/CSS/JS) for speed on slow connections.
+   - NEVER caches data.json — that always goes to the network so visitors
+     see new predictions the moment they're published, not stale ones.
+   - Bump CACHE_VERSION whenever the app shell changes so old caches are
+     dropped automatically.
+*/
+
+var CACHE_VERSION = "matchforecast-shell-v2";
+var SHELL_FILES = [
+  "./",
+  "index.html",
+  "styles.css",
+  "styles-additions.css",
+  "script.js"
+];
+
+self.addEventListener("install", function (event) {
   self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE_VERSION).then(function (cache) {
+      return cache.addAll(SHELL_FILES).catch(function () {
+        /* Don't fail install if one optional asset 404s */
+      });
+    })
+  );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", function (event) {
   event.waitUntil(
-    (async () => {
-      const keys = await caches.keys();
-      await Promise.all(keys.map((key) => caches.delete(key)));
-      await self.registration.unregister();
-      const clientsList = await self.clients.matchAll({ type: 'window' });
-      clientsList.forEach((client) => client.navigate(client.url));
-    })()
+    caches.keys().then(function (keys) {
+      return Promise.all(
+        keys.filter(function (key) { return key !== CACHE_VERSION; })
+            .map(function (key) { return caches.delete(key); })
+      );
+    }).then(function () { return self.clients.claim(); })
+  );
+});
+
+self.addEventListener("fetch", function (event) {
+  var url = event.request.url;
+
+  /* data.json (with or without a ?v= cache-busting query) always goes
+     straight to the network — never served from the cache. */
+  if (url.indexOf("data.json") !== -1) {
+    event.respondWith(
+      fetch(event.request, { cache: "no-store" }).catch(function () {
+        return new Response("{}", { headers: { "Content-Type": "application/json" } });
+      })
+    );
+    return;
+  }
+
+  /* Everything else: cache-first, falling back to network, so the shell
+     still loads on a poor 2G connection. */
+  event.respondWith(
+    caches.match(event.request).then(function (cached) {
+      return cached || fetch(event.request);
+    })
   );
 });
