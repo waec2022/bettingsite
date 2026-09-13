@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-13T07:06:58.240Z",
+    "lastUpdated": "2026-09-13T09:13:22.157Z",
     "displayDate": "13, sep 2026",
     "resultsDate": "",
     "stats": {
@@ -38,8 +38,33 @@
   ],
   "accumulators": [],
   "correctScores": [],
-  "codesOnly": [],
-  "livePredictions": [],
+  "codesOnly": [
+    {
+      "bookmaker": "Bet9ja",
+      "label": "5odds",
+      "code": "Bsbsyeg",
+      "id": "codesOnly_1789290733704"
+    },
+    {
+      "bookmaker": "BetPawa",
+      "label": "2oods",
+      "code": "Bsbsye",
+      "id": "codesOnly_1789290743702"
+    }
+  ],
+  "livePredictions": [
+    {
+      "match": "Che vs man utd",
+      "league": "Premium league",
+      "market": "Over",
+      "prediction": "3.4",
+      "odds": "4oods",
+      "bookmaker": "Bet9ja",
+      "code": "Vdvdb",
+      "status": "live",
+      "id": "livePredictions_1789290790521"
+    }
+  ],
   "betOfTheDay": [],
   "results": [],
   "news": [],
