@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-13T11:03:10.754Z",
+    "lastUpdated": "2026-09-15T08:53:42.880Z",
     "displayDate": "13, sep 2026",
     "resultsDate": "",
     "stats": {
@@ -12,32 +12,173 @@
   },
   "predictions": [
     {
-      "match": "Manutd vs Chelsea",
+      "match": "Ajax vs feynord",
       "date": "23 sep 2023",
-      "league": "Premium",
+      "league": "Premium league",
       "market": "Under 4.5",
-      "prediction": "Under 4",
-      "odds": "30d",
-      "status": "pending",
+      "prediction": "4.5",
+      "odds": "3odds",
+      "status": "won",
       "bookmakers": [
         {
           "name": "Bet9ja",
           "odds": "2",
-          "code": "Tgejsjsn",
-          "link": ""
+          "code": "Tgejt",
+          "link": "https://github.com/waec2022/bettingsite"
         },
         {
           "name": "SportyBet",
           "odds": "47272",
           "code": "Nsnsn",
-          "link": ""
+          "link": "https://waec2022.github.io/matchforecast-editor/"
+        },
+        {
+          "name": "1xBet",
+          "odds": "2",
+          "code": "Ffgr2h",
+          "link": "https://waec2022.github.io/matchforecast-editor/"
         }
       ],
       "id": "predictions_1789283216769"
+    },
+    {
+      "match": "Man utd vs AthletiCo Madrid",
+      "date": "Sep 15 ,2026",
+      "league": "Champions league",
+      "market": "Bttts",
+      "prediction": "Gg",
+      "odds": "1",
+      "status": "pending",
+      "bookmakers": [
+        {
+          "name": "Bet9ja",
+          "odds": "2",
+          "code": "Fffghs",
+          "link": ""
+        }
+      ],
+      "id": "predictions_1789462046052"
     }
   ],
-  "accumulators": [],
-  "correctScores": [],
+  "accumulators": [
+    {
+      "title": "5-banker",
+      "date": "15 sep, 2026",
+      "totalOdds": "10",
+      "status": "pending",
+      "selections": [
+        {
+          "match": "Chelsea vs manutd",
+          "pick": ""
+        },
+        {
+          "match": "Arsenal vs Madrid",
+          "pick": ""
+        },
+        {
+          "match": "Manchester united vs Chelsea",
+          "pick": ""
+        },
+        {
+          "match": "Liverpool vs Luton town",
+          "pick": ""
+        },
+        {
+          "match": "Chelsea vs manutd",
+          "pick": ""
+        },
+        {
+          "match": "Arsenal vs Madrid",
+          "pick": ""
+        },
+        {
+          "match": "Manchester united vs Chelsea",
+          "pick": ""
+        },
+        {
+          "match": "Liverpool vs Luton town",
+          "pick": ""
+        }
+      ],
+      "bookmakers": [
+        {
+          "name": "Bet9ja",
+          "odds": "2",
+          "code": "Cc45hsb",
+          "link": "https://waec2022.github.io/matchforecast-editor/"
+        }
+      ],
+      "id": "accumulators_1789462162692"
+    },
+    {
+      "title": "2- banker",
+      "date": "Today's",
+      "totalOdds": "2",
+      "status": "won",
+      "selections": [
+        {
+          "match": "Chelsea vs manutd",
+          "pick": ""
+        },
+        {
+          "match": "Arsenal vs Madrid",
+          "pick": ""
+        }
+      ],
+      "bookmakers": [
+        {
+          "name": "Bet9ja",
+          "odds": "5odd",
+          "code": "Ghrbdb",
+          "link": ""
+        },
+        {
+          "name": "SportyBet",
+          "odds": "2",
+          "code": "Bdbdndm",
+          "link": ""
+        },
+        {
+          "name": "BetPawa",
+          "odds": "2",
+          "code": "Vsvsb",
+          "link": ""
+        },
+        {
+          "name": "Betway",
+          "odds": "2",
+          "code": "",
+          "link": ""
+        },
+        {
+          "name": "1xBet",
+          "odds": "4",
+          "code": "",
+          "link": ""
+        }
+      ],
+      "id": "accumulators_1789462234640"
+    }
+  ],
+  "correctScores": [
+    {
+      "match": "Chelsea vs man utd",
+      "date": "Today's",
+      "league": "Premium",
+      "correctScore": "3 - 3",
+      "odds": "5",
+      "status": "pending",
+      "bookmakers": [
+        {
+          "name": "Bet9ja",
+          "odds": "20",
+          "code": "Dgsbsb",
+          "link": "https://waec2022.github.io/matchforecast-editor/"
+        }
+      ],
+      "id": "correctScores_1789462288449"
+    }
+  ],
   "codesOnly": [
     {
       "bookmaker": "Bet9ja",
@@ -66,33 +207,42 @@
     }
   ],
   "betOfTheDay": [],
-  "results": [],
+  "results": [
+    {
+      "match": "Chelsea vs manutd",
+      "date": "Yesterday",
+      "result": "2-4",
+      "winLoss": "draw",
+      "status": "Won",
+      "id": "results_1789462417783"
+    }
+  ],
   "news": [],
   "bookmakers": [
     {
       "id": "bet9ja",
       "name": "Bet9ja",
-      "link": ""
+      "link": "https://waec2022.github.io/matchforecast-editor/"
     },
     {
       "id": "sportybet",
       "name": "SportyBet",
-      "link": ""
+      "link": "https://waec2022.github.io/matchforecast-editor/"
     },
     {
       "id": "betpawa",
       "name": "BetPawa",
-      "link": ""
+      "link": "https://waec2022.github.io/matchforecast-editor/"
     },
     {
       "id": "betway",
       "name": "Betway",
-      "link": ""
+      "link": "https://waec2022.github.io/matchforecast-editor/"
     },
     {
       "id": "1xbet",
       "name": "1xBet",
-      "link": ""
+      "link": "https://waec2022.github.io/matchforecast-editor/"
     }
   ]
 }
