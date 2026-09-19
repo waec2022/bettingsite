@@ -40,6 +40,31 @@
     if (html !== undefined) e.innerHTML = html;
     return e;
   }
+  const BADGE_COLORS = ['#2ecc58', '#2f7bff', '#8b5cf6', '#e34848', '#ffb100', '#0aa2a2', '#c2185b', '#5c6bc0'];
+  function teamInitials(name) {
+    return String(name || '').trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase() || '?';
+  }
+  function hashColor(str) {
+    let h = 0;
+    for (let i = 0; i < String(str).length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+    return BADGE_COLORS[h % BADGE_COLORS.length];
+  }
+  function teamBadge(name) {
+    return `<span class="team-badge" style="background:${hashColor(name)}">${esc(teamInitials(name))}</span>`;
+  }
+  function matchupHtml(home, away) {
+    return `<span class="matchup">
+      <span class="matchup__side">${teamBadge(home)}<span class="matchup__name">${esc(home)}</span></span>
+      <span class="matchup__vs">vs</span>
+      <span class="matchup__side">${teamBadge(away)}<span class="matchup__name">${esc(away)}</span></span>
+    </span>`;
+  }
+  function matchupFromString(matchStr) {
+    const parts = String(matchStr || '').split(/\s+vs\s+/i);
+    if (parts.length === 2) return matchupHtml(parts[0], parts[1]);
+    return esc(matchStr);
+  }
+
   function bookmakerBadges(bookmakers) {
     if (!bookmakers) return '';
     return Object.entries(bookmakers).map(([k, v]) =>
@@ -105,7 +130,7 @@
       tbody.innerHTML = filtered.map((p, idx) => `
         <tr id="prediction-${esc(p.id)}">
           <td class="col-num">${idx + 1}</td>
-          <td class="col-match">${esc(p.home)} vs ${esc(p.away)}<div class="mf-sub">${esc(p.league || '')}</div></td>
+          <td class="col-match">${matchupHtml(p.home, p.away)}<div class="mf-sub">${esc(p.league || '')}</div></td>
           <td class="col-pick">${esc(p.selection)}${p.rating ? `<div class="mf-rating">Rating ${esc(p.rating)}/10</div>` : ''}</td>
           <td class="col-odds">${esc(p.odds)}</td>
           <td class="col-books">${bookmakerBadges(p.bookmakers)}</td>
@@ -119,7 +144,7 @@
         <div class="pick-card" id="prediction-card-${esc(p.id)}">
           <div class="pick-card__top">
             <span class="pick-card__num">#${idx + 1}</span>
-            <span class="pick-card__match">${esc(p.home)} vs ${esc(p.away)}</span>
+            <span class="pick-card__match">${matchupHtml(p.home, p.away)}</span>
           </div>
           <div class="pick-card__mid">
             <span class="pick-card__selection">${esc(p.selection)}</span>
@@ -132,15 +157,19 @@
   }
 
   /* ---------------- ACCUMULATORS ---------------- */
-  const TIER_COLORS = ['#2ecc58', '#2f7bff', '#8b5cf6', '#ffb100', '#e34848', '#0aa2a2', '#465066'];
+  const TIER_COLORS = ['#2ecc58', '#2f7bff', '#8b5cf6', '#f5811f'];
 
   function renderAccumulators() {
     const grid = document.getElementById('accumulatorGrid');
     if (!grid) return;
     const items = livePublished(DATA.accumulators);
+    // Force the exact 4-column tier grid regardless of the page's own CSS for this container.
+    grid.style.display = 'grid';
+    grid.style.gridTemplateColumns = 'repeat(4, 1fr)';
+    grid.style.gap = '6px';
     grid.innerHTML = items.map((a, idx) => {
       const color = TIER_COLORS[idx % TIER_COLORS.length];
-      const preview = (a.selections || []).slice(0, 3).map(s =>
+      const preview = (a.selections || []).slice(0, 4).map(s =>
         `<div class="acc-sel"><b>${esc(s.match)}</b><span>${esc(s.pick)} @ ${esc(s.odds)}</span></div>`
       ).join('');
       return `<div class="acc-card" id="accumulator-${esc(a.id)}" style="background:${color}">
@@ -241,7 +270,7 @@
     const items = livePublished(DATA.betOfDay);
     listEl.innerHTML = items.map(b => `
       <div class="bod-card" id="bet-of-day-${esc(b.id)}">
-        <div class="bod-card__match">${esc(b.match)}</div>
+        <div class="bod-card__match">${matchupFromString(b.match)}</div>
         <div class="bod-card__pick">${esc(b.pick)} <span class="bod-card__odds">@ ${esc(b.odds)}</span></div>
         <p class="bod-card__desc">${esc(b.description || '')}</p>
         <div class="bod-card__meta">Rating ${esc(b.rating)}/10 · ${esc(bookmakerLabel(b.bookmaker))}</div>
@@ -258,7 +287,7 @@
     gridEl.innerHTML = items.map(l => `
       <div class="live-card" id="live-${esc(l.id)}">
         <div class="live-card__top"><span class="live-dot"></span> ${esc(l.minute)} · ${esc(l.currentScore)}</div>
-        <div class="live-card__match">${esc(l.match)}</div>
+        <div class="live-card__match">${matchupFromString(l.match)}</div>
         <div class="live-card__pick">${esc(l.pick)} @ ${esc(l.odds)}</div>
       </div>`).join('') || `<div class="mf-empty">No live predictions right now.</div>`;
   }
@@ -276,7 +305,7 @@
     tbody.innerHTML = items.map((c, idx) => `
       <tr id="correct-score-${esc(c.id)}">
         <td>${idx + 1}</td>
-        <td>${esc(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
+        <td>${matchupFromString(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
         <td>${esc(c.score)}</td>
         <td>${esc(c.odds)}</td>
         <td>${bookmakerBadges(c.bookmakers)}</td>
