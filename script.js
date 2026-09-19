@@ -1,515 +1,432 @@
+/* ============================================================
+   MatchForecast — script.js (data-driven rendering)
+   Reads everything from data.json (published by the private
+   editor). Renders into the EXISTING index.html containers
+   where they exist, and creates the 4 newer panels (Bet of the
+   Day, Live Predictions, Correct Score, Codes Only) if they are
+   not already present in the page, so this still works even if
+   index.html hasn't been updated with the new markup yet.
 
-/* ==========================================================================
-   MatchForecast — script.js
-   Renders ALL daily content from data.json (the single source of truth).
-   No hard-coded matches/odds/codes live in this file anymore.
-   The Local Editor (matchforecast-editor) publishes data.json to GitHub;
-   this file only fetches it and draws the page.
-   ========================================================================== */
+   SCHEDULING: every item may carry a `publishAt` ISO timestamp
+   (Africa/Lagos, e.g. 2026-09-20T15:00:00+01:00). Anything whose
+   publishAt is in the future is filtered out everywhere — lists,
+   counts and search — until the clock passes it. A 30s poll
+   re-filters and re-renders without a full page reload.
+   ============================================================ */
 
 (function () {
-  "use strict";
+  'use strict';
 
-  var DATA_URL = "data.json";
-  var state = {
-    data: null,
-    activeFilter: "All"
-  };
+  const DATA_URL = 'data.json';
+  const POLL_MS = 30000;
+  let DATA = null;
+  let activeFilter = 'All';
 
   /* ---------------- helpers ---------------- */
-
-  function el(tag, className, html) {
-    var e = document.createElement(tag);
-    if (className) e.className = className;
+  function now() { return new Date(); }
+  function isLive(item) {
+    if (!item.publishAt) return true;
+    return new Date(item.publishAt).getTime() <= now().getTime();
+  }
+  function livePublished(list) {
+    return (list || []).filter(i => isLive(i) && i.status !== 'cancelled');
+  }
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+  function el(tag, cls, html) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
     if (html !== undefined) e.innerHTML = html;
     return e;
   }
-
-  function esc(str) {
-    if (str === undefined || str === null) return "";
-    return String(str)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  function bookmakerBadges(bookmakers) {
+    if (!bookmakers) return '';
+    return Object.entries(bookmakers).map(([k, v]) =>
+      `<span class="bm-badge bm-badge--${esc(k)}">${esc(bookmakerLabel(k))}${v.odds ? ' ' + esc(v.odds) : ''}</span>`
+    ).join('');
+  }
+  function bookmakerLabel(key) {
+    const m = (DATA.meta.bookmakers || []).find(b => b.key === key);
+    return m ? m.name : key;
+  }
+  function codeRevealHtml(bookmakers, idPrefix) {
+    if (!bookmakers || !Object.keys(bookmakers).length) return '';
+    const rows = Object.entries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
+      `<div class="code-row"><span class="code-row__bm">${esc(bookmakerLabel(k))}</span>
+        <span class="code-row__code" data-code-value="${esc(v.code)}">••••••</span>
+        <button type="button" class="code-row__btn" data-reveal>Reveal</button>
+        <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}">Copy</button>
+      </div>`
+    ).join('');
+    return `<div class="code-reveal" id="${idPrefix}">${rows}</div>`;
   }
 
-  function safeArr(a) {
-    return Array.isArray(a) ? a : [];
+  // Ensure a panel exists in the DOM; create + append if missing.
+  function ensurePanel(id, parentSelector, headerHtml, extraClass) {
+    let panel = document.getElementById(id);
+    if (panel) return panel;
+    panel = el('div', 'panel' + (extraClass ? ' ' + extraClass : ''));
+    panel.id = id;
+    panel.innerHTML = headerHtml;
+    const parent = document.querySelector(parentSelector) || document.querySelector('.content-main') || document.querySelector('main');
+    if (parent) parent.appendChild(panel);
+    return panel;
   }
 
-  function statusClass(status) {
-    var s = (status || "pending").toLowerCase();
-    if (s === "won" || s === "win") return "status-won";
-    if (s === "lost" || s === "loss") return "status-lost";
-    if (s === "live") return "status-live";
-    return "status-pending";
+  /* ---------------- TOP PICKS (predictions) ---------------- */
+  const FILTERS = ['All', 'Over/Under', 'BTTS', 'Match Winner', 'Double Chance', 'Other'];
+
+  function renderPicksFilters(items) {
+    const wrap = document.getElementById('picksFilters');
+    if (!wrap) return;
+    wrap.innerHTML = FILTERS.map(f => {
+      const count = f === 'All' ? items.length : items.filter(i => i.category === f).length;
+      const activeCls = f === activeFilter ? ' filter-chip--active' : '';
+      return `<button class="filter-chip${activeCls}" data-filter="${esc(f)}" role="tab" aria-selected="${f === activeFilter}">${esc(f)} (${count})</button>`;
+    }).join('');
+    wrap.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => { activeFilter = btn.dataset.filter; renderPicks(); });
+    });
   }
 
-  /* Renders the bookmaker chips (name + odds + reveal/copy code) used by
-     predictions, accumulators, correct scores and live predictions. */
-  function bookmakerChips(list) {
-    var wrap = el("div", "bm-chips");
-    safeArr(list).forEach(function (b) {
-      if (!b || !b.name) return;
-      var chip = el("div", "bm-chip");
-      var head = el("span", "bm-chip__name", esc(b.name));
-      chip.appendChild(head);
-      if (b.odds) chip.appendChild(el("span", "bm-chip__odds", esc(b.odds)));
-      if (b.code) {
-        var codeBtn = el("button", "bm-chip__code-btn");
-        codeBtn.type = "button";
-        codeBtn.dataset.code = b.code;
-        codeBtn.textContent = "Reveal Code";
-        codeBtn.addEventListener("click", function () {
-          revealAndCopy(codeBtn, b.code);
+  function renderPicks() {
+    const items = livePublished(DATA.predictions).sort((a, b) => (b.rating || 0) - (a.rating || 0));
+    const badge = document.getElementById('pickCountBadge');
+    if (badge) badge.textContent = `${items.length} Selections`;
+    const overviewTotal = document.getElementById('statTotal');
+    if (overviewTotal) overviewTotal.textContent = items.length;
+
+    renderPicksFilters(items);
+    const filtered = activeFilter === 'All' ? items : items.filter(i => i.category === activeFilter);
+
+    const tbody = document.getElementById('picksTableBody');
+    if (tbody) {
+      tbody.innerHTML = filtered.map((p, idx) => `
+        <tr id="prediction-${esc(p.id)}">
+          <td class="col-num">${idx + 1}</td>
+          <td class="col-match">${esc(p.home)} vs ${esc(p.away)}<div class="mf-sub">${esc(p.league || '')}</div></td>
+          <td class="col-pick">${esc(p.selection)}${p.rating ? `<div class="mf-rating">Rating ${esc(p.rating)}/10</div>` : ''}</td>
+          <td class="col-odds">${esc(p.odds)}</td>
+          <td class="col-books">${bookmakerBadges(p.bookmakers)}</td>
+          <td class="col-code">${codeRevealHtml(p.bookmakers, `codes-pred-${p.id}`)}</td>
+        </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No selections yet.</td></tr>`;
+    }
+
+    const cards = document.getElementById('picksCardsList');
+    if (cards) {
+      cards.innerHTML = filtered.map((p, idx) => `
+        <div class="pick-card" id="prediction-card-${esc(p.id)}">
+          <div class="pick-card__top">
+            <span class="pick-card__num">#${idx + 1}</span>
+            <span class="pick-card__match">${esc(p.home)} vs ${esc(p.away)}</span>
+          </div>
+          <div class="pick-card__mid">
+            <span class="pick-card__selection">${esc(p.selection)}</span>
+            <span class="pick-card__odds">${esc(p.odds)}</span>
+          </div>
+          <div class="pick-card__books">${bookmakerBadges(p.bookmakers)}</div>
+          ${codeRevealHtml(p.bookmakers, `codes-predcard-${p.id}`)}
+        </div>`).join('') || `<div class="mf-empty">No selections yet.</div>`;
+    }
+  }
+
+  /* ---------------- ACCUMULATORS ---------------- */
+  const TIER_COLORS = ['#2ecc58', '#2f7bff', '#8b5cf6', '#ffb100', '#e34848', '#0aa2a2', '#465066'];
+
+  function renderAccumulators() {
+    const grid = document.getElementById('accumulatorGrid');
+    if (!grid) return;
+    const items = livePublished(DATA.accumulators);
+    grid.innerHTML = items.map((a, idx) => {
+      const color = TIER_COLORS[idx % TIER_COLORS.length];
+      const preview = (a.selections || []).slice(0, 3).map(s =>
+        `<div class="acc-sel"><b>${esc(s.match)}</b><span>${esc(s.pick)} @ ${esc(s.odds)}</span></div>`
+      ).join('');
+      return `<div class="acc-card" id="accumulator-${esc(a.id)}" style="background:${color}">
+        <div class="acc-card__head">🎯 ${esc(a.tier || a.title)}</div>
+        <div class="acc-card__meta">${(a.selections || []).length} Selections · Combined ${esc(a.totalOdds)}</div>
+        <div class="acc-card__sels">${preview}</div>
+        <button type="button" class="acc-card__btn" data-view-acc="${esc(a.id)}">View Slip →</button>
+      </div>`;
+    }).join('') || `<div class="mf-empty">No accumulators yet.</div>`;
+
+    grid.querySelectorAll('[data-view-acc]').forEach(btn => {
+      btn.addEventListener('click', () => openAccModal(btn.dataset.viewAcc));
+    });
+  }
+
+  function ensureModal() {
+    let modal = document.getElementById('mfModal');
+    if (modal) return modal;
+    modal = el('div', 'mf-modal', `
+      <div class="mf-modal__box">
+        <button type="button" class="mf-modal__close" id="mfModalClose">✕</button>
+        <div id="mfModalBody"></div>
+      </div>`);
+    modal.id = 'mfModal';
+    document.body.appendChild(modal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.getElementById('mfModalClose').addEventListener('click', closeModal);
+    return modal;
+  }
+  function closeModal() { const m = document.getElementById('mfModal'); if (m) m.classList.remove('mf-modal--open'); }
+  function openAccModal(id) {
+    const acc = (DATA.accumulators || []).find(a => a.id === id);
+    if (!acc) return;
+    const modal = ensureModal();
+    const rows = (acc.selections || []).map(s =>
+      `<div class="mf-modal__row"><span>${esc(s.match)}</span><b>${esc(s.pick)} @ ${esc(s.odds)}</b></div>`).join('');
+    document.getElementById('mfModalBody').innerHTML = `
+      <h3>${esc(acc.title)} — Combined ${esc(acc.totalOdds)}</h3>
+      ${rows}
+      ${codeRevealHtml(acc.bookmakers, `codes-acc-${acc.id}`)}`;
+    modal.classList.add('mf-modal--open');
+    wireCodeReveal(modal);
+  }
+
+  /* ---------------- RESULTS ---------------- */
+  function renderResults() {
+    const grid = document.getElementById('resultsGrid');
+    if (!grid) return;
+    const items = (DATA.results || []);
+    grid.innerHTML = items.map(r => `
+      <div class="result-card result-card--${r.outcome}" id="result-${esc(r.id)}">
+        <span class="result-card__status">${r.outcome === 'won' ? '✓' : (r.outcome === 'lost' ? '✕' : '–')}</span>
+        <div class="result-card__body">
+          <div class="result-card__match">${esc(r.match)}</div>
+          <div class="result-card__meta">${esc(r.prediction)} @ ${esc(r.odds)} · FT ${esc(r.actualResult)}</div>
+        </div>
+      </div>`).join('') || `<div class="mf-empty">No results yet.</div>`;
+  }
+
+  /* ---------------- BOOKMAKERS (sidebar) ---------------- */
+  function renderBookmakers() {
+    const listEl = document.getElementById('bookmakerList');
+    if (!listEl) return;
+    const items = (DATA.meta.bookmakers || []).filter(b => b.status !== 'inactive').sort((a, b) => (a.order || 0) - (b.order || 0));
+    listEl.innerHTML = items.map(b => `
+      <li class="bookmaker-item" id="bookmaker-${esc(b.key)}">
+        <a href="#" data-affiliate="${esc(b.affiliateUrl || '')}" class="bookmaker-item__link">
+          <span class="bookmaker-item__name">${esc(b.name)}</span>
+          <span class="bookmaker-item__desc">${esc(b.description || '')}</span>
+        </a>
+      </li>`).join('');
+  }
+
+  /* ---------------- NEWS (sidebar) ---------------- */
+  function renderNews() {
+    const listEl = document.getElementById('newsList');
+    if (!listEl) return;
+    const items = livePublished(DATA.news).slice(0, 6);
+    listEl.innerHTML = items.map(n => `
+      <li class="news-item" id="news-${esc(n.id)}">
+        <a href="#news-${esc(n.id)}" class="news-item__link">
+          <span class="news-item__title">${esc(n.title)}</span>
+          <span class="news-item__date">${esc(n.date)}</span>
+        </a>
+      </li>`).join('') || `<li class="mf-empty">No news posted yet.</li>`;
+  }
+
+  /* ---------------- BET OF THE DAY (new) ---------------- */
+  function renderBetOfDay() {
+    const panel = ensurePanel('bet-of-day', '.content-main',
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> BET OF THE DAY</h2></div>
+       <div id="betOfDayList"></div>`, 'panel--bod');
+    const listEl = panel.querySelector('#betOfDayList') || document.getElementById('betOfDayList');
+    const items = livePublished(DATA.betOfDay);
+    listEl.innerHTML = items.map(b => `
+      <div class="bod-card" id="bet-of-day-${esc(b.id)}">
+        <div class="bod-card__match">${esc(b.match)}</div>
+        <div class="bod-card__pick">${esc(b.pick)} <span class="bod-card__odds">@ ${esc(b.odds)}</span></div>
+        <p class="bod-card__desc">${esc(b.description || '')}</p>
+        <div class="bod-card__meta">Rating ${esc(b.rating)}/10 · ${esc(bookmakerLabel(b.bookmaker))}</div>
+      </div>`).join('') || `<div class="mf-empty">No Bet of the Day yet.</div>`;
+  }
+
+  /* ---------------- LIVE PREDICTIONS (new) ---------------- */
+  function renderLivePredictions() {
+    const panel = ensurePanel('live-predictions', '.content-main',
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">📡</span> LIVE PREDICTIONS</h2></div>
+       <div class="live-grid" id="liveGrid"></div>`, 'panel--live');
+    const gridEl = panel.querySelector('#liveGrid') || document.getElementById('liveGrid');
+    const items = livePublished(DATA.livePredictions);
+    gridEl.innerHTML = items.map(l => `
+      <div class="live-card" id="live-${esc(l.id)}">
+        <div class="live-card__top"><span class="live-dot"></span> ${esc(l.minute)} · ${esc(l.currentScore)}</div>
+        <div class="live-card__match">${esc(l.match)}</div>
+        <div class="live-card__pick">${esc(l.pick)} @ ${esc(l.odds)}</div>
+      </div>`).join('') || `<div class="mf-empty">No live predictions right now.</div>`;
+  }
+
+  /* ---------------- CORRECT SCORE (new) ---------------- */
+  function renderCorrectScore() {
+    const panel = ensurePanel('correct-score', '.content-main',
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">🎯</span> CORRECT SCORE</h2></div>
+       <div class="cs-table-wrap"><table class="cs-table">
+         <thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead>
+         <tbody id="correctScoreBody"></tbody>
+       </table></div>`, 'panel--cs');
+    const tbody = panel.querySelector('#correctScoreBody') || document.getElementById('correctScoreBody');
+    const items = livePublished(DATA.correctScores);
+    tbody.innerHTML = items.map((c, idx) => `
+      <tr id="correct-score-${esc(c.id)}">
+        <td>${idx + 1}</td>
+        <td>${esc(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
+        <td>${esc(c.score)}</td>
+        <td>${esc(c.odds)}</td>
+        <td>${bookmakerBadges(c.bookmakers)}</td>
+        <td>${codeRevealHtml(c.bookmakers, `codes-cs-${c.id}`)}</td>
+      </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No correct score picks yet.</td></tr>`;
+  }
+
+  /* ---------------- CODES ONLY (new, sidebar) ---------------- */
+  function renderCodesOnly() {
+    const panel = ensurePanel('codes-only', '.content-sidebar',
+      `<h3 class="sidebar-panel__title">🔑 CODES ONLY</h3><div id="codesOnlyList"></div>`, 'sidebar-panel panel--codes');
+    const listEl = panel.querySelector('#codesOnlyList') || document.getElementById('codesOnlyList');
+    const items = livePublished(DATA.codesOnly);
+    listEl.innerHTML = items.map(c => `
+      <div class="codes-item" id="codes-only-${esc(c.id)}">
+        <div class="codes-item__top"><b>${esc(bookmakerLabel(c.bookmaker))}</b><span>${esc(c.label)}</span></div>
+        <div class="code-row">
+          <span class="code-row__code" data-code-value="${esc(c.code)}">••••••</span>
+          <button type="button" class="code-row__btn" data-reveal>Reveal</button>
+          <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(c.code)}">Copy</button>
+        </div>
+      </div>`).join('') || `<div class="mf-empty">No codes yet.</div>`;
+  }
+
+  /* ---------------- reveal / copy (event delegation, wired once) ---------------- */
+  function wireCodeReveal(root) {
+    root.querySelectorAll('[data-reveal]').forEach(btn => {
+      if (btn.dataset.wired) return;
+      btn.dataset.wired = '1';
+      btn.addEventListener('click', () => {
+        const codeSpan = btn.parentElement.querySelector('[data-code-value]');
+        if (codeSpan) codeSpan.textContent = codeSpan.dataset.codeValue;
+        btn.disabled = true;
+      });
+    });
+    root.querySelectorAll('[data-copy]').forEach(btn => {
+      if (btn.dataset.wired) return;
+      btn.dataset.wired = '1';
+      btn.addEventListener('click', () => {
+        navigator.clipboard?.writeText(btn.dataset.copy).then(() => {
+          const old = btn.textContent; btn.textContent = 'Copied!';
+          setTimeout(() => { btn.textContent = old; }, 1500);
         });
-        chip.appendChild(codeBtn);
-      }
-      if (b.link) {
-        var a = document.createElement("a");
-        a.href = b.link;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.className = "bm-chip__link";
-        a.textContent = "Bet Now";
-        chip.appendChild(a);
-      }
-      wrap.appendChild(chip);
-    });
-    return wrap;
-  }
-
-  function revealAndCopy(btn, code) {
-    if (btn.classList.contains("is-revealed")) {
-      navigator.clipboard && navigator.clipboard.writeText(code).catch(function () {});
-      btn.textContent = "Copied!";
-      setTimeout(function () {
-        btn.textContent = code;
-      }, 1200);
-      return;
-    }
-    btn.classList.add("is-revealed");
-    btn.textContent = code;
-  }
-
-  function bookmakerNames(list) {
-    return safeArr(list).map(function (b) { return b.name; }).filter(Boolean).join(", ");
-  }
-
-  /* ---------------- overview / hero stats ---------------- */
-
-  function renderMeta(data) {
-    var m = data.meta || {};
-    var stats = m.stats || {};
-    setText("statTotal", stats.totalSelections || 0);
-    setText("statWinners", stats.winnersYesterday || 0);
-    setText("statLosers", stats.losersYesterday || 0);
-    setText("statHitRate", (stats.hitRateYesterday || 0) + "%");
-
-    var dateLabel = m.displayDate || "";
-    var overviewDate = document.getElementById("overviewDate");
-    if (overviewDate) overviewDate.lastChild ? (overviewDate.lastChild.textContent = " " + dateLabel) : null;
-    setDateBadge("picksHeaderDate", dateLabel);
-    setDateBadge("resultsDateBadge", m.resultsDate || dateLabel);
-  }
-
-  function setDateBadge(id, text) {
-    var node = document.getElementById(id);
-    if (!node) return;
-    var svg = node.querySelector("svg");
-    node.textContent = "";
-    if (svg) node.appendChild(svg);
-    node.appendChild(document.createTextNode(" " + (text || "")));
-  }
-
-  function setText(id, val) {
-    var n = document.getElementById(id);
-    if (n) n.textContent = val;
-  }
-
-  /* ---------------- Bet of the Day ---------------- */
-
-  function renderBetOfTheDay(list) {
-    var grid = document.getElementById("betOfTheDayGrid");
-    if (!grid) return;
-    grid.innerHTML = "";
-    var items = safeArr(list);
-    if (!items.length) {
-      grid.appendChild(el("p", "empty-state", "No Bet of the Day selection yet — check back soon."));
-      return;
-    }
-    items.forEach(function (b) {
-      var card = el("div", "botd-card");
-      card.appendChild(el("div", "botd-card__match", esc(b.match)));
-      card.appendChild(el("div", "botd-card__pick", (b.market ? esc(b.market) + ": " : "") + esc(b.prediction)));
-      if (b.odds) card.appendChild(el("span", "botd-card__odds", "Odds " + esc(b.odds)));
-      card.appendChild(bookmakerChips(b.bookmakers));
-      grid.appendChild(card);
-    });
-  }
-
-  /* ---------------- Top Picks (predictions) ---------------- */
-
-  function buildFilters(predictions) {
-    var bar = document.getElementById("picksFilters");
-    if (!bar) return;
-    var markets = {};
-    predictions.forEach(function (p) {
-      var m = p.market || "Other";
-      markets[m] = (markets[m] || 0) + 1;
-    });
-    bar.innerHTML = "";
-    var allBtn = el("button", "filter-chip" + (state.activeFilter === "All" ? " filter-chip--active" : ""), "All (" + predictions.length + ")");
-    allBtn.type = "button";
-    allBtn.dataset.filter = "All";
-    allBtn.setAttribute("role", "tab");
-    allBtn.setAttribute("aria-selected", state.activeFilter === "All");
-    bar.appendChild(allBtn);
-    Object.keys(markets).forEach(function (m) {
-      var b = el("button", "filter-chip" + (state.activeFilter === m ? " filter-chip--active" : ""), esc(m) + " (" + markets[m] + ")");
-      b.type = "button";
-      b.dataset.filter = m;
-      b.setAttribute("role", "tab");
-      b.setAttribute("aria-selected", state.activeFilter === m);
-      bar.appendChild(b);
-    });
-    bar.querySelectorAll("button").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        state.activeFilter = btn.dataset.filter;
-        renderPicks(state.data.predictions);
       });
     });
   }
 
-  function renderPicks(predictions) {
-    predictions = safeArr(predictions);
-    buildFilters(predictions);
-
-    var filtered = state.activeFilter === "All"
-      ? predictions
-      : predictions.filter(function (p) { return (p.market || "Other") === state.activeFilter; });
-
-    setText("pickCountBadge", filtered.length + " Selections");
-
-    var tbody = document.getElementById("picksTableBody");
-    var cards = document.getElementById("picksCardsList");
-    if (tbody) tbody.innerHTML = "";
-    if (cards) cards.innerHTML = "";
-
-    if (!filtered.length) {
-      if (tbody) {
-        var tr = document.createElement("tr");
-        tr.innerHTML = '<td colspan="6" class="empty-state">No predictions published yet — check back soon.</td>';
-        tbody.appendChild(tr);
-      }
-      return;
-    }
-
-    filtered.forEach(function (p, i) {
-      if (tbody) {
-        var row = document.createElement("tr");
-        row.className = statusClass(p.status);
-        row.innerHTML =
-          '<td class="col-num">' + (i + 1) + '</td>' +
-          '<td class="col-match"><strong>' + esc(p.match) + '</strong><br><small>' + esc(p.league || "") + '</small></td>' +
-          '<td class="col-pick">' + esc(p.prediction) + '</td>' +
-          '<td class="col-odds">' + esc(p.odds || "") + '</td>' +
-          '<td class="col-books">' + esc(bookmakerNames(p.bookmakers)) + '</td>' +
-          '<td class="col-code"></td>';
-        row.querySelector(".col-code").appendChild(bookmakerChips(p.bookmakers));
-        tbody.appendChild(row);
-      }
-      if (cards) {
-        var card = el("div", "pick-card " + statusClass(p.status));
-        card.innerHTML =
-          '<div class="pick-card__top">' +
-            '<span class="pick-card__match">' + esc(p.match) + '</span>' +
-            '<span class="pick-card__league">' + esc(p.league || "") + '</span>' +
-          '</div>' +
-          '<div class="pick-card__mid">' +
-            '<span class="pick-card__pick">' + esc(p.prediction) + '</span>' +
-            '<span class="pick-card__odds">' + esc(p.odds || "") + '</span>' +
-          '</div>';
-        card.appendChild(bookmakerChips(p.bookmakers));
-        cards.appendChild(card);
-      }
-    });
+  /* ---------------- SEARCH ---------------- */
+  function buildSearchIndex() {
+    const idx = [];
+    livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection}`, anchor: `prediction-${p.id}` }));
+    livePublished(DATA.accumulators).forEach(a => idx.push({ type: 'Accumulator', label: a.title, anchor: `accumulator-${a.id}` }));
+    livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score}`, anchor: `correct-score-${c.id}` }));
+    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Code', label: `${bookmakerLabel(c.bookmaker)} — ${c.label}`, anchor: `codes-only-${c.id}` }));
+    livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live', label: l.match, anchor: `live-${l.id}` }));
+    livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: b.match, anchor: `bet-of-day-${b.id}` }));
+    (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: r.match, anchor: `result-${r.id}` }));
+    livePublished(DATA.news).forEach(n => idx.push({ type: 'News', label: n.title, anchor: `news-${n.id}` }));
+    (DATA.meta.bookmakers || []).forEach(b => idx.push({ type: 'Bookmaker', label: b.name, anchor: `bookmaker-${b.key}` }));
+    return idx;
   }
 
-  /* ---------------- Live Predictions ---------------- */
-
-  function renderLive(list) {
-    list = safeArr(list);
-    setText("liveCountBadge", list.length + " Live");
-    var tbody = document.getElementById("liveTableBody");
-    var cards = document.getElementById("liveCardsList");
-    if (tbody) tbody.innerHTML = "";
-    if (cards) cards.innerHTML = "";
-    if (!list.length) {
-      if (tbody) tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No live predictions right now.</td></tr>';
-      return;
-    }
-    list.forEach(function (p, i) {
-      if (tbody) {
-        var row = document.createElement("tr");
-        row.className = "status-live";
-        row.innerHTML =
-          '<td class="col-num">' + (i + 1) + '</td>' +
-          '<td class="col-match"><strong>' + esc(p.match) + '</strong><br><small>' + esc(p.league || "") + '</small></td>' +
-          '<td class="col-pick">' + esc(p.prediction) + '</td>' +
-          '<td class="col-odds">' + esc(p.odds || "") + '</td>' +
-          '<td class="col-books">' + esc(p.bookmaker || "") + '</td>' +
-          '<td class="col-code">' + esc(p.code || "") + '</td>';
-        tbody.appendChild(row);
-      }
-      if (cards) {
-        var card = el("div", "pick-card status-live");
-        card.innerHTML =
-          '<div class="pick-card__top"><span class="pick-card__match">' + esc(p.match) + '</span></div>' +
-          '<div class="pick-card__mid"><span class="pick-card__pick">' + esc(p.prediction) + '</span><span class="pick-card__odds">' + esc(p.odds || "") + '</span></div>';
-        cards.appendChild(card);
-      }
-    });
-  }
-
-  /* ---------------- Accumulators ---------------- */
-
-  function renderAccumulators(list) {
-    list = safeArr(list);
-    setText("accaCountBadge", list.length + " Odds Slips");
-    var grid = document.getElementById("accumulatorGrid");
-    if (!grid) return;
-    grid.innerHTML = "";
-    if (!list.length) {
-      grid.appendChild(el("p", "empty-state", "No accumulators published yet."));
-      return;
-    }
-    list.forEach(function (acc) {
-      var card = el("div", "accumulator-card");
-      var head = el("div", "accumulator-card__head");
-      head.innerHTML = '<span class="accumulator-card__title">' + esc(acc.title) + '</span>' +
-        '<span class="accumulator-card__odds">Odds ' + esc(acc.totalOdds || "") + '</span>';
-      card.appendChild(head);
-
-      var selList = el("ul", "accumulator-card__selections");
-      safeArr(acc.selections).forEach(function (s) {
-        selList.appendChild(el("li", "", esc(s.match) + " — <strong>" + esc(s.pick) + "</strong>"));
-      });
-      card.appendChild(selList);
-      card.appendChild(bookmakerChips(acc.bookmakers));
-      grid.appendChild(card);
-    });
-  }
-
-  /* ---------------- Correct Score ---------------- */
-
-  function renderCorrectScores(list) {
-    list = safeArr(list);
-    setText("csCountBadge", list.length + " Selections");
-    var tbody = document.getElementById("csTableBody");
-    var cards = document.getElementById("csCardsList");
-    if (tbody) tbody.innerHTML = "";
-    if (cards) cards.innerHTML = "";
-    if (!list.length) {
-      if (tbody) tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No correct-score picks published yet.</td></tr>';
-      return;
-    }
-    list.forEach(function (c, i) {
-      if (tbody) {
-        var row = document.createElement("tr");
-        row.className = statusClass(c.status);
-        row.innerHTML =
-          '<td class="col-num">' + (i + 1) + '</td>' +
-          '<td class="col-match"><strong>' + esc(c.match) + '</strong><br><small>' + esc(c.league || "") + '</small></td>' +
-          '<td class="col-pick">' + esc(c.correctScore) + '</td>' +
-          '<td class="col-odds">' + esc(c.odds || "") + '</td>' +
-          '<td class="col-books">' + esc(bookmakerNames(c.bookmakers)) + '</td>' +
-          '<td class="col-code"></td>';
-        row.querySelector(".col-code").appendChild(bookmakerChips(c.bookmakers));
-        tbody.appendChild(row);
-      }
-      if (cards) {
-        var card = el("div", "pick-card " + statusClass(c.status));
-        card.innerHTML =
-          '<div class="pick-card__top"><span class="pick-card__match">' + esc(c.match) + '</span></div>' +
-          '<div class="pick-card__mid"><span class="pick-card__pick">' + esc(c.correctScore) + '</span><span class="pick-card__odds">' + esc(c.odds || "") + '</span></div>';
-        card.appendChild(bookmakerChips(c.bookmakers));
-        cards.appendChild(card);
-      }
-    });
-  }
-
-  /* ---------------- Codes Only ---------------- */
-
-  function renderCodesOnly(list) {
-    var ul = document.getElementById("codesOnlyList");
-    if (!ul) return;
-    ul.innerHTML = "";
-    list = safeArr(list);
-    if (!list.length) {
-      ul.appendChild(el("li", "empty-state", "No codes published yet."));
-      return;
-    }
-    list.forEach(function (c) {
-      var li = el("li", "codes-only-item");
-      li.innerHTML = '<span class="codes-only-item__label">' + esc(c.bookmaker) + (c.label ? " — " + esc(c.label) : "") + '</span>';
-      if (c.code) {
-        var btn = el("button", "bm-chip__code-btn");
-        btn.type = "button";
-        btn.textContent = "Reveal Code";
-        btn.addEventListener("click", function () { revealAndCopy(btn, c.code); });
-        li.appendChild(btn);
-      }
-      ul.appendChild(li);
-    });
-  }
-
-  /* ---------------- Results ---------------- */
-
-  function renderResults(list) {
-    var grid = document.getElementById("resultsGrid");
-    if (!grid) return;
-    grid.innerHTML = "";
-    list = safeArr(list);
-    if (!list.length) {
-      grid.appendChild(el("p", "empty-state", "No results posted yet."));
-      return;
-    }
-    list.forEach(function (r) {
-      var card = el("div", "result-card " + (r.winLoss === "win" ? "result-card--win" : r.winLoss === "loss" ? "result-card--loss" : ""));
-      card.innerHTML =
-        '<div class="result-card__match">' + esc(r.match) + '</div>' +
-        '<div class="result-card__score">' + esc(r.result || "") + '</div>' +
-        '<div class="result-card__status">' + esc((r.status || r.winLoss || "").toString().toUpperCase()) + '</div>';
-      grid.appendChild(card);
-    });
-  }
-
-  /* ---------------- News ---------------- */
-
-  function renderNews(list) {
-    var ul = document.getElementById("newsList");
-    if (!ul) return;
-    ul.innerHTML = "";
-    list = safeArr(list);
-    if (!list.length) {
-      ul.appendChild(el("li", "empty-state", "No news posted yet."));
-      return;
-    }
-    list.forEach(function (n) {
-      var li = el("li", "news-item");
-      li.innerHTML =
-        (n.image ? '<img class="news-item__img" src="' + esc(n.image) + '" alt="" loading="lazy">' : "") +
-        '<div class="news-item__body">' +
-          '<span class="news-item__title">' + esc(n.title) + '</span>' +
-          '<span class="news-item__date">' + esc(n.date || "") + (n.category ? " · " + esc(n.category) : "") + '</span>' +
-        '</div>';
-      if (n.link) {
-        var a = document.createElement("a");
-        a.href = n.link;
-        a.className = "news-item__link";
-        a.appendChild(li);
-        ul.appendChild(a);
-      } else {
-        ul.appendChild(li);
-      }
-    });
-  }
-
-  /* ---------------- Bookmakers sidebar ---------------- */
-
-  function renderBookmakers(list) {
-    var ul = document.getElementById("bookmakerList");
-    if (!ul) return;
-    ul.innerHTML = "";
-    safeArr(list).forEach(function (b) {
-      var li = el("li", "bookmaker-list__item");
-      li.innerHTML = '<span>' + esc(b.name) + '</span>';
-      if (b.link) {
-        var a = document.createElement("a");
-        a.href = b.link;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.textContent = "Visit";
-        li.appendChild(a);
-      }
-      ul.appendChild(li);
-    });
-  }
-
-  /* ---------------- search ---------------- */
-
-  function setupSearch(data) {
-    var input = document.getElementById("searchInput");
-    var results = document.getElementById("searchResults");
+  function setupSearch() {
+    const toggle = document.getElementById('searchToggle');
+    const box = document.getElementById('navbarSearch');
+    const input = document.getElementById('searchInput');
+    const results = document.getElementById('searchResults');
     if (!input || !results) return;
-    input.addEventListener("input", function () {
-      var q = input.value.trim().toLowerCase();
-      results.innerHTML = "";
-      if (!q) return;
-      var pool = []
-        .concat(safeArr(data.predictions).map(function (p) { return { label: p.match + " — " + p.prediction, type: "Prediction" }; }))
-        .concat(safeArr(data.correctScores).map(function (c) { return { label: c.match + " — " + c.correctScore, type: "Correct Score" }; }))
-        .concat(safeArr(data.livePredictions).map(function (p) { return { label: p.match + " — " + p.prediction, type: "Live" }; }));
-      var matches = pool.filter(function (item) { return item.label.toLowerCase().indexOf(q) !== -1; }).slice(0, 8);
-      matches.forEach(function (m) {
-        results.appendChild(el("li", "", esc(m.label) + ' <small>(' + m.type + ')</small>'));
+
+    if (toggle && box) {
+      toggle.addEventListener('click', () => {
+        const open = box.style.display === 'block';
+        box.style.display = open ? 'none' : 'block';
+        toggle.setAttribute('aria-expanded', String(!open));
+        if (!open) input.focus();
+      });
+    }
+
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      if (!q) { results.innerHTML = ''; return; }
+      const idx = buildSearchIndex();
+      const matches = idx.filter(i => i.label.toLowerCase().includes(q)).slice(0, 12);
+      results.innerHTML = matches.map(m =>
+        `<li class="search-result" data-anchor="${esc(m.anchor)}"><span class="search-result__type">${esc(m.type)}</span> ${esc(m.label)}</li>`
+      ).join('') || `<li class="search-result search-result--empty">No matches</li>`;
+      results.querySelectorAll('[data-anchor]').forEach(li => {
+        li.addEventListener('click', () => goToResult(li.dataset.anchor));
       });
     });
   }
 
-  var searchToggle = document.getElementById("searchToggle");
-  if (searchToggle) {
-    searchToggle.addEventListener("click", function () {
-      var box = document.getElementById("navbarSearch");
-      var expanded = searchToggle.getAttribute("aria-expanded") === "true";
-      searchToggle.setAttribute("aria-expanded", String(!expanded));
-      if (box) box.classList.toggle("is-open", !expanded);
+  function goToResult(anchorId) {
+    const target = document.getElementById(anchorId);
+    const results = document.getElementById('searchResults');
+    const box = document.getElementById('navbarSearch');
+    if (results) results.innerHTML = '';
+    if (box) box.style.display = 'none';
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.add('mf-highlight');
+    setTimeout(() => target.classList.remove('mf-highlight'), 1800);
+  }
+
+  /* ---------------- overview / stats ---------------- */
+  function renderOverview() {
+    const ov = DATA.meta.overview || {};
+    const map = { statTotal: ov.statTotal, statWinners: ov.statWinners, statLosers: ov.statLosers, statHitRate: ov.statHitRate };
+    Object.entries(map).forEach(([id, val]) => {
+      const node = document.getElementById(id);
+      if (node && val !== undefined && id !== 'statTotal') node.textContent = val; // statTotal is derived from live count in renderPicks
     });
+    const dateEl = document.getElementById('overviewDate');
+    if (dateEl && ov.date) dateEl.lastChild.textContent = ' ' + ov.date;
   }
 
-  /* ---------------- master render ---------------- */
-
-  function render(data) {
-    state.data = data;
-    renderMeta(data);
-    renderBetOfTheDay(data.betOfTheDay);
-    renderPicks(data.predictions);
-    renderLive(data.livePredictions);
-    renderAccumulators(data.accumulators);
-    renderCorrectScores(data.correctScores);
-    renderCodesOnly(data.codesOnly);
-    renderResults(data.results);
-    renderNews(data.news);
-    renderBookmakers(data.bookmakers);
-    setupSearch(data);
+  /* ---------------- render everything ---------------- */
+  function renderAll() {
+    renderOverview();
+    renderPicks();
+    renderAccumulators();
+    renderResults();
+    renderBookmakers();
+    renderNews();
+    renderBetOfDay();
+    renderLivePredictions();
+    renderCorrectScore();
+    renderCodesOnly();
+    wireCodeReveal(document);
   }
 
-  /* ---------------- data loading (always fresh, cache-busted) ---------------- */
-
-  function loadData() {
-    var url = DATA_URL + "?v=" + Date.now();
-    fetch(url, { cache: "no-store" })
-      .then(function (res) {
-        if (!res.ok) throw new Error("data.json request failed: " + res.status);
-        return res.json();
-      })
-      .then(function (data) {
-        render(data);
-      })
-      .catch(function (err) {
-        console.error("MatchForecast: failed to load data.json", err);
-      });
+  /* ---------------- load + poll ---------------- */
+  async function loadData() {
+    try {
+      const res = await fetch(DATA_URL + '?v=' + Date.now(), { cache: 'no-store' });
+      DATA = await res.json();
+      if (!DATA.meta) DATA.meta = { bookmakers: [], overview: {} };
+      renderAll();
+    } catch (e) {
+      console.error('Failed to load data.json', e);
+    }
   }
 
-  document.addEventListener("DOMContentLoaded", loadData);
+  document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    setupSearch();
+    setInterval(loadData, POLL_MS); // re-check for newly-eligible scheduled content
+  });
 
-  /* Register the service worker (kept lightweight: it only caches the
-     static app shell, never data.json — see sw.js). */
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-      navigator.serviceWorker.register("sw.js").catch(function () {});
+  // Register the service worker (network-first for data.json, cache-first for
+  // everything else — see sw.js). Safe no-op if the browser doesn't support it.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(err => console.error('SW registration failed', err));
     });
   }
 })();
