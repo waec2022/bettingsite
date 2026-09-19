@@ -1,14 +1,5 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-19T12:50:16.918Z",
-    "displayDate": "",
-    "resultsDate": "",
-    "stats": {
-      "totalSelections": 0,
-      "winnersYesterday": 0,
-      "losersYesterday": 0,
-      "hitRateYesterday": 0
-    },
     "bookmakers": [
       {
         "key": "bet9ja",
@@ -87,6 +78,43 @@
         "betway": {
           "odds": 1.77,
           "code": "DEMO-BETWAY-PRED-001"
+        }
+      }
+    },
+    {
+      "id": "DEMO-PRED-002",
+      "date": "2026-09-19",
+      "kickoff": "20:45",
+      "home": "Bayern Munich",
+      "away": "Leverkusen",
+      "league": "Bundesliga",
+      "category": "BTTS",
+      "market": "BTTS",
+      "selection": "BTTS - Yes",
+      "odds": 2.37,
+      "rating": 10,
+      "status": "scheduled",
+      "publishAt": "2026-09-19T13:00:00+01:00",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 2.37,
+          "code": "DEMO-BET9JA-PRED-002"
+        },
+        "sportybet": {
+          "odds": 2.37,
+          "code": "DEMO-SPORTYBET-PRED-002"
+        },
+        "betpawa": {
+          "odds": 2.37,
+          "code": "DEMO-BETPAWA-PRED-002"
+        },
+        "betway": {
+          "odds": 2.37,
+          "code": "DEMO-BETWAY-PRED-002"
+        },
+        "onexbet": {
+          "odds": 2.37,
+          "code": "DEMO-ONEXBET-PRED-002"
         }
       }
     },
@@ -1803,8 +1831,8 @@
   "accumulators": [
     {
       "id": "DEMO-ACC-001",
-      "title": "3 ODDS Slip #1",
-      "tier": "3 ODDS",
+      "title": "100 ODDS Slip",
+      "tier": "100 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
@@ -1826,151 +1854,83 @@
           "market": "Double Chance",
           "pick": "Double Chance X2",
           "odds": 1.29
-        }
-      ],
-      "totalOdds": 4.95,
-      "rating": 9,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 4.95,
-          "code": "DEMO-BET9JA-ACC-001"
-        },
-        "sportybet": {
-          "odds": 4.95,
-          "code": "DEMO-SPORTYBET-ACC-001"
-        },
-        "betpawa": {
-          "odds": 4.95,
-          "code": "DEMO-BETPAWA-ACC-001"
-        },
-        "betway": {
-          "odds": 4.95,
-          "code": "DEMO-BETWAY-ACC-001"
-        },
-        "onexbet": {
-          "odds": 4.95,
-          "code": "DEMO-ONEXBET-ACC-001"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-002",
-      "title": "3 ODDS Slip #2",
-      "tier": "3 ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "Celtic vs Rangers",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 1.23
         },
         {
-          "match": "Rennes vs Nantes",
+          "match": "Al Hilal vs Al Nassr",
           "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 1.21
+          "pick": "Double Chance 12",
+          "odds": 2.52
+        },
+        {
+          "match": "Chelsea vs Newcastle",
+          "market": "Other",
+          "pick": "Both Halves Over 0.5",
+          "odds": 1.87
         },
         {
           "match": "Ajax vs Feyenoord",
           "market": "Match Winner",
           "pick": "Away Win",
           "odds": 2.39
+        },
+        {
+          "match": "Al Hilal vs Al Nassr",
+          "market": "Other",
+          "pick": "Home -1 Handicap",
+          "odds": 2.23
         }
       ],
-      "totalOdds": 3.56,
-      "rating": 9,
+      "totalOdds": 124.44,
+      "rating": 10,
       "bookmakers": {
         "bet9ja": {
-          "odds": 3.56,
-          "code": "DEMO-BET9JA-ACC-002"
+          "odds": 124.44,
+          "code": "DEMO-BET9JA-ACC-001"
         },
         "sportybet": {
-          "odds": 3.56,
-          "code": "DEMO-SPORTYBET-ACC-002"
+          "odds": 124.44,
+          "code": "DEMO-SPORTYBET-ACC-001"
         },
         "betpawa": {
-          "odds": 3.56,
-          "code": "DEMO-BETPAWA-ACC-002"
+          "odds": 124.44,
+          "code": "DEMO-BETPAWA-ACC-001"
         },
         "betway": {
-          "odds": 3.56,
-          "code": "DEMO-BETWAY-ACC-002"
+          "odds": 124.44,
+          "code": "DEMO-BETWAY-ACC-001"
         },
         "onexbet": {
-          "odds": 3.56,
-          "code": "DEMO-ONEXBET-ACC-002"
+          "odds": 124.44,
+          "code": "DEMO-ONEXBET-ACC-001"
         }
       }
     },
     {
-      "id": "DEMO-ACC-003",
-      "title": "4 ODDS Slip #1",
-      "tier": "4 ODDS",
+      "id": "DEMO-ACC-002",
+      "title": "150 ODDS Slip",
+      "tier": "150 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
       "selections": [
         {
-          "match": "Werder Bremen vs Union Berlin",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 2.46
+          "match": "Dortmund vs RB Leipzig",
+          "market": "Double Chance",
+          "pick": "Double Chance 1X",
+          "odds": 1.58
         },
         {
           "match": "West Ham vs Nottingham Forest",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.81
-        },
-        {
-          "match": "Chelsea vs Newcastle",
-          "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 2.14
+          "market": "Over/Under",
+          "pick": "Over 3.5 Goals",
+          "odds": 1.67
         },
         {
           "match": "Galatasaray vs Fenerbahce",
           "market": "BTTS",
           "pick": "BTTS - No",
           "odds": 2.49
-        }
-      ],
-      "totalOdds": 23.73,
-      "rating": 10,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 23.73,
-          "code": "DEMO-BET9JA-ACC-003"
         },
-        "sportybet": {
-          "odds": 23.73,
-          "code": "DEMO-SPORTYBET-ACC-003"
-        },
-        "betpawa": {
-          "odds": 23.73,
-          "code": "DEMO-BETPAWA-ACC-003"
-        },
-        "betway": {
-          "odds": 23.73,
-          "code": "DEMO-BETWAY-ACC-003"
-        },
-        "onexbet": {
-          "odds": 23.73,
-          "code": "DEMO-ONEXBET-ACC-003"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-004",
-      "title": "4 ODDS Slip #2",
-      "tier": "4 ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
         {
           "match": "Werder Bremen vs Union Berlin",
           "market": "Over/Under",
@@ -1996,35 +1956,35 @@
           "odds": 1.66
         }
       ],
-      "totalOdds": 7.31,
+      "totalOdds": 48.01,
       "rating": 9,
       "bookmakers": {
         "bet9ja": {
-          "odds": 7.31,
-          "code": "DEMO-BET9JA-ACC-004"
+          "odds": 48.01,
+          "code": "DEMO-BET9JA-ACC-002"
         },
         "sportybet": {
-          "odds": 7.31,
-          "code": "DEMO-SPORTYBET-ACC-004"
+          "odds": 48.01,
+          "code": "DEMO-SPORTYBET-ACC-002"
         },
         "betpawa": {
-          "odds": 7.31,
-          "code": "DEMO-BETPAWA-ACC-004"
+          "odds": 48.01,
+          "code": "DEMO-BETPAWA-ACC-002"
         },
         "betway": {
-          "odds": 7.31,
-          "code": "DEMO-BETWAY-ACC-004"
+          "odds": 48.01,
+          "code": "DEMO-BETWAY-ACC-002"
         },
         "onexbet": {
-          "odds": 7.31,
-          "code": "DEMO-ONEXBET-ACC-004"
+          "odds": 48.01,
+          "code": "DEMO-ONEXBET-ACC-002"
         }
       }
     },
     {
-      "id": "DEMO-ACC-005",
-      "title": "5 ODDS Slip #1",
-      "tier": "5 ODDS",
+      "id": "DEMO-ACC-003",
+      "title": "200 ODDS Slip",
+      "tier": "200 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
@@ -2058,45 +2018,11 @@
           "market": "Other",
           "pick": "Draw No Bet - Home",
           "odds": 1.53
-        }
-      ],
-      "totalOdds": 31.95,
-      "rating": 9,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 31.95,
-          "code": "DEMO-BET9JA-ACC-005"
         },
-        "sportybet": {
-          "odds": 31.95,
-          "code": "DEMO-SPORTYBET-ACC-005"
-        },
-        "betpawa": {
-          "odds": 31.95,
-          "code": "DEMO-BETPAWA-ACC-005"
-        },
-        "betway": {
-          "odds": 31.95,
-          "code": "DEMO-BETWAY-ACC-005"
-        },
-        "onexbet": {
-          "odds": 31.95,
-          "code": "DEMO-ONEXBET-ACC-005"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-006",
-      "title": "5 ODDS Slip #2",
-      "tier": "5 ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
         {
-          "match": "Real Madrid vs Espanyol",
-          "market": "Other",
-          "pick": "Draw No Bet - Home",
+          "match": "Crystal Palace vs Brentford",
+          "market": "Over/Under",
+          "pick": "Over 2.5 Goals",
           "odds": 1.85
         },
         {
@@ -2110,134 +2036,134 @@
           "market": "BTTS",
           "pick": "BTTS - No",
           "odds": 1.35
+        }
+      ],
+      "totalOdds": 163.59,
+      "rating": 6,
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 163.59,
+          "code": "DEMO-BET9JA-ACC-003"
         },
+        "sportybet": {
+          "odds": 163.59,
+          "code": "DEMO-SPORTYBET-ACC-003"
+        },
+        "betpawa": {
+          "odds": 163.59,
+          "code": "DEMO-BETPAWA-ACC-003"
+        },
+        "betway": {
+          "odds": 163.59,
+          "code": "DEMO-BETWAY-ACC-003"
+        },
+        "onexbet": {
+          "odds": 163.59,
+          "code": "DEMO-ONEXBET-ACC-003"
+        }
+      }
+    },
+    {
+      "id": "DEMO-ACC-004",
+      "title": "300 ODDS Slip",
+      "tier": "300 ODDS",
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:30:00+01:00",
+      "selections": [
         {
-          "match": "Chelsea vs Newcastle",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.15
+          "match": "Roma vs Fiorentina",
+          "market": "Other",
+          "pick": "Home -1 Handicap",
+          "odds": 2.47
         },
         {
           "match": "Celtic vs Rangers",
           "market": "Double Chance",
           "pick": "Double Chance 12",
           "odds": 1.48
-        }
-      ],
-      "totalOdds": 16.29,
-      "rating": 10,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 16.29,
-          "code": "DEMO-BET9JA-ACC-006"
-        },
-        "sportybet": {
-          "odds": 16.29,
-          "code": "DEMO-SPORTYBET-ACC-006"
-        },
-        "betpawa": {
-          "odds": 16.29,
-          "code": "DEMO-BETPAWA-ACC-006"
-        },
-        "betway": {
-          "odds": 16.29,
-          "code": "DEMO-BETWAY-ACC-006"
-        },
-        "onexbet": {
-          "odds": 16.29,
-          "code": "DEMO-ONEXBET-ACC-006"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-007",
-      "title": "7 ODDS Slip #1",
-      "tier": "7 ODDS",
-      "date": "2026-09-19",
-      "status": "scheduled",
-      "publishAt": "2026-09-19T13:30:00+01:00",
-      "selections": [
-        {
-          "match": "Frankfurt vs Wolfsburg",
-          "market": "Over/Under",
-          "pick": "Under 3.5 Goals",
-          "odds": 2.39
         },
         {
-          "match": "Real Madrid vs Espanyol",
+          "match": "Utrecht vs Twente",
+          "market": "BTTS",
+          "pick": "BTTS - Yes",
+          "odds": 2.18
+        },
+        {
+          "match": "Roma vs Fiorentina",
           "market": "Other",
           "pick": "Draw No Bet - Home",
-          "odds": 1.69
+          "odds": 2.31
         },
         {
-          "match": "Flamengo vs Palmeiras",
-          "market": "Match Winner",
-          "pick": "Home Win",
-          "odds": 1.91
-        },
-        {
-          "match": "Sporting CP vs Braga",
+          "match": "Rennes vs Nantes",
           "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 2.35
+          "pick": "Under 3.5 Goals",
+          "odds": 1.95
         },
         {
-          "match": "Barcelona vs Sevilla",
+          "match": "PSV vs AZ Alkmaar",
+          "market": "Over/Under",
+          "pick": "Under 3.5 Goals",
+          "odds": 1.22
+        },
+        {
+          "match": "Al Hilal vs Al Nassr",
           "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 2.09
+          "pick": "Double Chance 1X",
+          "odds": 1.81
         },
         {
-          "match": "Wolves vs Everton",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.45
-        },
-        {
-          "match": "Osasuna vs Girona",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.33
+          "match": "PSV vs AZ Alkmaar",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 1.41
         }
       ],
-      "totalOdds": 128.01,
-      "rating": 10,
+      "totalOdds": 111.77,
+      "rating": 7,
       "bookmakers": {
         "bet9ja": {
-          "odds": 128.01,
-          "code": "DEMO-BET9JA-ACC-007"
+          "odds": 111.77,
+          "code": "DEMO-BET9JA-ACC-004"
         },
         "sportybet": {
-          "odds": 128.01,
-          "code": "DEMO-SPORTYBET-ACC-007"
+          "odds": 111.77,
+          "code": "DEMO-SPORTYBET-ACC-004"
         },
         "betpawa": {
-          "odds": 128.01,
-          "code": "DEMO-BETPAWA-ACC-007"
+          "odds": 111.77,
+          "code": "DEMO-BETPAWA-ACC-004"
         },
         "betway": {
-          "odds": 128.01,
-          "code": "DEMO-BETWAY-ACC-007"
+          "odds": 111.77,
+          "code": "DEMO-BETWAY-ACC-004"
         },
         "onexbet": {
-          "odds": 128.01,
-          "code": "DEMO-ONEXBET-ACC-007"
+          "odds": 111.77,
+          "code": "DEMO-ONEXBET-ACC-004"
         }
       }
     },
     {
-      "id": "DEMO-ACC-008",
-      "title": "7 ODDS Slip #2",
-      "tier": "7 ODDS",
+      "id": "DEMO-ACC-005",
+      "title": "500 ODDS Slip",
+      "tier": "500 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
       "selections": [
         {
-          "match": "Crystal Palace vs Brentford",
+          "match": "Osasuna vs Girona",
+          "market": "Match Winner",
+          "pick": "Draw",
+          "odds": 2.33
+        },
+        {
+          "match": "Werder Bremen vs Union Berlin",
           "market": "Double Chance",
           "pick": "Double Chance X2",
-          "odds": 2.36
+          "odds": 1.81
         },
         {
           "match": "Utrecht vs Twente",
@@ -2274,140 +2200,140 @@
           "market": "Match Winner",
           "pick": "Away Win",
           "odds": 2.43
-        }
-      ],
-      "totalOdds": 183.53,
-      "rating": 8,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 183.53,
-          "code": "DEMO-BET9JA-ACC-008"
-        },
-        "sportybet": {
-          "odds": 183.53,
-          "code": "DEMO-SPORTYBET-ACC-008"
-        },
-        "betpawa": {
-          "odds": 183.53,
-          "code": "DEMO-BETPAWA-ACC-008"
-        },
-        "betway": {
-          "odds": 183.53,
-          "code": "DEMO-BETWAY-ACC-008"
-        },
-        "onexbet": {
-          "odds": 183.53,
-          "code": "DEMO-ONEXBET-ACC-008"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-009",
-      "title": "10 ODDS Slip #1",
-      "tier": "10 ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "Bologna vs Torino",
-          "market": "Over/Under",
-          "pick": "Over 2.5 Goals",
-          "odds": 1.32
-        },
-        {
-          "match": "Al Hilal vs Al Nassr",
-          "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 2.26
-        },
-        {
-          "match": "Crystal Palace vs Brentford",
-          "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 2.31
-        },
-        {
-          "match": "Aston Villa vs Fulham",
-          "market": "Match Winner",
-          "pick": "Home Win",
-          "odds": 1.77
-        },
-        {
-          "match": "Frankfurt vs Wolfsburg",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.01
-        },
-        {
-          "match": "Crystal Palace vs Brentford",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 1.68
-        },
-        {
-          "match": "Bologna vs Torino",
-          "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 2.18
         },
         {
           "match": "AC Milan vs Napoli",
-          "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 1.52
-        },
-        {
-          "match": "Monaco vs Lens",
-          "market": "Match Winner",
-          "pick": "Home Win",
-          "odds": 2.24
-        },
-        {
-          "match": "Lyon vs Nice",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 2.23
+          "market": "Other",
+          "pick": "Draw No Bet - Home",
+          "odds": 1.92
         }
       ],
-      "totalOdds": 681.75,
-      "rating": 8,
+      "totalOdds": 629.68,
+      "rating": 7,
       "bookmakers": {
         "bet9ja": {
-          "odds": 681.75,
-          "code": "DEMO-BET9JA-ACC-009"
+          "odds": 629.68,
+          "code": "DEMO-BET9JA-ACC-005"
         },
         "sportybet": {
-          "odds": 681.75,
-          "code": "DEMO-SPORTYBET-ACC-009"
+          "odds": 629.68,
+          "code": "DEMO-SPORTYBET-ACC-005"
         },
         "betpawa": {
-          "odds": 681.75,
-          "code": "DEMO-BETPAWA-ACC-009"
+          "odds": 629.68,
+          "code": "DEMO-BETPAWA-ACC-005"
         },
         "betway": {
-          "odds": 681.75,
-          "code": "DEMO-BETWAY-ACC-009"
+          "odds": 629.68,
+          "code": "DEMO-BETWAY-ACC-005"
         },
         "onexbet": {
-          "odds": 681.75,
-          "code": "DEMO-ONEXBET-ACC-009"
+          "odds": 629.68,
+          "code": "DEMO-ONEXBET-ACC-005"
         }
       }
     },
     {
-      "id": "DEMO-ACC-010",
-      "title": "10 ODDS Slip #2",
-      "tier": "10 ODDS",
+      "id": "DEMO-ACC-006",
+      "title": "700 ODDS Slip",
+      "tier": "700 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
       "selections": [
         {
-          "match": "Utrecht vs Twente",
+          "match": "Aston Villa vs Fulham",
+          "market": "BTTS",
+          "pick": "BTTS - No",
+          "odds": 1.88
+        },
+        {
+          "match": "Frankfurt vs Wolfsburg",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 2.2
+        },
+        {
+          "match": "River Plate vs Boca Juniors",
+          "market": "Over/Under",
+          "pick": "Over 1.5 Goals",
+          "odds": 1.61
+        },
+        {
+          "match": "Galatasaray vs Fenerbahce",
+          "market": "BTTS",
+          "pick": "BTTS - No",
+          "odds": 2.13
+        },
+        {
+          "match": "PSV vs AZ Alkmaar",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 1.94
+        },
+        {
+          "match": "Flamengo vs Palmeiras",
+          "market": "Other",
+          "pick": "Both Halves Over 0.5",
+          "odds": 1.69
+        },
+        {
+          "match": "Wolves vs Everton",
+          "market": "Match Winner",
+          "pick": "Away Win",
+          "odds": 1.55
+        },
+        {
+          "match": "Real Madrid vs Espanyol",
+          "market": "BTTS",
+          "pick": "BTTS - No",
+          "odds": 1.37
+        },
+        {
+          "match": "Werder Bremen vs Union Berlin",
+          "market": "BTTS",
+          "pick": "BTTS - Yes",
+          "odds": 1.5
+        }
+      ],
+      "totalOdds": 148.12,
+      "rating": 9,
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 148.12,
+          "code": "DEMO-BET9JA-ACC-006"
+        },
+        "sportybet": {
+          "odds": 148.12,
+          "code": "DEMO-SPORTYBET-ACC-006"
+        },
+        "betpawa": {
+          "odds": 148.12,
+          "code": "DEMO-BETPAWA-ACC-006"
+        },
+        "betway": {
+          "odds": 148.12,
+          "code": "DEMO-BETWAY-ACC-006"
+        },
+        "onexbet": {
+          "odds": 148.12,
+          "code": "DEMO-ONEXBET-ACC-006"
+        }
+      }
+    },
+    {
+      "id": "DEMO-ACC-007",
+      "title": "1000 ODDS Slip",
+      "tier": "1000 ODDS",
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:30:00+01:00",
+      "selections": [
+        {
+          "match": "AC Milan vs Napoli",
           "market": "Other",
           "pick": "Home -1 Handicap",
-          "odds": 1.6
+          "odds": 2.04
         },
         {
           "match": "Barcelona vs Sevilla",
@@ -2437,7 +2363,7 @@
           "match": "West Ham vs Nottingham Forest",
           "market": "Over/Under",
           "pick": "Over 1.5 Goals",
-          "odds": 2
+          "odds": 2.0
         },
         {
           "match": "Crystal Palace vs Brentford",
@@ -2464,35 +2390,35 @@
           "odds": 2.34
         }
       ],
-      "totalOdds": 477.62,
+      "totalOdds": 608.97,
       "rating": 8,
       "bookmakers": {
         "bet9ja": {
-          "odds": 477.62,
-          "code": "DEMO-BET9JA-ACC-010"
+          "odds": 608.97,
+          "code": "DEMO-BET9JA-ACC-007"
         },
         "sportybet": {
-          "odds": 477.62,
-          "code": "DEMO-SPORTYBET-ACC-010"
+          "odds": 608.97,
+          "code": "DEMO-SPORTYBET-ACC-007"
         },
         "betpawa": {
-          "odds": 477.62,
-          "code": "DEMO-BETPAWA-ACC-010"
+          "odds": 608.97,
+          "code": "DEMO-BETPAWA-ACC-007"
         },
         "betway": {
-          "odds": 477.62,
-          "code": "DEMO-BETWAY-ACC-010"
+          "odds": 608.97,
+          "code": "DEMO-BETWAY-ACC-007"
         },
         "onexbet": {
-          "odds": 477.62,
-          "code": "DEMO-ONEXBET-ACC-010"
+          "odds": 608.97,
+          "code": "DEMO-ONEXBET-ACC-007"
         }
       }
     },
     {
-      "id": "DEMO-ACC-011",
-      "title": "15 ODDS Slip #1",
-      "tier": "15 ODDS",
+      "id": "DEMO-ACC-008",
+      "title": "1500 ODDS Slip",
+      "tier": "1500 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
@@ -2532,52 +2458,18 @@
           "market": "BTTS",
           "pick": "BTTS - Yes",
           "odds": 1.57
-        }
-      ],
-      "totalOdds": 43.56,
-      "rating": 6,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 43.56,
-          "code": "DEMO-BET9JA-ACC-011"
         },
-        "sportybet": {
-          "odds": 43.56,
-          "code": "DEMO-SPORTYBET-ACC-011"
-        },
-        "betpawa": {
-          "odds": 43.56,
-          "code": "DEMO-BETPAWA-ACC-011"
-        },
-        "betway": {
-          "odds": 43.56,
-          "code": "DEMO-BETWAY-ACC-011"
-        },
-        "onexbet": {
-          "odds": 43.56,
-          "code": "DEMO-ONEXBET-ACC-011"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-012",
-      "title": "15 ODDS Slip #2",
-      "tier": "15 ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
         {
-          "match": "PSG vs Marseille",
+          "match": "Aston Villa vs Fulham",
           "market": "BTTS",
           "pick": "BTTS - Yes",
-          "odds": 1.97
+          "odds": 1.44
         },
         {
-          "match": "PSG vs Marseille",
-          "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 1.83
+          "match": "Tottenham vs Brighton",
+          "market": "BTTS",
+          "pick": "BTTS - Yes",
+          "odds": 1.77
         },
         {
           "match": "Crystal Palace vs Brentford",
@@ -2590,70 +2482,64 @@
           "market": "Double Chance",
           "pick": "Double Chance 1X",
           "odds": 2.16
-        },
-        {
-          "match": "Inter Milan vs Atalanta",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 2.33
-        },
-        {
-          "match": "Monaco vs Lens",
-          "market": "Double Chance",
-          "pick": "Double Chance 1X",
-          "odds": 1.96
         }
       ],
-      "totalOdds": 54.05,
-      "rating": 7,
+      "totalOdds": 364.56,
+      "rating": 8,
       "bookmakers": {
         "bet9ja": {
-          "odds": 54.05,
-          "code": "DEMO-BET9JA-ACC-012"
+          "odds": 364.56,
+          "code": "DEMO-BET9JA-ACC-008"
         },
         "sportybet": {
-          "odds": 54.05,
-          "code": "DEMO-SPORTYBET-ACC-012"
+          "odds": 364.56,
+          "code": "DEMO-SPORTYBET-ACC-008"
         },
         "betpawa": {
-          "odds": 54.05,
-          "code": "DEMO-BETPAWA-ACC-012"
+          "odds": 364.56,
+          "code": "DEMO-BETPAWA-ACC-008"
         },
         "betway": {
-          "odds": 54.05,
-          "code": "DEMO-BETWAY-ACC-012"
+          "odds": 364.56,
+          "code": "DEMO-BETWAY-ACC-008"
         },
         "onexbet": {
-          "odds": 54.05,
-          "code": "DEMO-ONEXBET-ACC-012"
+          "odds": 364.56,
+          "code": "DEMO-ONEXBET-ACC-008"
         }
       }
     },
     {
-      "id": "DEMO-ACC-013",
-      "title": "20+ ODDS Slip #1",
-      "tier": "20+ ODDS",
+      "id": "DEMO-ACC-009",
+      "title": "2000 ODDS Slip",
+      "tier": "2000 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
       "selections": [
         {
-          "match": "AC Milan vs Napoli",
+          "match": "Utrecht vs Twente",
           "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 1.28
+          "pick": "BTTS - No",
+          "odds": 1.36
         },
         {
-          "match": "Roma vs Fiorentina",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 2.35
+          "match": "Dortmund vs RB Leipzig",
+          "market": "BTTS",
+          "pick": "BTTS - No",
+          "odds": 2.36
         },
         {
-          "match": "Juventus vs Lazio",
-          "market": "Double Chance",
-          "pick": "Double Chance 1X",
-          "odds": 1.86
+          "match": "Tottenham vs Brighton",
+          "market": "Over/Under",
+          "pick": "Over 2.5 Goals",
+          "odds": 2.31
+        },
+        {
+          "match": "Rennes vs Nantes",
+          "market": "Match Winner",
+          "pick": "Away Win",
+          "odds": 1.37
         },
         {
           "match": "Roma vs Fiorentina",
@@ -2684,310 +2570,282 @@
           "market": "Other",
           "pick": "Draw No Bet - Home",
           "odds": 2.27
-        }
-      ],
-      "totalOdds": 198.38,
-      "rating": 7,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 198.38,
-          "code": "DEMO-BET9JA-ACC-013"
         },
-        "sportybet": {
-          "odds": 198.38,
-          "code": "DEMO-SPORTYBET-ACC-013"
-        },
-        "betpawa": {
-          "odds": 198.38,
-          "code": "DEMO-BETPAWA-ACC-013"
-        },
-        "betway": {
-          "odds": 198.38,
-          "code": "DEMO-BETWAY-ACC-013"
-        },
-        "onexbet": {
-          "odds": 198.38,
-          "code": "DEMO-ONEXBET-ACC-013"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-014",
-      "title": "20+ ODDS Slip #2",
-      "tier": "20+ ODDS",
-      "date": "2026-09-19",
-      "status": "scheduled",
-      "publishAt": "2026-09-19T13:30:00+01:00",
-      "selections": [
         {
-          "match": "Crystal Palace vs Brentford",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 1.82
+          "match": "Lyon vs Nice",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 2.11
         },
         {
           "match": "AC Milan vs Napoli",
           "market": "BTTS",
           "pick": "BTTS - No",
           "odds": 2.09
+        }
+      ],
+      "totalOdds": 1588.28,
+      "rating": 9,
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 1588.28,
+          "code": "DEMO-BET9JA-ACC-009"
+        },
+        "sportybet": {
+          "odds": 1588.28,
+          "code": "DEMO-SPORTYBET-ACC-009"
+        },
+        "betpawa": {
+          "odds": 1588.28,
+          "code": "DEMO-BETPAWA-ACC-009"
+        },
+        "betway": {
+          "odds": 1588.28,
+          "code": "DEMO-BETWAY-ACC-009"
+        },
+        "onexbet": {
+          "odds": 1588.28,
+          "code": "DEMO-ONEXBET-ACC-009"
+        }
+      }
+    },
+    {
+      "id": "DEMO-ACC-010",
+      "title": "3000 ODDS Slip",
+      "tier": "3000 ODDS",
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:30:00+01:00",
+      "selections": [
+        {
+          "match": "Aston Villa vs Fulham",
+          "market": "Double Chance",
+          "pick": "Double Chance X2",
+          "odds": 1.77
+        },
+        {
+          "match": "Porto vs Benfica",
+          "market": "Over/Under",
+          "pick": "Over 2.5 Goals",
+          "odds": 1.66
         },
         {
           "match": "West Ham vs Nottingham Forest",
-          "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 1.69
-        },
-        {
-          "match": "Sporting CP vs Braga",
           "market": "Match Winner",
           "pick": "Draw",
-          "odds": 1.35
+          "odds": 2.52
         },
         {
-          "match": "PSG vs Marseille",
+          "match": "Bologna vs Torino",
+          "market": "Over/Under",
+          "pick": "Over 3.5 Goals",
+          "odds": 1.32
+        },
+        {
+          "match": "Inter Milan vs Atalanta",
           "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 2.17
-        },
-        {
-          "match": "Juventus vs Lazio",
-          "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 1.25
-        },
-        {
-          "match": "Aston Villa vs Fulham",
-          "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 1.65
+          "pick": "Home Win",
+          "odds": 2.56
         },
         {
           "match": "Galatasaray vs Fenerbahce",
           "market": "Other",
           "pick": "Draw No Bet - Home",
           "odds": 2.12
+        },
+        {
+          "match": "Werder Bremen vs Union Berlin",
+          "market": "Double Chance",
+          "pick": "Double Chance X2",
+          "odds": 1.28
+        },
+        {
+          "match": "Osasuna vs Girona",
+          "market": "Match Winner",
+          "pick": "Draw",
+          "odds": 2.26
+        },
+        {
+          "match": "River Plate vs Boca Juniors",
+          "market": "Over/Under",
+          "pick": "Over 2.5 Goals",
+          "odds": 1.57
+        },
+        {
+          "match": "Atletico Madrid vs Valencia",
+          "market": "Match Winner",
+          "pick": "Away Win",
+          "odds": 2.43
+        },
+        {
+          "match": "West Ham vs Nottingham Forest",
+          "market": "Over/Under",
+          "pick": "Over 1.5 Goals",
+          "odds": 2.56
         }
       ],
-      "totalOdds": 82.34,
+      "totalOdds": 1498.64,
       "rating": 10,
       "bookmakers": {
         "bet9ja": {
-          "odds": 82.34,
-          "code": "DEMO-BET9JA-ACC-014"
+          "odds": 1498.64,
+          "code": "DEMO-BET9JA-ACC-010"
         },
         "sportybet": {
-          "odds": 82.34,
-          "code": "DEMO-SPORTYBET-ACC-014"
+          "odds": 1498.64,
+          "code": "DEMO-SPORTYBET-ACC-010"
         },
         "betpawa": {
-          "odds": 82.34,
-          "code": "DEMO-BETPAWA-ACC-014"
+          "odds": 1498.64,
+          "code": "DEMO-BETPAWA-ACC-010"
         },
         "betway": {
-          "odds": 82.34,
-          "code": "DEMO-BETWAY-ACC-014"
+          "odds": 1498.64,
+          "code": "DEMO-BETWAY-ACC-010"
         },
         "onexbet": {
-          "odds": 82.34,
-          "code": "DEMO-ONEXBET-ACC-014"
+          "odds": 1498.64,
+          "code": "DEMO-ONEXBET-ACC-010"
         }
       }
     },
     {
-      "id": "DEMO-ACC-015",
-      "title": "30+ ODDS Slip #1",
-      "tier": "30+ ODDS",
+      "id": "DEMO-ACC-011",
+      "title": "5000 ODDS Slip",
+      "tier": "5000 ODDS",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:30:00+01:00",
       "selections": [
         {
-          "match": "Wolves vs Everton",
-          "market": "Double Chance",
-          "pick": "Double Chance 1X",
-          "odds": 1.46
-        },
-        {
-          "match": "PSV vs AZ Alkmaar",
-          "market": "Other",
-          "pick": "Both Halves Over 0.5",
-          "odds": 2.08
-        },
-        {
-          "match": "Man United vs Burnley",
+          "match": "Frankfurt vs Wolfsburg",
           "market": "BTTS",
           "pick": "BTTS - No",
           "odds": 1.97
         },
         {
-          "match": "Juventus vs Lazio",
+          "match": "Bologna vs Torino",
           "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 1.88
-        },
-        {
-          "match": "Chelsea vs Newcastle",
-          "market": "Other",
-          "pick": "Draw No Bet - Home",
-          "odds": 2.19
-        },
-        {
-          "match": "Roma vs Fiorentina",
-          "market": "Other",
-          "pick": "Draw No Bet - Home",
-          "odds": 1.97
-        },
-        {
-          "match": "Aston Villa vs Fulham",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 1.85
+          "pick": "Double Chance 1X",
+          "odds": 1.51
         },
         {
           "match": "Real Madrid vs Espanyol",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 2.51
+          "market": "Double Chance",
+          "pick": "Double Chance 1X",
+          "odds": 2.11
         },
         {
-          "match": "Juventus vs Lazio",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 1.58
-        }
-      ],
-      "totalOdds": 356,
-      "rating": 9,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 356,
-          "code": "DEMO-BET9JA-ACC-015"
-        },
-        "sportybet": {
-          "odds": 356,
-          "code": "DEMO-SPORTYBET-ACC-015"
-        },
-        "betpawa": {
-          "odds": 356,
-          "code": "DEMO-BETPAWA-ACC-015"
-        },
-        "betway": {
-          "odds": 356,
-          "code": "DEMO-BETWAY-ACC-015"
-        },
-        "onexbet": {
-          "odds": 356,
-          "code": "DEMO-ONEXBET-ACC-015"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-016",
-      "title": "30+ ODDS Slip #2",
-      "tier": "30+ ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "Crystal Palace vs Brentford",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.97
-        },
-        {
-          "match": "Celtic vs Rangers",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 2.41
+          "match": "Villarreal vs Betis",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 1.61
         },
         {
           "match": "AC Milan vs Napoli",
           "market": "Double Chance",
           "pick": "Double Chance X2",
-          "odds": 2.51
-        },
-        {
-          "match": "Real Sociedad vs Getafe",
-          "market": "Match Winner",
-          "pick": "Home Win",
-          "odds": 1.6
-        },
-        {
-          "match": "Roma vs Fiorentina",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 2.6
-        },
-        {
-          "match": "West Ham vs Nottingham Forest",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.95
-        },
-        {
-          "match": "Ajax vs Feyenoord",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.27
-        },
-        {
-          "match": "Celtic vs Rangers",
-          "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 2.42
+          "odds": 2.57
         },
         {
           "match": "Frankfurt vs Wolfsburg",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 1.4
+        },
+        {
+          "match": "Monaco vs Lens",
           "market": "Other",
-          "pick": "Both Halves Over 0.5",
-          "odds": 1.53
+          "pick": "Home -1 Handicap",
+          "odds": 2.24
+        },
+        {
+          "match": "Atletico Madrid vs Valencia",
+          "market": "Over/Under",
+          "pick": "Under 3.5 Goals",
+          "odds": 2.28
+        },
+        {
+          "match": "Al Hilal vs Al Nassr",
+          "market": "Match Winner",
+          "pick": "Draw",
+          "odds": 1.57
+        },
+        {
+          "match": "Arsenal vs Man City",
+          "market": "Match Winner",
+          "pick": "Draw",
+          "odds": 1.62
+        },
+        {
+          "match": "Utrecht vs Twente",
+          "market": "Other",
+          "pick": "Home -1 Handicap",
+          "odds": 1.89
+        },
+        {
+          "match": "Villarreal vs Betis",
+          "market": "Double Chance",
+          "pick": "Double Chance 12",
+          "odds": 1.88
         }
       ],
-      "totalOdds": 812.49,
-      "rating": 9,
+      "totalOdds": 1678.15,
+      "rating": 8,
       "bookmakers": {
         "bet9ja": {
-          "odds": 812.49,
-          "code": "DEMO-BET9JA-ACC-016"
+          "odds": 1678.15,
+          "code": "DEMO-BET9JA-ACC-011"
         },
         "sportybet": {
-          "odds": 812.49,
-          "code": "DEMO-SPORTYBET-ACC-016"
+          "odds": 1678.15,
+          "code": "DEMO-SPORTYBET-ACC-011"
         },
         "betpawa": {
-          "odds": 812.49,
-          "code": "DEMO-BETPAWA-ACC-016"
+          "odds": 1678.15,
+          "code": "DEMO-BETPAWA-ACC-011"
         },
         "betway": {
-          "odds": 812.49,
-          "code": "DEMO-BETWAY-ACC-016"
+          "odds": 1678.15,
+          "code": "DEMO-BETWAY-ACC-011"
         },
         "onexbet": {
-          "odds": 812.49,
-          "code": "DEMO-ONEXBET-ACC-016"
+          "odds": 1678.15,
+          "code": "DEMO-ONEXBET-ACC-011"
         }
       }
     },
     {
-      "id": "DEMO-ACC-017",
-      "title": "50+ ODDS Slip #1",
-      "tier": "50+ ODDS",
+      "id": "DEMO-ACC-012",
+      "title": "10000+ ODDS Slip",
+      "tier": "10000+ ODDS",
       "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
+      "status": "scheduled",
+      "publishAt": "2026-09-19T13:30:00+01:00",
       "selections": [
         {
-          "match": "Liverpool vs Bournemouth",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 1.86
+          "match": "Bologna vs Torino",
+          "market": "Other",
+          "pick": "Both Halves Over 0.5",
+          "odds": 1.84
         },
         {
-          "match": "Celtic vs Rangers",
+          "match": "Porto vs Benfica",
+          "market": "BTTS",
+          "pick": "BTTS - Yes",
+          "odds": 2.0
+        },
+        {
+          "match": "Dortmund vs RB Leipzig",
           "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 2.31
+          "pick": "Double Chance 1X",
+          "odds": 1.65
+        },
+        {
+          "match": "Crystal Palace vs Brentford",
+          "market": "Double Chance",
+          "pick": "Double Chance X2",
+          "odds": 2.58
         },
         {
           "match": "Villarreal vs Betis",
@@ -3036,324 +2894,36 @@
           "market": "Other",
           "pick": "Draw No Bet - Home",
           "odds": 2.06
-        }
-      ],
-      "totalOdds": 766.42,
-      "rating": 7,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 766.42,
-          "code": "DEMO-BET9JA-ACC-017"
-        },
-        "sportybet": {
-          "odds": 766.42,
-          "code": "DEMO-SPORTYBET-ACC-017"
-        },
-        "betpawa": {
-          "odds": 766.42,
-          "code": "DEMO-BETPAWA-ACC-017"
-        },
-        "betway": {
-          "odds": 766.42,
-          "code": "DEMO-BETWAY-ACC-017"
-        },
-        "onexbet": {
-          "odds": 766.42,
-          "code": "DEMO-ONEXBET-ACC-017"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-018",
-      "title": "50+ ODDS Slip #2",
-      "tier": "50+ ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "Juventus vs Lazio",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 1.81
         },
         {
-          "match": "Barcelona vs Sevilla",
-          "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 1.43
-        },
-        {
-          "match": "Roma vs Fiorentina",
-          "market": "Over/Under",
-          "pick": "Over 1.5 Goals",
-          "odds": 1.65
-        },
-        {
-          "match": "Man United vs Burnley",
+          "match": "Frankfurt vs Wolfsburg",
           "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 1.72
-        },
-        {
-          "match": "Villarreal vs Betis",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.99
-        },
-        {
-          "match": "Lyon vs Nice",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 1.31
-        },
-        {
-          "match": "Celtic vs Rangers",
-          "market": "Other",
-          "pick": "Home -1 Handicap",
-          "odds": 1.54
-        },
-        {
-          "match": "Utrecht vs Twente",
-          "market": "BTTS",
-          "pick": "BTTS - Yes",
-          "odds": 1.85
-        },
-        {
-          "match": "Inter Milan vs Atalanta",
-          "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 2.13
-        },
-        {
-          "match": "Wolves vs Everton",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 1.97
-        }
-      ],
-      "totalOdds": 228.92,
-      "rating": 6,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 228.92,
-          "code": "DEMO-BET9JA-ACC-018"
-        },
-        "sportybet": {
-          "odds": 228.92,
-          "code": "DEMO-SPORTYBET-ACC-018"
-        },
-        "betpawa": {
-          "odds": 228.92,
-          "code": "DEMO-BETPAWA-ACC-018"
-        },
-        "betway": {
-          "odds": 228.92,
-          "code": "DEMO-BETWAY-ACC-018"
-        },
-        "onexbet": {
-          "odds": 228.92,
-          "code": "DEMO-ONEXBET-ACC-018"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-019",
-      "title": "100+ ODDS Slip #1",
-      "tier": "100+ ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "River Plate vs Boca Juniors",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 1.62
-        },
-        {
-          "match": "Flamengo vs Palmeiras",
-          "market": "Match Winner",
-          "pick": "Away Win",
-          "odds": 2.38
-        },
-        {
-          "match": "Monaco vs Lens",
-          "market": "Double Chance",
-          "pick": "Double Chance X2",
-          "odds": 1.35
-        },
-        {
-          "match": "Celtic vs Rangers",
-          "market": "Other",
-          "pick": "Both Halves Over 0.5",
-          "odds": 2
-        },
-        {
-          "match": "Juventus vs Lazio",
-          "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 1.58
-        },
-        {
-          "match": "Rennes vs Nantes",
-          "market": "Over/Under",
-          "pick": "Over 3.5 Goals",
-          "odds": 2.37
-        },
-        {
-          "match": "Juventus vs Lazio",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.51
-        },
-        {
-          "match": "Monaco vs Lens",
-          "market": "Other",
-          "pick": "Both Halves Over 0.5",
-          "odds": 2.15
-        },
-        {
-          "match": "Atletico Madrid vs Valencia",
-          "market": "Over/Under",
-          "pick": "Over 1.5 Goals",
-          "odds": 1.63
-        },
-        {
-          "match": "River Plate vs Boca Juniors",
-          "market": "Over/Under",
-          "pick": "Under 3.5 Goals",
-          "odds": 2.23
-        },
-        {
-          "match": "Aston Villa vs Fulham",
-          "market": "Match Winner",
-          "pick": "Away Win",
+          "pick": "Home Win",
           "odds": 2.25
         }
       ],
-      "totalOdds": 1035.03,
-      "rating": 7,
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 1035.03,
-          "code": "DEMO-BET9JA-ACC-019"
-        },
-        "sportybet": {
-          "odds": 1035.03,
-          "code": "DEMO-SPORTYBET-ACC-019"
-        },
-        "betpawa": {
-          "odds": 1035.03,
-          "code": "DEMO-BETPAWA-ACC-019"
-        },
-        "betway": {
-          "odds": 1035.03,
-          "code": "DEMO-BETWAY-ACC-019"
-        },
-        "onexbet": {
-          "odds": 1035.03,
-          "code": "DEMO-ONEXBET-ACC-019"
-        }
-      }
-    },
-    {
-      "id": "DEMO-ACC-020",
-      "title": "100+ ODDS Slip #2",
-      "tier": "100+ ODDS",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:30:00+01:00",
-      "selections": [
-        {
-          "match": "Monaco vs Lens",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 1.94
-        },
-        {
-          "match": "AC Milan vs Napoli",
-          "market": "BTTS",
-          "pick": "BTTS - No",
-          "odds": 2.48
-        },
-        {
-          "match": "Crystal Palace vs Brentford",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.42
-        },
-        {
-          "match": "Real Madrid vs Espanyol",
-          "market": "Double Chance",
-          "pick": "Double Chance 1X",
-          "odds": 1.4
-        },
-        {
-          "match": "Dortmund vs RB Leipzig",
-          "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 1.71
-        },
-        {
-          "match": "Galatasaray vs Fenerbahce",
-          "market": "Over/Under",
-          "pick": "Under 3.5 Goals",
-          "odds": 1.95
-        },
-        {
-          "match": "Wolves vs Everton",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 2.25
-        },
-        {
-          "match": "Inter Milan vs Atalanta",
-          "market": "Other",
-          "pick": "Both Halves Over 0.5",
-          "odds": 2.35
-        },
-        {
-          "match": "PSV vs AZ Alkmaar",
-          "market": "Over/Under",
-          "pick": "Over 2.5 Goals",
-          "odds": 1.86
-        },
-        {
-          "match": "Bologna vs Torino",
-          "market": "Match Winner",
-          "pick": "Draw",
-          "odds": 1.51
-        },
-        {
-          "match": "Tottenham vs Brighton",
-          "market": "Double Chance",
-          "pick": "Double Chance 12",
-          "odds": 1.62
-        }
-      ],
-      "totalOdds": 1307.62,
+      "totalOdds": 6287.43,
       "rating": 9,
       "bookmakers": {
         "bet9ja": {
-          "odds": 1307.62,
-          "code": "DEMO-BET9JA-ACC-020"
+          "odds": 6287.43,
+          "code": "DEMO-BET9JA-ACC-012"
         },
         "sportybet": {
-          "odds": 1307.62,
-          "code": "DEMO-SPORTYBET-ACC-020"
+          "odds": 6287.43,
+          "code": "DEMO-SPORTYBET-ACC-012"
         },
         "betpawa": {
-          "odds": 1307.62,
-          "code": "DEMO-BETPAWA-ACC-020"
+          "odds": 6287.43,
+          "code": "DEMO-BETPAWA-ACC-012"
         },
         "betway": {
-          "odds": 1307.62,
-          "code": "DEMO-BETWAY-ACC-020"
+          "odds": 6287.43,
+          "code": "DEMO-BETWAY-ACC-012"
         },
         "onexbet": {
-          "odds": 1307.62,
-          "code": "DEMO-ONEXBET-ACC-020"
+          "odds": 6287.43,
+          "code": "DEMO-ONEXBET-ACC-012"
         }
       }
     }
@@ -3361,224 +2931,224 @@
   "correctScores": [
     {
       "id": "DEMO-CS-001",
-      "match": "Real Madrid vs Espanyol",
+      "match": "Barcelona vs Sevilla",
       "league": "La Liga",
-      "score": "1-0",
-      "odds": 16.41,
+      "score": "0-3",
+      "odds": 7.83,
       "rating": 7,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 16.41,
+          "odds": 7.83,
           "code": "DEMO-BET9JA-CS-001"
         },
-        "onexbet": {
-          "odds": 16.41,
-          "code": "DEMO-ONEXBET-CS-001"
-        },
-        "betway": {
-          "odds": 16.41,
-          "code": "DEMO-BETWAY-CS-001"
+        "betpawa": {
+          "odds": 7.83,
+          "code": "DEMO-BETPAWA-CS-001"
         }
       }
     },
     {
       "id": "DEMO-CS-002",
-      "match": "Werder Bremen vs Union Berlin",
-      "league": "Bundesliga",
-      "score": "1-3",
-      "odds": 10.99,
-      "rating": 9,
+      "match": "Man United vs Burnley",
+      "league": "Premier League",
+      "score": "2-2",
+      "odds": 10.12,
+      "rating": 6,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 10.99,
+          "odds": 10.12,
           "code": "DEMO-BET9JA-CS-002"
         },
         "sportybet": {
-          "odds": 10.99,
+          "odds": 10.12,
           "code": "DEMO-SPORTYBET-CS-002"
         },
         "betpawa": {
-          "odds": 10.99,
+          "odds": 10.12,
           "code": "DEMO-BETPAWA-CS-002"
         },
         "betway": {
-          "odds": 10.99,
+          "odds": 10.12,
           "code": "DEMO-BETWAY-CS-002"
         },
         "onexbet": {
-          "odds": 10.99,
+          "odds": 10.12,
           "code": "DEMO-ONEXBET-CS-002"
         }
       }
     },
     {
       "id": "DEMO-CS-003",
-      "match": "Al Hilal vs Al Nassr",
-      "league": "Saudi Pro League",
-      "score": "4-1",
-      "odds": 15.74,
-      "rating": 5,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:40:00+01:00",
-      "bookmakers": {
-        "onexbet": {
-          "odds": 15.74,
-          "code": "DEMO-ONEXBET-CS-003"
-        },
-        "betway": {
-          "odds": 15.74,
-          "code": "DEMO-BETWAY-CS-003"
-        },
-        "sportybet": {
-          "odds": 15.74,
-          "code": "DEMO-SPORTYBET-CS-003"
-        }
-      }
-    },
-    {
-      "id": "DEMO-CS-004",
-      "match": "Liverpool vs Bournemouth",
-      "league": "Premier League",
-      "score": "2-1",
-      "odds": 10.88,
+      "match": "Frankfurt vs Wolfsburg",
+      "league": "Bundesliga",
+      "score": "4-3",
+      "odds": 12.23,
       "rating": 6,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
+        "sportybet": {
+          "odds": 12.23,
+          "code": "DEMO-SPORTYBET-CS-003"
+        },
         "bet9ja": {
-          "odds": 10.88,
+          "odds": 12.23,
+          "code": "DEMO-BET9JA-CS-003"
+        }
+      }
+    },
+    {
+      "id": "DEMO-CS-004",
+      "match": "Celtic vs Rangers",
+      "league": "Scottish Premiership",
+      "score": "4-1",
+      "odds": 11.47,
+      "rating": 9,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:40:00+01:00",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 11.47,
           "code": "DEMO-BET9JA-CS-004"
         },
         "sportybet": {
-          "odds": 10.88,
+          "odds": 11.47,
           "code": "DEMO-SPORTYBET-CS-004"
         },
         "betpawa": {
-          "odds": 10.88,
+          "odds": 11.47,
           "code": "DEMO-BETPAWA-CS-004"
         },
         "betway": {
-          "odds": 10.88,
+          "odds": 11.47,
           "code": "DEMO-BETWAY-CS-004"
         },
         "onexbet": {
-          "odds": 10.88,
+          "odds": 11.47,
           "code": "DEMO-ONEXBET-CS-004"
         }
       }
     },
     {
       "id": "DEMO-CS-005",
-      "match": "PSV vs AZ Alkmaar",
-      "league": "Eredivisie",
-      "score": "0-2",
-      "odds": 11.99,
-      "rating": 7,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:40:00+01:00",
-      "bookmakers": {
-        "betway": {
-          "odds": 11.99,
-          "code": "DEMO-BETWAY-CS-005"
-        },
-        "betpawa": {
-          "odds": 11.99,
-          "code": "DEMO-BETPAWA-CS-005"
-        }
-      }
-    },
-    {
-      "id": "DEMO-CS-006",
-      "match": "Monaco vs Lens",
-      "league": "Ligue 1",
-      "score": "0-3",
-      "odds": 7.01,
-      "rating": 6,
+      "match": "Villarreal vs Betis",
+      "league": "La Liga",
+      "score": "1-3",
+      "odds": 13.02,
+      "rating": 8,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 7.01,
+          "odds": 13.02,
+          "code": "DEMO-BET9JA-CS-005"
+        },
+        "betway": {
+          "odds": 13.02,
+          "code": "DEMO-BETWAY-CS-005"
+        },
+        "sportybet": {
+          "odds": 13.02,
+          "code": "DEMO-SPORTYBET-CS-005"
+        }
+      }
+    },
+    {
+      "id": "DEMO-CS-006",
+      "match": "Werder Bremen vs Union Berlin",
+      "league": "Bundesliga",
+      "score": "1-0",
+      "odds": 10.86,
+      "rating": 7,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:40:00+01:00",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": 10.86,
           "code": "DEMO-BET9JA-CS-006"
         },
         "sportybet": {
-          "odds": 7.01,
+          "odds": 10.86,
           "code": "DEMO-SPORTYBET-CS-006"
         },
         "betpawa": {
-          "odds": 7.01,
+          "odds": 10.86,
           "code": "DEMO-BETPAWA-CS-006"
         },
         "betway": {
-          "odds": 7.01,
+          "odds": 10.86,
           "code": "DEMO-BETWAY-CS-006"
         },
         "onexbet": {
-          "odds": 7.01,
+          "odds": 10.86,
           "code": "DEMO-ONEXBET-CS-006"
         }
       }
     },
     {
       "id": "DEMO-CS-007",
-      "match": "Chelsea vs Newcastle",
-      "league": "Premier League",
-      "score": "0-2",
-      "odds": 8.68,
-      "rating": 6,
+      "match": "Utrecht vs Twente",
+      "league": "Eredivisie",
+      "score": "2-3",
+      "odds": 13.59,
+      "rating": 8,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
-        "bet9ja": {
-          "odds": 8.68,
-          "code": "DEMO-BET9JA-CS-007"
-        },
         "sportybet": {
-          "odds": 8.68,
+          "odds": 13.59,
           "code": "DEMO-SPORTYBET-CS-007"
+        },
+        "betway": {
+          "odds": 13.59,
+          "code": "DEMO-BETWAY-CS-007"
+        },
+        "onexbet": {
+          "odds": 13.59,
+          "code": "DEMO-ONEXBET-CS-007"
         }
       }
     },
     {
       "id": "DEMO-CS-008",
-      "match": "Utrecht vs Twente",
-      "league": "Eredivisie",
-      "score": "1-1",
-      "odds": 9.61,
-      "rating": 6,
+      "match": "Barcelona vs Sevilla",
+      "league": "La Liga",
+      "score": "1-3",
+      "odds": 12.29,
+      "rating": 9,
       "date": "2026-09-19",
       "status": "scheduled",
       "publishAt": "2026-09-19T12:45:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 9.61,
+          "odds": 12.29,
           "code": "DEMO-BET9JA-CS-008"
         },
         "sportybet": {
-          "odds": 9.61,
+          "odds": 12.29,
           "code": "DEMO-SPORTYBET-CS-008"
         },
         "betpawa": {
-          "odds": 9.61,
+          "odds": 12.29,
           "code": "DEMO-BETPAWA-CS-008"
         },
         "betway": {
-          "odds": 9.61,
+          "odds": 12.29,
           "code": "DEMO-BETWAY-CS-008"
         },
         "onexbet": {
-          "odds": 9.61,
+          "odds": 12.29,
           "code": "DEMO-ONEXBET-CS-008"
         }
       }
@@ -3587,120 +3157,120 @@
   "codesOnly": [
     {
       "id": "DEMO-CODE-001",
-      "bookmaker": "onexbet",
-      "code": "DEMO-ONEXBET-001",
-      "label": "Sure 2 Odds",
-      "odds": 2.11,
-      "description": "Sure 2 Odds — demo booking code for testing only.",
-      "rating": 6,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-002",
-      "bookmaker": "sportybet",
-      "code": "DEMO-SPORTYBET-002",
-      "label": "VIP Booking",
-      "odds": 22.53,
-      "description": "VIP Booking — demo booking code for testing only.",
-      "rating": 6,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-003",
-      "bookmaker": "bet9ja",
-      "code": "DEMO-BET9JA-003",
-      "label": "Weekend Special",
-      "odds": 27.12,
-      "description": "Weekend Special — demo booking code for testing only.",
-      "rating": 5,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-004",
-      "bookmaker": "sportybet",
-      "code": "DEMO-SPORTYBET-004",
-      "label": "Midweek Slip",
-      "odds": 2.56,
-      "description": "Midweek Slip — demo booking code for testing only.",
-      "rating": 6,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-005",
-      "bookmaker": "onexbet",
-      "code": "DEMO-ONEXBET-005",
-      "label": "Big Six Special",
-      "odds": 14.3,
-      "description": "Big Six Special — demo booking code for testing only.",
-      "rating": 6,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-006",
       "bookmaker": "betpawa",
-      "code": "DEMO-BETPAWA-006",
-      "label": "Champions League Slip",
-      "odds": 3.99,
-      "description": "Champions League Slip — demo booking code for testing only.",
-      "rating": 10,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-007",
-      "bookmaker": "betway",
-      "code": "DEMO-BETWAY-007",
-      "label": "Late Kickoff Special",
-      "odds": 21.99,
-      "description": "Late Kickoff Special — demo booking code for testing only.",
-      "rating": 10,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:50:00+01:00"
-    },
-    {
-      "id": "DEMO-CODE-008",
-      "bookmaker": "bet9ja",
-      "code": "DEMO-BET9JA-008",
-      "label": "Small Odds Big Wins",
-      "odds": 20.1,
-      "description": "Small Odds Big Wins — demo booking code for testing only.",
+      "code": "DEMO-BETPAWA-001",
+      "label": "Sure 2 Odds",
+      "odds": 39.72,
+      "description": "Sure 2 Odds \u2014 demo booking code for testing only.",
       "rating": 7,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:50:00+01:00"
     },
     {
+      "id": "DEMO-CODE-002",
+      "bookmaker": "bet9ja",
+      "code": "DEMO-BET9JA-002",
+      "label": "VIP Booking",
+      "odds": 39.16,
+      "description": "VIP Booking \u2014 demo booking code for testing only.",
+      "rating": 10,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-003",
+      "bookmaker": "betway",
+      "code": "DEMO-BETWAY-003",
+      "label": "Weekend Special",
+      "odds": 12.43,
+      "description": "Weekend Special \u2014 demo booking code for testing only.",
+      "rating": 9,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-004",
+      "bookmaker": "bet9ja",
+      "code": "DEMO-BET9JA-004",
+      "label": "Midweek Slip",
+      "odds": 36.6,
+      "description": "Midweek Slip \u2014 demo booking code for testing only.",
+      "rating": 10,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-005",
+      "bookmaker": "betway",
+      "code": "DEMO-BETWAY-005",
+      "label": "Big Six Special",
+      "odds": 33.65,
+      "description": "Big Six Special \u2014 demo booking code for testing only.",
+      "rating": 7,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-006",
+      "bookmaker": "sportybet",
+      "code": "DEMO-SPORTYBET-006",
+      "label": "Champions League Slip",
+      "odds": 25.07,
+      "description": "Champions League Slip \u2014 demo booking code for testing only.",
+      "rating": 7,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-007",
+      "bookmaker": "sportybet",
+      "code": "DEMO-SPORTYBET-007",
+      "label": "Late Kickoff Special",
+      "odds": 26.19,
+      "description": "Late Kickoff Special \u2014 demo booking code for testing only.",
+      "rating": 9,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
+      "id": "DEMO-CODE-008",
+      "bookmaker": "betpawa",
+      "code": "DEMO-BETPAWA-008",
+      "label": "Small Odds Big Wins",
+      "odds": 27.76,
+      "description": "Small Odds Big Wins \u2014 demo booking code for testing only.",
+      "rating": 10,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:50:00+01:00"
+    },
+    {
       "id": "DEMO-CODE-009",
-      "bookmaker": "onexbet",
-      "code": "DEMO-ONEXBET-009",
+      "bookmaker": "sportybet",
+      "code": "DEMO-SPORTYBET-009",
       "label": "Bankers Combo",
-      "odds": 24.56,
-      "description": "Bankers Combo — demo booking code for testing only.",
-      "rating": 8,
+      "odds": 25.87,
+      "description": "Bankers Combo \u2014 demo booking code for testing only.",
+      "rating": 10,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:50:00+01:00"
     },
     {
       "id": "DEMO-CODE-010",
-      "bookmaker": "onexbet",
-      "code": "DEMO-ONEXBET-010",
+      "bookmaker": "bet9ja",
+      "code": "DEMO-BET9JA-010",
       "label": "Value Pick",
-      "odds": 10.42,
-      "description": "Value Pick — demo booking code for testing only.",
-      "rating": 9,
+      "odds": 13.74,
+      "description": "Value Pick \u2014 demo booking code for testing only.",
+      "rating": 8,
       "date": "2026-09-19",
       "status": "scheduled",
       "publishAt": "2026-09-19T14:00:00+01:00"
@@ -3711,49 +3281,49 @@
       "id": "DEMO-LIVE-001",
       "match": "Liverpool vs Bournemouth",
       "league": "Premier League",
-      "currentScore": "2-2",
-      "minute": "67'",
-      "pick": "BTTS - Yes",
-      "odds": 2.13,
-      "rating": 5,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
-    },
-    {
-      "id": "DEMO-LIVE-002",
-      "match": "Man United vs Burnley",
-      "league": "Premier League",
-      "currentScore": "1-1",
-      "minute": "55'",
+      "currentScore": "2-1",
+      "minute": "17'",
       "pick": "Over 1.5 Goals",
-      "odds": 2.18,
-      "rating": 8,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
-    },
-    {
-      "id": "DEMO-LIVE-003",
-      "match": "Tottenham vs Brighton",
-      "league": "Premier League",
-      "currentScore": "0-1",
-      "minute": "78'",
-      "pick": "Next Goal Home",
-      "odds": 1.51,
+      "odds": 2.86,
       "rating": 7,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:55:00+01:00"
     },
     {
+      "id": "DEMO-LIVE-002",
+      "match": "Al Hilal vs Al Nassr",
+      "league": "Saudi Pro League",
+      "currentScore": "0-0",
+      "minute": "17'",
+      "pick": "BTTS - Yes",
+      "odds": 2.25,
+      "rating": 7,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:55:00+01:00"
+    },
+    {
+      "id": "DEMO-LIVE-003",
+      "match": "PSG vs Marseille",
+      "league": "Ligue 1",
+      "currentScore": "1-1",
+      "minute": "38'",
+      "pick": "BTTS - Yes",
+      "odds": 2.69,
+      "rating": 8,
+      "date": "2026-09-19",
+      "status": "published",
+      "publishAt": "2026-09-19T11:55:00+01:00"
+    },
+    {
       "id": "DEMO-LIVE-004",
-      "match": "Utrecht vs Twente",
-      "league": "Eredivisie",
-      "currentScore": "2-2",
-      "minute": "42'",
+      "match": "Tottenham vs Brighton",
+      "league": "Premier League",
+      "currentScore": "0-0",
+      "minute": "87'",
       "pick": "Home Win",
-      "odds": 2.99,
+      "odds": 2.95,
       "rating": 9,
       "date": "2026-09-19",
       "status": "published",
@@ -3761,26 +3331,26 @@
     },
     {
       "id": "DEMO-LIVE-005",
-      "match": "Juventus vs Lazio",
-      "league": "Serie A",
-      "currentScore": "1-2",
-      "minute": "78'",
-      "pick": "Home Win",
-      "odds": 1.56,
-      "rating": 5,
+      "match": "PSV vs AZ Alkmaar",
+      "league": "Eredivisie",
+      "currentScore": "0-1",
+      "minute": "2'",
+      "pick": "BTTS - Yes",
+      "odds": 2.26,
+      "rating": 8,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:55:00+01:00"
     },
     {
       "id": "DEMO-LIVE-006",
-      "match": "Bologna vs Torino",
-      "league": "Serie A",
-      "currentScore": "2-0",
-      "minute": "56'",
-      "pick": "Home Win",
-      "odds": 2.82,
-      "rating": 8,
+      "match": "PSV vs AZ Alkmaar",
+      "league": "Eredivisie",
+      "currentScore": "2-2",
+      "minute": "87'",
+      "pick": "BTTS - Yes",
+      "odds": 2.34,
+      "rating": 7,
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:55:00+01:00"
@@ -3789,11 +3359,11 @@
   "betOfDay": [
     {
       "id": "DEMO-BOD-001",
-      "match": "Sporting CP vs Braga",
-      "market": "Double Chance",
-      "pick": "Double Chance X2",
-      "odds": 1.87,
-      "rating": 8,
+      "match": "Barcelona vs Sevilla",
+      "market": "BTTS",
+      "pick": "BTTS - No",
+      "odds": 1.52,
+      "rating": 10,
       "bookmaker": "betpawa",
       "description": "Our most confident selection of the day based on current form and head-to-head record.",
       "date": "2026-09-19",
@@ -3802,11 +3372,11 @@
     },
     {
       "id": "DEMO-BOD-002",
-      "match": "Flamengo vs Palmeiras",
-      "market": "Match Winner",
-      "pick": "Draw",
-      "odds": 1.73,
-      "rating": 8,
+      "match": "Dortmund vs RB Leipzig",
+      "market": "Over/Under",
+      "pick": "Over 3.5 Goals",
+      "odds": 2.32,
+      "rating": 9,
       "bookmaker": "betway",
       "description": "Our most confident selection of the day based on current form and head-to-head record.",
       "date": "2026-09-19",
@@ -3815,12 +3385,12 @@
     },
     {
       "id": "DEMO-BOD-003",
-      "match": "Tottenham vs Brighton",
-      "market": "Over/Under",
-      "pick": "Over 1.5 Goals",
-      "odds": 1.58,
-      "rating": 8,
-      "bookmaker": "betpawa",
+      "match": "Real Madrid vs Espanyol",
+      "market": "BTTS",
+      "pick": "BTTS - Yes",
+      "odds": 2.35,
+      "rating": 9,
+      "bookmaker": "betway",
       "description": "Our most confident selection of the day based on current form and head-to-head record.",
       "date": "2026-09-19",
       "status": "published",
@@ -3828,12 +3398,12 @@
     },
     {
       "id": "DEMO-BOD-004",
-      "match": "Atletico Madrid vs Valencia",
-      "market": "Other",
-      "pick": "Draw No Bet - Home",
-      "odds": 2.03,
-      "rating": 10,
-      "bookmaker": "onexbet",
+      "match": "Real Madrid vs Espanyol",
+      "market": "Over/Under",
+      "pick": "Over 2.5 Goals",
+      "odds": 2.3,
+      "rating": 8,
+      "bookmaker": "betway",
       "description": "Our most confident selection of the day based on current form and head-to-head record.",
       "date": "2026-09-19",
       "status": "scheduled",
@@ -3843,134 +3413,134 @@
   "results": [
     {
       "id": "DEMO-RES-001",
-      "match": "Sporting CP vs Braga",
-      "prediction": "Under 3.5 Goals",
-      "market": "Over/Under",
-      "odds": 2.79,
-      "actualResult": "3-0",
-      "outcome": "won",
-      "rating": 7,
-      "date": "2026-09-18"
-    },
-    {
-      "id": "DEMO-RES-002",
-      "match": "Roma vs Fiorentina",
+      "match": "Wolves vs Everton",
       "prediction": "Draw",
       "market": "Match Winner",
-      "odds": 2.16,
-      "actualResult": "1-3",
-      "outcome": "won",
-      "rating": 6,
-      "date": "2026-09-18"
-    },
-    {
-      "id": "DEMO-RES-003",
-      "match": "Barcelona vs Sevilla",
-      "prediction": "Away Win",
-      "market": "Match Winner",
-      "odds": 1.5,
-      "actualResult": "2-1",
+      "odds": 2.48,
+      "actualResult": "3-1",
       "outcome": "lost",
       "rating": 8,
       "date": "2026-09-18"
     },
     {
-      "id": "DEMO-RES-004",
-      "match": "Bologna vs Torino",
-      "prediction": "Home -1 Handicap",
-      "market": "Other",
-      "odds": 2.39,
-      "actualResult": "0-2",
+      "id": "DEMO-RES-002",
+      "match": "Barcelona vs Sevilla",
+      "prediction": "Double Chance X2",
+      "market": "Double Chance",
+      "odds": 2.9,
+      "actualResult": "2-0",
       "outcome": "lost",
+      "rating": 7,
+      "date": "2026-09-18"
+    },
+    {
+      "id": "DEMO-RES-003",
+      "match": "Bayern Munich vs Leverkusen",
+      "prediction": "Double Chance 1X",
+      "market": "Double Chance",
+      "odds": 2.75,
+      "actualResult": "0-2",
+      "outcome": "won",
+      "rating": 9,
+      "date": "2026-09-18"
+    },
+    {
+      "id": "DEMO-RES-004",
+      "match": "Ajax vs Feyenoord",
+      "prediction": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": 1.62,
+      "actualResult": "0-3",
+      "outcome": "won",
       "rating": 5,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-005",
-      "match": "Lyon vs Nice",
-      "prediction": "Away Win",
-      "market": "Match Winner",
-      "odds": 2.87,
-      "actualResult": "2-0",
+      "match": "Bayern Munich vs Leverkusen",
+      "prediction": "Draw No Bet - Home",
+      "market": "Other",
+      "odds": 2.64,
+      "actualResult": "1-1",
+      "outcome": "won",
+      "rating": 9,
+      "date": "2026-09-18"
+    },
+    {
+      "id": "DEMO-RES-006",
+      "match": "Bayern Munich vs Leverkusen",
+      "prediction": "Over 2.5 Goals",
+      "market": "Over/Under",
+      "odds": 2.3,
+      "actualResult": "1-2",
       "outcome": "lost",
       "rating": 6,
       "date": "2026-09-18"
     },
     {
-      "id": "DEMO-RES-006",
-      "match": "Villarreal vs Betis",
-      "prediction": "Both Halves Over 0.5",
-      "market": "Other",
-      "odds": 1.42,
-      "actualResult": "0-0",
-      "outcome": "lost",
-      "rating": 9,
-      "date": "2026-09-18"
-    },
-    {
       "id": "DEMO-RES-007",
-      "match": "Bayern Munich vs Leverkusen",
-      "prediction": "Double Chance X2",
-      "market": "Double Chance",
-      "odds": 1.88,
-      "actualResult": "2-2",
+      "match": "Arsenal vs Man City",
+      "prediction": "Home Win",
+      "market": "Match Winner",
+      "odds": 2.22,
+      "actualResult": "1-0",
       "outcome": "won",
-      "rating": 7,
+      "rating": 5,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-008",
-      "match": "Rennes vs Nantes",
-      "prediction": "Draw No Bet - Home",
-      "market": "Other",
-      "odds": 1.56,
-      "actualResult": "0-0",
+      "match": "Atletico Madrid vs Valencia",
+      "prediction": "Over 2.5 Goals",
+      "market": "Over/Under",
+      "odds": 2.3,
+      "actualResult": "0-1",
       "outcome": "won",
       "rating": 7,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-009",
-      "match": "River Plate vs Boca Juniors",
-      "prediction": "Double Chance 12",
-      "market": "Double Chance",
-      "odds": 2.05,
-      "actualResult": "2-1",
-      "outcome": "won",
-      "rating": 9,
+      "match": "Man United vs Burnley",
+      "prediction": "BTTS - No",
+      "market": "BTTS",
+      "odds": 2.19,
+      "actualResult": "0-3",
+      "outcome": "lost",
+      "rating": 8,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-010",
-      "match": "Real Madrid vs Espanyol",
-      "prediction": "Home Win",
-      "market": "Match Winner",
-      "odds": 1.78,
-      "actualResult": "3-2",
-      "outcome": "won",
-      "rating": 5,
+      "match": "PSV vs AZ Alkmaar",
+      "prediction": "Draw No Bet - Home",
+      "market": "Other",
+      "odds": 2.07,
+      "actualResult": "1-0",
+      "outcome": "lost",
+      "rating": 9,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-011",
-      "match": "Dortmund vs RB Leipzig",
+      "match": "Roma vs Fiorentina",
       "prediction": "Double Chance 1X",
       "market": "Double Chance",
-      "odds": 1.31,
-      "actualResult": "2-1",
+      "odds": 1.4,
+      "actualResult": "3-3",
       "outcome": "lost",
-      "rating": 6,
+      "rating": 8,
       "date": "2026-09-18"
     },
     {
       "id": "DEMO-RES-012",
-      "match": "Inter Milan vs Atalanta",
-      "prediction": "Home Win",
-      "market": "Match Winner",
-      "odds": 1.31,
-      "actualResult": "3-1",
-      "outcome": "won",
-      "rating": 6,
+      "match": "Barcelona vs Sevilla",
+      "prediction": "Double Chance X2",
+      "market": "Double Chance",
+      "odds": 1.42,
+      "actualResult": "0-2",
+      "outcome": "lost",
+      "rating": 9,
       "date": "2026-09-18"
     }
   ],
@@ -3979,12 +3549,12 @@
       "id": "DEMO-NEWS-001",
       "title": "Weekend Premier League Preview: Key Fixtures To Watch",
       "slug": "weekend-premier-league-preview-key-fixtures-to-watch",
-      "category": "Report",
-      "excerpt": "Weekend Premier League Preview: Key Fixtures To Watch — a quick look at what matters for bettors this week.",
+      "category": "Analysis",
+      "excerpt": "Weekend Premier League Preview: Key Fixtures To Watch \u2014 a quick look at what matters for bettors this week.",
       "content": "Weekend Premier League Preview: Key Fixtures To Watch.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T16:50:00+01:00",
+      "publishAt": "2026-09-19T08:46:00+01:00",
       "featured": true,
       "status": "published"
     },
@@ -3993,11 +3563,11 @@
       "title": "Injury Update: Squad News Ahead Of Matchday",
       "slug": "injury-update-squad-news-ahead-of-matchday",
       "category": "Analysis",
-      "excerpt": "Injury Update: Squad News Ahead Of Matchday — a quick look at what matters for bettors this week.",
+      "excerpt": "Injury Update: Squad News Ahead Of Matchday \u2014 a quick look at what matters for bettors this week.",
       "content": "Injury Update: Squad News Ahead Of Matchday.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T17:56:00+01:00",
+      "publishAt": "2026-09-19T01:37:00+01:00",
       "featured": true,
       "status": "published"
     },
@@ -4006,11 +3576,11 @@
       "title": "Betting Trends: Where The Value Is This Week",
       "slug": "betting-trends-where-the-value-is-this-week",
       "category": "Guide",
-      "excerpt": "Betting Trends: Where The Value Is This Week — a quick look at what matters for bettors this week.",
+      "excerpt": "Betting Trends: Where The Value Is This Week \u2014 a quick look at what matters for bettors this week.",
       "content": "Betting Trends: Where The Value Is This Week.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-19T08:33:00+01:00",
+      "publishAt": "2026-09-18T22:00:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4018,12 +3588,12 @@
       "id": "DEMO-NEWS-004",
       "title": "Champions League Round-Up: What We Learned",
       "slug": "champions-league-round-up-what-we-learned",
-      "category": "Report",
-      "excerpt": "Champions League Round-Up: What We Learned — a quick look at what matters for bettors this week.",
+      "category": "Guide",
+      "excerpt": "Champions League Round-Up: What We Learned \u2014 a quick look at what matters for bettors this week.",
       "content": "Champions League Round-Up: What We Learned.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T05:36:00+01:00",
+      "publishAt": "2026-09-18T19:31:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4031,12 +3601,12 @@
       "id": "DEMO-NEWS-005",
       "title": "Top 5 Accumulators That Delivered Last Weekend",
       "slug": "top-5-accumulators-that-delivered-last-weekend",
-      "category": "Preview",
-      "excerpt": "Top 5 Accumulators That Delivered Last Weekend — a quick look at what matters for bettors this week.",
+      "category": "Report",
+      "excerpt": "Top 5 Accumulators That Delivered Last Weekend \u2014 a quick look at what matters for bettors this week.",
       "content": "Top 5 Accumulators That Delivered Last Weekend.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T20:07:00+01:00",
+      "publishAt": "2026-09-19T07:37:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4045,11 +3615,11 @@
       "title": "How To Read Odds: A Beginner's Guide",
       "slug": "how-to-read-odds-a-beginners-guide",
       "category": "Preview",
-      "excerpt": "How To Read Odds: A Beginner's Guide — a quick look at what matters for bettors this week.",
+      "excerpt": "How To Read Odds: A Beginner's Guide \u2014 a quick look at what matters for bettors this week.",
       "content": "How To Read Odds: A Beginner's Guide.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T19:19:00+01:00",
+      "publishAt": "2026-09-18T05:54:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4057,12 +3627,12 @@
       "id": "DEMO-NEWS-007",
       "title": "La Liga Title Race Heats Up",
       "slug": "la-liga-title-race-heats-up",
-      "category": "Preview",
-      "excerpt": "La Liga Title Race Heats Up — a quick look at what matters for bettors this week.",
+      "category": "Analysis",
+      "excerpt": "La Liga Title Race Heats Up \u2014 a quick look at what matters for bettors this week.",
       "content": "La Liga Title Race Heats Up.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T05:35:00+01:00",
+      "publishAt": "2026-09-18T20:20:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4070,12 +3640,12 @@
       "id": "DEMO-NEWS-008",
       "title": "Bundesliga Goal Machines: Who's In Form",
       "slug": "bundesliga-goal-machines-whos-in-form",
-      "category": "Guide",
-      "excerpt": "Bundesliga Goal Machines: Who's In Form — a quick look at what matters for bettors this week.",
+      "category": "Report",
+      "excerpt": "Bundesliga Goal Machines: Who's In Form \u2014 a quick look at what matters for bettors this week.",
       "content": "Bundesliga Goal Machines: Who's In Form.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T15:21:00+01:00",
+      "publishAt": "2026-09-18T04:42:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4083,12 +3653,12 @@
       "id": "DEMO-NEWS-009",
       "title": "Correct Score Betting: Tips For Higher Accuracy",
       "slug": "correct-score-betting-tips-for-higher-accuracy",
-      "category": "Report",
-      "excerpt": "Correct Score Betting: Tips For Higher Accuracy — a quick look at what matters for bettors this week.",
+      "category": "Analysis",
+      "excerpt": "Correct Score Betting: Tips For Higher Accuracy \u2014 a quick look at what matters for bettors this week.",
       "content": "Correct Score Betting: Tips For Higher Accuracy.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
-      "publishAt": "2026-09-18T15:26:00+01:00",
+      "publishAt": "2026-09-18T20:53:00+01:00",
       "featured": false,
       "status": "published"
     },
@@ -4096,42 +3666,14 @@
       "id": "DEMO-NEWS-010",
       "title": "MatchForecast Monthly Performance Report",
       "slug": "matchforecast-monthly-performance-report",
-      "category": "Report",
-      "excerpt": "MatchForecast Monthly Performance Report — a quick look at what matters for bettors this week.",
+      "category": "Guide",
+      "excerpt": "MatchForecast Monthly Performance Report \u2014 a quick look at what matters for bettors this week.",
       "content": "MatchForecast Monthly Performance Report.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
       "publishAt": "2026-09-19T18:00:00+01:00",
       "featured": false,
       "status": "scheduled"
-    }
-  ],
-  "betOfTheDay": [],
-  "bookmakers": [
-    {
-      "id": "bet9ja",
-      "name": "Bet9ja",
-      "link": ""
-    },
-    {
-      "id": "sportybet",
-      "name": "SportyBet",
-      "link": ""
-    },
-    {
-      "id": "betpawa",
-      "name": "BetPawa",
-      "link": ""
-    },
-    {
-      "id": "betway",
-      "name": "Betway",
-      "link": ""
-    },
-    {
-      "id": "1xbet",
-      "name": "1xBet",
-      "link": ""
     }
   ]
 }
