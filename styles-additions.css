@@ -1,119 +1,89 @@
-/* Additive styles for data-driven content blocks introduced alongside
-   data.json. Intentionally minimal so it inherits the site's existing
-   panel/card look and only fills in gaps for new element types. */
+/* ============================================================
+   styles-additions.css
+   Purely additive — loaded AFTER styles.css, never edits it.
+   Covers: Bet of the Day, Live Predictions, Correct Score,
+   Codes Only, reveal/copy code rows, accumulator modal, search
+   result list, and mobile-safety rules (no overflow, sane
+   grids) at 320/360/375/390/412/430px.
+   ============================================================ */
 
-.empty-state {
-  padding: 18px 12px;
-  text-align: center;
-  color: #8a93a6;
-  font-size: 14px;
+/* ---- generic helpers ---- */
+.mf-empty { text-align: center; color: #8a94a6; padding: 20px 10px; font-size: 13px; }
+.mf-sub { font-size: 11px; color: #8a94a6; margin-top: 2px; }
+.mf-rating { font-size: 11px; color: #2ecc58; font-weight: 700; margin-top: 2px; }
+.mf-highlight { animation: mfPulse 1.8s ease; }
+@keyframes mfPulse { 0% { background: #fff6cc; } 100% { background: transparent; } }
+
+/* ---- bookmaker badges ---- */
+.bm-badge { display:inline-block; font-size:10px; font-weight:700; padding:3px 7px; border-radius:5px; margin:0 4px 4px 0; background:#eef1f6; color:#465066; }
+.bm-badge--bet9ja{background:#0a5c36;color:#fff;} .bm-badge--sportybet{background:#e2001a;color:#fff;}
+.bm-badge--betpawa{background:#f5a623;color:#1a1a1a;} .bm-badge--betway{background:#0b0b0b;color:#fff;}
+.bm-badge--onexbet{background:#1c1c50;color:#fff;}
+
+/* ---- reveal / copy code row ---- */
+.code-reveal { display:flex; flex-direction:column; gap:6px; }
+.code-row { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:11px; }
+.code-row__bm { font-weight:700; width:70px; flex-shrink:0; }
+.code-row__code { font-family:monospace; background:#171f31; color:#8ff0b0; padding:3px 8px; border-radius:5px; min-width:70px; text-align:center; }
+.code-row__btn { border:none; background:#2ecc58; color:#04371a; font-weight:700; font-size:10px; padding:4px 8px; border-radius:5px; cursor:pointer; }
+.code-row__btn--copy { background:#171f31; color:#fff; }
+
+/* ---- Bet of the Day ---- */
+.panel--bod .bod-card { border:1px solid #e4e8ee; border-radius:10px; padding:14px; margin-bottom:10px; background:#fbfdff; }
+.bod-card__match { font-weight:700; font-size:15px; margin-bottom:4px; }
+.bod-card__pick { color:#2ecc58; font-weight:700; }
+.bod-card__odds { color:#171f31; font-weight:700; float:right; }
+.bod-card__desc { font-size:12px; color:#6b7688; margin:8px 0; }
+.bod-card__meta { font-size:11px; color:#8a94a6; }
+
+/* ---- Live Predictions ---- */
+.live-grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+.live-card { border:1px solid #e4e8ee; border-radius:10px; padding:12px; background:#fff; }
+.live-card__top { font-size:11px; color:#e34848; font-weight:700; display:flex; align-items:center; gap:6px; margin-bottom:6px; }
+.live-dot { width:7px; height:7px; border-radius:50%; background:#e34848; display:inline-block; animation: mfBlink 1.2s infinite; }
+@keyframes mfBlink { 50% { opacity: 0.3; } }
+.live-card__match { font-weight:700; font-size:13px; }
+.live-card__pick { font-size:12px; color:#2ecc58; margin-top:4px; }
+
+/* ---- Correct Score ---- */
+.cs-table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.cs-table { width:100%; border-collapse:collapse; font-size:13px; min-width:520px; }
+.cs-table th, .cs-table td { padding:8px 6px; border-bottom:1px solid #eef1f6; text-align:left; vertical-align:top; }
+.cs-table th { color:#6b7688; font-size:11px; text-transform:uppercase; }
+
+/* ---- Codes Only (sidebar) ---- */
+.panel--codes .codes-item { border:1px solid #e4e8ee; border-radius:10px; padding:10px; margin-bottom:8px; }
+.codes-item__top { display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px; }
+
+/* ---- accumulator modal ---- */
+.mf-modal { position:fixed; inset:0; background:rgba(10,14,24,0.55); display:none; align-items:flex-end; justify-content:center; z-index:100; }
+.mf-modal--open { display:flex; }
+.mf-modal__box { background:#fff; width:100%; max-width:480px; max-height:80vh; overflow-y:auto; border-radius:16px 16px 0 0; padding:18px; position:relative; }
+.mf-modal__close { position:absolute; top:10px; right:14px; border:none; background:none; font-size:18px; cursor:pointer; }
+.mf-modal__row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eef1f6; font-size:13px; }
+
+/* ---- search results dropdown ---- */
+.search-results { list-style:none; margin:0; padding:0; max-height:280px; overflow-y:auto; }
+.search-result { padding:10px 12px; font-size:13px; border-bottom:1px solid #eef1f6; cursor:pointer; }
+.search-result:active { background:#f4f6f9; }
+.search-result__type { font-size:10px; font-weight:700; color:#2ecc58; text-transform:uppercase; margin-right:6px; }
+.search-result--empty { color:#8a94a6; cursor:default; }
+
+/* ============================================================
+   MOBILE SAFETY — 320 / 360 / 375 / 390 / 412 / 430px
+   ============================================================ */
+@media (max-width: 480px) {
+  html, body { max-width:100%; overflow-x:hidden; }
+  .panel, .card, .acc-card, .bod-card, .live-card, .codes-item, .item-card { max-width:100%; box-sizing:border-box; }
+  .live-grid { grid-template-columns: 1fr 1fr; gap:8px; }
+  .acc-card { padding:12px !important; }
+  .code-row { font-size:10px; }
+  .code-row__bm { width:56px; }
+  img, svg, table { max-width:100%; }
+  .mf-modal__box { max-height:85vh; }
 }
 
-.bm-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+@media (max-width: 360px) {
+  .live-grid { grid-template-columns: 1fr; }
+  .bod-card__odds { float:none; display:block; margin-top:4px; }
 }
-
-.bm-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #f3f5f8;
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 12px;
-}
-
-.bm-chip__name { font-weight: 600; }
-.bm-chip__odds { color: #171f31; }
-
-.bm-chip__code-btn {
-  background: #171f31;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 3px 8px;
-  font-size: 11px;
-  cursor: pointer;
-}
-.bm-chip__code-btn.is-revealed { background: #2ecc58; }
-
-.bm-chip__link {
-  background: #2ecc58;
-  color: #171f31;
-  border-radius: 4px;
-  padding: 3px 8px;
-  font-size: 11px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.status-won { border-left: 3px solid #2ecc58; }
-.status-lost { border-left: 3px solid #e74c3c; }
-.status-live { border-left: 3px solid #e74c3c; }
-.status-pending { border-left: 3px solid #f1c40f; }
-
-.pick-card {
-  border: 1px solid #e7eaf0;
-  border-radius: 8px;
-  padding: 10px 12px;
-  margin-bottom: 10px;
-}
-.pick-card__top { display: flex; justify-content: space-between; font-weight: 600; }
-.pick-card__league { font-weight: 400; color: #8a93a6; font-size: 12px; }
-.pick-card__mid { display: flex; justify-content: space-between; margin: 6px 0; }
-.pick-card__odds { font-weight: 700; color: #171f31; }
-
-.botd-card {
-  border: 1px solid #e7eaf0;
-  border-radius: 10px;
-  padding: 14px;
-  background: linear-gradient(135deg, #171f31, #23304b);
-  color: #fff;
-  margin-bottom: 12px;
-}
-.botd-card__match { font-size: 16px; font-weight: 700; }
-.botd-card__pick { margin: 6px 0; }
-.botd-card__odds { display: inline-block; background: #2ecc58; color: #171f31; border-radius: 4px; padding: 2px 8px; font-weight: 700; margin-bottom: 8px; }
-.botd-card .bm-chip { background: rgba(255,255,255,0.12); color: #fff; }
-.botd-card .bm-chip__odds { color: #fff; }
-
-.accumulator-card {
-  border: 1px solid #e7eaf0;
-  border-radius: 10px;
-  padding: 14px;
-  margin-bottom: 12px;
-}
-.accumulator-card__head { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px; }
-.accumulator-card__odds { color: #2ecc58; }
-.accumulator-card__selections { margin: 0 0 10px 18px; padding: 0; font-size: 13px; color: #444; }
-
-.result-card {
-  border: 1px solid #e7eaf0;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-}
-.result-card--win { border-color: #2ecc58; }
-.result-card--loss { border-color: #e74c3c; }
-.result-card__match { font-size: 13px; font-weight: 600; }
-.result-card__score { font-size: 18px; font-weight: 700; margin: 4px 0; }
-.result-card__status { font-size: 11px; letter-spacing: 0.05em; color: #8a93a6; }
-
-.codes-only-list { list-style: none; margin: 0; padding: 0; }
-.codes-only-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #eef0f4;
-  font-size: 13px;
-}
-
-.news-item { display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px solid #eef0f4; }
-.news-item__img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
-.news-item__body { display: flex; flex-direction: column; }
-.news-item__title { font-size: 13px; font-weight: 600; }
-.news-item__date { font-size: 11px; color: #8a93a6; }
-.news-item__link { text-decoration: none; color: inherit; }
