@@ -65,9 +65,16 @@
     return esc(matchStr);
   }
 
+  // Always walk bookmakers in the site's canonical order (meta.bookmakers),
+  // not the random insertion order they happen to have on a given item.
+  function orderedBookmakerEntries(bookmakers) {
+    if (!bookmakers) return [];
+    const order = (DATA.meta.bookmakers || []).map(b => b.key);
+    return Object.entries(bookmakers).sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+  }
   function bookmakerBadges(bookmakers) {
     if (!bookmakers) return '';
-    return Object.entries(bookmakers).map(([k, v]) =>
+    return orderedBookmakerEntries(bookmakers).map(([k, v]) =>
       `<span class="bm-badge bm-badge--${esc(k)}">${esc(bookmakerLabel(k))}${v.odds ? ' ' + esc(v.odds) : ''}</span>`
     ).join('');
   }
@@ -77,7 +84,7 @@
   }
   function codeRevealHtml(bookmakers, idPrefix) {
     if (!bookmakers || !Object.keys(bookmakers).length) return '';
-    const rows = Object.entries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
+    const rows = orderedBookmakerEntries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
       `<div class="code-row"><span class="code-row__bm">${esc(bookmakerLabel(k))}</span>
         <span class="code-row__code" data-code-value="${esc(v.code)}">••••••</span>
         <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}" style="display:none">Copy</button>
@@ -163,10 +170,9 @@
     const grid = document.getElementById('accumulatorGrid');
     if (!grid) return;
     const items = livePublished(DATA.accumulators);
-    // Force the exact 4-column tier grid regardless of the page's own CSS for this container.
+    grid.classList.add('acc-grid');
     grid.style.display = 'grid';
-    grid.style.gridTemplateColumns = 'repeat(4, 1fr)';
-    grid.style.gap = '6px';
+    grid.style.gap = '8px';
     grid.innerHTML = items.map((a, idx) => {
       const color = TIER_COLORS[idx % TIER_COLORS.length];
       const preview = (a.selections || []).slice(0, 4).map(s =>
