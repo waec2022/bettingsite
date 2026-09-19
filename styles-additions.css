@@ -45,12 +45,13 @@
 .news-item__chevron { color:#c3c9d4; font-size:18px; }
 
 /* ---- Bet of the Day ---- */
-.panel--bod .bod-card { border:1px solid #e4e8ee; border-radius:10px; padding:14px; margin-bottom:10px; background:#fbfdff; }
-.bod-card__match { font-weight:700; font-size:15px; margin-bottom:4px; }
-.bod-card__pick { color:#2ecc58; font-weight:700; }
-.bod-card__odds { color:#171f31; font-weight:700; float:right; }
-.bod-card__desc { font-size:12px; color:#6b7688; margin:8px 0; }
-.bod-card__meta { font-size:11px; color:#8a94a6; }
+.panel--bod .bod-card { border:none; border-radius:10px; padding:14px; margin-bottom:10px; background:linear-gradient(135deg, #ffb100, #ff8a00); }
+.bod-card__match { font-weight:700; font-size:15px; margin-bottom:4px; color:#3a2400; }
+.bod-card__match .matchup__name, .bod-card__match .matchup__vs { color:#3a2400; }
+.bod-card__pick { color:#0a4d24; font-weight:800; background:rgba(255,255,255,0.55); padding:2px 8px; border-radius:6px; }
+.bod-card__odds { color:#3a2400; font-weight:800; float:right; }
+.bod-card__desc { font-size:12px; color:#4a3000; margin:8px 0; }
+.bod-card__meta { font-size:11px; color:#5a3c00; font-weight:600; }
 
 /* ---- Live Predictions ---- */
 .live-grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
@@ -87,6 +88,10 @@
 .codes-item__top b { font-size:14px; }
 
 /* ---- accumulator tier cards (exact reference match) ---- */
+.acc-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 600px) {
+  .acc-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
 .acc-card { border-radius:12px; padding:14px; color:#fff; display:flex; flex-direction:column; gap:8px; }
 .acc-card__head { font-size:12px; font-weight:800; letter-spacing:0.3px; }
 .acc-card__meta { font-size:10px; opacity:0.9; margin-top:-4px; }
