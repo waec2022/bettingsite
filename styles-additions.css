@@ -21,12 +21,28 @@
 .bm-badge--onexbet{background:#1c1c50;color:#fff;}
 
 /* ---- reveal / copy code row ---- */
-.code-reveal { display:flex; flex-direction:column; gap:6px; }
-.code-row { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:11px; }
+.reveal-toggle { display:inline-flex; align-items:center; gap:6px; border:none; background:#171f31; color:#fff; font-weight:700; font-size:12px; padding:8px 14px; border-radius:8px; cursor:pointer; }
+.reveal-toggle:disabled { opacity:0.85; cursor:default; }
+.code-reveal { display:flex; flex-direction:column; gap:6px; margin-top:6px; }
+.code-row { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:11px; margin-top:6px; }
 .code-row__bm { font-weight:700; width:70px; flex-shrink:0; }
 .code-row__code { font-family:monospace; background:#171f31; color:#8ff0b0; padding:3px 8px; border-radius:5px; min-width:70px; text-align:center; }
 .code-row__btn { border:none; background:#2ecc58; color:#04371a; font-weight:700; font-size:10px; padding:4px 8px; border-radius:5px; cursor:pointer; }
 .code-row__btn--copy { background:#171f31; color:#fff; }
+
+/* ---- Featured Bookmakers row ---- */
+.bookmaker-item { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 0; border-bottom:1px solid #eef1f6; }
+.bookmaker-item__badge { flex-shrink:0; }
+.bookmaker-item__cta { font-size:12px; font-weight:700; color:#171f31; border:1px solid #e4e8ee; padding:6px 10px; border-radius:8px; text-decoration:none; white-space:nowrap; }
+.bookmaker-item__cta:active { background:#f4f6f9; }
+
+/* ---- News row with icon + chevron ---- */
+.news-item__link { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #eef1f6; text-decoration:none; color:inherit; }
+.news-item__icon { flex-shrink:0; width:28px; height:28px; border-radius:7px; background:#eef1f6; display:flex; align-items:center; justify-content:center; font-size:14px; }
+.news-item__text { flex:1; display:flex; flex-direction:column; }
+.news-item__title { font-size:13px; font-weight:600; color:#182233; }
+.news-item__date { font-size:11px; color:#8a94a6; }
+.news-item__chevron { color:#c3c9d4; font-size:18px; }
 
 /* ---- Bet of the Day ---- */
 .panel--bod .bod-card { border:1px solid #e4e8ee; border-radius:10px; padding:14px; margin-bottom:10px; background:#fbfdff; }
