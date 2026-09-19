@@ -55,11 +55,11 @@
     const rows = Object.entries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
       `<div class="code-row"><span class="code-row__bm">${esc(bookmakerLabel(k))}</span>
         <span class="code-row__code" data-code-value="${esc(v.code)}">••••••</span>
-        <button type="button" class="code-row__btn" data-reveal>Reveal</button>
-        <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}">Copy</button>
+        <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}" style="display:none">Copy</button>
       </div>`
     ).join('');
-    return `<div class="code-reveal" id="${idPrefix}">${rows}</div>`;
+    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Reveal Code</button>
+      <div class="code-reveal" id="${idPrefix}" style="display:none">${rows}</div>`;
   }
 
   // Ensure a panel exists in the DOM; create + append if missing.
@@ -207,14 +207,14 @@
     const items = (DATA.meta.bookmakers || []).filter(b => b.status !== 'inactive').sort((a, b) => (a.order || 0) - (b.order || 0));
     listEl.innerHTML = items.map(b => `
       <li class="bookmaker-item" id="bookmaker-${esc(b.key)}">
-        <a href="#" data-affiliate="${esc(b.affiliateUrl || '')}" class="bookmaker-item__link">
-          <span class="bookmaker-item__name">${esc(b.name)}</span>
-          <span class="bookmaker-item__desc">${esc(b.description || '')}</span>
-        </a>
+        <span class="bookmaker-item__badge bm-badge bm-badge--${esc(b.key)}">${esc(b.name)}</span>
+        <a href="#" data-affiliate="${esc(b.affiliateUrl || '')}" class="bookmaker-item__cta">Get Code &amp; Bet →</a>
       </li>`).join('');
   }
 
   /* ---------------- NEWS (sidebar) ---------------- */
+  const NEWS_ICONS = { Preview: '📰', Analysis: '📊', Guide: '📘', Report: '📈' };
+
   function renderNews() {
     const listEl = document.getElementById('newsList');
     if (!listEl) return;
@@ -222,8 +222,12 @@
     listEl.innerHTML = items.map(n => `
       <li class="news-item" id="news-${esc(n.id)}">
         <a href="#news-${esc(n.id)}" class="news-item__link">
-          <span class="news-item__title">${esc(n.title)}</span>
-          <span class="news-item__date">${esc(n.date)}</span>
+          <span class="news-item__icon">${NEWS_ICONS[n.category] || '📰'}</span>
+          <span class="news-item__text">
+            <span class="news-item__title">${esc(n.title)}</span>
+            <span class="news-item__date">${esc(n.date)}</span>
+          </span>
+          <span class="news-item__chevron">›</span>
         </a>
       </li>`).join('') || `<li class="mf-empty">No news posted yet.</li>`;
   }
@@ -289,22 +293,26 @@
     listEl.innerHTML = items.map(c => `
       <div class="codes-item" id="codes-only-${esc(c.id)}">
         <div class="codes-item__top"><b>${esc(bookmakerLabel(c.bookmaker))}</b><span>${esc(c.label)}</span></div>
-        <div class="code-row">
+        <button type="button" class="reveal-toggle" data-reveal-toggle="codes-only-reveal-${esc(c.id)}">🔒 Reveal Code</button>
+        <div class="code-row" id="codes-only-reveal-${esc(c.id)}" style="display:none">
           <span class="code-row__code" data-code-value="${esc(c.code)}">••••••</span>
-          <button type="button" class="code-row__btn" data-reveal>Reveal</button>
-          <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(c.code)}">Copy</button>
+          <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(c.code)}" style="display:none">Copy</button>
         </div>
       </div>`).join('') || `<div class="mf-empty">No codes yet.</div>`;
   }
 
   /* ---------------- reveal / copy (event delegation, wired once) ---------------- */
   function wireCodeReveal(root) {
-    root.querySelectorAll('[data-reveal]').forEach(btn => {
+    root.querySelectorAll('[data-reveal-toggle]').forEach(btn => {
       if (btn.dataset.wired) return;
       btn.dataset.wired = '1';
       btn.addEventListener('click', () => {
-        const codeSpan = btn.parentElement.querySelector('[data-code-value]');
-        if (codeSpan) codeSpan.textContent = codeSpan.dataset.codeValue;
+        const panel = document.getElementById(btn.dataset.revealToggle);
+        if (!panel) return;
+        panel.style.display = 'flex';
+        panel.querySelectorAll('[data-code-value]').forEach(span => { span.textContent = span.dataset.codeValue; });
+        panel.querySelectorAll('.code-row__btn--copy').forEach(b => { b.style.display = 'inline-block'; });
+        btn.textContent = '🔓 Code Revealed';
         btn.disabled = true;
       });
     });
