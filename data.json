@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-09-19T12:43:26.016Z",
+    "lastUpdated": "2026-09-19T12:49:33.863Z",
     "displayDate": "",
     "resultsDate": "",
     "stats": {
@@ -87,43 +87,6 @@
         "betway": {
           "odds": 1.77,
           "code": "DEMO-BETWAY-PRED-001"
-        }
-      }
-    },
-    {
-      "id": "DEMO-PRED-002",
-      "date": "2026-09-19",
-      "kickoff": "20:45",
-      "home": "Bayern Munich",
-      "away": "Leverkusen",
-      "league": "Bundesliga",
-      "category": "BTTS",
-      "market": "BTTS",
-      "selection": "BTTS - Yes",
-      "odds": 2.37,
-      "rating": 10,
-      "status": "scheduled",
-      "publishAt": "2026-09-19T13:00:00+01:00",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 2.37,
-          "code": "DEMO-BET9JA-PRED-002"
-        },
-        "sportybet": {
-          "odds": 2.37,
-          "code": "DEMO-SPORTYBET-PRED-002"
-        },
-        "betpawa": {
-          "odds": 2.37,
-          "code": "DEMO-BETPAWA-PRED-002"
-        },
-        "betway": {
-          "odds": 2.37,
-          "code": "DEMO-BETWAY-PRED-002"
-        },
-        "onexbet": {
-          "odds": 2.37,
-          "code": "DEMO-ONEXBET-PRED-002"
         }
       }
     },
