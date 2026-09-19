@@ -1,61 +1,63 @@
-/* MatchForecast service worker
-   - Caches only the static app shell (HTML/CSS/JS) for speed on slow connections.
-   - NEVER caches data.json — that always goes to the network so visitors
-     see new predictions the moment they're published, not stale ones.
-   - Bump CACHE_VERSION whenever the app shell changes so old caches are
-     dropped automatically.
-*/
+/* ============================================================
+   MatchForecast — sw.js
+   Fixes the "old predictions stuck for hours" problem:
+   - data.json is ALWAYS fetched from the network first. Cache
+     is only used as a fallback if the network request fails
+     (e.g. visitor briefly offline).
+   - Everything else (HTML/CSS/JS/images) is cache-first for
+     speed, with the cache refreshed in the background on every
+     visit, and a versioned cache name so old caches get cleaned
+     up automatically when you deploy new static files.
+   Replace your existing sw.js with this file, then bump
+   CACHE_VERSION any time you change script.js/styles.css so
+   old visitors pick up the new static files quickly.
+   ============================================================ */
 
-var CACHE_VERSION = "matchforecast-shell-v2";
-var SHELL_FILES = [
-  "./",
-  "index.html",
-  "styles.css",
-  "styles-additions.css",
-  "script.js"
-];
+const CACHE_VERSION = 'mf-v2';
+const STATIC_CACHE = `${CACHE_VERSION}-static`;
 
-self.addEventListener("install", function (event) {
+self.addEventListener('install', (event) => {
   self.skipWaiting();
+});
+
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.open(CACHE_VERSION).then(function (cache) {
-      return cache.addAll(SHELL_FILES).catch(function () {
-        /* Don't fail install if one optional asset 404s */
-      });
-    })
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== STATIC_CACHE).map(k => caches.delete(k)))
+    ).then(() => self.clients.claim())
   );
 });
 
-self.addEventListener("activate", function (event) {
-  event.waitUntil(
-    caches.keys().then(function (keys) {
-      return Promise.all(
-        keys.filter(function (key) { return key !== CACHE_VERSION; })
-            .map(function (key) { return caches.delete(key); })
-      );
-    }).then(function () { return self.clients.claim(); })
-  );
-});
+self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
 
-self.addEventListener("fetch", function (event) {
-  var url = event.request.url;
-
-  /* data.json (with or without a ?v= cache-busting query) always goes
-     straight to the network — never served from the cache. */
-  if (url.indexOf("data.json") !== -1) {
+  // Network-first for the daily data file — never serve a stale prediction.
+  if (url.pathname.endsWith('data.json')) {
     event.respondWith(
-      fetch(event.request, { cache: "no-store" }).catch(function () {
-        return new Response("{}", { headers: { "Content-Type": "application/json" } });
-      })
+      fetch(event.request, { cache: 'no-store' })
+        .then(res => {
+          const clone = res.clone();
+          caches.open(STATIC_CACHE).then(c => c.put(event.request, clone));
+          return res;
+        })
+        .catch(() => caches.match(event.request))
     );
     return;
   }
 
-  /* Everything else: cache-first, falling back to network, so the shell
-     still loads on a poor 2G connection. */
-  event.respondWith(
-    caches.match(event.request).then(function (cached) {
-      return cached || fetch(event.request);
-    })
-  );
+  // Cache-first (stale-while-revalidate) for everything else same-origin.
+  if (url.origin === self.location.origin) {
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        const network = fetch(event.request).then(res => {
+          if (res && res.ok) {
+            const clone = res.clone();
+            caches.open(STATIC_CACHE).then(c => c.put(event.request, clone));
+          }
+          return res;
+        }).catch(() => cached);
+        return cached || network;
+      })
+    );
+  }
 });
