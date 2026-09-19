@@ -1,5 +1,14 @@
 {
   "meta": {
+    "lastUpdated": "2026-09-19T12:43:26.016Z",
+    "displayDate": "",
+    "resultsDate": "",
+    "stats": {
+      "totalSelections": 0,
+      "winnersYesterday": 0,
+      "losersYesterday": 0,
+      "hitRateYesterday": 0
+    },
     "bookmakers": [
       {
         "key": "bet9ja",
@@ -2465,7 +2474,7 @@
           "match": "West Ham vs Nottingham Forest",
           "market": "Over/Under",
           "pick": "Over 1.5 Goals",
-          "odds": 2.0
+          "odds": 2
         },
         {
           "match": "Crystal Palace vs Brentford",
@@ -2884,27 +2893,27 @@
           "odds": 1.58
         }
       ],
-      "totalOdds": 356.0,
+      "totalOdds": 356,
       "rating": 9,
       "bookmakers": {
         "bet9ja": {
-          "odds": 356.0,
+          "odds": 356,
           "code": "DEMO-BET9JA-ACC-015"
         },
         "sportybet": {
-          "odds": 356.0,
+          "odds": 356,
           "code": "DEMO-SPORTYBET-ACC-015"
         },
         "betpawa": {
-          "odds": 356.0,
+          "odds": 356,
           "code": "DEMO-BETPAWA-ACC-015"
         },
         "betway": {
-          "odds": 356.0,
+          "odds": 356,
           "code": "DEMO-BETWAY-ACC-015"
         },
         "onexbet": {
-          "odds": 356.0,
+          "odds": 356,
           "code": "DEMO-ONEXBET-ACC-015"
         }
       }
@@ -3215,7 +3224,7 @@
           "match": "Celtic vs Rangers",
           "market": "Other",
           "pick": "Both Halves Over 0.5",
-          "odds": 2.0
+          "odds": 2
         },
         {
           "match": "Juventus vs Lazio",
@@ -3619,7 +3628,7 @@
       "code": "DEMO-ONEXBET-001",
       "label": "Sure 2 Odds",
       "odds": 2.11,
-      "description": "Sure 2 Odds \u2014 demo booking code for testing only.",
+      "description": "Sure 2 Odds — demo booking code for testing only.",
       "rating": 6,
       "date": "2026-09-19",
       "status": "published",
@@ -3631,7 +3640,7 @@
       "code": "DEMO-SPORTYBET-002",
       "label": "VIP Booking",
       "odds": 22.53,
-      "description": "VIP Booking \u2014 demo booking code for testing only.",
+      "description": "VIP Booking — demo booking code for testing only.",
       "rating": 6,
       "date": "2026-09-19",
       "status": "published",
@@ -3643,7 +3652,7 @@
       "code": "DEMO-BET9JA-003",
       "label": "Weekend Special",
       "odds": 27.12,
-      "description": "Weekend Special \u2014 demo booking code for testing only.",
+      "description": "Weekend Special — demo booking code for testing only.",
       "rating": 5,
       "date": "2026-09-19",
       "status": "published",
@@ -3655,7 +3664,7 @@
       "code": "DEMO-SPORTYBET-004",
       "label": "Midweek Slip",
       "odds": 2.56,
-      "description": "Midweek Slip \u2014 demo booking code for testing only.",
+      "description": "Midweek Slip — demo booking code for testing only.",
       "rating": 6,
       "date": "2026-09-19",
       "status": "published",
@@ -3667,7 +3676,7 @@
       "code": "DEMO-ONEXBET-005",
       "label": "Big Six Special",
       "odds": 14.3,
-      "description": "Big Six Special \u2014 demo booking code for testing only.",
+      "description": "Big Six Special — demo booking code for testing only.",
       "rating": 6,
       "date": "2026-09-19",
       "status": "published",
@@ -3679,7 +3688,7 @@
       "code": "DEMO-BETPAWA-006",
       "label": "Champions League Slip",
       "odds": 3.99,
-      "description": "Champions League Slip \u2014 demo booking code for testing only.",
+      "description": "Champions League Slip — demo booking code for testing only.",
       "rating": 10,
       "date": "2026-09-19",
       "status": "published",
@@ -3691,7 +3700,7 @@
       "code": "DEMO-BETWAY-007",
       "label": "Late Kickoff Special",
       "odds": 21.99,
-      "description": "Late Kickoff Special \u2014 demo booking code for testing only.",
+      "description": "Late Kickoff Special — demo booking code for testing only.",
       "rating": 10,
       "date": "2026-09-19",
       "status": "published",
@@ -3703,7 +3712,7 @@
       "code": "DEMO-BET9JA-008",
       "label": "Small Odds Big Wins",
       "odds": 20.1,
-      "description": "Small Odds Big Wins \u2014 demo booking code for testing only.",
+      "description": "Small Odds Big Wins — demo booking code for testing only.",
       "rating": 7,
       "date": "2026-09-19",
       "status": "published",
@@ -3715,7 +3724,7 @@
       "code": "DEMO-ONEXBET-009",
       "label": "Bankers Combo",
       "odds": 24.56,
-      "description": "Bankers Combo \u2014 demo booking code for testing only.",
+      "description": "Bankers Combo — demo booking code for testing only.",
       "rating": 8,
       "date": "2026-09-19",
       "status": "published",
@@ -3727,7 +3736,7 @@
       "code": "DEMO-ONEXBET-010",
       "label": "Value Pick",
       "odds": 10.42,
-      "description": "Value Pick \u2014 demo booking code for testing only.",
+      "description": "Value Pick — demo booking code for testing only.",
       "rating": 9,
       "date": "2026-09-19",
       "status": "scheduled",
@@ -4008,7 +4017,7 @@
       "title": "Weekend Premier League Preview: Key Fixtures To Watch",
       "slug": "weekend-premier-league-preview-key-fixtures-to-watch",
       "category": "Report",
-      "excerpt": "Weekend Premier League Preview: Key Fixtures To Watch \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Weekend Premier League Preview: Key Fixtures To Watch — a quick look at what matters for bettors this week.",
       "content": "Weekend Premier League Preview: Key Fixtures To Watch.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4021,7 +4030,7 @@
       "title": "Injury Update: Squad News Ahead Of Matchday",
       "slug": "injury-update-squad-news-ahead-of-matchday",
       "category": "Analysis",
-      "excerpt": "Injury Update: Squad News Ahead Of Matchday \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Injury Update: Squad News Ahead Of Matchday — a quick look at what matters for bettors this week.",
       "content": "Injury Update: Squad News Ahead Of Matchday.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4034,7 +4043,7 @@
       "title": "Betting Trends: Where The Value Is This Week",
       "slug": "betting-trends-where-the-value-is-this-week",
       "category": "Guide",
-      "excerpt": "Betting Trends: Where The Value Is This Week \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Betting Trends: Where The Value Is This Week — a quick look at what matters for bettors this week.",
       "content": "Betting Trends: Where The Value Is This Week.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4047,7 +4056,7 @@
       "title": "Champions League Round-Up: What We Learned",
       "slug": "champions-league-round-up-what-we-learned",
       "category": "Report",
-      "excerpt": "Champions League Round-Up: What We Learned \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Champions League Round-Up: What We Learned — a quick look at what matters for bettors this week.",
       "content": "Champions League Round-Up: What We Learned.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4060,7 +4069,7 @@
       "title": "Top 5 Accumulators That Delivered Last Weekend",
       "slug": "top-5-accumulators-that-delivered-last-weekend",
       "category": "Preview",
-      "excerpt": "Top 5 Accumulators That Delivered Last Weekend \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Top 5 Accumulators That Delivered Last Weekend — a quick look at what matters for bettors this week.",
       "content": "Top 5 Accumulators That Delivered Last Weekend.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4073,7 +4082,7 @@
       "title": "How To Read Odds: A Beginner's Guide",
       "slug": "how-to-read-odds-a-beginners-guide",
       "category": "Preview",
-      "excerpt": "How To Read Odds: A Beginner's Guide \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "How To Read Odds: A Beginner's Guide — a quick look at what matters for bettors this week.",
       "content": "How To Read Odds: A Beginner's Guide.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4086,7 +4095,7 @@
       "title": "La Liga Title Race Heats Up",
       "slug": "la-liga-title-race-heats-up",
       "category": "Preview",
-      "excerpt": "La Liga Title Race Heats Up \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "La Liga Title Race Heats Up — a quick look at what matters for bettors this week.",
       "content": "La Liga Title Race Heats Up.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4099,7 +4108,7 @@
       "title": "Bundesliga Goal Machines: Who's In Form",
       "slug": "bundesliga-goal-machines-whos-in-form",
       "category": "Guide",
-      "excerpt": "Bundesliga Goal Machines: Who's In Form \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Bundesliga Goal Machines: Who's In Form — a quick look at what matters for bettors this week.",
       "content": "Bundesliga Goal Machines: Who's In Form.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4112,7 +4121,7 @@
       "title": "Correct Score Betting: Tips For Higher Accuracy",
       "slug": "correct-score-betting-tips-for-higher-accuracy",
       "category": "Report",
-      "excerpt": "Correct Score Betting: Tips For Higher Accuracy \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "Correct Score Betting: Tips For Higher Accuracy — a quick look at what matters for bettors this week.",
       "content": "Correct Score Betting: Tips For Higher Accuracy.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
@@ -4125,13 +4134,41 @@
       "title": "MatchForecast Monthly Performance Report",
       "slug": "matchforecast-monthly-performance-report",
       "category": "Report",
-      "excerpt": "MatchForecast Monthly Performance Report \u2014 a quick look at what matters for bettors this week.",
+      "excerpt": "MatchForecast Monthly Performance Report — a quick look at what matters for bettors this week.",
       "content": "MatchForecast Monthly Performance Report.\n\nThis is placeholder demo content for the News section. Replace with real editorial content from the Editor.",
       "author": "MatchForecast Team",
       "date": "2026-09-19",
       "publishAt": "2026-09-19T18:00:00+01:00",
       "featured": false,
       "status": "scheduled"
+    }
+  ],
+  "betOfTheDay": [],
+  "bookmakers": [
+    {
+      "id": "bet9ja",
+      "name": "Bet9ja",
+      "link": ""
+    },
+    {
+      "id": "sportybet",
+      "name": "SportyBet",
+      "link": ""
+    },
+    {
+      "id": "betpawa",
+      "name": "BetPawa",
+      "link": ""
+    },
+    {
+      "id": "betway",
+      "name": "Betway",
+      "link": ""
+    },
+    {
+      "id": "1xbet",
+      "name": "1xBet",
+      "link": ""
     }
   ]
 }
