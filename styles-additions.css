@@ -20,14 +20,18 @@
 .bm-badge--betpawa{background:#f5a623;color:#1a1a1a;} .bm-badge--betway{background:#0b0b0b;color:#fff;}
 .bm-badge--onexbet{background:#1c1c50;color:#fff;}
 
-/* ---- reveal / copy code row ---- */
+/* ---- reveal / copy code row (aligned box, not scattered) ---- */
 .reveal-toggle { display:inline-flex; align-items:center; gap:6px; border:none; background:#171f31; color:#fff; font-weight:700; font-size:12px; padding:8px 14px; border-radius:8px; cursor:pointer; }
 .reveal-toggle:disabled { opacity:0.85; cursor:default; }
-.code-reveal { display:flex; flex-direction:column; gap:6px; margin-top:6px; }
-.code-row { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-size:11px; margin-top:6px; }
-.code-row__bm { font-weight:700; width:70px; flex-shrink:0; }
-.code-row__code { font-family:monospace; background:#171f31; color:#8ff0b0; padding:3px 8px; border-radius:5px; min-width:70px; text-align:center; }
-.code-row__btn { border:none; background:#2ecc58; color:#04371a; font-weight:700; font-size:10px; padding:4px 8px; border-radius:5px; cursor:pointer; }
+.code-reveal { display:flex; flex-direction:column; gap:0; margin-top:8px; border:1px solid #e4e8ee; border-radius:8px; overflow:hidden; }
+.code-row {
+  display:grid; grid-template-columns:70px 1fr auto; align-items:center; gap:8px;
+  font-size:11px; padding:7px 10px; border-bottom:1px solid #eef1f6; background:#fbfdff;
+}
+.code-reveal .code-row:last-child { border-bottom:none; }
+.code-row__bm { font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.code-row__code { font-family:monospace; background:#171f31; color:#8ff0b0; padding:4px 8px; border-radius:5px; text-align:center; justify-self:stretch; }
+.code-row__btn { border:none; background:#2ecc58; color:#04371a; font-weight:700; font-size:10px; padding:5px 9px; border-radius:5px; cursor:pointer; white-space:nowrap; }
 .code-row__btn--copy { background:#171f31; color:#fff; }
 
 /* ---- Featured Bookmakers row ---- */
@@ -82,6 +86,15 @@
 .cs-table th, .cs-table td { padding:8px 6px; border-bottom:1px solid #eef1f6; text-align:left; vertical-align:top; }
 .cs-table th { color:#6b7688; font-size:11px; text-transform:uppercase; }
 
+/* ---- predictions table: aligned columns, not scattered ---- */
+.col-num { width:28px; color:#8a94a6; font-size:12px; vertical-align:top; }
+.col-match { min-width:150px; vertical-align:top; }
+.col-pick { min-width:110px; vertical-align:top; }
+.col-odds { width:60px; font-weight:700; vertical-align:top; }
+.col-books { min-width:140px; vertical-align:top; }
+.col-code { width:150px; vertical-align:top; }
+#picksTableBody td, #correctScoreBody td { padding:12px 8px; border-bottom:1px solid #eef1f6; }
+
 /* ---- team initials badges ---- */
 .matchup { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-weight:600; font-size:13px; }
 .matchup__side { display:flex; align-items:center; gap:5px; }
@@ -130,7 +143,11 @@
 .mf-modal__row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eef1f6; font-size:13px; }
 
 /* ---- search results dropdown ---- */
-.search-results { list-style:none; margin:0; padding:0; max-height:280px; overflow-y:auto; }
+#searchResults.search-results, .search-results {
+  list-style:none; margin:4px 0 0; padding:0; max-height:300px; overflow-y:auto;
+  background:#fff; border:1px solid #e4e8ee; border-radius:10px;
+  box-shadow:0 8px 24px rgba(10,14,24,0.18);
+}
 .search-result { padding:10px 12px; font-size:13px; border-bottom:1px solid #eef1f6; cursor:pointer; }
 .search-result:active { background:#f4f6f9; }
 .search-result__type { font-size:10px; font-weight:700; color:#2ecc58; text-transform:uppercase; margin-right:6px; }
