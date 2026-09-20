@@ -275,9 +275,12 @@
     const listEl = panel.querySelector('#betOfDayList') || document.getElementById('betOfDayList');
     const items = livePublished(DATA.betOfDay);
     listEl.innerHTML = items.map(b => `
-      <div class="bod-card" id="bet-of-day-${esc(b.id)}">
+      <div class="bod-card" id="bet-of-day-${esc(b.id)}"${b.photo ? ` style="background-image:url('${esc(b.photo)}')"` : ''}>
         <div class="bod-card__match">${matchupFromString(b.match)}</div>
-        <div class="bod-card__pick">${esc(b.pick)} <span class="bod-card__odds">@ ${esc(b.odds)}</span></div>
+        <div class="bod-card__pick-row">
+          <span class="bod-card__pick">${esc(b.pick)}</span>
+          <span class="bod-card__odds">@ ${esc(b.odds)}</span>
+        </div>
         <p class="bod-card__desc">${esc(b.description || '')}</p>
         <div class="bod-card__meta">Rating ${esc(b.rating)}/10 · ${esc(bookmakerLabel(b.bookmaker))}</div>
       </div>`).join('') || `<div class="mf-empty">No Bet of the Day yet.</div>`;
