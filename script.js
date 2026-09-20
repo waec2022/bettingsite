@@ -17,6 +17,12 @@
 (function () {
   'use strict';
 
+  // Guards against script.js accidentally being included twice in index.html
+  // (easy to happen after manual edits) — without this, two copies would
+  // both try to render, causing duplicate sections and race conditions.
+  if (window.__mfScriptInitialized) return;
+  window.__mfScriptInitialized = true;
+
   const DATA_URL = 'data.json';
   const POLL_MS = 30000;
   let DATA = null;
@@ -273,7 +279,8 @@
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> BET OF THE DAY</h2></div>
        <div id="betOfDayList"></div>`, 'panel--bod');
     const listEl = panel.querySelector('#betOfDayList') || document.getElementById('betOfDayList');
-    const items = livePublished(DATA.betOfDay);
+    // Just the single most confident pick — your one "correct and sure" headline bet.
+    const items = livePublished(DATA.betOfDay).sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 1);
     listEl.innerHTML = items.map(b => `
       <div class="bod-card" id="bet-of-day-${esc(b.id)}"${b.photo ? ` style="background-image:url('${esc(b.photo)}')"` : ''}>
         <div class="bod-card__match">${matchupFromString(b.match)}</div>
@@ -327,19 +334,12 @@
     const panel = ensurePanel('codes-only', '.content-sidebar',
       `<h3 class="sidebar-panel__title">🔑 CODES ONLY</h3><div id="codesOnlyList"></div>`, 'sidebar-panel panel--codes');
     const listEl = panel.querySelector('#codesOnlyList') || document.getElementById('codesOnlyList');
-    const bmOrder = (DATA.meta.bookmakers || []).map(b => b.key);
-    const items = livePublished(DATA.codesOnly).slice().sort((a, b) => bmOrder.indexOf(a.bookmaker) - bmOrder.indexOf(b.bookmaker));
+    const items = livePublished(DATA.codesOnly);
     listEl.innerHTML = items.map(c => `
       <div class="codes-item" id="codes-only-${esc(c.id)}">
-        <div class="codes-item__top">
-          <span class="bm-badge bm-badge--${esc(c.bookmaker)}">${esc(bookmakerLabel(c.bookmaker))}</span>
-          <span>${esc(c.label)}</span>
-        </div>
-        <button type="button" class="reveal-toggle" data-reveal-toggle="codes-only-reveal-${esc(c.id)}">🔒 Reveal Code</button>
-        <div class="code-row" id="codes-only-reveal-${esc(c.id)}" style="display:none">
-          <span class="code-row__code" data-code-value="${esc(c.code)}">••••••</span>
-          <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(c.code)}" style="display:none">Copy</button>
-        </div>
+        <div class="codes-item__top"><b>${esc(c.label)}</b>${c.odds ? `<span>@ ${esc(c.odds)}</span>` : ''}</div>
+        ${bookmakerBadges(c.bookmakers)}
+        ${codeRevealHtml(c.bookmakers, `codes-only-reveal-${esc(c.id)}`)}
       </div>`).join('') || `<div class="mf-empty">No codes yet.</div>`;
   }
 
@@ -377,7 +377,7 @@
     livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection}`, anchor: `prediction-${p.id}` }));
     livePublished(DATA.accumulators).forEach(a => idx.push({ type: 'Accumulator', label: a.title, anchor: `accumulator-${a.id}` }));
     livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score}`, anchor: `correct-score-${c.id}` }));
-    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Code', label: `${bookmakerLabel(c.bookmaker)} — ${c.label}`, anchor: `codes-only-${c.id}` }));
+    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Code', label: c.label, anchor: `codes-only-${c.id}` }));
     livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live', label: l.match, anchor: `live-${l.id}` }));
     livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: b.match, anchor: `bet-of-day-${b.id}` }));
     (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: r.match, anchor: `result-${r.id}` }));
@@ -399,6 +399,15 @@
     results.innerHTML = matches.map(m =>
       `<li class="search-result" data-anchor="${esc(m.anchor)}"><span class="search-result__type">${esc(m.type)}</span> ${highlightMatch(m.label, q)}</li>`
     ).join('') || `<li class="search-result search-result--empty">No matches</li>`;
+    // Force the dropdown visible — some page CSS hides #searchResults by
+    // default until a class we don't know about is toggled, so we override
+    // directly here rather than relying on any assumed class name.
+    results.style.display = 'block';
+    results.style.visibility = 'visible';
+    results.style.opacity = '1';
+    results.style.maxHeight = 'none';
+    results.style.position = results.style.position || 'relative';
+    results.style.zIndex = '50';
     results.querySelectorAll('[data-anchor]').forEach(li => {
       li.addEventListener('click', () => goToResult(li.dataset.anchor));
     });
@@ -410,6 +419,7 @@
     const input = document.getElementById('searchInput');
     const results = document.getElementById('searchResults');
     if (!input || !results) return;
+    results.classList.add('search-results');
 
     if (toggle && box) {
       toggle.addEventListener('click', () => {
@@ -478,6 +488,14 @@
   }
 
   /* ---------------- load + poll ---------------- */
+  let firstRenderDone = false;
+  function revealPage() {
+    // Pairs with the tiny <script>document.documentElement.style.visibility='hidden'</script>
+    // at the very top of index.html's <head> — this is what makes everything
+    // appear in one frame instead of flashing an empty "0 Selections" state first.
+    document.documentElement.style.visibility = 'visible';
+  }
+
   async function loadData() {
     try {
       const res = await fetch(DATA_URL + '?v=' + Date.now(), { cache: 'no-store' });
@@ -486,6 +504,8 @@
       renderAll();
     } catch (e) {
       console.error('Failed to load data.json', e);
+    } finally {
+      if (!firstRenderDone) { firstRenderDone = true; revealPage(); }
     }
   }
 
@@ -493,6 +513,9 @@
     loadData();
     setupSearch();
     setInterval(loadData, POLL_MS); // re-check for newly-eligible scheduled content
+    // Safety net: never leave the page invisible for more than 4s even if the
+    // network is very slow or data.json fails to load at all.
+    setTimeout(() => { if (!firstRenderDone) { firstRenderDone = true; revealPage(); } }, 4000);
   });
 
   // Register the service worker (network-first for data.json, cache-first for
