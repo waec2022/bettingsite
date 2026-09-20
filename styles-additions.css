@@ -121,6 +121,7 @@
 .search-result:active { background:#f4f6f9; }
 .search-result__type { font-size:10px; font-weight:700; color:#2ecc58; text-transform:uppercase; margin-right:6px; }
 .search-result--empty { color:#8a94a6; cursor:default; }
+.search-result mark { background:#d9fbe5; color:#0a5c36; font-weight:700; padding:0 1px; border-radius:2px; }
 
 /* ============================================================
    MOBILE SAFETY — 320 / 360 / 375 / 390 / 412 / 430px
