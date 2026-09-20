@@ -324,10 +324,14 @@
     const panel = ensurePanel('codes-only', '.content-sidebar',
       `<h3 class="sidebar-panel__title">🔑 CODES ONLY</h3><div id="codesOnlyList"></div>`, 'sidebar-panel panel--codes');
     const listEl = panel.querySelector('#codesOnlyList') || document.getElementById('codesOnlyList');
-    const items = livePublished(DATA.codesOnly);
+    const bmOrder = (DATA.meta.bookmakers || []).map(b => b.key);
+    const items = livePublished(DATA.codesOnly).slice().sort((a, b) => bmOrder.indexOf(a.bookmaker) - bmOrder.indexOf(b.bookmaker));
     listEl.innerHTML = items.map(c => `
       <div class="codes-item" id="codes-only-${esc(c.id)}">
-        <div class="codes-item__top"><b>${esc(bookmakerLabel(c.bookmaker))}</b><span>${esc(c.label)}</span></div>
+        <div class="codes-item__top">
+          <span class="bm-badge bm-badge--${esc(c.bookmaker)}">${esc(bookmakerLabel(c.bookmaker))}</span>
+          <span>${esc(c.label)}</span>
+        </div>
         <button type="button" class="reveal-toggle" data-reveal-toggle="codes-only-reveal-${esc(c.id)}">🔒 Reveal Code</button>
         <div class="code-row" id="codes-only-reveal-${esc(c.id)}" style="display:none">
           <span class="code-row__code" data-code-value="${esc(c.code)}">••••••</span>
@@ -364,6 +368,7 @@
   }
 
   /* ---------------- SEARCH ---------------- */
+  let SEARCH_INDEX = [];
   function buildSearchIndex() {
     const idx = [];
     livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection}`, anchor: `prediction-${p.id}` }));
@@ -375,7 +380,25 @@
     (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: r.match, anchor: `result-${r.id}` }));
     livePublished(DATA.news).forEach(n => idx.push({ type: 'News', label: n.title, anchor: `news-${n.id}` }));
     (DATA.meta.bookmakers || []).forEach(b => idx.push({ type: 'Bookmaker', label: b.name, anchor: `bookmaker-${b.key}` }));
+    SEARCH_INDEX = idx; // rebuilt once per data load/poll, not on every keystroke — keeps typing instant
     return idx;
+  }
+
+  function highlightMatch(label, q) {
+    const i = label.toLowerCase().indexOf(q);
+    if (i === -1) return esc(label);
+    return esc(label.slice(0, i)) + '<mark>' + esc(label.slice(i, i + q.length)) + '</mark>' + esc(label.slice(i + q.length));
+  }
+
+  function renderSearchResults(matches, q) {
+    const results = document.getElementById('searchResults');
+    if (!results) return;
+    results.innerHTML = matches.map(m =>
+      `<li class="search-result" data-anchor="${esc(m.anchor)}"><span class="search-result__type">${esc(m.type)}</span> ${highlightMatch(m.label, q)}</li>`
+    ).join('') || `<li class="search-result search-result--empty">No matches</li>`;
+    results.querySelectorAll('[data-anchor]').forEach(li => {
+      li.addEventListener('click', () => goToResult(li.dataset.anchor));
+    });
   }
 
   function setupSearch() {
@@ -394,17 +417,20 @@
       });
     }
 
+    // 'input' fires on every keystroke (typed, pasted, or voice-typed) — instant, no debounce delay.
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
       if (!q) { results.innerHTML = ''; return; }
-      const idx = buildSearchIndex();
-      const matches = idx.filter(i => i.label.toLowerCase().includes(q)).slice(0, 12);
-      results.innerHTML = matches.map(m =>
-        `<li class="search-result" data-anchor="${esc(m.anchor)}"><span class="search-result__type">${esc(m.type)}</span> ${esc(m.label)}</li>`
-      ).join('') || `<li class="search-result search-result--empty">No matches</li>`;
-      results.querySelectorAll('[data-anchor]').forEach(li => {
-        li.addEventListener('click', () => goToResult(li.dataset.anchor));
-      });
+      const matches = SEARCH_INDEX.filter(i => i.label.toLowerCase().includes(q)).slice(0, 12);
+      renderSearchResults(matches, q);
+    });
+
+    // Enter jumps straight to the top result — no need to reach for it.
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const first = results.querySelector('[data-anchor]');
+        if (first) goToResult(first.dataset.anchor);
+      }
     });
   }
 
@@ -445,6 +471,7 @@
     renderCorrectScore();
     renderCodesOnly();
     wireCodeReveal(document);
+    buildSearchIndex();
   }
 
   /* ---------------- load + poll ---------------- */
