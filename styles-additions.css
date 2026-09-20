@@ -45,13 +45,27 @@
 .news-item__chevron { color:#c3c9d4; font-size:18px; }
 
 /* ---- Bet of the Day ---- */
-.panel--bod .bod-card { border:none; border-radius:10px; padding:14px; margin-bottom:10px; background:linear-gradient(135deg, #ffb100, #ff8a00); }
-.bod-card__match { font-weight:700; font-size:15px; margin-bottom:4px; color:#3a2400; }
-.bod-card__match .matchup__name, .bod-card__match .matchup__vs { color:#3a2400; }
-.bod-card__pick { color:#0a4d24; font-weight:800; background:rgba(255,255,255,0.55); padding:2px 8px; border-radius:6px; }
-.bod-card__odds { color:#3a2400; font-weight:800; float:right; }
-.bod-card__desc { font-size:12px; color:#4a3000; margin:8px 0; }
-.bod-card__meta { font-size:11px; color:#5a3c00; font-weight:600; }
+.panel--bod .bod-card {
+  border:1px solid rgba(255,177,0,0.5); border-radius:12px; padding:16px; margin-bottom:14px;
+  background:linear-gradient(160deg, #1a1f2e, #0d0f1a);
+  background-size:cover; background-position:center;
+  box-shadow:0 0 14px rgba(255,177,0,0.25), inset 0 0 30px rgba(0,0,0,0.4);
+  position:relative; overflow:hidden;
+}
+.panel--bod .bod-card::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(160deg, rgba(10,12,20,0.55), rgba(10,12,20,0.85));
+  pointer-events:none;
+}
+.panel--bod .bod-card > * { position:relative; z-index:1; }
+.bod-card__match { font-weight:700; font-size:15px; margin-bottom:10px; }
+.bod-card__match .matchup__name { color:#fff; }
+.bod-card__match .matchup__vs { color:#ffb100; font-weight:700; }
+.bod-card__pick-row { background:rgba(255,177,0,0.12); border:1px solid rgba(255,177,0,0.4); border-radius:8px; padding:10px 12px; margin-bottom:8px; }
+.bod-card__pick { color:#ffcc4d; font-weight:800; font-size:16px; }
+.bod-card__odds { color:#fff; font-weight:800; float:right; }
+.bod-card__desc { font-size:12px; color:#c7cbd6; margin:8px 0; }
+.bod-card__meta { font-size:11px; color:#ffb100; font-weight:700; }
 
 /* ---- Live Predictions ---- */
 .live-grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
