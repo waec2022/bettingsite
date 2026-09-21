@@ -329,6 +329,26 @@
       </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No correct score picks yet.</td></tr>`;
   }
 
+  /* ---------------- BET OF THE DAY — more picks (separate from the single main one) ---------------- */
+  function renderBetOfDayMore() {
+    const panel = ensurePanel('bet-of-day-more', '.content-main',
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> MORE BET OF THE DAY</h2></div>
+       <div id="betOfDayMoreList"></div>`, 'panel--bod');
+    const listEl = panel.querySelector('#betOfDayMoreList') || document.getElementById('betOfDayMoreList');
+    // Everything except the single top pick already shown in the main section above.
+    const items = livePublished(DATA.betOfDay).sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(1, 4);
+    listEl.innerHTML = items.map(b => `
+      <div class="bod-card" id="bet-of-day-more-${esc(b.id)}"${b.photo ? ` style="background-image:url('${esc(b.photo)}')"` : ''}>
+        <div class="bod-card__match">${matchupFromString(b.match)}</div>
+        <div class="bod-card__pick-row">
+          <span class="bod-card__pick">${esc(b.pick)}</span>
+          <span class="bod-card__odds">@ ${esc(b.odds)}</span>
+        </div>
+        <p class="bod-card__desc">${esc(b.description || '')}</p>
+        <div class="bod-card__meta">Rating ${esc(b.rating)}/10 · ${esc(bookmakerLabel(b.bookmaker))}</div>
+      </div>`).join('') || `<div class="mf-empty">No more Bet of the Day picks yet.</div>`;
+  }
+
   /* ---------------- CODES ONLY (new, sidebar) ---------------- */
   function renderCodesOnly() {
     const panel = ensurePanel('codes-only', '.content-sidebar',
@@ -482,6 +502,7 @@
     renderBetOfDay();
     renderLivePredictions();
     renderCorrectScore();
+    renderBetOfDayMore();
     renderCodesOnly();
     wireCodeReveal(document);
     buildSearchIndex();
