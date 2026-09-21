@@ -1,4 +1,3 @@
-
 {
   "meta": {
     "bookmakers": [
@@ -61,10 +60,10 @@
     ],
     "overview": {
       "date": "2026-09-19",
-      "statTotal": 87,
-      "statWinners": 52,
+      "statTotal": 5,
+      "statWinners": 12,
       "statLosers": 13,
-      "statHitRate": "28%"
+      "statHitRate": "48%"
     },
     "timezone": "Africa/Lagos"
   },
@@ -442,7 +441,7 @@
           "odds": 49.2,
           "code": "DEMO-SPORTYBET-ACC-002"
         },
-        "betpawa":
+        "betpawa": {
           "odds": 49.2,
           "code": "DEMO-BETPAWA-ACC-002"
         },
