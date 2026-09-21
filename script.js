@@ -115,30 +115,50 @@
   /* ---------------- TOP PICKS (predictions) ---------------- */
   const FILTERS = ['All', 'Over/Under', 'BTTS', 'Match Winner', 'Double Chance', 'Other'];
 
-  function renderPicksFilters(items) {
-    const wrap = document.getElementById('picksFilters');
-    if (!wrap) return;
-    wrap.innerHTML = FILTERS.map(f => {
+  // Guarantees Top Picks always has somewhere to render, even if the page's
+  // own #picksTableBody/#picksCardsList markup is missing or renamed —
+  // same self-healing approach used for Bet of the Day, Correct Score, etc.
+  function ensureTopPicksContainers() {
+    let cardsList = document.getElementById('picksCardsList');
+    let filtersEl = document.getElementById('picksFilters');
+    let badge = document.getElementById('pickCountBadge');
+    if (cardsList && filtersEl) {
+      return { cardsList, filtersEl, badge, tbody: document.getElementById('picksTableBody') };
+    }
+    const panel = ensurePanel('top-picks-fallback', '.content-main',
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">🔥</span> TODAY'S TOP PICKS <span id="pickCountBadgeFallback" class="badge-count"></span></h2></div>
+       <div id="picksFiltersFallback" class="filter-row"></div>
+       <div id="picksCardsListFallback"></div>`, 'panel--picks-fallback');
+    return {
+      cardsList: panel.querySelector('#picksCardsListFallback'),
+      filtersEl: panel.querySelector('#picksFiltersFallback'),
+      badge: panel.querySelector('#pickCountBadgeFallback'),
+      tbody: null,
+    };
+  }
+
+  function renderPicksFilters(items, filtersEl) {
+    if (!filtersEl) return;
+    filtersEl.innerHTML = FILTERS.map(f => {
       const count = f === 'All' ? items.length : items.filter(i => i.category === f).length;
       const activeCls = f === activeFilter ? ' filter-chip--active' : '';
       return `<button class="filter-chip${activeCls}" data-filter="${esc(f)}" role="tab" aria-selected="${f === activeFilter}">${esc(f)} (${count})</button>`;
     }).join('');
-    wrap.querySelectorAll('[data-filter]').forEach(btn => {
+    filtersEl.querySelectorAll('[data-filter]').forEach(btn => {
       btn.addEventListener('click', () => { activeFilter = btn.dataset.filter; renderPicks(); });
     });
   }
 
   function renderPicks() {
+    const { cardsList, filtersEl, badge, tbody } = ensureTopPicksContainers();
     const items = livePublished(DATA.predictions).sort((a, b) => (b.rating || 0) - (a.rating || 0));
-    const badge = document.getElementById('pickCountBadge');
     if (badge) badge.textContent = `${items.length} Selections`;
     const overviewTotal = document.getElementById('statTotal');
     if (overviewTotal) overviewTotal.textContent = items.length;
 
-    renderPicksFilters(items);
+    renderPicksFilters(items, filtersEl);
     const filtered = activeFilter === 'All' ? items : items.filter(i => i.category === activeFilter);
 
-    const tbody = document.getElementById('picksTableBody');
     if (tbody) {
       tbody.innerHTML = filtered.map((p, idx) => `
         <tr id="prediction-${esc(p.id)}">
@@ -151,9 +171,8 @@
         </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No selections yet.</td></tr>`;
     }
 
-    const cards = document.getElementById('picksCardsList');
-    if (cards) {
-      cards.innerHTML = filtered.map((p, idx) => `
+    if (cardsList) {
+      cardsList.innerHTML = filtered.map((p, idx) => `
         <div class="pick-card" id="prediction-card-${esc(p.id)}">
           <div class="pick-card__top">
             <span class="pick-card__num">#${idx + 1}</span>
@@ -397,8 +416,8 @@
     livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection}`, anchor: `prediction-${p.id}` }));
     livePublished(DATA.accumulators).forEach(a => idx.push({ type: 'Accumulator', label: a.title, anchor: `accumulator-${a.id}` }));
     livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score}`, anchor: `correct-score-${c.id}` }));
-    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Code', label: c.label, anchor: `codes-only-${c.id}` }));
-    livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live', label: l.match, anchor: `live-${l.id}` }));
+    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Codes Only', label: c.label, anchor: `codes-only-${c.id}` }));
+    livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live Predictions', label: l.match, anchor: `live-${l.id}` }));
     livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: b.match, anchor: `bet-of-day-${b.id}` }));
     (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: r.match, anchor: `result-${r.id}` }));
     livePublished(DATA.news).forEach(n => idx.push({ type: 'News', label: n.title, anchor: `news-${n.id}` }));
@@ -454,7 +473,9 @@
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
       if (!q) { results.innerHTML = ''; return; }
-      const matches = SEARCH_INDEX.filter(i => i.label.toLowerCase().includes(q)).slice(0, 12);
+      const matches = SEARCH_INDEX.filter(i =>
+        i.label.toLowerCase().includes(q) || i.type.toLowerCase().includes(q)
+      ).slice(0, 12);
       renderSearchResults(matches, q);
     });
 
@@ -539,11 +560,14 @@
     setTimeout(() => { if (!firstRenderDone) { firstRenderDone = true; revealPage(); } }, 4000);
   });
 
-  // Register the service worker (network-first for data.json, cache-first for
-  // everything else — see sw.js). Safe no-op if the browser doesn't support it.
+  // No service worker is used anymore — it was causing inconsistent update
+  // behavior ("sometimes it updates, sometimes it doesn't"). Every request
+  // now goes straight to the network with cache-busting instead. This also
+  // actively removes any service worker a visitor's browser installed from
+  // an earlier version of this site, so old caching behavior can't linger.
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(err => console.error('SW registration failed', err));
-    });
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    }).catch(() => {});
   }
 })();
