@@ -112,6 +112,18 @@
     return panel;
   }
 
+  // Guarantees a specific inner element exists inside a panel and returns it —
+  // NEVER returns null. This is what fixes the real bug: if the page already
+  // has a static, pre-existing version of a section (built before this data
+  // system existed) that doesn't contain the content container we need,
+  // this appends it instead of assuming it's already there and crashing.
+  function ensureChild(panel, childId, childHtml) {
+    let child = document.getElementById(childId);
+    if (child) return child;
+    if (panel) panel.insertAdjacentHTML('beforeend', childHtml);
+    return document.getElementById(childId);
+  }
+
   /* ---------------- TOP PICKS (predictions) ---------------- */
   const FILTERS = ['All', 'Over/Under', 'BTTS', 'Match Winner', 'Double Chance', 'Other'];
 
@@ -297,7 +309,7 @@
     const panel = ensurePanel('bet-of-day', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> BET OF THE DAY</h2></div>
        <div id="betOfDayList"></div>`, 'panel--bod');
-    const listEl = panel.querySelector('#betOfDayList') || document.getElementById('betOfDayList');
+    const listEl = ensureChild(panel, 'betOfDayList', '<div id="betOfDayList"></div>');
     // Just the single most confident pick — your one "correct and sure" headline bet.
     const items = livePublished(DATA.betOfDay).sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 1);
     listEl.innerHTML = items.map(b => `
@@ -317,7 +329,7 @@
     const panel = ensurePanel('live-predictions', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">📡</span> LIVE PREDICTIONS</h2></div>
        <div class="live-grid" id="liveGrid"></div>`, 'panel--live');
-    const gridEl = panel.querySelector('#liveGrid') || document.getElementById('liveGrid');
+    const gridEl = ensureChild(panel, 'liveGrid', '<div class="live-grid" id="liveGrid"></div>');
     const items = livePublished(DATA.livePredictions);
     gridEl.innerHTML = items.map(l => `
       <div class="live-card" id="live-${esc(l.id)}">
@@ -335,7 +347,7 @@
          <thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead>
          <tbody id="correctScoreBody"></tbody>
        </table></div>`, 'panel--cs');
-    const tbody = panel.querySelector('#correctScoreBody') || document.getElementById('correctScoreBody');
+    const tbody = ensureChild(panel, 'correctScoreBody', '<tbody id="correctScoreBody"></tbody>');
     const items = livePublished(DATA.correctScores);
     tbody.innerHTML = items.map((c, idx) => `
       <tr id="correct-score-${esc(c.id)}">
@@ -353,7 +365,7 @@
     const panel = ensurePanel('bet-of-day-more', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> MORE BET OF THE DAY</h2></div>
        <div id="betOfDayMoreList"></div>`, 'panel--bod');
-    const listEl = panel.querySelector('#betOfDayMoreList') || document.getElementById('betOfDayMoreList');
+    const listEl = ensureChild(panel, 'betOfDayMoreList', '<div id="betOfDayMoreList"></div>');
     // Everything except the single top pick already shown in the main section above.
     const items = livePublished(DATA.betOfDay).sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(1, 4);
     listEl.innerHTML = items.map(b => `
@@ -372,7 +384,7 @@
   function renderCodesOnly() {
     const panel = ensurePanel('codes-only', '.content-sidebar',
       `<h3 class="sidebar-panel__title">🔑 CODES ONLY</h3><div id="codesOnlyList"></div>`, 'sidebar-panel panel--codes');
-    const listEl = panel.querySelector('#codesOnlyList') || document.getElementById('codesOnlyList');
+    const listEl = ensureChild(panel, 'codesOnlyList', '<div id="codesOnlyList"></div>');
     const items = livePublished(DATA.codesOnly);
     listEl.innerHTML = items.map(c => `
       <div class="codes-item" id="codes-only-${esc(c.id)}">
@@ -514,19 +526,20 @@
 
   /* ---------------- render everything ---------------- */
   function renderAll() {
-    renderOverview();
-    renderPicks();
-    renderAccumulators();
-    renderResults();
-    renderBookmakers();
-    renderNews();
-    renderBetOfDay();
-    renderLivePredictions();
-    renderCorrectScore();
-    renderBetOfDayMore();
-    renderCodesOnly();
-    wireCodeReveal(document);
-    buildSearchIndex();
+    // Every section is isolated: if one throws (e.g. an unexpected page
+    // structure), it's logged to the console but every OTHER section still
+    // renders normally. One broken section can never again take the rest
+    // of the page down with it.
+    const sections = [
+      renderOverview, renderPicks, renderAccumulators, renderResults,
+      renderBookmakers, renderNews, renderBetOfDay, renderLivePredictions,
+      renderCorrectScore, renderBetOfDayMore, renderCodesOnly,
+    ];
+    sections.forEach(fn => {
+      try { fn(); } catch (e) { console.error(`Render failed: ${fn.name}`, e); }
+    });
+    try { wireCodeReveal(document); } catch (e) { console.error('wireCodeReveal failed', e); }
+    try { buildSearchIndex(); } catch (e) { console.error('buildSearchIndex failed', e); }
   }
 
   /* ---------------- load + poll ---------------- */
