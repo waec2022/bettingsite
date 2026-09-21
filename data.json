@@ -1496,38 +1496,38 @@
       "match": "River Plate vs Boca Juniors",
       "league": "Argentine Primera",
       "score": "2-1",
-      "odds": 15.24,
-      "rating": 7,
+      "odds": "15.24",
+      "rating": "7",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-BET9JA-CS-001"
         },
         "sportybet": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-SPORTYBET-CS-001"
         },
         "betpawa": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-BETPAWA-CS-001"
         },
         "betway": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-BETWAY-CS-001"
         },
         "onexbet": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-ONEXBET-CS-001"
         },
         "msport": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-MSPORT-CS-001"
         },
         "360bet": {
-          "odds": 15.24,
+          "odds": "15.24",
           "code": "DEMO-360BET-CS-001"
         }
       }
@@ -1537,38 +1537,38 @@
       "match": "Osasuna vs Girona",
       "league": "La Liga",
       "score": "3-1",
-      "odds": 9.02,
-      "rating": 5,
+      "odds": "9.02",
+      "rating": "5",
       "date": "2026-09-19",
       "status": "published",
       "publishAt": "2026-09-19T11:40:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-BET9JA-CS-002"
         },
         "sportybet": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-SPORTYBET-CS-002"
         },
         "betpawa": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-BETPAWA-CS-002"
         },
         "betway": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-BETWAY-CS-002"
         },
         "onexbet": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-ONEXBET-CS-002"
         },
         "msport": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-MSPORT-CS-002"
         },
         "360bet": {
-          "odds": 9.02,
+          "odds": "9.02",
           "code": "DEMO-360BET-CS-002"
         }
       }
@@ -1578,38 +1578,38 @@
       "match": "Juventus vs Lazio",
       "league": "Serie A",
       "score": "1-2",
-      "odds": 9.69,
-      "rating": 9,
+      "odds": "9.69",
+      "rating": "9",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-19T11:40:00+01:00",
+      "publishAt": "2026-09-22T01:01:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-BET9JA-CS-003"
         },
         "sportybet": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-SPORTYBET-CS-003"
         },
         "betpawa": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-BETPAWA-CS-003"
         },
         "betway": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-BETWAY-CS-003"
         },
         "onexbet": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-ONEXBET-CS-003"
         },
         "msport": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-MSPORT-CS-003"
         },
         "360bet": {
-          "odds": 9.69,
+          "odds": "9.69",
           "code": "DEMO-360BET-CS-003"
         }
       }
