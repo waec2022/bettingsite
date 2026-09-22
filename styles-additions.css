@@ -97,8 +97,8 @@
 #picksTableBody td, #correctScoreBody td { padding:12px 8px; border-bottom:1px solid #eef1f6; }
 
 /* ---- team initials badges ---- */
-.matchup { display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-weight:600; font-size:13px; }
-.matchup__side { display:flex; align-items:center; gap:5px; }
+.matchup { display:flex; align-items:center; gap:6px; flex-wrap:nowrap; font-weight:600; font-size:13px; overflow-x:auto; }
+.matchup__side { display:flex; align-items:center; gap:5px; flex-shrink:0; white-space:nowrap; }
 .team-badge { width:22px; height:22px; border-radius:50%; color:#fff; font-size:9px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
 .matchup__vs { font-size:11px; color:#8a94a6; font-weight:400; }
 .matchup__name { white-space:nowrap; }
@@ -114,20 +114,22 @@
 .pick-card__body { display:flex; gap:10px; align-items:stretch; }
 .pick-card__books { flex:1; display:grid; grid-template-columns:repeat(3, 1fr); gap:6px; align-content:start; }
 .pick-card__books .bm-badge { text-align:center; margin:0; }
-.pick-card__reveal { width:112px; flex-shrink:0; display:flex; flex-direction:column; }
-.pick-card__reveal .reveal-toggle { flex:1; white-space:normal; }
+.pick-card__reveal { width:112px; flex-shrink:0; display:flex; align-items:flex-start; }
+.pick-card__reveal .reveal-toggle { width:100%; white-space:normal; padding:10px 8px; font-size:11px; text-align:center; justify-content:center; }
 
-.result-card { padding:12px; margin-bottom:10px; }
+.result-card { padding:14px; margin-bottom:10px; position:relative; background:#fbfdff; }
+.result-card--won { background:#f3fcf6; }
+.result-card--lost { background:#fdf4f4; }
 #resultsGrid { display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; }
-.result-card__head { display:flex; align-items:center; gap:8px; margin-bottom:4px; }
-.result-card__status { width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; flex-shrink:0; color:#fff; }
+.result-card__ft { position:absolute; top:10px; right:10px; background:#e9fbf0; color:#0a5c36; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; }
+.result-card__scoreline { display:flex; align-items:center; gap:6px; margin-bottom:8px; padding-right:36px; }
+.result-card__status { width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; flex-shrink:0; color:#fff; }
 .result-card--won .result-card__status { background:#2ecc58; }
 .result-card--lost .result-card__status { background:#e34848; }
 .result-card--void .result-card__status { background:#c3c9d4; }
-.result-card__match { font-weight:700; font-size:13px; }
-.result-card__meta { font-size:12px; color:#6b7688; margin-bottom:10px; }
-.result-card__scoreline { display:flex; align-items:center; justify-content:center; gap:8px; }
-.result-card__score { background:#e9fbf0; color:#0a5c36; font-weight:800; font-size:13px; padding:5px 10px; border-radius:6px; flex:1; text-align:center; }
+.result-card__team-name { font-weight:700; font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.result-card__score { font-weight:800; font-size:14px; color:#182233; flex:1; text-align:center; }
+.result-card__meta { font-size:11px; color:#6b7688; }
 
 @media (max-width: 420px) {
   .pick-card__reveal { width:92px; }
@@ -163,6 +165,8 @@
   .acc-card { padding:10px; gap:6px; }
   .acc-card__head { font-size:10px; }
   .acc-sel { font-size:9px; padding:4px 5px; }
+  .matchup { font-size:12px; }
+  .team-badge { width:19px; height:19px; font-size:8px; }
 }
 .mf-modal { position:fixed; inset:0; background:rgba(10,14,24,0.55); display:none; align-items:flex-end; justify-content:center; z-index:100; }
 .mf-modal--open { display:flex; }
