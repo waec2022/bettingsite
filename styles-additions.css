@@ -1,3 +1,4 @@
+
 /* ============================================================
    styles-additions.css
    Purely additive — loaded AFTER styles.css, never edits it.
@@ -105,7 +106,34 @@
 /* ---- general breathing room (less compact overall) ---- */
 .panel, .card, .item-card, .bod-card, .live-card { padding:16px; margin-bottom:14px; }
 .pick-card { padding:14px; margin-bottom:10px; }
+.pick-card__top { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+.pick-card__num { background:#2ecc58; color:#04371a; font-weight:800; font-size:11px; padding:3px 8px; border-radius:6px; flex-shrink:0; }
+.pick-card__match { flex:1; min-width:0; }
+.pick-card__odds-pill { background:#e9fbf0; color:#0a5c36; font-weight:800; font-size:14px; padding:6px 12px; border-radius:8px; flex-shrink:0; }
+.pick-card__selection { font-weight:700; font-size:14px; color:#182233; margin-bottom:10px; }
+.pick-card__body { display:flex; gap:10px; align-items:stretch; }
+.pick-card__books { flex:1; display:grid; grid-template-columns:repeat(3, 1fr); gap:6px; align-content:start; }
+.pick-card__books .bm-badge { text-align:center; margin:0; }
+.pick-card__reveal { width:112px; flex-shrink:0; display:flex; flex-direction:column; }
+.pick-card__reveal .reveal-toggle { flex:1; white-space:normal; }
+
 .result-card { padding:12px; margin-bottom:10px; }
+#resultsGrid { display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; }
+.result-card__head { display:flex; align-items:center; gap:8px; margin-bottom:4px; }
+.result-card__status { width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; flex-shrink:0; color:#fff; }
+.result-card--won .result-card__status { background:#2ecc58; }
+.result-card--lost .result-card__status { background:#e34848; }
+.result-card--void .result-card__status { background:#c3c9d4; }
+.result-card__match { font-weight:700; font-size:13px; }
+.result-card__meta { font-size:12px; color:#6b7688; margin-bottom:10px; }
+.result-card__scoreline { display:flex; align-items:center; justify-content:center; gap:8px; }
+.result-card__score { background:#e9fbf0; color:#0a5c36; font-weight:800; font-size:13px; padding:5px 10px; border-radius:6px; flex:1; text-align:center; }
+
+@media (max-width: 420px) {
+  .pick-card__reveal { width:92px; }
+  .pick-card__books .bm-badge { font-size:9px; padding:3px 4px; }
+  #resultsGrid { grid-template-columns:1fr; }
+}
 .cs-table th, .cs-table td { padding:10px 8px; }
 .news-item__link, .bookmaker-item { padding:12px 0; }
 
