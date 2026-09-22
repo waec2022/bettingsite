@@ -1,3 +1,4 @@
+
 /* ============================================================
    MatchForecast — script.js (data-driven rendering)
    Reads everything from data.json (published by the private
@@ -189,13 +190,13 @@
           <div class="pick-card__top">
             <span class="pick-card__num">#${idx + 1}</span>
             <span class="pick-card__match">${matchupHtml(p.home, p.away)}</span>
+            <span class="pick-card__odds-pill">${esc(p.odds)}</span>
           </div>
-          <div class="pick-card__mid">
-            <span class="pick-card__selection">${esc(p.selection)}</span>
-            <span class="pick-card__odds">${esc(p.odds)}</span>
+          <div class="pick-card__selection">${esc(p.selection)}</div>
+          <div class="pick-card__body">
+            <div class="pick-card__books">${bookmakerBadges(p.bookmakers)}</div>
+            <div class="pick-card__reveal">${codeRevealHtml(p.bookmakers, `codes-predcard-${p.id}`)}</div>
           </div>
-          <div class="pick-card__books">${bookmakerBadges(p.bookmakers)}</div>
-          ${codeRevealHtml(p.bookmakers, `codes-predcard-${p.id}`)}
         </div>`).join('') || `<div class="mf-empty">No selections yet.</div>`;
     }
   }
@@ -258,17 +259,29 @@
   }
 
   /* ---------------- RESULTS ---------------- */
+  function renderScoreline(matchStr, scoreStr) {
+    const parts = String(matchStr || '').split(/\s+vs\s+/i);
+    const scoreParts = String(scoreStr || '').split('-').map(s => s.trim());
+    if (parts.length !== 2) return '';
+    return `<div class="result-card__scoreline">
+      ${teamBadge(parts[0])}
+      <span class="result-card__score">${esc(scoreParts[0] ?? '')} - ${esc(scoreParts[1] ?? '')}</span>
+      ${teamBadge(parts[1])}
+    </div>`;
+  }
+
   function renderResults() {
     const grid = document.getElementById('resultsGrid');
     if (!grid) return;
     const items = (DATA.results || []);
     grid.innerHTML = items.map(r => `
       <div class="result-card result-card--${r.outcome}" id="result-${esc(r.id)}">
-        <span class="result-card__status">${r.outcome === 'won' ? '✓' : (r.outcome === 'lost' ? '✕' : '–')}</span>
-        <div class="result-card__body">
-          <div class="result-card__match">${esc(r.match)}</div>
-          <div class="result-card__meta">${esc(r.prediction)} @ ${esc(r.odds)} · FT ${esc(r.actualResult)}</div>
+        <div class="result-card__head">
+          <span class="result-card__status">${r.outcome === 'won' ? '✓' : (r.outcome === 'lost' ? '✕' : '–')}</span>
+          <span class="result-card__match">${esc(r.match)}</span>
         </div>
+        <div class="result-card__meta">${esc(r.prediction)}${r.odds ? ' @ ' + esc(r.odds) : ''}</div>
+        ${renderScoreline(r.match, r.actualResult)}
       </div>`).join('') || `<div class="mf-empty">No results yet.</div>`;
   }
 
@@ -425,17 +438,30 @@
   let SEARCH_INDEX = [];
   function buildSearchIndex() {
     const idx = [];
-    livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection}`, anchor: `prediction-${p.id}` }));
-    livePublished(DATA.accumulators).forEach(a => idx.push({ type: 'Accumulator', label: a.title, anchor: `accumulator-${a.id}` }));
-    livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score}`, anchor: `correct-score-${c.id}` }));
-    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Codes Only', label: c.label, anchor: `codes-only-${c.id}` }));
-    livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live Predictions', label: l.match, anchor: `live-${l.id}` }));
-    livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: b.match, anchor: `bet-of-day-${b.id}` }));
-    (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: r.match, anchor: `result-${r.id}` }));
+    livePublished(DATA.predictions).forEach(p => idx.push({ type: 'Prediction', label: `${p.home} vs ${p.away} — ${p.selection} @ ${p.odds} (${p.league || ''})`, anchor: `prediction-${p.id}` }));
+    livePublished(DATA.accumulators).forEach(a => idx.push({ type: 'Accumulator', label: `${a.title} — ${a.tier || ''} combined ${a.totalOdds || ''}`, anchor: `accumulator-${a.id}` }));
+    livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score} @ ${c.odds}`, anchor: `correct-score-${c.id}` }));
+    livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Codes Only', label: `${c.label} @ ${c.odds || ''}`, anchor: `codes-only-${c.id}` }));
+    livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live Predictions', label: `${l.match} — ${l.pick} @ ${l.odds}`, anchor: `live-${l.id}` }));
+    livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: `${b.match} — ${b.pick} @ ${b.odds}`, anchor: `bet-of-day-${b.id}` }));
+    (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: `${r.match} — ${r.prediction} @ ${r.odds} FT ${r.actualResult}`, anchor: `result-${r.id}` }));
     livePublished(DATA.news).forEach(n => idx.push({ type: 'News', label: n.title, anchor: `news-${n.id}` }));
     (DATA.meta.bookmakers || []).forEach(b => idx.push({ type: 'Bookmaker', label: b.name, anchor: `bookmaker-${b.key}` }));
     SEARCH_INDEX = idx; // rebuilt once per data load/poll, not on every keystroke — keeps typing instant
     return idx;
+  }
+
+  // Smart matching: every word the person typed must appear SOMEWHERE in the
+  // item's label or type (not necessarily together, not necessarily in
+  // order). This is what makes "code only", "real madrid", "correct score
+  // 8.50" all work naturally instead of needing an exact substring match.
+  function searchMatches(query) {
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!words.length) return [];
+    return SEARCH_INDEX.filter(item => {
+      const haystack = `${item.label} ${item.type}`.toLowerCase();
+      return words.every(w => haystack.includes(w));
+    });
   }
 
   function highlightMatch(label, q) {
@@ -483,12 +509,10 @@
 
     // 'input' fires on every keystroke (typed, pasted, or voice-typed) — instant, no debounce delay.
     input.addEventListener('input', () => {
-      const q = input.value.trim().toLowerCase();
+      const q = input.value.trim();
       if (!q) { results.innerHTML = ''; return; }
-      const matches = SEARCH_INDEX.filter(i =>
-        i.label.toLowerCase().includes(q) || i.type.toLowerCase().includes(q)
-      ).slice(0, 12);
-      renderSearchResults(matches, q);
+      const matches = searchMatches(q).slice(0, 12);
+      renderSearchResults(matches, q.toLowerCase().split(/\s+/)[0]);
     });
 
     // Enter jumps straight to the top result — no need to reach for it.
