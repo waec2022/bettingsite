@@ -259,14 +259,16 @@
   }
 
   /* ---------------- RESULTS ---------------- */
-  function renderScoreline(matchStr, scoreStr) {
+  function renderScoreline(matchStr, scoreStr, outcome) {
     const parts = String(matchStr || '').split(/\s+vs\s+/i);
     const scoreParts = String(scoreStr || '').split('-').map(s => s.trim());
     if (parts.length !== 2) return '';
+    const statusIcon = outcome === 'won' ? '✓' : (outcome === 'lost' ? '✕' : '–');
     return `<div class="result-card__scoreline">
-      ${teamBadge(parts[0])}
+      <span class="result-card__status">${statusIcon}</span>
+      ${teamBadge(parts[0])}<span class="result-card__team-name">${esc(parts[0])}</span>
       <span class="result-card__score">${esc(scoreParts[0] ?? '')} - ${esc(scoreParts[1] ?? '')}</span>
-      ${teamBadge(parts[1])}
+      <span class="result-card__team-name">${esc(parts[1])}</span>${teamBadge(parts[1])}
     </div>`;
   }
 
@@ -276,12 +278,9 @@
     const items = (DATA.results || []);
     grid.innerHTML = items.map(r => `
       <div class="result-card result-card--${r.outcome}" id="result-${esc(r.id)}">
-        <div class="result-card__head">
-          <span class="result-card__status">${r.outcome === 'won' ? '✓' : (r.outcome === 'lost' ? '✕' : '–')}</span>
-          <span class="result-card__match">${esc(r.match)}</span>
-        </div>
-        <div class="result-card__meta">${esc(r.prediction)}${r.odds ? ' @ ' + esc(r.odds) : ''}</div>
-        ${renderScoreline(r.match, r.actualResult)}
+        <span class="result-card__ft">FT</span>
+        ${renderScoreline(r.match, r.actualResult, r.outcome)}
+        <div class="result-card__meta">${esc(r.prediction)}${r.odds ? ' @ ' + esc(r.odds) : ''} · ${esc(r.match)}</div>
       </div>`).join('') || `<div class="mf-empty">No results yet.</div>`;
   }
 
