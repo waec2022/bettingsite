@@ -12,8 +12,8 @@
 .mf-empty { text-align: center; color: #8a94a6; padding: 20px 10px; font-size: 13px; }
 .mf-sub { font-size: 11px; color: #8a94a6; margin-top: 2px; }
 .mf-rating { font-size: 11px; color: #2ecc58; font-weight: 700; margin-top: 2px; }
-.mf-highlight { animation: mfPulse 1.8s ease; }
-@keyframes mfPulse { 0% { background: #fff6cc; } 100% { background: transparent; } }
+.mf-highlight { animation: mfPulse 2.2s ease; outline: 3px solid #2ecc58; outline-offset: 3px; border-radius: 8px; }
+@keyframes mfPulse { 0% { background: #fff6cc; } 70% { background: #fff6cc; } 100% { background: transparent; } }
 
 /* ---- bookmaker badges ---- */
 .bm-badge { display:inline-block; font-size:10px; font-weight:700; padding:3px 7px; border-radius:5px; margin:0 4px 4px 0; background:#eef1f6; color:#465066; }
