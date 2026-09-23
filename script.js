@@ -56,20 +56,31 @@
     for (let i = 0; i < String(str).length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
     return BADGE_COLORS[h % BADGE_COLORS.length];
   }
-  function teamBadge(name) {
+  function teamBadge(name, logoUrl) {
+    if (logoUrl) return `<img class="team-badge team-badge--logo" src="${esc(logoUrl)}" alt="${esc(name)}">`;
     return `<span class="team-badge" style="background:${hashColor(name)}">${esc(teamInitials(name))}</span>`;
   }
-  function matchupHtml(home, away) {
+  function matchupHtml(home, away, homeLogo, awayLogo) {
     return `<span class="matchup">
-      <span class="matchup__side">${teamBadge(home)}<span class="matchup__name">${esc(home)}</span></span>
+      <span class="matchup__side">${teamBadge(home, homeLogo)}<span class="matchup__name">${esc(home)}</span></span>
       <span class="matchup__vs">vs</span>
-      <span class="matchup__side">${teamBadge(away)}<span class="matchup__name">${esc(away)}</span></span>
+      <span class="matchup__side">${teamBadge(away, awayLogo)}<span class="matchup__name">${esc(away)}</span></span>
     </span>`;
   }
   function matchupFromString(matchStr) {
     const parts = String(matchStr || '').split(/\s+vs\s+/i);
     if (parts.length === 2) return matchupHtml(parts[0], parts[1]);
     return esc(matchStr);
+  }
+
+  // A bookmaker's affiliateUrl only counts as "real" once someone has actually
+  // set it in the editor — the placeholder values (e.g. BET9JA_AFFILIATE_URL)
+  // don't count, so badges safely stay non-clickable until a real link exists.
+  function isRealUrl(url) {
+    return !!url && /^https?:\/\//i.test(url);
+  }
+  function bookmakerMeta(key) {
+    return (DATA.meta.bookmakers || []).find(b => b.key === key);
   }
 
   // Always walk bookmakers in the site's canonical order (meta.bookmakers),
@@ -81,9 +92,15 @@
   }
   function bookmakerBadges(bookmakers) {
     if (!bookmakers) return '';
-    return orderedBookmakerEntries(bookmakers).map(([k, v]) =>
-      `<span class="bm-badge bm-badge--${esc(k)}">${esc(bookmakerLabel(k))}${v.odds ? ' ' + esc(v.odds) : ''}</span>`
-    ).join('');
+    return orderedBookmakerEntries(bookmakers).map(([k, v]) => {
+      const meta = bookmakerMeta(k);
+      const style = meta && meta.color ? ` style="background:${esc(meta.color)}"` : '';
+      const label = `${esc(bookmakerLabel(k))}${v.odds ? ' ' + esc(v.odds) : ''}`;
+      if (meta && isRealUrl(meta.affiliateUrl)) {
+        return `<a class="bm-badge bm-badge--${esc(k)}" href="${esc(meta.affiliateUrl)}" target="_blank" rel="noopener sponsored"${style}>${label}</a>`;
+      }
+      return `<span class="bm-badge bm-badge--${esc(k)}"${style}>${label}</span>`;
+    }).join('');
   }
   function bookmakerLabel(key) {
     const m = (DATA.meta.bookmakers || []).find(b => b.key === key);
@@ -176,7 +193,7 @@
       tbody.innerHTML = filtered.map((p, idx) => `
         <tr id="prediction-${esc(p.id)}">
           <td class="col-num">${idx + 1}</td>
-          <td class="col-match">${matchupHtml(p.home, p.away)}<div class="mf-sub">${esc(p.league || '')}</div></td>
+          <td class="col-match">${matchupHtml(p.home, p.away, p.homeLogo, p.awayLogo)}<div class="mf-sub">${esc(p.league || '')}</div></td>
           <td class="col-pick">${esc(p.selection)}${p.rating ? `<div class="mf-rating">Rating ${esc(p.rating)}/10</div>` : ''}</td>
           <td class="col-odds">${esc(p.odds)}</td>
           <td class="col-books">${bookmakerBadges(p.bookmakers)}</td>
@@ -189,7 +206,7 @@
         <div class="pick-card" id="prediction-card-${esc(p.id)}">
           <div class="pick-card__top">
             <span class="pick-card__num">#${idx + 1}</span>
-            <span class="pick-card__match">${matchupHtml(p.home, p.away)}</span>
+            <span class="pick-card__match">${matchupHtml(p.home, p.away, p.homeLogo, p.awayLogo)}</span>
             <span class="pick-card__odds-pill">${esc(p.odds)}</span>
           </div>
           <div class="pick-card__selection">${esc(p.selection)}</div>
@@ -289,11 +306,15 @@
     const listEl = document.getElementById('bookmakerList');
     if (!listEl) return;
     const items = (DATA.meta.bookmakers || []).filter(b => b.status !== 'inactive').sort((a, b) => (a.order || 0) - (b.order || 0));
-    listEl.innerHTML = items.map(b => `
+    listEl.innerHTML = items.map(b => {
+      const style = b.color ? ` style="background:${esc(b.color)}"` : '';
+      const hasLink = isRealUrl(b.affiliateUrl);
+      return `
       <li class="bookmaker-item" id="bookmaker-${esc(b.key)}">
-        <span class="bookmaker-item__badge bm-badge bm-badge--${esc(b.key)}">${esc(b.name)}</span>
-        <a href="#" data-affiliate="${esc(b.affiliateUrl || '')}" class="bookmaker-item__cta">Get Code &amp; Bet →</a>
-      </li>`).join('');
+        <span class="bookmaker-item__badge bm-badge bm-badge--${esc(b.key)}"${style}>${esc(b.name)}</span>
+        <a href="${hasLink ? esc(b.affiliateUrl) : '#'}" ${hasLink ? 'target="_blank" rel="noopener sponsored"' : ''} class="bookmaker-item__cta">Get Code &amp; Bet →</a>
+      </li>`;
+    }).join('');
   }
 
   /* ---------------- NEWS (sidebar) ---------------- */
