@@ -548,15 +548,39 @@
     const target = document.getElementById(anchorId);
     const results = document.getElementById('searchResults');
     const box = document.getElementById('navbarSearch');
+    const input = document.getElementById('searchInput');
     if (results) results.innerHTML = '';
+    if (input) input.value = '';
     if (box) box.style.display = 'none';
     if (!target) return;
     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     target.classList.add('mf-highlight');
-    setTimeout(() => target.classList.remove('mf-highlight'), 1800);
+    setTimeout(() => target.classList.remove('mf-highlight'), 2200);
   }
 
   /* ---------------- overview / stats ---------------- */
+  /* ---------------- branding (set once in the editor, applied everywhere) ---------------- */
+  function applyBranding() {
+    const b = DATA.meta.branding;
+    if (!b || !b.siteName) return; // nothing set yet — leave the page exactly as-is
+    if (b.tagline) {
+      document.title = `${b.siteName} — ${b.tagline}`;
+    } else {
+      document.title = b.siteName;
+    }
+    // Reuses whatever element(s) currently show the site name — the header
+    // logo and footer both use the same markup pattern, so this updates
+    // both at once, wherever it appears in the page.
+    document.querySelectorAll('.brand__text').forEach(el => { el.textContent = b.siteName; });
+    document.querySelectorAll('.brand__tagline, .navbar__tagline').forEach(el => {
+      if (b.tagline) el.textContent = b.tagline;
+    });
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && b.tagline) {
+      metaDesc.setAttribute('content', `${b.siteName} — ${b.tagline}. Get daily football selections, booking codes and odds.`);
+    }
+  }
+
   function renderOverview() {
     const ov = DATA.meta.overview || {};
     const map = { statTotal: ov.statTotal, statWinners: ov.statWinners, statLosers: ov.statLosers, statHitRate: ov.statHitRate };
@@ -575,7 +599,7 @@
     // renders normally. One broken section can never again take the rest
     // of the page down with it.
     const sections = [
-      renderOverview, renderPicks, renderAccumulators, renderResults,
+      applyBranding, renderOverview, renderPicks, renderAccumulators, renderResults,
       renderBookmakers, renderNews, renderBetOfDay, renderLivePredictions,
       renderCorrectScore, renderBetOfDayMore, renderCodesOnly,
     ];
