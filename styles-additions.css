@@ -100,6 +100,7 @@
 .matchup { display:flex; align-items:center; gap:6px; flex-wrap:nowrap; font-weight:600; font-size:13px; overflow-x:auto; }
 .matchup__side { display:flex; align-items:center; gap:5px; flex-shrink:0; white-space:nowrap; }
 .team-badge { width:22px; height:22px; border-radius:50%; color:#fff; font-size:9px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
+.team-badge--logo { object-fit:cover; background:#fff; border:1px solid #e4e8ee; }
 .matchup__vs { font-size:11px; color:#8a94a6; font-weight:400; }
 .matchup__name { white-space:nowrap; }
 
