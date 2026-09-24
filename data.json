@@ -67,7 +67,7 @@
     "overview": {
       "date": "2026-09-24",
       "statTotal": 36,
-      "statWinners": "67",
+      "statWinners": "13",
       "statLosers": "19",
       "statHitRate": "30%"
     },
@@ -1595,7 +1595,7 @@
       "rating": "9",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-23T05:34:00+01:00",
+      "publishAt": "2026-09-24T08:29:00+01:00",
       "bookmakers": {
         "bet9ja": {
           "odds": "9.69",
@@ -1626,6 +1626,18 @@
           "code": "DEMO-360BET-CS-003"
         }
       }
+    },
+    {
+      "id": "isvw1jvg",
+      "match": "Chelsea vs Newcastle",
+      "league": "La Liga",
+      "score": "",
+      "odds": "2",
+      "date": "2026-09-24",
+      "rating": "3",
+      "status": "published",
+      "publishAt": "2026-09-24T08:29:00+01:00",
+      "bookmakers": {}
     }
   ],
   "codesOnly": [
