@@ -95,6 +95,8 @@
 .col-books { min-width:140px; vertical-align:top; }
 .col-code { width:150px; vertical-align:top; }
 #picksTableBody td, #correctScoreBody td { padding:12px 8px; border-bottom:1px solid #eef1f6; }
+.reveal-row td { padding:0; border-bottom:none; }
+.reveal-row .code-reveal { margin:0 8px 12px; }
 
 /* ---- team initials badges ---- */
 .matchup { display:flex; align-items:center; gap:6px; flex-wrap:nowrap; font-weight:600; font-size:13px; overflow-x:auto; }
@@ -115,13 +117,9 @@
 .pick-card__body { display:flex; gap:10px; align-items:stretch; }
 .pick-card__books { flex:1; display:grid; grid-template-columns:repeat(3, 1fr); gap:6px; align-content:start; }
 .pick-card__books .bm-badge { text-align:center; margin:0; }
-.pick-card__reveal { width:112px; flex-shrink:0; display:flex; flex-direction:column; gap:6px; }
-.pick-card__reveal .reveal-toggle { width:100%; white-space:nowrap; padding:8px 4px; font-size:10px; text-align:center; justify-content:center; }
-.pick-card__reveal .code-reveal { width:100%; }
-.pick-card__reveal .code-row { display:flex; flex-direction:column; align-items:stretch; gap:4px; padding:6px 8px; }
-.pick-card__reveal .code-row__bm { font-size:9px; width:auto; }
-.pick-card__reveal .code-row__code { font-size:9px; padding:3px 6px; }
-.pick-card__reveal .code-row__btn--copy { font-size:9px; padding:4px 6px; width:100%; }
+.pick-card__reveal-btn { width:112px; flex-shrink:0; }
+.pick-card__reveal-btn .reveal-toggle { width:100%; white-space:nowrap; padding:10px 6px; font-size:11px; text-align:center; justify-content:center; }
+.pick-card .code-reveal { margin-top:10px; }
 
 .result-card { padding:14px; margin-bottom:10px; position:relative; background:#fbfdff; }
 .result-card--won { background:#f3fcf6; }
@@ -138,7 +136,7 @@
 .result-card__meta { font-size:11px; color:#6b7688; }
 
 @media (max-width: 420px) {
-  .pick-card__reveal { width:92px; }
+  .pick-card__reveal-btn { width:92px; }
   .pick-card__books .bm-badge { font-size:9px; padding:3px 4px; }
   #resultsGrid { grid-template-columns:1fr; }
 }
