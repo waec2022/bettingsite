@@ -56,16 +56,27 @@
         "affiliateUrl": "360BET_AFFILIATE_URL",
         "status": "active",
         "order": 7
+      },
+      {
+        "key": "Football.com",
+        "name": "Football.com",
+        "color": "#465066",
+        "affiliateUrl": ""
       }
     ],
     "overview": {
-      "date": "2026-09-19",
+      "date": "2026-09-24",
       "statTotal": 36,
-      "statWinners": 12,
-      "statLosers": 13,
-      "statHitRate": "100%"
+      "statWinners": "67",
+      "statLosers": "19",
+      "statHitRate": "30%"
     },
-    "timezone": "Africa/Lagos"
+    "timezone": "Africa/Lagos",
+    "branding": {
+      "siteName": "Sure2OddToday",
+      "tagline": "Daily Football Tips & Bet Codes",
+      "domain": "sure2oddtoday.online"
+    }
   },
   "predictions": [
     {
