@@ -106,7 +106,7 @@
     const m = (DATA.meta.bookmakers || []).find(b => b.key === key);
     return m ? m.name : key;
   }
-  function codeRevealHtml(bookmakers, idPrefix) {
+  function codeRevealPanelHtml(bookmakers, idPrefix) {
     if (!bookmakers || !Object.keys(bookmakers).length) return '';
     const rows = orderedBookmakerEntries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
       `<div class="code-row"><span class="code-row__bm">${esc(bookmakerLabel(k))}</span>
@@ -114,8 +114,15 @@
         <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}" style="display:none">Copy</button>
       </div>`
     ).join('');
-    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Reveal Code</button>
-      <div class="code-reveal" id="${idPrefix}" style="display:none">${rows}</div>`;
+    return `<div class="code-reveal" id="${idPrefix}" style="display:none">${rows}</div>`;
+  }
+  function codeRevealButtonHtml(idPrefix) {
+    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Reveal Code</button>`;
+  }
+  // Kept for spots that still want button+panel together inline (Correct Score, Codes Only, the modal).
+  function codeRevealHtml(bookmakers, idPrefix) {
+    if (!bookmakers || !Object.keys(bookmakers).length) return '';
+    return codeRevealButtonHtml(idPrefix) + codeRevealPanelHtml(bookmakers, idPrefix);
   }
 
   // Ensure a panel exists in the DOM; create + append if missing.
@@ -190,19 +197,25 @@
     const filtered = activeFilter === 'All' ? items : items.filter(i => i.category === activeFilter);
 
     if (tbody) {
-      tbody.innerHTML = filtered.map((p, idx) => `
+      tbody.innerHTML = filtered.map((p, idx) => {
+        const revealId = `codes-pred-${p.id}`;
+        return `
         <tr id="prediction-${esc(p.id)}">
           <td class="col-num">${idx + 1}</td>
           <td class="col-match">${matchupHtml(p.home, p.away, p.homeLogo, p.awayLogo)}<div class="mf-sub">${esc(p.league || '')}</div></td>
           <td class="col-pick">${esc(p.selection)}${p.rating ? `<div class="mf-rating">Rating ${esc(p.rating)}/10</div>` : ''}</td>
           <td class="col-odds">${esc(p.odds)}</td>
           <td class="col-books">${bookmakerBadges(p.bookmakers)}</td>
-          <td class="col-code">${codeRevealHtml(p.bookmakers, `codes-pred-${p.id}`)}</td>
-        </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No selections yet.</td></tr>`;
+          <td class="col-code">${codeRevealButtonHtml(revealId)}</td>
+        </tr>
+        <tr class="reveal-row"><td colspan="6">${codeRevealPanelHtml(p.bookmakers, revealId)}</td></tr>`;
+      }).join('') || `<tr><td colspan="6" class="mf-empty">No selections yet.</td></tr>`;
     }
 
     if (cardsList) {
-      cardsList.innerHTML = filtered.map((p, idx) => `
+      cardsList.innerHTML = filtered.map((p, idx) => {
+        const revealId = `codes-predcard-${p.id}`;
+        return `
         <div class="pick-card" id="prediction-card-${esc(p.id)}">
           <div class="pick-card__top">
             <span class="pick-card__num">#${idx + 1}</span>
@@ -212,9 +225,11 @@
           <div class="pick-card__selection">${esc(p.selection)}</div>
           <div class="pick-card__body">
             <div class="pick-card__books">${bookmakerBadges(p.bookmakers)}</div>
-            <div class="pick-card__reveal">${codeRevealHtml(p.bookmakers, `codes-predcard-${p.id}`)}</div>
+            <div class="pick-card__reveal-btn">${codeRevealButtonHtml(revealId)}</div>
           </div>
-        </div>`).join('') || `<div class="mf-empty">No selections yet.</div>`;
+          ${codeRevealPanelHtml(p.bookmakers, revealId)}
+        </div>`;
+      }).join('') || `<div class="mf-empty">No selections yet.</div>`;
     }
   }
 
@@ -339,7 +354,7 @@
 
   /* ---------------- BET OF THE DAY (new) ---------------- */
   function renderBetOfDay() {
-    const panel = ensurePanel('bet-of-day', '.content-main',
+    const panel = ensurePanel('bet-of-day-main', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">⭐</span> BET OF THE DAY</h2></div>
        <div id="betOfDayList"></div>`, 'panel--bod');
     const listEl = ensureChild(panel, 'betOfDayList', '<div id="betOfDayList"></div>');
