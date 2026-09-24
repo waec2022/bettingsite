@@ -583,10 +583,10 @@
     } else {
       document.title = b.siteName;
     }
-    // Reuses whatever element(s) currently show the site name — the header
-    // logo and footer both use the same markup pattern, so this updates
-    // both at once, wherever it appears in the page.
-    document.querySelectorAll('.brand__text').forEach(el => { el.textContent = b.siteName; });
+    // Confirmed against the real markup: .brand__text wraps BOTH
+    // .brand__name and .brand__tagline together — updating .brand__name
+    // specifically (not the wrapper) is what preserves the tagline span.
+    document.querySelectorAll('.brand__name').forEach(el => { el.textContent = b.siteName; });
     document.querySelectorAll('.brand__tagline, .navbar__tagline').forEach(el => {
       if (b.tagline) el.textContent = b.tagline;
     });
@@ -656,14 +656,36 @@
     setTimeout(() => { if (!firstRenderDone) { firstRenderDone = true; revealPage(); } }, 4000);
   });
 
-  // No service worker is used anymore — it was causing inconsistent update
-  // behavior ("sometimes it updates, sometimes it doesn't"). Every request
-  // now goes straight to the network with cache-busting instead. This also
-  // actively removes any service worker a visitor's browser installed from
-  // an earlier version of this site, so old caching behavior can't linger.
+  // Service worker: rebuilt (see sw.js) as versioned + safe — it never
+  // caches data.json, and any old cache version gets deleted the moment a
+  // new sw.js activates. Registering it here is what lets the browser
+  // detect a new version after each deploy.
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then(regs => {
-      regs.forEach(reg => reg.unregister());
-    }).catch(() => {});
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        // If a new sw.js is already waiting (detected but not yet active),
+        // nudge it to activate immediately rather than waiting for every
+        // open tab to close first.
+        if (reg.waiting) reg.waiting.postMessage('SKIP_WAITING');
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                newWorker.postMessage('SKIP_WAITING');
+              }
+            });
+          }
+        });
+      }).catch(err => console.error('SW registration failed', err));
+    });
+    // Once the new service worker takes control, do one reload so the page
+    // itself (not just future requests) reflects the new version.
+    let refreshedOnce = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (refreshedOnce) return;
+      refreshedOnce = true;
+      window.location.reload();
+    });
   }
 })();
