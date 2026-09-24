@@ -67,9 +67,9 @@
     "overview": {
       "date": "2026-09-24",
       "statTotal": 36,
-      "statWinners": "13",
-      "statLosers": "19",
-      "statHitRate": "30%"
+      "statWinners": "56",
+      "statLosers": "26",
+      "statHitRate": "60%"
     },
     "timezone": "Africa/Lagos",
     "branding": {
@@ -1756,13 +1756,13 @@
       "match": "Celtic vs Rangers",
       "league": "Scottish Premiership",
       "currentScore": "1-2",
-      "minute": "70'",
+      "minute": "16'",
       "pick": "Next Goal Home",
-      "odds": 2.18,
-      "rating": 7,
+      "odds": "2.18",
+      "rating": "7",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
+      "publishAt": "2026-09-24T22:00:00+01:00"
     },
     {
       "id": "DEMO-LIVE-002",
