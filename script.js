@@ -1,4 +1,3 @@
-
 /* ============================================================
    MatchForecast — script.js (data-driven rendering)
    Reads everything from data.json (published by the private
@@ -390,19 +389,21 @@
   /* ---------------- CORRECT SCORE (new) ---------------- */
   function renderCorrectScore() {
     const panel = ensurePanel('correct-score', '.content-main',
-      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">🎯</span> CORRECT SCORE</h2></div>
+      `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">🎯</span> CORRECT SCORE <span class="panel__badge" id="csCountBadge"></span></h2></div>
        <div class="cs-table-wrap"><table class="cs-table">
          <thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead>
          <tbody id="correctScoreBody"></tbody>
        </table></div>`, 'panel--cs');
     const tbody = ensureChild(panel, 'correctScoreBody', '<tbody id="correctScoreBody"></tbody>');
     const items = livePublished(DATA.correctScores);
+    const badge = document.getElementById('csCountBadge');
+    if (badge) badge.textContent = `${items.length} Selection${items.length === 1 ? '' : 's'}`;
     tbody.innerHTML = items.map((c, idx) => `
       <tr id="correct-score-${esc(c.id)}">
         <td>${idx + 1}</td>
         <td>${matchupFromString(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
-        <td>${esc(c.score)}</td>
-        <td>${esc(c.odds)}</td>
+        <td><span class="cs-pill">${esc(c.score)}</span></td>
+        <td><span class="cs-pill">${esc(c.odds)}</span></td>
         <td>${bookmakerBadges(c.bookmakers)}</td>
         <td>${codeRevealHtml(c.bookmakers, `codes-cs-${c.id}`)}</td>
       </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No correct score picks yet.</td></tr>`;
