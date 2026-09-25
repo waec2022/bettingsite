@@ -95,32 +95,24 @@
       "publishAt": "2026-09-25T01:32:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.64",
+          "odds": "1.77",
           "code": "ZT1WCY"
         },
         "sportybet": {
-          "odds": "1.77",
-          "code": "DEMO-SPORTYBET-PRED-001"
+          "odds": "1.64",
+          "code": "ZT1WCY"
         },
         "betpawa": {
           "odds": "1.77",
-          "code": "DEMO-BETPAWA-PRED-001"
+          "code": ""
         },
         "betway": {
           "odds": "1.77",
-          "code": "DEMO-BETWAY-PRED-001"
-        },
-        "onexbet": {
-          "odds": "1.77",
-          "code": "DEMO-ONEXBET-PRED-001"
+          "code": ""
         },
         "msport": {
-          "odds": "1.77",
-          "code": "DEMO-MSPORT-PRED-001"
-        },
-        "360bet": {
-          "odds": "1.77",
-          "code": "DEMO-360BET-PRED-001"
+          "odds": "1.60",
+          "code": "B2U3WKZ"
         }
       },
       "homeLogo": "",
