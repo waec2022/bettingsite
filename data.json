@@ -297,6 +297,30 @@
           "code": "DEMO-360BET-PRED-005"
         }
       }
+    },
+    {
+      "id": "ipfyuysm",
+      "date": "2026-09-25",
+      "kickoff": "23:38",
+      "home": "Norwich ",
+      "away": "Leeds ",
+      "homeLogo": "",
+      "awayLogo": "",
+      "league": "Serie A",
+      "category": "Match Winner",
+      "selection": "Home",
+      "odds": "2",
+      "rating": "7",
+      "status": "scheduled",
+      "publishAt": "2026-09-25T22:38:00+01:00",
+      "expiresAt": "2026-09-25T22:47:00+01:00",
+      "market": "Match Winner",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.77",
+          "code": "DEMO-BET9JA-PRED-001"
+        }
+      }
     }
   ],
   "accumulators": [
