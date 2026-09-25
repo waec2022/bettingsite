@@ -1,3 +1,4 @@
+
 /* ============================================================
    MatchForecast — script.js (data-driven rendering)
    Reads everything from data.json (published by the private
@@ -31,8 +32,9 @@
   /* ---------------- helpers ---------------- */
   function now() { return new Date(); }
   function isLive(item) {
-    if (!item.publishAt) return true;
-    return new Date(item.publishAt).getTime() <= now().getTime();
+    if (item.publishAt && new Date(item.publishAt).getTime() > now().getTime()) return false;
+    if (item.expiresAt && new Date(item.expiresAt).getTime() <= now().getTime()) return false;
+    return true;
   }
   function livePublished(list) {
     return (list || []).filter(i => isLive(i) && i.status !== 'cancelled');
