@@ -1587,7 +1587,7 @@
       "rating": "9",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-24T08:29:00+01:00",
+      "publishAt": "2026-09-25T02:11:00+01:00",
       "bookmakers": {
         "bet9ja": {
           "odds": "9.69",
@@ -1628,8 +1628,13 @@
       "date": "2026-09-24",
       "rating": "3",
       "status": "published",
-      "publishAt": "2026-09-24T08:29:00+01:00",
-      "bookmakers": {}
+      "publishAt": "2026-09-25T02:11:00+01:00",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.64",
+          "code": "ZT1WCY"
+        }
+      }
     }
   ],
   "codesOnly": [
