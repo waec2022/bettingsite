@@ -1,4 +1,3 @@
-
 /* ============================================================
    styles-additions.css
    Purely additive — loaded AFTER styles.css, never edits it.
@@ -86,6 +85,8 @@
 .cs-table { width:100%; border-collapse:collapse; font-size:13px; min-width:520px; }
 .cs-table th, .cs-table td { padding:8px 6px; border-bottom:1px solid #eef1f6; text-align:left; vertical-align:top; }
 .cs-table th { color:#6b7688; font-size:11px; text-transform:uppercase; }
+.panel--cs { background:#fdf3f5; }
+.cs-pill { display:inline-block; background:#e9fbf0; color:#0a5c36; font-weight:800; font-size:13px; padding:6px 12px; border-radius:8px; }
 
 /* ---- predictions table: aligned columns, not scattered ---- */
 .col-num { width:28px; color:#8a94a6; font-size:12px; vertical-align:top; }
