@@ -103,6 +103,14 @@
       return `<span class="bm-badge bm-badge--${esc(k)}"${style}>${label}</span>`;
     }).join('');
   }
+  // Compact row view (e.g. Correct Score table) — shows just ONE badge so the
+  // row stays a single readable line; Reveal Code still opens ALL of them.
+  function primaryBookmakerBadge(bookmakers) {
+    const entries = orderedBookmakerEntries(bookmakers);
+    if (!entries.length) return '';
+    const [k, v] = entries[0];
+    return bookmakerBadges({ [k]: v });
+  }
   function bookmakerLabel(key) {
     const m = (DATA.meta.bookmakers || []).find(b => b.key === key);
     return m ? m.name : key;
@@ -421,7 +429,7 @@
         <td>${matchupFromString(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
         <td><span class="cs-pill">${esc(c.score)}</span></td>
         <td><span class="cs-pill">${esc(c.odds)}</span></td>
-        <td>${bookmakerBadges(c.bookmakers)}</td>
+        <td>${primaryBookmakerBadge(c.bookmakers)}</td>
         <td>${codeRevealHtml(c.bookmakers, `codes-cs-${c.id}`)}</td>
       </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No correct score picks yet.</td></tr>`;
   }
