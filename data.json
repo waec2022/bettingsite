@@ -1522,48 +1522,6 @@
   ],
   "correctScores": [
     {
-      "id": "DEMO-CS-001",
-      "match": "River Plate vs Boca Juniors",
-      "league": "Argentine Primera",
-      "score": "2-1",
-      "odds": "15.24",
-      "rating": "7",
-      "date": "2026-09-25",
-      "status": "published",
-      "publishAt": "2026-09-25T01:58:00+01:00",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "15.24",
-          "code": "DEMO-BET9JA-CS-001"
-        },
-        "sportybet": {
-          "odds": "15.24",
-          "code": "DEMO-SPORTYBET-CS-001"
-        },
-        "betpawa": {
-          "odds": "15.24",
-          "code": "DEMO-BETPAWA-CS-001"
-        },
-        "betway": {
-          "odds": "15.24",
-          "code": "DEMO-BETWAY-CS-001"
-        },
-        "onexbet": {
-          "odds": "15.24",
-          "code": "DEMO-ONEXBET-CS-001"
-        },
-        "msport": {
-          "odds": "15.24",
-          "code": "DEMO-MSPORT-CS-001"
-        },
-        "360bet": {
-          "odds": "15.24",
-          "code": "DEMO-360BET-CS-001"
-        }
-      },
-      "expiresAt": ""
-    },
-    {
       "id": "DEMO-CS-002",
       "match": "Osasuna vs Girona",
       "league": "La Liga",
@@ -1606,289 +1564,50 @@
       "expiresAt": ""
     },
     {
-      "id": "DEMO-CS-003",
-      "match": "Juventus vs Lazio",
-      "league": "Serie A",
-      "score": "1-2",
-      "odds": "9.69",
-      "rating": "9",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-25T02:11:00+01:00",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "9.69",
-          "code": "DEMO-BET9JA-CS-003"
-        },
-        "sportybet": {
-          "odds": "9.69",
-          "code": "DEMO-SPORTYBET-CS-003"
-        },
-        "betpawa": {
-          "odds": "9.69",
-          "code": "DEMO-BETPAWA-CS-003"
-        },
-        "betway": {
-          "odds": "9.69",
-          "code": "DEMO-BETWAY-CS-003"
-        },
-        "onexbet": {
-          "odds": "9.69",
-          "code": "DEMO-ONEXBET-CS-003"
-        },
-        "msport": {
-          "odds": "9.69",
-          "code": "DEMO-MSPORT-CS-003"
-        },
-        "360bet": {
-          "odds": "9.69",
-          "code": "DEMO-360BET-CS-003"
-        }
-      }
-    },
-    {
-      "id": "isvw1jvg",
-      "match": "Chelsea vs Newcastle",
-      "league": "La Liga",
-      "score": "",
-      "odds": "2",
-      "date": "2026-09-24",
-      "rating": "3",
-      "status": "published",
-      "publishAt": "2026-09-25T02:11:00+01:00",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "1.64",
-          "code": "ZT1WCY"
-        }
-      }
-    },
-    {
-      "id": "i44hobzz",
-      "date": "2026-09-26",
-      "status": "published",
-      "publishAt": "",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 9.5,
-          "code": "DEMO-BET9JA-CS-U946"
-        },
-        "sportybet": {
-          "odds": 9.5,
-          "code": "DEMO-SPORTYBET-CS-FHZ4"
-        },
-        "betpawa": {
-          "odds": 9.5,
-          "code": "DEMO-BETPAWA-CS-N9U3"
-        },
-        "betway": {
-          "odds": 9.5,
-          "code": "DEMO-BETWAY-CS-8K1Z"
-        },
-        "onexbet": {
-          "odds": 9.5,
-          "code": "DEMO-ONEXBET-CS-75JH"
-        },
-        "msport": {
-          "odds": 9.5,
-          "code": "DEMO-MSPORT-CS-Y520"
-        },
-        "360bet": {
-          "odds": 9.5,
-          "code": "DEMO-360BET-CS-02YX"
-        },
-        "Football.com": {
-          "odds": 9.5,
-          "code": "DEMO-FOOTBALL.COM-CS-QG45"
-        }
-      },
-      "match": "Real Madrid vs Barcelona",
-      "league": "La Liga",
-      "score": "2-1",
-      "odds": 9.5,
-      "rating": 8
-    },
-    {
       "id": "iy35unnj",
       "date": "2026-09-26",
       "status": "published",
-      "publishAt": "",
+      "publishAt": "2026-09-26T21:16:00+01:00",
       "bookmakers": {
         "bet9ja": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-BET9JA-CS-O1H5"
         },
         "sportybet": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-SPORTYBET-CS-KMZJ"
         },
         "betpawa": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-BETPAWA-CS-LZOT"
         },
         "betway": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-BETWAY-CS-FRBK"
         },
         "onexbet": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-ONEXBET-CS-228V"
         },
         "msport": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-MSPORT-CS-CXX8"
         },
         "360bet": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-360BET-CS-41B9"
         },
         "Football.com": {
-          "odds": 7,
+          "odds": "7",
           "code": "DEMO-FOOTBALL.COM-CS-HF20"
         }
       },
       "match": "Liverpool vs Chelsea",
       "league": "Premier League",
       "score": "1-1",
-      "odds": 7,
-      "rating": 6
-    },
-    {
-      "id": "i5kr9yhb",
-      "date": "2026-09-26",
-      "status": "published",
-      "publishAt": "",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "11",
-          "code": "DEMO-BET9JA-CS-040A"
-        },
-        "sportybet": {
-          "odds": "11",
-          "code": "DEMO-SPORTYBET-CS-GDX9"
-        },
-        "betpawa": {
-          "odds": "11",
-          "code": "DEMO-BETPAWA-CS-ET83"
-        },
-        "betway": {
-          "odds": "11",
-          "code": "DEMO-BETWAY-CS-5E16"
-        },
-        "onexbet": {
-          "odds": "11",
-          "code": "DEMO-ONEXBET-CS-9Z5V"
-        },
-        "msport": {
-          "odds": "11",
-          "code": "DEMO-MSPORT-CS-Z8UA"
-        },
-        "360bet": {
-          "odds": "11",
-          "code": "DEMO-360BET-CS-O8VO"
-        },
-        "Football.com": {
-          "odds": "11",
-          "code": "DEMO-FOOTBALL.COM-CS-AYOJ"
-        }
-      },
-      "match": "Bayern Munich vs Dortmund",
-      "league": "Bundesliga",
-      "score": "3-1",
-      "odds": "11",
-      "rating": "7",
+      "odds": "7",
+      "rating": "6",
       "expiresAt": ""
-    },
-    {
-      "id": "ica3hrsy",
-      "date": "2026-09-26",
-      "status": "published",
-      "publishAt": "",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "9.5",
-          "code": "DEMO-BET9JA-CS-4UZM"
-        },
-        "sportybet": {
-          "odds": "9.5",
-          "code": "DEMO-SPORTYBET-CS-S2WS"
-        },
-        "betpawa": {
-          "odds": "9.5",
-          "code": "DEMO-BETPAWA-CS-DHHU"
-        },
-        "betway": {
-          "odds": "9.5",
-          "code": "DEMO-BETWAY-CS-F6MR"
-        },
-        "onexbet": {
-          "odds": "9.5",
-          "code": "DEMO-ONEXBET-CS-875I"
-        },
-        "msport": {
-          "odds": "9.5",
-          "code": "DEMO-MSPORT-CS-7HVJ"
-        },
-        "360bet": {
-          "odds": "9.5",
-          "code": "DEMO-360BET-CS-PVWT"
-        },
-        "Football.com": {
-          "odds": "9.5",
-          "code": "DEMO-FOOTBALL.COM-CS-C2LW"
-        }
-      },
-      "match": "Real Madrid vs Barcelona",
-      "league": "La Liga",
-      "score": "2-1",
-      "odds": "9.5",
-      "rating": "8",
-      "expiresAt": ""
-    },
-    {
-      "id": "i3ulwaff",
-      "date": "2026-09-26",
-      "status": "published",
-      "publishAt": "",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 7,
-          "code": "DEMO-BET9JA-CS-Q7GP"
-        },
-        "sportybet": {
-          "odds": 7,
-          "code": "DEMO-SPORTYBET-CS-3CQL"
-        },
-        "betpawa": {
-          "odds": 7,
-          "code": "DEMO-BETPAWA-CS-CETF"
-        },
-        "betway": {
-          "odds": 7,
-          "code": "DEMO-BETWAY-CS-Z9GS"
-        },
-        "onexbet": {
-          "odds": 7,
-          "code": "DEMO-ONEXBET-CS-NMXH"
-        },
-        "msport": {
-          "odds": 7,
-          "code": "DEMO-MSPORT-CS-CRWL"
-        },
-        "360bet": {
-          "odds": 7,
-          "code": "DEMO-360BET-CS-P5T6"
-        },
-        "Football.com": {
-          "odds": 7,
-          "code": "DEMO-FOOTBALL.COM-CS-9PSK"
-        }
-      },
-      "match": "Liverpool vs Chelsea",
-      "league": "Premier League",
-      "score": "1-1",
-      "odds": 7,
-      "rating": 6
     }
   ],
   "codesOnly": [
@@ -2011,10 +1730,11 @@
       "pick": "Next Goal Home",
       "odds": "2.18",
       "rating": "7",
-      "date": "2026-09-19",
-      "status": "cancelled",
-      "publishAt": "2026-09-26T14:39:00+01:00",
-      "expiresAt": ""
+      "date": "2026-09-26",
+      "status": "published",
+      "publishAt": "2026-09-26T21:19:00+01:00",
+      "expiresAt": "",
+      "kickoffAt": "2026-09-26T21:19:00+01:00"
     },
     {
       "id": "DEMO-LIVE-002",
@@ -2027,21 +1747,9 @@
       "rating": "8",
       "date": "2026-09-19",
       "status": "cancelled",
-      "publishAt": "2026-09-23T05:41:00+01:00"
-    },
-    {
-      "id": "DEMO-LIVE-003",
-      "match": "PSG vs Marseille",
-      "league": "Ligue 1",
-      "currentScore": "1-0",
-      "minute": "80'",
-      "pick": "Over 1.5 Goals",
-      "odds": "2.85",
-      "rating": "9",
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-26T14:34:00+01:00",
-      "expiresAt": "2026-09-26T20:34:00+01:00"
+      "publishAt": "2026-09-26T21:18:00+01:00",
+      "kickoffAt": "2026-09-26T21:19:00+01:00",
+      "expiresAt": ""
     },
     {
       "id": "DEMO-LIVE-004",
@@ -2050,24 +1758,13 @@
       "currentScore": "2-0",
       "minute": "11'",
       "pick": "Home Win",
-      "odds": 1.62,
-      "rating": 8,
+      "odds": "1.62",
+      "rating": "8",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
-    },
-    {
-      "id": "DEMO-LIVE-005",
-      "match": "Lyon vs Nice",
-      "league": "Ligue 1",
-      "currentScore": "0-1",
-      "minute": "49'",
-      "pick": "BTTS - Yes",
-      "odds": 1.74,
-      "rating": 7,
-      "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
+      "publishAt": "2026-09-19T11:55:00+01:00",
+      "kickoffAt": "2026-09-26T21:19:00+01:00",
+      "expiresAt": ""
     },
     {
       "id": "DEMO-LIVE-006",
@@ -2076,11 +1773,13 @@
       "currentScore": "1-1",
       "minute": "54'",
       "pick": "BTTS - Yes",
-      "odds": 2.74,
-      "rating": 8,
+      "odds": "2.74",
+      "rating": "8",
       "date": "2026-09-19",
       "status": "published",
-      "publishAt": "2026-09-19T11:55:00+01:00"
+      "publishAt": "2026-09-26T21:15:00+01:00",
+      "kickoffAt": "2026-09-26T21:19:00+01:00",
+      "expiresAt": ""
     }
   ],
   "betOfDay": [
