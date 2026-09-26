@@ -410,7 +410,8 @@
          <thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead>
          <tbody id="correctScoreBody"></tbody>
        </table></div>`, 'panel--cs');
-    const tbody = ensureChild(panel, 'correctScoreBody', '<tbody id="correctScoreBody"></tbody>');
+    const tbody = ensureChild(panel, 'correctScoreBody',
+      '<div class="cs-table-wrap"><table class="cs-table"><thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead><tbody id="correctScoreBody"></tbody></table></div>');
     const items = livePublished(DATA.correctScores);
     const badge = document.getElementById('csCountBadge');
     if (badge) badge.textContent = `${items.length} Selection${items.length === 1 ? '' : 's'}`;
