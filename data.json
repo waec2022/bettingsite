@@ -83,8 +83,8 @@
       "id": "DEMO-PRED-001",
       "date": "2026-09-25",
       "kickoff": "17:00",
-      "home": "Armenia ",
-      "away": "Latvia",
+      "home": "Norwich ",
+      "away": "China",
       "league": "International UEFA Nations League",
       "category": "Over/Under",
       "market": "Over/Under",
@@ -116,7 +116,8 @@
         }
       },
       "homeLogo": "",
-      "awayLogo": ""
+      "awayLogo": "",
+      "expiresAt": ""
     },
     {
       "id": "DEMO-PRED-002",
@@ -312,8 +313,8 @@
       "odds": "2",
       "rating": "7",
       "status": "scheduled",
-      "publishAt": "2026-09-25T22:38:00+01:00",
-      "expiresAt": "2026-09-25T22:47:00+01:00",
+      "publishAt": "2026-09-26T08:03:00+01:00",
+      "expiresAt": "2026-09-26T14:03:00+01:00",
       "market": "Match Winner",
       "bookmakers": {
         "bet9ja": {
