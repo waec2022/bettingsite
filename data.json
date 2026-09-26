@@ -1560,7 +1560,8 @@
           "odds": "15.24",
           "code": "DEMO-360BET-CS-001"
         }
-      }
+      },
+      "expiresAt": ""
     },
     {
       "id": "DEMO-CS-002",
@@ -1601,7 +1602,8 @@
           "odds": "9.02",
           "code": "DEMO-360BET-CS-002"
         }
-      }
+      },
+      "expiresAt": ""
     },
     {
       "id": "DEMO-CS-003",
@@ -1758,43 +1760,44 @@
       "publishAt": "",
       "bookmakers": {
         "bet9ja": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-BET9JA-CS-040A"
         },
         "sportybet": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-SPORTYBET-CS-GDX9"
         },
         "betpawa": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-BETPAWA-CS-ET83"
         },
         "betway": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-BETWAY-CS-5E16"
         },
         "onexbet": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-ONEXBET-CS-9Z5V"
         },
         "msport": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-MSPORT-CS-Z8UA"
         },
         "360bet": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-360BET-CS-O8VO"
         },
         "Football.com": {
-          "odds": 11,
+          "odds": "11",
           "code": "DEMO-FOOTBALL.COM-CS-AYOJ"
         }
       },
       "match": "Bayern Munich vs Dortmund",
       "league": "Bundesliga",
       "score": "3-1",
-      "odds": 11,
-      "rating": 7
+      "odds": "11",
+      "rating": "7",
+      "expiresAt": ""
     },
     {
       "id": "ica3hrsy",
@@ -1803,43 +1806,44 @@
       "publishAt": "",
       "bookmakers": {
         "bet9ja": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-BET9JA-CS-4UZM"
         },
         "sportybet": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-SPORTYBET-CS-S2WS"
         },
         "betpawa": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-BETPAWA-CS-DHHU"
         },
         "betway": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-BETWAY-CS-F6MR"
         },
         "onexbet": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-ONEXBET-CS-875I"
         },
         "msport": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-MSPORT-CS-7HVJ"
         },
         "360bet": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-360BET-CS-PVWT"
         },
         "Football.com": {
-          "odds": 9.5,
+          "odds": "9.5",
           "code": "DEMO-FOOTBALL.COM-CS-C2LW"
         }
       },
       "match": "Real Madrid vs Barcelona",
       "league": "La Liga",
       "score": "2-1",
-      "odds": 9.5,
-      "rating": 8
+      "odds": "9.5",
+      "rating": "8",
+      "expiresAt": ""
     },
     {
       "id": "i3ulwaff",
@@ -1885,51 +1889,6 @@
       "score": "1-1",
       "odds": 7,
       "rating": 6
-    },
-    {
-      "id": "iw109frs",
-      "date": "2026-09-26",
-      "status": "published",
-      "publishAt": "",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": 11,
-          "code": "DEMO-BET9JA-CS-X0YE"
-        },
-        "sportybet": {
-          "odds": 11,
-          "code": "DEMO-SPORTYBET-CS-6NWL"
-        },
-        "betpawa": {
-          "odds": 11,
-          "code": "DEMO-BETPAWA-CS-OPUV"
-        },
-        "betway": {
-          "odds": 11,
-          "code": "DEMO-BETWAY-CS-6L2T"
-        },
-        "onexbet": {
-          "odds": 11,
-          "code": "DEMO-ONEXBET-CS-J0XJ"
-        },
-        "msport": {
-          "odds": 11,
-          "code": "DEMO-MSPORT-CS-YMPF"
-        },
-        "360bet": {
-          "odds": 11,
-          "code": "DEMO-360BET-CS-58BG"
-        },
-        "Football.com": {
-          "odds": 11,
-          "code": "DEMO-FOOTBALL.COM-CS-RFVZ"
-        }
-      },
-      "match": "Bayern Munich vs Dortmund",
-      "league": "Bundesliga",
-      "score": "3-1",
-      "odds": 11,
-      "rating": 7
     }
   ],
   "codesOnly": [
@@ -2053,8 +2012,9 @@
       "odds": "2.18",
       "rating": "7",
       "date": "2026-09-19",
-      "status": "published",
-      "publishAt": "2026-09-24T22:00:00+01:00"
+      "status": "cancelled",
+      "publishAt": "2026-09-26T14:39:00+01:00",
+      "expiresAt": ""
     },
     {
       "id": "DEMO-LIVE-002",
