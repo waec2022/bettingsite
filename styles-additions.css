@@ -1,3 +1,4 @@
+
 /* ============================================================
    styles-additions.css
    Purely additive — loaded AFTER styles.css, never edits it.
@@ -74,6 +75,10 @@
 /* ---- Live Predictions ---- */
 .live-grid { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
 .live-card { border:1px solid #e4e8ee; border-radius:10px; padding:12px; background:#fff; }
+.live-card--upcoming .live-dot { background:#8a94a6; animation:none; }
+.live-card--upcoming .live-card__top { color:#6b7688; }
+.live-card--ended { opacity:0.6; }
+.live-card--ended .live-dot { background:#8a94a6; animation:none; }
 .live-card__top { font-size:11px; color:#e34848; font-weight:700; display:flex; align-items:center; gap:6px; margin-bottom:6px; }
 .live-dot { width:7px; height:7px; border-radius:50%; background:#e34848; display:inline-block; animation: mfBlink 1.2s infinite; }
 @keyframes mfBlink { 50% { opacity: 0.3; } }
