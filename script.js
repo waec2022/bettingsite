@@ -374,18 +374,32 @@
   }
 
   /* ---------------- LIVE PREDICTIONS (new) ---------------- */
+  // Live minute is calculated purely from kickoffAt — never from publishAt,
+  // never from when the visitor opened the page, never from when it was
+  // created. Capped at 90'; never counts past LIVE ENDED.
+  function liveMatchStatus(kickoffAt) {
+    if (!kickoffAt) return { label: 'UPCOMING', cls: 'upcoming' };
+    const diffMin = (now().getTime() - new Date(kickoffAt).getTime()) / 60000;
+    if (diffMin < 0) return { label: 'UPCOMING', cls: 'upcoming' };
+    if (diffMin >= 90) return { label: 'LIVE ENDED', cls: 'ended' };
+    return { label: `LIVE • ${Math.min(90, Math.floor(diffMin) + 1)}'`, cls: 'live' };
+  }
+
   function renderLivePredictions() {
     const panel = ensurePanel('live-predictions', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">📡</span> LIVE PREDICTIONS</h2></div>
        <div class="live-grid" id="liveGrid"></div>`, 'panel--live');
     const gridEl = ensureChild(panel, 'liveGrid', '<div class="live-grid" id="liveGrid"></div>');
     const items = livePublished(DATA.livePredictions);
-    gridEl.innerHTML = items.map(l => `
-      <div class="live-card" id="live-${esc(l.id)}">
-        <div class="live-card__top"><span class="live-dot"></span> ${esc(l.minute)} · ${esc(l.currentScore)}</div>
+    gridEl.innerHTML = items.map(l => {
+      const status = liveMatchStatus(l.kickoffAt);
+      return `
+      <div class="live-card live-card--${status.cls}" id="live-${esc(l.id)}">
+        <div class="live-card__top"><span class="live-dot"></span> ${esc(status.label)} · ${esc(l.currentScore || '')}</div>
         <div class="live-card__match">${matchupFromString(l.match)}</div>
         <div class="live-card__pick">${esc(l.pick)} @ ${esc(l.odds)}</div>
-      </div>`).join('') || `<div class="mf-empty">No live predictions right now.</div>`;
+      </div>`;
+    }).join('') || `<div class="mf-empty">No live predictions right now.</div>`;
   }
 
   /* ---------------- CORRECT SCORE (new) ---------------- */
