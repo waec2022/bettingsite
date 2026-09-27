@@ -414,24 +414,31 @@
   function renderCorrectScore() {
     const panel = ensurePanel('correct-score', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">🎯</span> CORRECT SCORE <span class="panel__badge" id="csCountBadge"></span></h2></div>
-       <div class="cs-table-wrap"><table class="cs-table">
-         <thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead>
-         <tbody id="correctScoreBody"></tbody>
-       </table></div>`, 'panel--cs');
-    const tbody = ensureChild(panel, 'correctScoreBody',
-      '<div class="cs-table-wrap"><table class="cs-table"><thead><tr><th>#</th><th>Match</th><th>Score</th><th>Odds</th><th>Bookmakers</th><th>Code</th></tr></thead><tbody id="correctScoreBody"></tbody></table></div>');
+       <div id="correctScoreList"></div>`, 'panel--cs');
+    const listEl = ensureChild(panel, 'correctScoreList', '<div id="correctScoreList"></div>');
     const items = livePublished(DATA.correctScores);
     const badge = document.getElementById('csCountBadge');
     if (badge) badge.textContent = `${items.length} Selection${items.length === 1 ? '' : 's'}`;
-    tbody.innerHTML = items.map((c, idx) => `
-      <tr id="correct-score-${esc(c.id)}">
-        <td>${idx + 1}</td>
-        <td>${matchupFromString(c.match)}<div class="mf-sub">${esc(c.league || '')}</div></td>
-        <td><span class="cs-pill">${esc(c.score)}</span></td>
-        <td><span class="cs-pill">${esc(c.odds)}</span></td>
-        <td>${primaryBookmakerBadge(c.bookmakers)}</td>
-        <td>${codeRevealHtml(c.bookmakers, `codes-cs-${c.id}`)}</td>
-      </tr>`).join('') || `<tr><td colspan="6" class="mf-empty">No correct score picks yet.</td></tr>`;
+    listEl.innerHTML = items.map((c, idx) => {
+      const revealId = `codes-cs-${c.id}`;
+      return `
+      <div class="cs-card" id="correct-score-${esc(c.id)}">
+        <div class="cs-card__top">
+          <span class="cs-card__num">#${idx + 1}</span>
+          <span class="cs-card__match">${matchupFromString(c.match)}</span>
+        </div>
+        ${c.league ? `<div class="mf-sub">${esc(c.league)}</div>` : ''}
+        <div class="cs-card__pills">
+          <span class="cs-pill">${esc(c.score)}</span>
+          <span class="cs-pill">${esc(c.odds)}</span>
+        </div>
+        <div class="cs-card__body">
+          <div class="cs-card__bm">${primaryBookmakerBadge(c.bookmakers)}</div>
+          <div class="cs-card__reveal-btn">${codeRevealButtonHtml(revealId)}</div>
+        </div>
+        ${codeRevealPanelHtml(c.bookmakers, revealId)}
+      </div>`;
+    }).join('') || `<div class="mf-empty">No correct score picks yet.</div>`;
   }
 
   /* ---------------- BET OF THE DAY — more picks (separate from the single main one) ---------------- */
