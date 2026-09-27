@@ -1,3 +1,4 @@
+
 /* ============================================================
    styles-additions.css
    Purely additive — loaded AFTER styles.css, never edits it.
@@ -85,12 +86,18 @@
 .live-card__pick { font-size:12px; color:#2ecc58; margin-top:4px; }
 
 /* ---- Correct Score ---- */
-.cs-table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
-.cs-table { width:100%; border-collapse:collapse; font-size:13px; min-width:420px; }
-.cs-table th, .cs-table td { padding:8px 6px; border-bottom:1px solid #eef1f6; text-align:left; vertical-align:top; }
-.cs-table th { color:#6b7688; font-size:11px; text-transform:uppercase; }
 .panel--cs { background:#fdf3f5; }
 .cs-pill { display:inline-block; background:#e9fbf0; color:#0a5c36; font-weight:800; font-size:13px; padding:6px 12px; border-radius:8px; }
+.cs-card { background:#fff; border:1px solid #f3d9dd; border-radius:12px; padding:14px; margin-bottom:10px; }
+.cs-card__top { display:flex; align-items:center; gap:8px; margin-bottom:6px; }
+.cs-card__num { background:#e34848; color:#fff; font-weight:800; font-size:11px; padding:3px 8px; border-radius:6px; flex-shrink:0; }
+.cs-card__match { flex:1; min-width:0; }
+.cs-card__pills { display:flex; gap:8px; margin:10px 0; }
+.cs-card__body { display:flex; gap:10px; align-items:flex-start; }
+.cs-card__bm { flex:1; min-width:0; }
+.cs-card__reveal-btn { width:112px; flex-shrink:0; }
+.cs-card__reveal-btn .reveal-toggle { width:100%; white-space:nowrap; padding:10px 6px; font-size:11px; text-align:center; justify-content:center; }
+.cs-card .code-reveal { margin-top:10px; }
 
 /* ---- predictions table: aligned columns, not scattered ---- */
 .col-num { width:28px; color:#8a94a6; font-size:12px; vertical-align:top; }
@@ -145,7 +152,7 @@
   .pick-card__books .bm-badge { font-size:9px; padding:3px 4px; }
   #resultsGrid { grid-template-columns:1fr; }
 }
-.cs-table th, .cs-table td { padding:10px 8px; }
+.cs-card { padding:12px; }
 .news-item__link, .bookmaker-item { padding:12px 0; }
 
 /* ---- Codes Only (sidebar) ---- */
