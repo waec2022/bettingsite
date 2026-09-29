@@ -2,12 +2,14 @@
   "meta": {
     "bookmakers": [
       {
-        "key": "bet9ja",
-        "name": "Bet9ja",
+        "key": "1xbet",
+        "name": "1XBET",
         "description": "Nigeria's leading sports betting platform.",
-        "affiliateUrl": "",
+        "affiliateUrl": "https://refpa3665.com/L?tag=d_6143675m_66329c_sure2oddtoday&site=6143675&ad=66329",
         "status": "active",
-        "order": 1
+        "order": 1,
+        "mainUrl": "1xbet.",
+        "promoCode": "Welcome"
       },
       {
         "key": "sportybet",
