@@ -5,7 +5,7 @@
         "key": "bet9ja",
         "name": "Bet9ja",
         "description": "Nigeria's leading sports betting platform.",
-        "affiliateUrl": "BET9JA_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 1
       },
@@ -13,59 +13,59 @@
         "key": "sportybet",
         "name": "SportyBet",
         "description": "Fast payouts and wide market coverage.",
-        "affiliateUrl": "SPORTYBET_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 2
       },
       {
-        "key": "betpawa",
-        "name": "BetPawa",
+        "key": "",
+        "name": "",
         "description": "Low minimum stakes, simple interface.",
-        "affiliateUrl": "BETPAWA_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 3
       },
       {
-        "key": "betway",
-        "name": "Betway",
+        "key": "",
+        "name": "",
         "description": "Global bookmaker with competitive odds.",
-        "affiliateUrl": "BETWAY_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 4
       },
       {
-        "key": "onexbet",
-        "name": "1xBet",
+        "key": "",
+        "name": "",
         "description": "Huge market range, live betting focus.",
-        "affiliateUrl": "ONEXBET_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 5
       },
       {
-        "key": "msport",
-        "name": "MSport",
+        "key": "",
+        "name": "",
         "description": "Popular for live betting and fast withdrawals.",
-        "affiliateUrl": "MSPORT_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 6
       },
       {
-        "key": "360bet",
-        "name": "360bet",
+        "key": "",
+        "name": "",
         "description": "Wide odds range across major leagues.",
-        "affiliateUrl": "360BET_AFFILIATE_URL",
+        "affiliateUrl": "",
         "status": "active",
         "order": 7
       },
       {
-        "key": "Football.com",
-        "name": "Football.com",
+        "key": "",
+        "name": "",
         "color": "#465066",
         "affiliateUrl": ""
       }
     ],
     "overview": {
-      "date": "2026-09-26",
+      "date": "2026-09-29",
       "statTotal": 36,
       "statWinners": "6",
       "statLosers": "26",
