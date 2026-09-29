@@ -119,14 +119,14 @@
     if (!bookmakers || !Object.keys(bookmakers).length) return '';
     const rows = orderedBookmakerEntries(bookmakers).filter(([, v]) => v.code).map(([k, v]) =>
       `<div class="code-row"><span class="code-row__bm">${esc(bookmakerLabel(k))}</span>
-        <span class="code-row__code" data-code-value="${esc(v.code)}">••••••</span>
-        <button type="button" class="code-row__btn code-row__btn--copy" data-copy="${esc(v.code)}" style="display:none">Copy</button>
+        <span class="code-row__code">${esc(v.code)}</span>
+        <button type="button" class="code-row__btn code-row__btn--copybet" data-copybet="${esc(v.code)}" data-bm="${esc(k)}">Copy Code &amp; Bet →</button>
       </div>`
     ).join('');
     return `<div class="code-reveal" id="${idPrefix}" style="display:none">${rows}</div>`;
   }
   function codeRevealButtonHtml(idPrefix) {
-    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Reveal Code</button>`;
+    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Copy Code &amp; Bet →</button>`;
   }
   // Kept for spots that still want button+panel together inline (Correct Score, Codes Only, the modal).
   function codeRevealHtml(bookmakers, idPrefix) {
@@ -475,7 +475,7 @@
       </div>`).join('') || `<div class="mf-empty">No codes yet.</div>`;
   }
 
-  /* ---------------- reveal / copy (event delegation, wired once) ---------------- */
+  /* ---------------- reveal / copy-and-bet (event delegation, wired once) ---------------- */
   function wireCodeReveal(root) {
     root.querySelectorAll('[data-reveal-toggle]').forEach(btn => {
       if (btn.dataset.wired) return;
@@ -483,23 +483,102 @@
       btn.addEventListener('click', () => {
         const panel = document.getElementById(btn.dataset.revealToggle);
         if (!panel) return;
-        panel.style.display = 'flex';
-        panel.querySelectorAll('[data-code-value]').forEach(span => { span.textContent = span.dataset.codeValue; });
-        panel.querySelectorAll('.code-row__btn--copy').forEach(b => { b.style.display = 'inline-block'; });
-        btn.textContent = '🔓 Code Revealed';
-        btn.disabled = true;
+        const isOpen = panel.style.display === 'flex';
+        panel.style.display = isOpen ? 'none' : 'flex';
       });
     });
-    root.querySelectorAll('[data-copy]').forEach(btn => {
+    root.querySelectorAll('[data-copybet]').forEach(btn => {
       if (btn.dataset.wired) return;
       btn.dataset.wired = '1';
       btn.addEventListener('click', () => {
-        navigator.clipboard?.writeText(btn.dataset.copy).then(() => {
-          const old = btn.textContent; btn.textContent = 'Copied!';
-          setTimeout(() => { btn.textContent = old; }, 1500);
-        });
+        const code = btn.dataset.copybet;
+        const key = btn.dataset.bm;
+        const afterCopy = () => showAccountCheckPopup(key);
+        if (navigator.clipboard?.writeText) {
+          navigator.clipboard.writeText(code).then(() => {
+            siteToast('Booking code copied to clipboard!');
+            afterCopy();
+          }).catch(afterCopy);
+        } else {
+          afterCopy();
+        }
       });
     });
+  }
+
+  /* ---------------- site toast (small top notification) ---------------- */
+  function siteToast(msg) {
+    let t = document.getElementById('siteToast');
+    if (!t) {
+      t = document.createElement('div');
+      t.id = 'siteToast';
+      t.className = 'site-toast';
+      document.body.appendChild(t);
+    }
+    t.innerHTML = `<span class="site-toast__icon">✓</span><span>${esc(msg)}</span><button type="button" class="site-toast__close" aria-label="Close">✕</button>`;
+    t.classList.add('site-toast--show');
+    t.querySelector('.site-toast__close').onclick = () => t.classList.remove('site-toast--show');
+    clearTimeout(t._hideTimer);
+    t._hideTimer = setTimeout(() => t.classList.remove('site-toast--show'), 3000);
+  }
+
+  /* ---------------- account-check popup: "do you already have an account?" ----------------
+     Yes  -> opens the bookmaker's own official site (mainUrl)
+     No   -> opens our referral/affiliate link (affiliateUrl)
+     The booking code is already copied to the clipboard by this point, so
+     either way the visitor can just paste it once they're on the site. */
+  function ensureAccountModal() {
+    let modal = document.getElementById('accountModal');
+    if (modal) return modal;
+    modal = document.createElement('div');
+    modal.id = 'accountModal';
+    modal.className = 'account-modal';
+    modal.innerHTML = `<div class="account-modal__box" id="accountModalBox"></div>`;
+    document.body.appendChild(modal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeAccountModal(); });
+    return modal;
+  }
+  function closeAccountModal() {
+    const m = document.getElementById('accountModal');
+    if (m) m.classList.remove('account-modal--open');
+  }
+  function showAccountCheckPopup(key) {
+    const meta = bookmakerMeta(key);
+    if (!meta) return;
+    const modal = ensureAccountModal();
+    const box = document.getElementById('accountModalBox');
+    box.innerHTML = `
+      <button type="button" class="account-modal__close" data-acc-close>✕</button>
+      <div class="account-modal__brand">${esc(meta.name)}</div>
+      <div class="account-modal__q">Do you already have a ${esc(meta.name)} account?</div>
+      <p class="account-modal__hint">Choose an option to continue.</p>
+      <button type="button" class="account-modal__btn account-modal__btn--yes" data-acc="yes">👤 Yes, I have an account</button>
+      <button type="button" class="account-modal__btn account-modal__btn--no" data-acc="no">👤+ No, I don't have an account</button>
+      <button type="button" class="account-modal__btn account-modal__btn--cancel" data-acc-close>Cancel</button>
+      <p class="account-modal__note">🛡️ Your code is already copied. Choose an option to open the right site.</p>`;
+    modal.classList.add('account-modal--open');
+    box.querySelectorAll('[data-acc-close]').forEach(b => { b.onclick = closeAccountModal; });
+    box.querySelector('[data-acc="yes"]').onclick = () => redirectAfterAccountChoice(meta, true);
+    box.querySelector('[data-acc="no"]').onclick = () => redirectAfterAccountChoice(meta, false);
+  }
+  function redirectAfterAccountChoice(meta, hasAccount) {
+    const box = document.getElementById('accountModalBox');
+    const url = hasAccount ? meta.mainUrl : meta.affiliateUrl;
+    const goingSomewhere = isRealUrl(url);
+    box.innerHTML = `
+      <div class="account-modal__brand">${esc(meta.name)}</div>
+      <div class="account-modal__spinner">✓</div>
+      <div class="account-modal__redirect-title">${goingSomewhere ? (hasAccount ? 'Opening ' + esc(meta.name) + '…' : 'Opening your affiliate link…') : 'Link not set up yet'}</div>
+      <p class="account-modal__hint">${goingSomewhere
+        ? (hasAccount ? `You'll be redirected to the official ${esc(meta.name)} website.` : `You'll be redirected to ${esc(meta.name)} through our affiliate link.`)
+        : `No ${hasAccount ? 'main site' : 'affiliate'} link has been added for ${esc(meta.name)} yet — add one in the editor's Bookmaker settings.`}</p>
+      ${goingSomewhere ? `<p class="account-modal__redirecting">Redirecting…</p>` : ''}`;
+    if (goingSomewhere) {
+      setTimeout(() => {
+        window.open(url, '_blank', 'noopener');
+        closeAccountModal();
+      }, 900);
+    }
   }
 
   /* ---------------- SEARCH ---------------- */
