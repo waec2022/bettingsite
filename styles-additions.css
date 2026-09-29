@@ -33,7 +33,7 @@
 .code-row__bm { font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .code-row__code { font-family:monospace; background:#171f31; color:#8ff0b0; padding:4px 8px; border-radius:5px; text-align:center; justify-self:stretch; }
 .code-row__btn { border:none; background:#2ecc58; color:#04371a; font-weight:700; font-size:10px; padding:5px 9px; border-radius:5px; cursor:pointer; white-space:nowrap; }
-.code-row__btn--copy { background:#171f31; color:#fff; }
+.code-row__btn--copybet { background:#2ecc58; color:#04371a; }
 
 /* ---- Featured Bookmakers row ---- */
 .bookmaker-item { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 0; border-bottom:1px solid #eef1f6; }
@@ -220,3 +220,32 @@
   .live-grid { grid-template-columns: 1fr; }
   .bod-card__odds { float:none; display:block; margin-top:4px; }
 }
+
+/* ---- site toast (top notification, e.g. "Booking code copied") ---- */
+.site-toast {
+  position:fixed; top:14px; left:50%; transform:translateX(-50%) translateY(-140%);
+  background:#0a5c36; color:#fff; font-size:13px; font-weight:600;
+  padding:10px 14px; border-radius:10px; display:flex; align-items:center; gap:8px;
+  box-shadow:0 8px 20px rgba(10,14,24,0.25); z-index:200; max-width:92vw;
+  transition:transform 0.25s ease; pointer-events:none;
+}
+.site-toast--show { transform:translateX(-50%) translateY(0); pointer-events:auto; }
+.site-toast__icon { background:rgba(255,255,255,0.25); border-radius:50%; width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0; }
+.site-toast__close { background:none; border:none; color:#fff; opacity:0.8; font-size:12px; cursor:pointer; margin-left:4px; }
+
+/* ---- account-check popup: "Do you already have an account?" ---- */
+.account-modal { position:fixed; inset:0; background:rgba(10,14,24,0.6); display:none; align-items:center; justify-content:center; z-index:210; padding:16px; }
+.account-modal--open { display:flex; }
+.account-modal__box { background:#fff; border-radius:16px; padding:22px 20px; width:100%; max-width:360px; position:relative; text-align:center; }
+.account-modal__close { position:absolute; top:12px; right:14px; border:none; background:none; font-size:16px; color:#8a94a6; cursor:pointer; }
+.account-modal__brand { font-weight:800; font-size:18px; margin-bottom:14px; color:#182233; }
+.account-modal__q { font-weight:700; font-size:15px; margin-bottom:4px; }
+.account-modal__hint { font-size:12px; color:#6b7688; margin-bottom:16px; }
+.account-modal__btn { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; border:none; font-weight:700; font-size:13px; padding:13px; border-radius:10px; margin-bottom:10px; cursor:pointer; }
+.account-modal__btn--yes { background:#2ecc58; color:#04371a; }
+.account-modal__btn--no { background:#2f7bff; color:#fff; }
+.account-modal__btn--cancel { background:#f0f2f6; color:#465066; margin-bottom:0; }
+.account-modal__note { font-size:11px; color:#8a94a6; margin-top:14px; margin-bottom:0; }
+.account-modal__spinner { font-size:34px; color:#2ecc58; margin:6px 0 10px; }
+.account-modal__redirect-title { font-weight:700; font-size:15px; margin-bottom:6px; }
+.account-modal__redirecting { font-size:12px; color:#8a94a6; margin-top:10px; }
