@@ -204,10 +204,6 @@
       "status": "scheduled",
       "publishAt": "2026-09-19T12:30:00+01:00",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "2.45",
-          "code": "DEMO-BET9JA-PRED-005"
-        },
         "sportybet": {
           "odds": "2.45",
           "code": "DEMO-SPORTYBET-PRED-005"
