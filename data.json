@@ -83,159 +83,75 @@
   "predictions": [
     {
       "id": "DEMO-PRED-001",
-      "date": "2026-09-25",
-      "kickoff": "17:00",
-      "home": "Norwich ",
-      "away": "China",
-      "league": "International UEFA Nations League",
+      "date": "2026-09-30",
+      "kickoff": "19:00",
+      "home": "Spain U20 ",
+      "away": "Mexico U20",
+      "league": "Friendlies U20. National Teams Friendlies U20. National Teams",
       "category": "Over/Under",
       "market": "Over/Under",
-      "selection": "Corners Over 8.5",
-      "odds": "1.64",
+      "selection": "under 3.5",
+      "odds": "1.51",
       "rating": "6",
       "status": "published",
-      "publishAt": "2026-09-25T01:32:00+01:00",
+      "publishAt": "2026-09-30T12:28:00+01:00",
       "bookmakers": {
         "1xbet": {
-          "odds": "1.88",
-          "code": "ZT1WCY"
+          "odds": "1.51",
+          "code": "ZUAGT"
         }
       },
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": ""
+      "expiresAt": "2026-10-01T12:28:00+01:00"
     },
     {
       "id": "DEMO-PRED-002",
-      "date": "2026-09-19",
-      "kickoff": "20:00",
-      "home": "Utrecht",
-      "away": "Twente",
-      "league": "Eredivisie",
-      "category": "Double Chance",
-      "market": "Double Chance",
-      "selection": "Double Chance 1X",
-      "odds": "1.36",
+      "date": "2026-09-30",
+      "kickoff": "17:00",
+      "home": "Eritrea",
+      "away": "South Africa",
+      "league": "Africa Cup of Nations",
+      "category": "Over/Under",
+      "market": "Over/Under",
+      "selection": "2.5",
+      "odds": "1.55",
       "rating": "6",
       "status": "published",
-      "publishAt": "2026-09-19T07:57:00+01:00",
+      "publishAt": "2026-09-30T12:31:00+01:00",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.36",
-          "code": "DEMO-BET9JA-PRED-002"
-        },
-        "sportybet": {
-          "odds": "1.36",
-          "code": "DEMO-SPORTYBET-PRED-002"
+        "1xbet": {
+          "odds": "1.53",
+          "code": "KNCGT"
         }
       },
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": ""
+      "expiresAt": "2026-10-01T12:31:00+01:00"
     },
     {
       "id": "DEMO-PRED-003",
-      "date": "2026-09-19",
+      "date": "2026-09-30",
       "kickoff": "12:15",
       "home": "Bologna",
       "away": "Torino",
-      "league": "Serie A",
-      "category": "BTTS",
-      "market": "BTTS",
-      "selection": "BTTS - No",
-      "odds": "1.72",
+      "league": "Arabian Gulf Cup",
+      "category": "Other",
+      "market": "Other",
+      "selection": "Corners Over 7.5",
+      "odds": "1.44",
       "rating": "9",
       "status": "published",
-      "publishAt": "2026-09-19T07:11:00+01:00",
+      "publishAt": "2026-09-30T12:33:00+01:00",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.72",
-          "code": "DEMO-BET9JA-PRED-003"
-        },
-        "sportybet": {
-          "odds": "1.72",
-          "code": "DEMO-SPORTYBET-PRED-003"
+        "1xbet": {
+          "odds": "1.43",
+          "code": "MADGT"
         }
       },
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": ""
-    },
-    {
-      "id": "DEMO-PRED-004",
-      "date": "2026-09-19",
-      "kickoff": "13:45",
-      "home": "Flamengo",
-      "away": "Palmeiras",
-      "league": "Brasileirao",
-      "category": "Match Winner",
-      "market": "Match Winner",
-      "selection": "Away Win",
-      "odds": "1.6",
-      "rating": "7",
-      "status": "published",
-      "publishAt": "2026-09-19T10:11:00+01:00",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "1.6",
-          "code": "DEMO-BET9JA-PRED-004"
-        },
-        "sportybet": {
-          "odds": "1.6",
-          "code": "DEMO-SPORTYBET-PRED-004"
-        }
-      },
-      "homeLogo": "",
-      "awayLogo": "",
-      "expiresAt": ""
-    },
-    {
-      "id": "DEMO-PRED-005",
-      "date": "2026-09-19",
-      "kickoff": "19:00",
-      "home": "Barcelona",
-      "away": "Sevilla",
-      "league": "La Liga",
-      "category": "Match Winner",
-      "market": "Match Winner",
-      "selection": "Away Win",
-      "odds": "2.45",
-      "rating": "5",
-      "status": "scheduled",
-      "publishAt": "2026-09-19T12:30:00+01:00",
-      "bookmakers": {
-        "sportybet": {
-          "odds": "2.45",
-          "code": "DEMO-SPORTYBET-PRED-005"
-        }
-      },
-      "homeLogo": "",
-      "awayLogo": "",
-      "expiresAt": ""
-    },
-    {
-      "id": "ipfyuysm",
-      "date": "2026-09-25",
-      "kickoff": "23:38",
-      "home": "Gatafe",
-      "away": "Leeds ",
-      "homeLogo": "",
-      "awayLogo": "",
-      "league": "Serie A",
-      "category": "Match Winner",
-      "selection": "Home",
-      "odds": "2",
-      "rating": "7",
-      "status": "published",
-      "publishAt": "2026-09-26T08:03:00+01:00",
-      "expiresAt": "2026-09-26T08:19:00+01:00",
-      "market": "Match Winner",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "1.77",
-          "code": "DEMO-BET9JA-PRED-001"
-        }
-      }
+      "expiresAt": "2026-10-01T12:33:00+01:00"
     }
   ],
   "accumulators": [
