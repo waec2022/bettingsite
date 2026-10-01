@@ -146,6 +146,29 @@
     return panel;
   }
 
+  // Same as ensurePanel, but inserts immediately BEFORE a real existing
+  // element (e.g. "#accumulatorGrid") instead of appending to the end —
+  // this is what lets a new section land in a specific visual position
+  // ("between Top Picks and Accumulators") instead of always at the bottom.
+  // Falls back to a normal append if the anchor can't be found, so it never
+  // silently fails to render.
+  function ensurePanelBefore(id, beforeAnchorSelector, parentSelector, headerHtml, extraClass) {
+    let panel = document.getElementById(id);
+    if (panel) return panel;
+    panel = el('div', 'panel' + (extraClass ? ' ' + extraClass : ''));
+    panel.id = id;
+    panel.innerHTML = headerHtml;
+    const anchor = document.querySelector(beforeAnchorSelector);
+    const anchorPanel = anchor ? (anchor.closest('.panel') || anchor) : null;
+    if (anchorPanel && anchorPanel.parentNode) {
+      anchorPanel.parentNode.insertBefore(panel, anchorPanel);
+    } else {
+      const parent = document.querySelector(parentSelector) || document.querySelector('.content-main') || document.querySelector('main');
+      if (parent) parent.appendChild(panel);
+    }
+    return panel;
+  }
+
   // Guarantees a specific inner element exists inside a panel and returns it —
   // NEVER returns null. This is what fixes the real bug: if the page already
   // has a static, pre-existing version of a section (built before this data
@@ -393,6 +416,99 @@
     return { label: `LIVE • ${Math.min(90, Math.floor(diffMin) + 1)}'`, cls: 'live' };
   }
 
+  /* ---------------- HEDGE STRATEGY (new) ---------------- */
+  // Same kickoff-based timing rule as Live Predictions, just with the
+  // wording this feature asks for (UPCOMING / LIVE • N' / FINISHED • 90').
+  function hedgeMatchStatus(kickoffAt) {
+    if (!kickoffAt) return { label: 'UPCOMING', cls: 'upcoming', icon: '🟡' };
+    const diffMin = (now().getTime() - new Date(kickoffAt).getTime()) / 60000;
+    if (diffMin < 0) return { label: 'UPCOMING', cls: 'upcoming', icon: '🟡' };
+    if (diffMin >= 90) return { label: "FINISHED • 90'", cls: 'finished', icon: '⚫' };
+    return { label: `LIVE • ${Math.min(90, Math.floor(diffMin) + 1)}'`, cls: 'live', icon: '🔴' };
+  }
+  // kickoffAt is stored as an ISO string with an explicit +01:00 (Lagos)
+  // offset, so the date/time digits written in the string ARE already Lagos
+  // wall-clock time — no timezone conversion needed to display them.
+  function formatKickoffLagos(iso) {
+    const m = String(iso || '').match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+    if (!m) return '';
+    const [, y, mo, d, h, mi] = m;
+    const nowLagos = new Date(Date.now() + 60 * 60 * 1000);
+    const pad = n => String(n).padStart(2, '0');
+    const todayStr = `${nowLagos.getUTCFullYear()}-${pad(nowLagos.getUTCMonth() + 1)}-${pad(nowLagos.getUTCDate())}`;
+    const tmrw = new Date(nowLagos); tmrw.setUTCDate(tmrw.getUTCDate() + 1);
+    const tmrwStr = `${tmrw.getUTCFullYear()}-${pad(tmrw.getUTCMonth() + 1)}-${pad(tmrw.getUTCDate())}`;
+    const dateStr = `${y}-${mo}-${d}`;
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dayLabel = dateStr === todayStr ? 'Today' : dateStr === tmrwStr ? 'Tomorrow' : `${months[+mo - 1]} ${+d}`;
+    let hour = +h; const ampm = hour >= 12 ? 'PM' : 'AM'; hour = hour % 12 || 12;
+    return `${dayLabel} • ${hour}:${mi} ${ampm} (Africa/Lagos)`;
+  }
+  function relativeCountdown(kickoffAt) {
+    const diffMs = new Date(kickoffAt).getTime() - now().getTime();
+    if (diffMs <= 0) return '';
+    const mins = Math.floor(diffMs / 60000);
+    const days = Math.floor(mins / 1440), hrs = Math.floor((mins % 1440) / 60), rem = mins % 60;
+    if (days > 0) return `Starts in ${days}d ${hrs}h`;
+    if (hrs > 0) return `Starts in ${hrs}h ${rem}m`;
+    return `Starts in ${rem}m`;
+  }
+
+  function renderHedgeStrategies() {
+    const panel = ensurePanelBefore('hedge-strategies', '#accumulatorGrid', '.content-main',
+      `<div class="hedge-header">
+         <h2 class="panel__title"><span class="panel__title-icon">⚡</span> HEDGE STRATEGY <span class="hedge-badge">2-Step Live Strategy</span></h2>
+         <a href="#hedge-strategies" class="hedge-viewall">View All ›</a>
+       </div>
+       <p class="hedge-intro">Place the first selection before kickoff. If the match is still level at the set minute, check the live entry.</p>
+       <div id="hedgeList"></div>`, 'panel--hedge');
+    const listEl = ensureChild(panel, 'hedgeList', '<div id="hedgeList"></div>');
+    const items = livePublished(DATA.hedgeStrategies);
+    listEl.innerHTML = items.map(h => {
+      const status = hedgeMatchStatus(h.kickoffAt);
+      return `
+      <div class="hedge-card" id="hedge-${esc(h.id)}">
+        <div class="hedge-card__top">
+          <div class="hedge-card__matchcol">
+            <span class="hedge-card__match">${matchupFromString(h.match)}</span>
+            ${h.kickoffAt ? `<div class="hedge-card__datetime">📅 ${esc(formatKickoffLagos(h.kickoffAt))}</div>` : ''}
+          </div>
+          <div class="hedge-card__statuscol">
+            <span class="hedge-status hedge-status--${status.cls}">${status.icon} ${esc(status.label)}</span>
+            ${status.cls === 'upcoming' && h.kickoffAt ? `<div class="hedge-card__countdown">🕒 ${esc(relativeCountdown(h.kickoffAt))}</div>` : ''}
+          </div>
+        </div>
+        <div class="hedge-steps">
+          <div class="hedge-step">
+            <span class="hedge-step__num hedge-step__num--1">1</span>
+            <span class="hedge-step__tag hedge-step__tag--pre">BEFORE KICKOFF</span>
+            <div class="hedge-step__main">${esc(h.preMatchSelection)}</div>
+            <div class="hedge-step__sub">(Pre-match)</div>
+          </div>
+          <span class="hedge-arrow">→</span>
+          <div class="hedge-step">
+            <span class="hedge-step__num hedge-step__num--2">2</span>
+            <span class="hedge-step__tag hedge-step__tag--wait">WAIT UNTIL ${esc(h.entryMinute)}'</span>
+            <div class="hedge-step__main">If score is still ${esc(h.requiredScore)}</div>
+            <div class="hedge-step__sub">(Check live odds)</div>
+          </div>
+          <span class="hedge-arrow">→</span>
+          <div class="hedge-step">
+            <span class="hedge-step__num hedge-step__num--3">3</span>
+            <span class="hedge-step__tag hedge-step__tag--live">LIVE ENTRY</span>
+            <div class="hedge-step__main">${esc(h.liveSelection)}</div>
+            <div class="hedge-step__sub">(Live)</div>
+          </div>
+        </div>
+        <div class="hedge-card__foot">
+          <span class="hedge-card__kickoff">🕒 Kickoff: ${esc(formatKickoffLagos(h.kickoffAt))}</span>
+          ${h.odds ? `<span class="hedge-odds">@ ${esc(h.odds)}</span>` : ''}
+          <a href="#hedge-${esc(h.id)}" class="hedge-details-btn">View Details ›</a>
+        </div>
+      </div>`;
+    }).join('') || `<div class="mf-empty">No hedge strategies yet.</div>`;
+  }
+
   function renderLivePredictions() {
     const panel = ensurePanel('live-predictions', '.content-main',
       `<div class="panel__header"><h2 class="panel__title"><span class="panel__title-icon">📡</span> LIVE PREDICTIONS</h2></div>
@@ -590,6 +706,7 @@
     livePublished(DATA.correctScores).forEach(c => idx.push({ type: 'Correct Score', label: `${c.match} — ${c.score} @ ${c.odds}`, anchor: `correct-score-${c.id}` }));
     livePublished(DATA.codesOnly).forEach(c => idx.push({ type: 'Codes Only', label: `${c.label} @ ${c.odds || ''}`, anchor: `codes-only-${c.id}` }));
     livePublished(DATA.livePredictions).forEach(l => idx.push({ type: 'Live Predictions', label: `${l.match} — ${l.pick} @ ${l.odds}`, anchor: `live-${l.id}` }));
+    livePublished(DATA.hedgeStrategies).forEach(h => idx.push({ type: 'Hedge Strategy', label: `${h.match} — ${h.preMatchSelection} then ${h.liveSelection}`, anchor: `hedge-${h.id}` }));
     livePublished(DATA.betOfDay).forEach(b => idx.push({ type: 'Bet of the Day', label: `${b.match} — ${b.pick} @ ${b.odds}`, anchor: `bet-of-day-${b.id}` }));
     (DATA.results || []).forEach(r => idx.push({ type: 'Result', label: `${r.match} — ${r.prediction} @ ${r.odds} FT ${r.actualResult}`, anchor: `result-${r.id}` }));
     livePublished(DATA.news).forEach(n => idx.push({ type: 'News', label: n.title, anchor: `news-${n.id}` }));
@@ -726,7 +843,7 @@
     // renders normally. One broken section can never again take the rest
     // of the page down with it.
     const sections = [
-      applyBranding, renderOverview, renderPicks, renderAccumulators, renderResults,
+      applyBranding, renderOverview, renderPicks, renderHedgeStrategies, renderAccumulators, renderResults,
       renderBookmakers, renderNews, renderBetOfDay, renderLivePredictions,
       renderCorrectScore, renderBetOfDayMore, renderCodesOnly,
     ];
