@@ -534,5 +534,21 @@
       "featured": false,
       "status": "scheduled"
     }
+  ],
+  "hedgeStrategies": [
+    {
+      "id": "itl2nrns",
+      "match": "Arsenal vs Chelsea",
+      "kickoffAt": "2026-10-01T07:25:00+01:00",
+      "preMatchSelection": "Under 0.5 Goals",
+      "entryMinute": "20",
+      "requiredScore": "0-0",
+      "liveSelection": "Over 0.5 Goals",
+      "odds": "2.12",
+      "date": "2026-10-01",
+      "status": "published",
+      "publishAt": "2026-10-01T07:25:00+01:00",
+      "expiresAt": "2026-10-01T09:25:00+01:00"
+    }
   ]
 }
