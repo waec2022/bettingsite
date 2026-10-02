@@ -175,6 +175,25 @@
       "expiresAt": "2026-10-05T00:00:00+01:00",
       "market": "Other",
       "bookmakers": {}
+    },
+    {
+      "id": "ivs2q1jv",
+      "date": "2026-10-04",
+      "kickoff": "19:45",
+      "home": "Netherlands ",
+      "away": "Serbia",
+      "homeLogo": "",
+      "awayLogo": "",
+      "league": "International - UEFA Nations League, League A",
+      "category": "Other",
+      "selection": "score 15 No",
+      "odds": "1.40",
+      "rating": "6",
+      "status": "published",
+      "publishAt": "2026-10-04T03:35:00+01:00",
+      "expiresAt": "2026-10-05T00:00:00+01:00",
+      "market": "Other",
+      "bookmakers": {}
     }
   ],
   "accumulators": [
