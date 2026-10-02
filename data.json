@@ -622,7 +622,7 @@
     {
       "id": "itl2nrns",
       "match": "Arsenal vs Chelsea",
-      "kickoffAt": "2026-10-01T07:25:00+01:00",
+      "kickoffAt": "2026-10-02T03:02:00+01:00",
       "preMatchSelection": "Under 0.5 Goals",
       "entryMinute": "20",
       "requiredScore": "0-0",
@@ -630,8 +630,8 @@
       "odds": "2.12",
       "date": "2026-10-01",
       "status": "published",
-      "publishAt": "2026-10-01T07:25:00+01:00",
-      "expiresAt": "2026-10-01T09:25:00+01:00"
+      "publishAt": "2026-10-02T03:02:00+01:00",
+      "expiresAt": ""
     }
   ]
 }
