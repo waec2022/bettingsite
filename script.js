@@ -1,4 +1,3 @@
-
 /* ============================================================
    MatchForecast — script.js (data-driven rendering)
    Reads everything from data.json (published by the private
