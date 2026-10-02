@@ -194,7 +194,86 @@
       "expiresAt": "2026-11-01T12:40:00+01:00"
     }
   ],
-  "correctScores": [],
+  "correctScores": [
+    {
+      "id": "iu681ngf",
+      "date": "2026-10-02",
+      "status": "published",
+      "publishAt": "",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "9.5",
+          "code": "DEMO-1XBET-CS-H88U"
+        },
+        "sportybet": {
+          "odds": "9.5",
+          "code": "DEMO-SPORTYBET-CS-PZWI"
+        },
+        "": {
+          "odds": "9.5",
+          "code": "DEMO--CS-0RGP"
+        }
+      },
+      "match": "Real Madrid vs Barcelona",
+      "league": "La Liga",
+      "score": "2-1",
+      "odds": "9.5",
+      "rating": "8",
+      "expiresAt": ""
+    },
+    {
+      "id": "ilma203x",
+      "date": "2026-10-02",
+      "status": "published",
+      "publishAt": "",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "7",
+          "code": "DEMO-1XBET-CS-ETQ6"
+        },
+        "sportybet": {
+          "odds": "7",
+          "code": "DEMO-SPORTYBET-CS-VW5U"
+        },
+        "": {
+          "odds": "7",
+          "code": "DEMO--CS-Z1KA"
+        }
+      },
+      "match": "Liverpool vs Chelsea",
+      "league": "Premier League",
+      "score": "1-1",
+      "odds": "7",
+      "rating": "6",
+      "expiresAt": ""
+    },
+    {
+      "id": "in3ludz3",
+      "date": "2026-10-02",
+      "status": "published",
+      "publishAt": "",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "11",
+          "code": "DEMO-1XBET-CS-BIA9"
+        },
+        "sportybet": {
+          "odds": "11",
+          "code": "DEMO-SPORTYBET-CS-KIKW"
+        },
+        "": {
+          "odds": "11",
+          "code": "DEMO--CS-2ZEK"
+        }
+      },
+      "match": "Bayern Munich vs Dortmund",
+      "league": "Bundesliga",
+      "score": "3-1",
+      "odds": "11",
+      "rating": "7",
+      "expiresAt": ""
+    }
+  ],
   "codesOnly": [],
   "livePredictions": [
     {
