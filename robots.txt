@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sure2oddtoday.name.ng/sitemap.xml
