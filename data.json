@@ -83,15 +83,15 @@
   "predictions": [
     {
       "id": "DEMO-PRED-001",
-      "date": "2026-09-30",
-      "kickoff": "19:00",
-      "home": "Spain U20 ",
-      "away": "Mexico U20",
+      "date": "2026-10-02",
+      "kickoff": "19:45",
+      "home": "Belgium",
+      "away": "Turkiye",
       "league": "Friendlies U20. National Teams Friendlies U20. National Teams",
       "category": "Over/Under",
       "market": "Over/Under",
       "selection": "under 3.5",
-      "odds": "1.51",
+      "odds": "67230569215.98",
       "rating": "6",
       "status": "published",
       "publishAt": "2026-09-30T12:28:00+01:00",
@@ -103,6 +103,10 @@
         "sportybet": {
           "odds": "21",
           "code": "javascript:LoadEventAsync(2238954, 10,sTxtEventi, 1, 1)"
+        },
+        "": {
+          "odds": "ervryt",
+          "code": "javascript: AddCoupon(sCPbtn, sCPqt, '67230569216');"
         }
       },
       "homeLogo": "",
