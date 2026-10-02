@@ -91,10 +91,10 @@
       "category": "Over/Under",
       "market": "Over/Under",
       "selection": "under 3.5",
-      "odds": "67230569215.98",
+      "odds": "12",
       "rating": "6",
       "status": "published",
-      "publishAt": "2026-10-02T03:07:00+01:00",
+      "publishAt": "2026-10-02T03:09:00+01:00",
       "bookmakers": {
         "1xbet": {
           "odds": "1.51",
@@ -111,7 +111,7 @@
       },
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": ""
+      "expiresAt": "2026-10-05T03:09:00+01:00"
     },
     {
       "id": "DEMO-PRED-002",
