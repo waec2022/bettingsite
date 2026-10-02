@@ -88,78 +88,93 @@
       "home": "Belgium",
       "away": "Turkiye",
       "league": "Friendlies U20. National Teams Friendlies U20. National Teams",
-      "category": "Over/Under",
-      "market": "Over/Under",
-      "selection": "under 3.5",
-      "odds": "12",
-      "rating": "6",
+      "category": "Match Winner",
+      "market": "Match Winner",
+      "selection": "Home",
+      "odds": "1.59",
+      "rating": "8",
       "status": "published",
-      "publishAt": "2026-10-02T03:09:00+01:00",
-      "bookmakers": {
-        "1xbet": {
-          "odds": "1.51",
-          "code": "ZUAGT"
-        },
-        "sportybet": {
-          "odds": "21",
-          "code": "javascript:LoadEventAsync(2238954, 10,sTxtEventi, 1, 1)"
-        },
-        "": {
-          "odds": "ervryt",
-          "code": "javascript: AddCoupon(sCPbtn, sCPqt, '67230569216');"
-        }
-      },
+      "publishAt": "2026-10-02T00:00:00+01:00",
+      "bookmakers": {},
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": "2026-10-05T03:09:00+01:00"
+      "expiresAt": "2026-10-03T00:00:00+01:00"
     },
     {
       "id": "DEMO-PRED-002",
-      "date": "2026-09-30",
-      "kickoff": "17:00",
-      "home": "Eritrea",
-      "away": "South Africa",
-      "league": "Africa Cup of Nations",
-      "category": "Over/Under",
-      "market": "Over/Under",
-      "selection": "2.5",
+      "date": "2026-10-02",
+      "kickoff": "19:45",
+      "home": "France ",
+      "away": "Italy",
+      "league": "International - UEFA Nations League, League A",
+      "category": "BTTS",
+      "market": "BTTS",
+      "selection": "GG",
       "odds": "1.55",
       "rating": "6",
       "status": "published",
-      "publishAt": "2026-09-30T12:31:00+01:00",
-      "bookmakers": {
-        "1xbet": {
-          "odds": "1.53",
-          "code": "KNCGT"
-        }
-      },
+      "publishAt": "2026-10-02T05:15:00+01:00",
+      "bookmakers": {},
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": "2026-10-01T12:31:00+01:00"
+      "expiresAt": "2026-10-03T00:00:00+01:00"
     },
     {
       "id": "DEMO-PRED-003",
-      "date": "2026-09-30",
-      "kickoff": "12:15",
-      "home": "Bologna",
-      "away": "Torino",
-      "league": "Arabian Gulf Cup",
+      "date": "2026-10-03",
+      "kickoff": "17:00",
+      "home": "Croatia",
+      "away": "England",
+      "league": "International - UEFA Nations League, League A",
       "category": "Other",
       "market": "Other",
-      "selection": "Corners Over 7.5",
-      "odds": "1.44",
-      "rating": "9",
+      "selection": "Draw",
+      "odds": "3.80",
+      "rating": "3",
       "status": "published",
-      "publishAt": "2026-09-30T12:33:00+01:00",
-      "bookmakers": {
-        "1xbet": {
-          "odds": "1.43",
-          "code": "MADGT"
-        }
-      },
+      "publishAt": "2026-10-03T00:00:00+01:00",
+      "bookmakers": {},
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": "2026-10-01T12:33:00+01:00"
+      "expiresAt": "2026-10-04T00:00:00+01:00"
+    },
+    {
+      "id": "ipuj9hzn",
+      "date": "2026-10-03",
+      "kickoff": "19:44",
+      "home": "Spain ",
+      "away": " Czech Republic",
+      "homeLogo": "",
+      "awayLogo": "",
+      "league": "International - UEFA Nations League, League A",
+      "category": "Over/Under",
+      "selection": "Over 2.5",
+      "odds": "1.37",
+      "rating": "6",
+      "status": "published",
+      "publishAt": "2026-10-03T00:00:00+01:00",
+      "expiresAt": "2026-10-04T00:00:00+01:00",
+      "market": "Over/Under",
+      "bookmakers": {}
+    },
+    {
+      "id": "i41xr97f",
+      "date": "2026-10-04",
+      "kickoff": "19:45",
+      "home": "Greece",
+      "away": "Germany",
+      "homeLogo": "",
+      "awayLogo": "",
+      "league": "International - UEFA Nations League, League A",
+      "category": "Other",
+      "selection": "2up",
+      "odds": "1.43",
+      "rating": "5",
+      "status": "draft",
+      "publishAt": "2026-10-04T00:27:00+01:00",
+      "expiresAt": "2026-10-05T00:00:00+01:00",
+      "market": "Other",
+      "bookmakers": {}
     }
   ],
   "accumulators": [
