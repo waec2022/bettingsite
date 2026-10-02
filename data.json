@@ -9,15 +9,16 @@
         "status": "active",
         "order": 1,
         "mainUrl": "https://1xbet.ng/en",
-        "promoCode": "Welcome"
+        "promoCode": "Welcome 100 Bonus Awarded to you"
       },
       {
         "key": "sportybet",
         "name": "SportyBet",
         "description": "Fast payouts and wide market coverage.",
-        "affiliateUrl": "",
+        "affiliateUrl": "https://www.sportybet.com/ng/",
         "status": "active",
-        "order": 2
+        "order": 2,
+        "mainUrl": "https://www.sportybet.com/ng/"
       },
       {
         "key": "",
@@ -312,7 +313,25 @@
       "expiresAt": ""
     }
   ],
-  "codesOnly": [],
+  "codesOnly": [
+    {
+      "id": "i4v4wqaw",
+      "label": "2 odds",
+      "description": "TOadays 2 odd",
+      "odds": "2",
+      "date": "2026-10-02",
+      "rating": "9",
+      "status": "published",
+      "publishAt": "2026-10-02T04:40:00+01:00",
+      "expiresAt": "2026-10-03T03:40:00+01:00",
+      "bookmakers": {
+        "sportybet": {
+          "odds": "2.43",
+          "code": "URZB9J"
+        }
+      }
+    }
+  ],
   "livePredictions": [
     {
       "id": "DEMO-LIVE-001",
