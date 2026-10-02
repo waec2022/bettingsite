@@ -94,7 +94,7 @@
       "odds": "67230569215.98",
       "rating": "6",
       "status": "published",
-      "publishAt": "2026-09-30T12:28:00+01:00",
+      "publishAt": "2026-10-02T03:07:00+01:00",
       "bookmakers": {
         "1xbet": {
           "odds": "1.51",
@@ -111,7 +111,7 @@
       },
       "homeLogo": "",
       "awayLogo": "",
-      "expiresAt": "2026-10-01T12:28:00+01:00"
+      "expiresAt": ""
     },
     {
       "id": "DEMO-PRED-002",
