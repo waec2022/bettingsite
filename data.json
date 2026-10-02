@@ -99,6 +99,10 @@
         "1xbet": {
           "odds": "1.51",
           "code": "ZUAGT"
+        },
+        "sportybet": {
+          "odds": "21",
+          "code": "javascript:LoadEventAsync(2238954, 10,sTxtEventi, 1, 1)"
         }
       },
       "homeLogo": "",
