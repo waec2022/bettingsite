@@ -296,3 +296,22 @@
   .hedge-step__num { margin-bottom:0; flex-shrink:0; }
   .hedge-step__tag { margin-bottom:0; }
 }
+
+/* ---- HEDGE STRATEGY — expanded detail view ---- */
+.hedge-detail { position:relative; padding-top:8px; }
+.hedge-detail__collapse { position:absolute; top:-4px; right:0; background:rgba(255,255,255,0.08); border:none; color:#9aa5bd; font-size:14px; width:30px; height:30px; border-radius:8px; cursor:pointer; }
+.hedge-detail__group { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:12px; margin-bottom:12px; }
+.hedge-detail__group-label { color:#fff; font-weight:700; font-size:12px; margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.hedge-detail__group-tag { background:rgba(46,204,88,0.18); color:#4ee089; font-size:9px; font-weight:800; padding:3px 8px; border-radius:10px; }
+.hedge-detail__group-tag--live { background:rgba(139,92,246,0.2); color:#b79bfa; }
+.hedge-detail__group .code-reveal { margin-top:10px; background:#fff; border-radius:8px; overflow:hidden; }
+
+.hedge-detail__info { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:12px; margin-bottom:12px; }
+.hedge-detail__info-title { color:#fff; font-weight:700; font-size:12px; margin-bottom:8px; }
+.hedge-detail__info-row { display:flex; justify-content:space-between; gap:10px; font-size:12px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+.hedge-detail__info-row:last-child { border-bottom:none; }
+.hedge-detail__info-row span:first-child { color:#8a94a6; }
+.hedge-detail__info-row span:last-child { color:#fff; font-weight:600; text-align:right; }
+
+.hedge-detail__note { background:rgba(46,204,88,0.1); border:1px solid rgba(46,204,88,0.25); color:#c7f0d8; font-size:11px; line-height:1.5; padding:10px 12px; border-radius:8px; margin-bottom:14px; }
+.hedge-detail__back { display:block; width:100%; background:#2ecc58; color:#04371a; font-weight:800; font-size:13px; padding:12px; border:none; border-radius:10px; cursor:pointer; }
