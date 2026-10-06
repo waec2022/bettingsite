@@ -453,6 +453,56 @@
     return `Starts in ${rem}m`;
   }
 
+  // The two code groups are kept completely separate on purpose: a Pre-Match
+  // code is for the bet placed before kickoff, a Live Entry code is for the
+  // different bet placed later if the score condition is met. Mixing them up
+  // would mean someone books the wrong slip at the wrong time.
+  function hedgeDetailsPanelHtml(h) {
+    const infoRows = [
+      ['Competition', h.league],
+      ['Home Team', (h.match || '').split(/\s+vs\s+/i)[0]],
+      ['Away Team', (h.match || '').split(/\s+vs\s+/i)[1]],
+      ['Pre-match Market', h.preMatchMarket],
+      ['Entry Minute', h.entryMinute ? `${h.entryMinute}'` : ''],
+      ['Required Score', h.requiredScore],
+      ['Live Market', h.liveMarket],
+      ['Minimum Live Odds', h.liveMinOdds ? `${h.liveMinOdds}+` : ''],
+      ['Expires At', h.expiresAt ? formatKickoffLagos(h.expiresAt) : 'Never'],
+      ['Status', h.status],
+    ].filter(([, v]) => v);
+
+    const preId = `hedge-pre-codes-${h.id}`;
+    const liveId = `hedge-live-codes-${h.id}`;
+
+    return `
+      <div class="hedge-detail" id="hedge-detail-${esc(h.id)}" style="display:none">
+        <button type="button" class="hedge-detail__collapse" data-hedge-collapse="${esc(h.id)}" aria-label="Collapse">«</button>
+
+        <div class="hedge-detail__group">
+          <div class="hedge-detail__group-label">🔑 Pre-Match Booking Codes <span class="hedge-detail__group-tag">Step 1 — before kickoff</span></div>
+          ${Object.keys(h.preMatchBookmakers || {}).length
+            ? codeRevealButtonHtml(preId) + codeRevealPanelHtml(h.preMatchBookmakers, preId)
+            : `<p class="mf-empty" style="padding:8px 0">No pre-match codes added yet.</p>`}
+        </div>
+
+        <div class="hedge-detail__group">
+          <div class="hedge-detail__group-label">🔑 Live Entry Booking Codes <span class="hedge-detail__group-tag hedge-detail__group-tag--live">Step 3 — after minute ${esc(h.entryMinute || '?')}</span></div>
+          ${Object.keys(h.liveBookmakers || {}).length
+            ? codeRevealButtonHtml(liveId) + codeRevealPanelHtml(h.liveBookmakers, liveId)
+            : `<p class="mf-empty" style="padding:8px 0">No live-entry codes added yet.</p>`}
+        </div>
+
+        <div class="hedge-detail__info">
+          <div class="hedge-detail__info-title">Additional Information</div>
+          ${infoRows.map(([k, v]) => `<div class="hedge-detail__info-row"><span>${esc(k)}</span><span>${esc(v)}</span></div>`).join('')}
+        </div>
+
+        <p class="hedge-detail__note">ℹ️ Live odds can change quickly once the match starts — always confirm the odds shown on your bookmaker before placing the live entry.</p>
+
+        <button type="button" class="hedge-detail__back" data-hedge-collapse="${esc(h.id)}">← Back to Hedge Strategies</button>
+      </div>`;
+  }
+
   function renderHedgeStrategies() {
     const panel = ensurePanelBefore('hedge-strategies', '#accumulatorGrid', '.content-main',
       `<div class="hedge-header">
@@ -465,47 +515,72 @@
     const items = livePublished(DATA.hedgeStrategies);
     listEl.innerHTML = items.map(h => {
       const status = hedgeMatchStatus(h.kickoffAt);
+      const parts = (h.match || '').split(/\s+vs\s+/i);
+      const matchupHtmlBlock = parts.length === 2 ? matchupHtml(parts[0], parts[1], h.homeLogo, h.awayLogo) : esc(h.match);
       return `
       <div class="hedge-card" id="hedge-${esc(h.id)}">
-        <div class="hedge-card__top">
-          <div class="hedge-card__matchcol">
-            <span class="hedge-card__match">${matchupFromString(h.match)}</span>
-            ${h.kickoffAt ? `<div class="hedge-card__datetime">📅 ${esc(formatKickoffLagos(h.kickoffAt))}</div>` : ''}
+        <div class="hedge-card__view" id="hedge-view-${esc(h.id)}">
+          <div class="hedge-card__top">
+            <div class="hedge-card__matchcol">
+              <span class="hedge-card__match">${matchupHtmlBlock}</span>
+              ${h.kickoffAt ? `<div class="hedge-card__datetime">📅 ${esc(formatKickoffLagos(h.kickoffAt))}</div>` : ''}
+            </div>
+            <div class="hedge-card__statuscol">
+              <span class="hedge-status hedge-status--${status.cls}">${status.icon} ${esc(status.label)}</span>
+              ${status.cls === 'upcoming' && h.kickoffAt ? `<div class="hedge-card__countdown">🕒 ${esc(relativeCountdown(h.kickoffAt))}</div>` : ''}
+            </div>
           </div>
-          <div class="hedge-card__statuscol">
-            <span class="hedge-status hedge-status--${status.cls}">${status.icon} ${esc(status.label)}</span>
-            ${status.cls === 'upcoming' && h.kickoffAt ? `<div class="hedge-card__countdown">🕒 ${esc(relativeCountdown(h.kickoffAt))}</div>` : ''}
+          <div class="hedge-steps">
+            <div class="hedge-step">
+              <span class="hedge-step__num hedge-step__num--1">1</span>
+              <span class="hedge-step__tag hedge-step__tag--pre">BEFORE KICKOFF</span>
+              <div class="hedge-step__main">${esc(h.preMatchSelection)}</div>
+              <div class="hedge-step__sub">(Pre-match)</div>
+            </div>
+            <span class="hedge-arrow">→</span>
+            <div class="hedge-step">
+              <span class="hedge-step__num hedge-step__num--2">2</span>
+              <span class="hedge-step__tag hedge-step__tag--wait">WAIT UNTIL ${esc(h.entryMinute)}'</span>
+              <div class="hedge-step__main">If score is still ${esc(h.requiredScore)}</div>
+              <div class="hedge-step__sub">(Check live odds)</div>
+            </div>
+            <span class="hedge-arrow">→</span>
+            <div class="hedge-step">
+              <span class="hedge-step__num hedge-step__num--3">3</span>
+              <span class="hedge-step__tag hedge-step__tag--live">LIVE ENTRY</span>
+              <div class="hedge-step__main">${esc(h.liveSelection)}</div>
+              <div class="hedge-step__sub">(Live)</div>
+            </div>
+          </div>
+          <div class="hedge-card__foot">
+            <span class="hedge-card__kickoff">🕒 Kickoff: ${esc(formatKickoffLagos(h.kickoffAt))}</span>
+            ${h.odds ? `<span class="hedge-odds">@ ${esc(h.odds)}</span>` : ''}
+            <button type="button" class="hedge-details-btn" data-hedge-expand="${esc(h.id)}">View Details ›</button>
           </div>
         </div>
-        <div class="hedge-steps">
-          <div class="hedge-step">
-            <span class="hedge-step__num hedge-step__num--1">1</span>
-            <span class="hedge-step__tag hedge-step__tag--pre">BEFORE KICKOFF</span>
-            <div class="hedge-step__main">${esc(h.preMatchSelection)}</div>
-            <div class="hedge-step__sub">(Pre-match)</div>
-          </div>
-          <span class="hedge-arrow">→</span>
-          <div class="hedge-step">
-            <span class="hedge-step__num hedge-step__num--2">2</span>
-            <span class="hedge-step__tag hedge-step__tag--wait">WAIT UNTIL ${esc(h.entryMinute)}'</span>
-            <div class="hedge-step__main">If score is still ${esc(h.requiredScore)}</div>
-            <div class="hedge-step__sub">(Check live odds)</div>
-          </div>
-          <span class="hedge-arrow">→</span>
-          <div class="hedge-step">
-            <span class="hedge-step__num hedge-step__num--3">3</span>
-            <span class="hedge-step__tag hedge-step__tag--live">LIVE ENTRY</span>
-            <div class="hedge-step__main">${esc(h.liveSelection)}</div>
-            <div class="hedge-step__sub">(Live)</div>
-          </div>
-        </div>
-        <div class="hedge-card__foot">
-          <span class="hedge-card__kickoff">🕒 Kickoff: ${esc(formatKickoffLagos(h.kickoffAt))}</span>
-          ${h.odds ? `<span class="hedge-odds">@ ${esc(h.odds)}</span>` : ''}
-          <a href="#hedge-${esc(h.id)}" class="hedge-details-btn">View Details ›</a>
-        </div>
+        ${hedgeDetailsPanelHtml(h)}
       </div>`;
     }).join('') || `<div class="mf-empty">No hedge strategies yet.</div>`;
+
+    listEl.querySelectorAll('[data-hedge-expand]').forEach(btn => {
+      if (btn.dataset.wired) return;
+      btn.dataset.wired = '1';
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.hedgeExpand;
+        document.getElementById(`hedge-view-${id}`).style.display = 'none';
+        document.getElementById(`hedge-detail-${id}`).style.display = 'block';
+      });
+    });
+    listEl.querySelectorAll('[data-hedge-collapse]').forEach(btn => {
+      if (btn.dataset.wired) return;
+      btn.dataset.wired = '1';
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.hedgeCollapse;
+        document.getElementById(`hedge-detail-${id}`).style.display = 'none';
+        document.getElementById(`hedge-view-${id}`).style.display = 'block';
+      });
+    });
+    wireCodeReveal(listEl);
   }
 
   function renderLivePredictions() {
