@@ -147,7 +147,7 @@
       "tier": "2 ODDS",
       "date": "2026-09-30",
       "status": "draft",
-      "publishAt": "2026-10-07T16:02:00+01:00",
+      "publishAt": "2026-10-02T16:02:00+01:00",
       "selections": [
         {
           "match": "United Arab Emirates vs Qatar",
@@ -192,9 +192,9 @@
           "odds": "3.23"
         },
         {
-          "match": "Eritrea vs South Africa",
-          "pick": "Over - 2",
-          "odds": "1.22"
+          "match": "Eritrea vs South Africa / Over - 2 / 1.22",
+          "pick": "",
+          "odds": ""
         }
       ],
       "totalOdds": "12",
