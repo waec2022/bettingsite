@@ -273,6 +273,23 @@
           "code": "Y6PXB6"
         }
       }
+    },
+    {
+      "id": "ial0crna",
+      "label": "2 odds",
+      "description": "weekend odds ",
+      "odds": "2.42",
+      "date": "2026-10-07",
+      "rating": "6",
+      "status": "published",
+      "publishAt": "2026-10-07T16:20:00+01:00",
+      "expiresAt": "2026-10-15T16:20:00+01:00",
+      "bookmakers": {
+        "sportybet": {
+          "odds": "2.43",
+          "code": "KYLACG"
+        }
+      }
     }
   ],
   "livePredictions": [
