@@ -147,7 +147,7 @@
       "tier": "2 ODDS",
       "date": "2026-09-30",
       "status": "published",
-      "publishAt": "2026-09-30T13:01:00+01:00",
+      "publishAt": "2026-10-07T16:02:00+01:00",
       "selections": [
         {
           "match": "United Arab Emirates vs Qatar",
@@ -173,7 +173,7 @@
           "code": "YGEHT"
         }
       },
-      "expiresAt": "2026-11-01T12:40:00+01:00"
+      "expiresAt": ""
     }
   ],
   "correctScores": [
