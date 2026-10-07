@@ -260,17 +260,17 @@
     {
       "id": "i4v4wqaw",
       "label": "2 odds",
-      "description": "TOadays 2 odd",
+      "description": "weekend games",
       "odds": "2",
-      "date": "2026-10-02",
+      "date": "2026-10-07",
       "rating": "9",
       "status": "published",
-      "publishAt": "2026-10-07T16:06:00+01:00",
-      "expiresAt": "",
+      "publishAt": "2026-10-07T16:15:00+01:00",
+      "expiresAt": "2026-10-16T16:15:00+01:00",
       "bookmakers": {
         "sportybet": {
-          "odds": "2.43",
-          "code": "URZB9J"
+          "odds": "2.08",
+          "code": "Y6PXB6"
         }
       }
     }
