@@ -687,14 +687,14 @@
       "odds": "2.12",
       "date": "2026-10-01",
       "status": "published",
-      "publishAt": "2026-10-07T15:23:00+01:00",
+      "publishAt": "2026-10-07T15:26:00+01:00",
       "expiresAt": "",
       "league": "International - UEFA Nations League, League A",
       "homeLogo": "",
       "awayLogo": "",
       "preMatchMarket": "",
       "preMatchBookmakers": {
-        "1xbet": {
+        "sportybet": {
           "odds": "2",
           "code": "sddff"
         }
