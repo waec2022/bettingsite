@@ -125,7 +125,7 @@
     return `<div class="code-reveal" id="${idPrefix}" style="display:none">${rows}</div>`;
   }
   function codeRevealButtonHtml(idPrefix) {
-    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">🔒 Copy Code &amp; Bet →</button>`;
+    return `<button type="button" class="reveal-toggle" data-reveal-toggle="${idPrefix}">📋 Copy Code &amp; Bet</button>`;
   }
   // Kept for spots that still want button+panel together inline (Correct Score, Codes Only, the modal).
   function codeRevealHtml(bookmakers, idPrefix) {
@@ -246,18 +246,27 @@
     if (cardsList) {
       cardsList.innerHTML = filtered.map((p, idx) => {
         const revealId = `codes-predcard-${p.id}`;
+        const kickoffLabel = formatPredictionKickoff(p.date, p.kickoff);
         return `
         <div class="pick-card" id="prediction-card-${esc(p.id)}">
-          <div class="pick-card__top">
-            <span class="pick-card__num">#${idx + 1}</span>
-            <span class="pick-card__match">${matchupHtml(p.home, p.away, p.homeLogo, p.awayLogo)}</span>
-            <span class="pick-card__odds-pill">${esc(p.odds)}</span>
+          <div class="pick-card__league-row">
+            <span class="pick-card__league">⚽ ${esc(p.league || 'Football')}</span>
+            ${kickoffLabel ? `<span class="pick-card__kickoff">📅 ${esc(kickoffLabel)}</span>` : ''}
           </div>
-          <div class="pick-card__selection">${esc(p.selection)}</div>
-          <div class="pick-card__body">
-            <div class="pick-card__books">${bookmakerBadges(p.bookmakers)}</div>
-            <div class="pick-card__reveal-btn">${codeRevealButtonHtml(revealId)}</div>
+          <div class="pick-card__matchrow">
+            <span class="pick-card__team">${teamBadge(p.home, p.homeLogo)}<span class="pick-card__teamname">${esc(p.home)}</span></span>
+            <span class="pick-card__vs-pill">VS</span>
+            <span class="pick-card__team">${teamBadge(p.away, p.awayLogo)}<span class="pick-card__teamname">${esc(p.away)}</span></span>
           </div>
+          <div class="pick-card__predband">
+            <span class="pick-card__predicon">⚽</span>
+            <div class="pick-card__predtext">
+              <div class="pick-card__predlabel">Prediction</div>
+              <div class="pick-card__predselection">${esc(p.selection)}</div>
+            </div>
+            <span class="pick-card__predodds">${esc(p.odds)}</span>
+          </div>
+          <div class="pick-card__actions">${codeRevealButtonHtml(revealId)}</div>
           ${codeRevealPanelHtml(p.bookmakers, revealId)}
         </div>`;
       }).join('') || `<div class="mf-empty">No selections yet.</div>`;
@@ -443,6 +452,25 @@
     let hour = +h; const ampm = hour >= 12 ? 'PM' : 'AM'; hour = hour % 12 || 12;
     return `${dayLabel} • ${hour}:${mi} ${ampm} (Africa/Lagos)`;
   }
+  // Predictions store date (YYYY-MM-DD) and kickoff time (HH:MM) as two
+  // separate fields rather than one combined ISO timestamp — this builds
+  // the same "Today 3:00 PM" style label from those two plain fields.
+  function formatPredictionKickoff(dateStr, timeStr) {
+    if (!dateStr) return '';
+    const nowLagos = new Date(Date.now() + 60 * 60 * 1000);
+    const pad = n => String(n).padStart(2, '0');
+    const todayStr = `${nowLagos.getUTCFullYear()}-${pad(nowLagos.getUTCMonth() + 1)}-${pad(nowLagos.getUTCDate())}`;
+    const tmrw = new Date(nowLagos); tmrw.setUTCDate(tmrw.getUTCDate() + 1);
+    const tmrwStr = `${tmrw.getUTCFullYear()}-${pad(tmrw.getUTCMonth() + 1)}-${pad(tmrw.getUTCDate())}`;
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const m = dateStr.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    const dayLabel = !m ? dateStr : dateStr === todayStr ? 'Today' : dateStr === tmrwStr ? 'Tomorrow' : `${months[+m[2] - 1]} ${+m[3]}`;
+    if (!timeStr) return dayLabel;
+    const tm = timeStr.match(/^(\d{2}):(\d{2})/);
+    if (!tm) return dayLabel;
+    let hour = +tm[1]; const ampm = hour >= 12 ? 'PM' : 'AM'; hour = hour % 12 || 12;
+    return `${dayLabel} ${hour}:${tm[2]} ${ampm}`;
+  }
   function relativeCountdown(kickoffAt) {
     const diffMs = new Date(kickoffAt).getTime() - now().getTime();
     if (diffMs <= 0) return '';
@@ -481,14 +509,14 @@
         <div class="hedge-detail__group">
           <div class="hedge-detail__group-label">🔑 Pre-Match Booking Codes <span class="hedge-detail__group-tag">Step 1 — before kickoff</span></div>
           ${Object.keys(h.preMatchBookmakers || {}).length
-            ? codeRevealButtonHtml(preId) + codeRevealPanelHtml(h.preMatchBookmakers, preId)
+            ? codeRevealPanelHtml(h.preMatchBookmakers, preId).replace('style="display:none"', 'style="display:flex"')
             : `<p class="mf-empty" style="padding:8px 0">No pre-match codes added yet.</p>`}
         </div>
 
         <div class="hedge-detail__group">
           <div class="hedge-detail__group-label">🔑 Live Entry Booking Codes <span class="hedge-detail__group-tag hedge-detail__group-tag--live">Step 3 — after minute ${esc(h.entryMinute || '?')}</span></div>
           ${Object.keys(h.liveBookmakers || {}).length
-            ? codeRevealButtonHtml(liveId) + codeRevealPanelHtml(h.liveBookmakers, liveId)
+            ? codeRevealPanelHtml(h.liveBookmakers, liveId).replace('style="display:none"', 'style="display:flex"')
             : `<p class="mf-empty" style="padding:8px 0">No live-entry codes added yet.</p>`}
         </div>
 
@@ -611,21 +639,30 @@
     if (badge) badge.textContent = `${items.length} Selection${items.length === 1 ? '' : 's'}`;
     listEl.innerHTML = items.map((c, idx) => {
       const revealId = `codes-cs-${c.id}`;
+      const parts = (c.match || '').split(/\s+vs\s+/i);
+      const dateLabel = formatPredictionKickoff(c.date, null);
       return `
       <div class="cs-card" id="correct-score-${esc(c.id)}">
-        <div class="cs-card__top">
-          <span class="cs-card__num">#${idx + 1}</span>
-          <span class="cs-card__match">${matchupFromString(c.match)}</span>
+        <div class="pick-card__league-row">
+          <span class="pick-card__league">⚽ ${esc(c.league || 'Football')}</span>
+          ${dateLabel ? `<span class="pick-card__kickoff">📅 ${esc(dateLabel)}</span>` : ''}
         </div>
-        ${c.league ? `<div class="mf-sub">${esc(c.league)}</div>` : ''}
-        <div class="cs-card__pills">
-          <span class="cs-pill">${esc(c.score)}</span>
-          <span class="cs-pill">${esc(c.odds)}</span>
+        <div class="pick-card__matchrow">
+          ${parts.length === 2 ? `
+            <span class="pick-card__team">${teamBadge(parts[0])}<span class="pick-card__teamname">${esc(parts[0])}</span></span>
+            <span class="pick-card__vs-pill">VS</span>
+            <span class="pick-card__team">${teamBadge(parts[1])}<span class="pick-card__teamname">${esc(parts[1])}</span></span>
+          ` : `<span class="pick-card__teamname">${esc(c.match)}</span>`}
         </div>
-        <div class="cs-card__body">
-          <div class="cs-card__bm">${primaryBookmakerBadge(c.bookmakers)}</div>
-          <div class="cs-card__reveal-btn">${codeRevealButtonHtml(revealId)}</div>
+        <div class="pick-card__predband">
+          <span class="pick-card__predicon">🎯</span>
+          <div class="pick-card__predtext">
+            <div class="pick-card__predlabel">Correct Score</div>
+            <div class="pick-card__predselection">${esc(c.score)}</div>
+          </div>
+          <span class="pick-card__predodds">${esc(c.odds)}</span>
         </div>
+        <div class="pick-card__actions">${codeRevealButtonHtml(revealId)}</div>
         ${codeRevealPanelHtml(c.bookmakers, revealId)}
       </div>`;
     }).join('') || `<div class="mf-empty">No correct score picks yet.</div>`;
