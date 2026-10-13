@@ -22,7 +22,7 @@
       },
       {
         "key": "Bet9ja",
-        "name": "",
+        "name": "Bet9ja",
         "description": "Low minimum stakes, simple interface.",
         "affiliateUrl": "",
         "status": "active",
@@ -30,7 +30,7 @@
       },
       {
         "key": "Betpawa",
-        "name": "",
+        "name": "Betpawa",
         "description": "Global bookmaker with competitive odds.",
         "affiliateUrl": "",
         "status": "active",
@@ -38,7 +38,7 @@
       },
       {
         "key": "Football.com",
-        "name": "",
+        "name": "Football.com",
         "description": "Huge market range, live betting focus.",
         "affiliateUrl": "",
         "status": "active",
@@ -46,7 +46,7 @@
       }
     ],
     "overview": {
-      "date": "2026-09-30",
+      "date": "2026-10-13",
       "statTotal": 36,
       "statWinners": "45",
       "statLosers": "26",
