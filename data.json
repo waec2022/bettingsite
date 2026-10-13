@@ -21,7 +21,7 @@
         "mainUrl": "https://www.sportybet.com/ng/"
       },
       {
-        "key": "",
+        "key": "Bet9ja",
         "name": "",
         "description": "Low minimum stakes, simple interface.",
         "affiliateUrl": "",
@@ -29,7 +29,7 @@
         "order": 3
       },
       {
-        "key": "",
+        "key": "Betpawa",
         "name": "",
         "description": "Global bookmaker with competitive odds.",
         "affiliateUrl": "",
@@ -37,34 +37,12 @@
         "order": 4
       },
       {
-        "key": "",
+        "key": "Football.com",
         "name": "",
         "description": "Huge market range, live betting focus.",
         "affiliateUrl": "",
         "status": "active",
         "order": 5
-      },
-      {
-        "key": "",
-        "name": "",
-        "description": "Popular for live betting and fast withdrawals.",
-        "affiliateUrl": "",
-        "status": "active",
-        "order": 6
-      },
-      {
-        "key": "",
-        "name": "",
-        "description": "Wide odds range across major leagues.",
-        "affiliateUrl": "",
-        "status": "active",
-        "order": 7
-      },
-      {
-        "key": "",
-        "name": "",
-        "color": "#465066",
-        "affiliateUrl": ""
       }
     ],
     "overview": {
@@ -288,7 +266,7 @@
       "id": "i83nghj2",
       "date": "2026-10-13",
       "status": "published",
-      "publishAt": "2026-10-13T15:22:00+01:00",
+      "publishAt": "2026-10-13T15:28:00+01:00",
       "bookmakers": {
         "1xbet": {
           "odds": "9.5",
@@ -303,7 +281,7 @@
           "code": "DEMO--CS-CF65"
         }
       },
-      "match": "Real Madrid vs Barcelona",
+      "match": "Monoco vs lile",
       "league": "La Liga",
       "score": "2-1",
       "odds": "9.5",
@@ -329,7 +307,7 @@
           "code": "DEMO--CS-U5MB"
         }
       },
-      "match": "Liverpool vs Chelsea",
+      "match": "Aston Villa vs Tottenham ",
       "league": "Premier League",
       "score": "1-1",
       "odds": "7",
@@ -355,7 +333,7 @@
           "code": "DEMO--CS-TJUO"
         }
       },
-      "match": "Bayern Munich vs Dortmund",
+      "match": "Man utd vs hull city",
       "league": "Bundesliga",
       "score": "3-1",
       "odds": "11",
@@ -464,16 +442,18 @@
   "betOfDay": [
     {
       "id": "DEMO-BOD-004",
-      "match": "Real Madrid vs Espanyol",
+      "match": "Chelsea vs Bournemouth ",
       "market": "Other",
       "pick": "Draw No Bet - Home",
-      "odds": 1.92,
-      "rating": 9,
-      "bookmaker": "360bet",
+      "odds": "1.92",
+      "rating": "9",
+      "bookmaker": "1xbet",
       "description": "Our most confident selection of the day based on current form and head-to-head record.",
       "date": "2026-09-19",
       "status": "scheduled",
-      "publishAt": "2026-09-19T15:00:00+01:00"
+      "publishAt": "2026-09-19T15:00:00+01:00",
+      "photo": "",
+      "expiresAt": ""
     },
     {
       "id": "in3em8qs",
@@ -492,7 +472,7 @@
     },
     {
       "id": "i5ny9kf0",
-      "match": "Real Madrid vs Barcelona",
+      "match": "Portugal vs Norway ",
       "market": "Match Winner",
       "pick": "Home Win",
       "odds": "1.85",
@@ -775,7 +755,7 @@
   "hedgeStrategies": [
     {
       "id": "itl2nrns",
-      "match": "Arsenal vs Chelsea",
+      "match": "Leeds vs arsenal ",
       "kickoffAt": "2026-10-02T03:02:00+01:00",
       "preMatchSelection": "Under 0.5 Goals",
       "entryMinute": "20",
@@ -784,7 +764,7 @@
       "odds": "2.12",
       "date": "2026-10-01",
       "status": "published",
-      "publishAt": "2026-10-07T15:26:00+01:00",
+      "publishAt": "2026-10-13T15:26:00+01:00",
       "expiresAt": "",
       "league": "International - UEFA Nations League, League A",
       "homeLogo": "",
@@ -807,7 +787,7 @@
     },
     {
       "id": "ip6ye6cp",
-      "match": "Arsenal vs Chelsea",
+      "match": "Chelsea vs Bournemouth ",
       "league": "Premier League",
       "homeLogo": "",
       "awayLogo": "",
@@ -854,7 +834,7 @@
     },
     {
       "id": "i1hv1ne1",
-      "match": "Arsenal vs Chelsea",
+      "match": "ATM vs man utd ",
       "league": "Premier League",
       "homeLogo": "",
       "awayLogo": "",
@@ -901,7 +881,7 @@
     },
     {
       "id": "ijmdepr3",
-      "match": "Arsenal vs Chelsea",
+      "match": "Liverpool vs man city ",
       "league": "Premier League",
       "homeLogo": "",
       "awayLogo": "",
@@ -943,7 +923,7 @@
       },
       "date": "2026-10-13",
       "status": "published",
-      "publishAt": "2026-10-13T15:22:00+01:00",
+      "publishAt": "2026-10-13T15:26:00+01:00",
       "expiresAt": ""
     }
   ]
