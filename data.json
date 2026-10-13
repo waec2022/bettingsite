@@ -236,7 +236,7 @@
       "id": "ilma203x",
       "date": "2026-10-02",
       "status": "published",
-      "publishAt": "",
+      "publishAt": "2026-10-13T15:22:00+01:00",
       "bookmakers": {
         "1xbet": {
           "odds": "7",
@@ -275,6 +275,84 @@
         "": {
           "odds": "11",
           "code": "DEMO--CS-2ZEK"
+        }
+      },
+      "match": "Bayern Munich vs Dortmund",
+      "league": "Bundesliga",
+      "score": "3-1",
+      "odds": "11",
+      "rating": "7",
+      "expiresAt": ""
+    },
+    {
+      "id": "i83nghj2",
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:22:00+01:00",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "9.5",
+          "code": "DEMO-1XBET-CS-KQEJ"
+        },
+        "sportybet": {
+          "odds": "9.5",
+          "code": "DEMO-SPORTYBET-CS-6XNK"
+        },
+        "": {
+          "odds": "9.5",
+          "code": "DEMO--CS-CF65"
+        }
+      },
+      "match": "Real Madrid vs Barcelona",
+      "league": "La Liga",
+      "score": "2-1",
+      "odds": "9.5",
+      "rating": "8",
+      "expiresAt": ""
+    },
+    {
+      "id": "irux4jz5",
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:22:00+01:00",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "7",
+          "code": "DEMO-1XBET-CS-Q55E"
+        },
+        "sportybet": {
+          "odds": "7",
+          "code": "DEMO-SPORTYBET-CS-H71N"
+        },
+        "": {
+          "odds": "7",
+          "code": "DEMO--CS-U5MB"
+        }
+      },
+      "match": "Liverpool vs Chelsea",
+      "league": "Premier League",
+      "score": "1-1",
+      "odds": "7",
+      "rating": "6",
+      "expiresAt": ""
+    },
+    {
+      "id": "iq7bombg",
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:23:00+01:00",
+      "bookmakers": {
+        "1xbet": {
+          "odds": "11",
+          "code": "DEMO-1XBET-CS-S2Y5"
+        },
+        "sportybet": {
+          "odds": "11",
+          "code": "DEMO-SPORTYBET-CS-PASD"
+        },
+        "": {
+          "odds": "11",
+          "code": "DEMO--CS-TJUO"
         }
       },
       "match": "Bayern Munich vs Dortmund",
@@ -396,6 +474,36 @@
       "date": "2026-09-19",
       "status": "scheduled",
       "publishAt": "2026-09-19T15:00:00+01:00"
+    },
+    {
+      "id": "in3em8qs",
+      "match": "Real Madrid vs Barcelona",
+      "market": "Match Winner",
+      "pick": "Home Win",
+      "odds": "1.85",
+      "bookmaker": "1xbet",
+      "photo": "",
+      "description": "Our most confident selection of the day based on current form and head-to-head record.",
+      "date": "2026-10-13",
+      "rating": "9",
+      "status": "published",
+      "publishAt": "2026-10-13T15:23:00+01:00",
+      "expiresAt": ""
+    },
+    {
+      "id": "i5ny9kf0",
+      "match": "Real Madrid vs Barcelona",
+      "market": "Match Winner",
+      "pick": "Home Win",
+      "odds": "1.85",
+      "bookmaker": "1xbet",
+      "photo": "",
+      "description": "Our most confident selection of the day based on current form and head-to-head record.",
+      "date": "2026-10-13",
+      "rating": "9",
+      "status": "published",
+      "publishAt": "2026-10-13T15:23:00+01:00",
+      "expiresAt": ""
     }
   ],
   "results": [
@@ -696,6 +804,147 @@
           "code": "xsdd"
         }
       }
+    },
+    {
+      "id": "ip6ye6cp",
+      "match": "Arsenal vs Chelsea",
+      "league": "Premier League",
+      "homeLogo": "",
+      "awayLogo": "",
+      "kickoffAt": "2026-10-14T14:22:00+01:00",
+      "preMatchMarket": "Over/Under 0.5 Goals",
+      "preMatchSelection": "Under 0.5 Goals",
+      "preMatchBookmakers": {
+        "1xbet": {
+          "odds": "1.72",
+          "code": "DEMO-1XBET-PRE-001"
+        },
+        "sportybet": {
+          "odds": "1.72",
+          "code": "DEMO-SPORTYBET-PRE-002"
+        },
+        "": {
+          "odds": "1.72",
+          "code": "DEMO--PRE-003"
+        }
+      },
+      "entryMinute": "20",
+      "requiredScore": "0-0",
+      "liveMarket": "Over/Under 0.5 Goals",
+      "liveSelection": "Over 0.5 Goals",
+      "liveMinOdds": "2",
+      "liveBookmakers": {
+        "1xbet": {
+          "odds": "2.1",
+          "code": "DEMO-1XBET-LIVE-001"
+        },
+        "sportybet": {
+          "odds": "2.1",
+          "code": "DEMO-SPORTYBET-LIVE-002"
+        },
+        "": {
+          "odds": "2.1",
+          "code": "DEMO--LIVE-003"
+        }
+      },
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:22:00+01:00",
+      "expiresAt": ""
+    },
+    {
+      "id": "i1hv1ne1",
+      "match": "Arsenal vs Chelsea",
+      "league": "Premier League",
+      "homeLogo": "",
+      "awayLogo": "",
+      "kickoffAt": "2026-10-14T14:22:00+01:00",
+      "preMatchMarket": "Over/Under 0.5 Goals",
+      "preMatchSelection": "Under 0.5 Goals",
+      "preMatchBookmakers": {
+        "1xbet": {
+          "odds": "1.72",
+          "code": "DEMO-1XBET-PRE-001"
+        },
+        "sportybet": {
+          "odds": "1.72",
+          "code": "DEMO-SPORTYBET-PRE-002"
+        },
+        "": {
+          "odds": "1.72",
+          "code": "DEMO--PRE-003"
+        }
+      },
+      "entryMinute": "20",
+      "requiredScore": "0-0",
+      "liveMarket": "Over/Under 0.5 Goals",
+      "liveSelection": "Over 0.5 Goals",
+      "liveMinOdds": "2",
+      "liveBookmakers": {
+        "1xbet": {
+          "odds": "2.1",
+          "code": "DEMO-1XBET-LIVE-001"
+        },
+        "sportybet": {
+          "odds": "2.1",
+          "code": "DEMO-SPORTYBET-LIVE-002"
+        },
+        "": {
+          "odds": "2.1",
+          "code": "DEMO--LIVE-003"
+        }
+      },
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:22:00+01:00",
+      "expiresAt": ""
+    },
+    {
+      "id": "ijmdepr3",
+      "match": "Arsenal vs Chelsea",
+      "league": "Premier League",
+      "homeLogo": "",
+      "awayLogo": "",
+      "kickoffAt": "2026-10-14T14:22:00+01:00",
+      "preMatchMarket": "Over/Under 0.5 Goals",
+      "preMatchSelection": "Under 0.5 Goals",
+      "preMatchBookmakers": {
+        "1xbet": {
+          "odds": "1.72",
+          "code": "DEMO-1XBET-PRE-001"
+        },
+        "sportybet": {
+          "odds": "1.72",
+          "code": "DEMO-SPORTYBET-PRE-002"
+        },
+        "": {
+          "odds": "1.72",
+          "code": "DEMO--PRE-003"
+        }
+      },
+      "entryMinute": "20",
+      "requiredScore": "0-0",
+      "liveMarket": "Over/Under 0.5 Goals",
+      "liveSelection": "Over 0.5 Goals",
+      "liveMinOdds": "2",
+      "liveBookmakers": {
+        "1xbet": {
+          "odds": "2.1",
+          "code": "DEMO-1XBET-LIVE-001"
+        },
+        "sportybet": {
+          "odds": "2.1",
+          "code": "DEMO-SPORTYBET-LIVE-002"
+        },
+        "": {
+          "odds": "2.1",
+          "code": "DEMO--LIVE-003"
+        }
+      },
+      "date": "2026-10-13",
+      "status": "published",
+      "publishAt": "2026-10-13T15:22:00+01:00",
+      "expiresAt": ""
     }
   ]
 }
