@@ -483,7 +483,27 @@ atOptions = {
 <span class="bottom-nav__label">Blog</span>
 </a>
 </nav>
+<style>
+/* FORCE LATEST NEWS TO FIT PHONE */
+div:has(> div > div:contains("LATEST NEWS")) {
+  width: 100% !important;
+}
 
+/* Every news row */
+a[href*="preview"], div[style*="LATEST"] + div div {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+a[href*="preview"] div, .news-row div {
+  flex: 1 !important;
+  white-space: normal !important;
+  text-align: left !important;
+  width: auto !important;
+}
+</style>
 
 <script src="script.js?v=4"></script>
 
