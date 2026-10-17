@@ -5732,155 +5732,105 @@
   "codesOnly": [
     {
       "id": "code-1557430",
-      "label": "Everton vs Chelsea",
-      "odds": "1.95",
+      "label": "CODES ONLY FOR THE WEEKEND",
+      "odds": "1000",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.95",
-          "code": "Z8BDEJC"
-        },
         "sportybet": {
           "odds": "1.95",
-          "code": "KYQHKKF"
-        },
-        "betpawa": {
-          "odds": "1.95",
-          "code": "RHYFBY6"
+          "code": "YMH7SK"
         }
-      }
+      },
+      "description": "WEEKEND LOADING",
+      "date": "2026-10-17",
+      "rating": "3",
+      "status": "published",
+      "publishAt": "2026-10-17T13:15:00+01:00",
+      "expiresAt": "2026-10-24T13:07:00+01:00"
     },
     {
       "id": "code-1644472",
-      "label": "Bury vs Harrogate Town",
-      "odds": "2.10",
+      "label": "CODES ONLY FOR THE WEEKEND",
+      "odds": "1999.96",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "2.10",
-          "code": "TP93XP2"
-        },
         "sportybet": {
-          "odds": "2.10",
-          "code": "PM5ZY7L"
-        },
-        "betpawa": {
-          "odds": "2.10",
-          "code": "BEZU9MX"
+          "odds": "2000",
+          "code": "VPRXQV"
         }
-      }
+      },
+      "description": "WEEKENDS CODES FOR THE WEEKE",
+      "date": "2026-10-17",
+      "rating": "",
+      "status": "published",
+      "publishAt": "2026-10-17T13:08:00+01:00",
+      "expiresAt": "2026-10-24T13:08:00+01:00"
     },
     {
       "id": "code-1570416",
-      "label": "Espanyol vs Atletico Madrid",
-      "odds": "1.37",
+      "label": "CODES ONLY FOR THE WEEKEND",
+      "odds": "50",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.37",
-          "code": "QYNSN5F"
-        },
         "sportybet": {
-          "odds": "1.37",
-          "code": "6H2DV7E"
-        },
-        "betpawa": {
-          "odds": "1.37",
-          "code": "T87G943"
+          "odds": "4000",
+          "code": "QM6U4H"
         }
-      }
+      },
+      "description": "WEEKEND CODES FOR THE WEEK",
+      "date": "2026-10-17",
+      "rating": "7",
+      "status": "published",
+      "publishAt": "2026-10-17T13:10:00+01:00",
+      "expiresAt": "2026-10-24T13:10:00+01:00"
     },
     {
       "id": "code-1550156",
-      "label": "Venezia vs Napoli",
-      "odds": "1.43",
+      "label": "Weekend Special",
+      "odds": "300",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.43",
-          "code": "G49QQZY"
-        },
         "sportybet": {
-          "odds": "1.43",
-          "code": "RMD7QLB"
-        },
-        "betpawa": {
-          "odds": "1.43",
-          "code": "YCGPDLJ"
+          "odds": "300",
+          "code": "QM6U4H"
         }
-      }
+      },
+      "description": "WEEKLY CODES",
+      "date": "2026-10-17",
+      "rating": "7",
+      "status": "published",
+      "publishAt": "2026-10-17T13:11:00+01:00",
+      "expiresAt": "2026-10-24T13:11:00+01:00"
     },
     {
       "id": "code-1575188",
-      "label": "Union Berlin vs Borussia Dortmund",
-      "odds": "2.63",
+      "label": "Todays Special",
+      "odds": "2000",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "2.63",
-          "code": "5EU2ZSB"
-        },
         "sportybet": {
-          "odds": "2.63",
-          "code": "7GBD26T"
-        },
-        "betpawa": {
-          "odds": "2.63",
-          "code": "TRJHNDT"
+          "odds": "400",
+          "code": "TWKDQV"
         }
-      }
+      },
+      "description": "TODAYS",
+      "date": "2026-10-17",
+      "rating": "9",
+      "status": "published",
+      "publishAt": "2026-10-17T13:13:00+01:00",
+      "expiresAt": "2026-10-24T13:13:00+01:00"
     },
     {
       "id": "code-1575190",
-      "label": "Hamburger SV vs VfB Stuttgart",
-      "odds": "1.90",
+      "label": "Vvip Odds For Today",
+      "odds": "300",
       "bookmakers": {
-        "bet9ja": {
-          "odds": "1.90",
-          "code": "2GPYNXL"
-        },
         "sportybet": {
-          "odds": "1.90",
-          "code": "ZQ9MRXA"
-        },
-        "betpawa": {
-          "odds": "1.90",
-          "code": "PXFGGTC"
+          "odds": "",
+          "code": "TWKDQV"
         }
-      }
-    },
-    {
-      "id": "code-1575191",
-      "label": "Werder Bremen vs SC Paderborn 07",
-      "odds": "1.70",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "1.70",
-          "code": "CC33TDT"
-        },
-        "sportybet": {
-          "odds": "1.70",
-          "code": "CJWAH5X"
-        },
-        "betpawa": {
-          "odds": "1.70",
-          "code": "FG4EP5T"
-        }
-      }
-    },
-    {
-      "id": "code-1575192",
-      "label": "FC Schalke 04 vs FSV Mainz 05",
-      "odds": "2.35",
-      "bookmakers": {
-        "bet9ja": {
-          "odds": "2.35",
-          "code": "7852ZV8"
-        },
-        "sportybet": {
-          "odds": "2.35",
-          "code": "VVW943K"
-        },
-        "betpawa": {
-          "odds": "2.35",
-          "code": "AKZZQNE"
-        }
-      }
+      },
+      "description": "VVIP CODES",
+      "date": "2026-10-17",
+      "rating": "6",
+      "status": "published",
+      "publishAt": "2026-10-17T13:15:00+01:00",
+      "expiresAt": "2026-10-24T13:15:00+01:00"
     }
   ],
   "results": [
@@ -6245,36 +6195,12 @@
   "meta": {
     "bookmakers": [
       {
-        "key": "bet9ja",
-        "name": "Bet9ja",
-        "color": "#2ecc58",
-        "affiliateUrl": "https://bet9ja.com",
-        "mainUrl": "https://bet9ja.com",
-        "order": 1
-      },
-      {
         "key": "sportybet",
         "name": "SportyBet",
         "color": "#ff0000",
-        "affiliateUrl": "",
-        "mainUrl": "",
+        "affiliateUrl": "https://www.sportybet.com/ng/",
+        "mainUrl": "https://www.sportybet.com/ng/",
         "order": 2
-      },
-      {
-        "key": "betpawa",
-        "name": "BetPawa",
-        "color": "#2f7bff",
-        "affiliateUrl": "",
-        "mainUrl": "",
-        "order": 3
-      },
-      {
-        "key": "betway",
-        "name": "Betway",
-        "color": "#000000",
-        "affiliateUrl": "",
-        "mainUrl": "",
-        "order": 4
       }
     ],
     "overview": {
@@ -6285,7 +6211,9 @@
       "date": "2026-10-17"
     },
     "branding": {
-      "siteName": "MatchForecast"
+      "siteName": "MatchForecast",
+      "tagline": "Daily Football Tips & Bet Codes",
+      "domain": "sure2oddtoday.online"
     }
   },
   "betOfDayMore": [
