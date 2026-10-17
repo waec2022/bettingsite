@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1517367,
@@ -26,7 +27,7 @@
     "awayLogo": "https://media.api-sports.io/football/teams/4451.png",
     "time": "2026-10-17T08:00:00+00:00",
     "status": "live",
-    "statusLabel": "LIVE · 63' · 1-1",
+    "statusLabel": "LIVE · 31' · 1-0",
     "color": "red",
     "prediction": "Over 1.5",
     "odds": "1.40"
@@ -41,9 +42,9 @@
     "homeLogo": "https://media.api-sports.io/football/teams/5009.png",
     "awayLogo": "https://media.api-sports.io/football/teams/28428.png",
     "time": "2026-10-17T08:45:00+00:00",
-    "status": "live",
-    "statusLabel": "LIVE · 34' · 1-0",
-    "color": "red",
+    "status": "upcoming",
+    "statusLabel": "UPCOMING · 08:45 AM",
+    "color": "yellow",
     "prediction": "Over 1.5",
     "odds": "1.40"
   },
@@ -57,9 +58,9 @@
     "homeLogo": "https://media.api-sports.io/football/teams/10106.png",
     "awayLogo": "https://media.api-sports.io/football/teams/5011.png",
     "time": "2026-10-17T08:45:00+00:00",
-    "status": "live",
-    "statusLabel": "LIVE · 37' · 1-0",
-    "color": "red",
+    "status": "upcoming",
+    "statusLabel": "UPCOMING · 08:45 AM",
+    "color": "yellow",
     "prediction": "Over 1.5",
     "odds": "1.40"
   },
@@ -73,9 +74,9 @@
     "homeLogo": "https://media.api-sports.io/football/teams/5017.png",
     "awayLogo": "https://media.api-sports.io/football/teams/5013.png",
     "time": "2026-10-17T08:45:00+00:00",
-    "status": "live",
-    "statusLabel": "LIVE · 37' · 1-1",
-    "color": "red",
+    "status": "upcoming",
+    "statusLabel": "UPCOMING · 08:45 AM",
+    "color": "yellow",
     "prediction": "Over 1.5",
     "odds": "1.40"
   },
