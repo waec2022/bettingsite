@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "lastUpdated": "2026-10-17T07:04:08.437Z",
+  "lastUpdated": "2026-10-17T08:19:59.527Z",
   "predictions": [
     {
       "id": 1557430,
@@ -4706,210 +4706,1027 @@
   ],
   "hedgeStrategies": [
     {
-      "id": "hedge-1557430",
-      "match": "Everton vs Chelsea",
-      "league": "Premier League",
-      "kickoffAt": "2026-10-17T06:58:08.437Z",
+      "id": 1498885,
+      "home": "Atletico DE Rafaela",
+      "away": "Quilmes",
+      "match": "Atletico DE Rafaela vs Quilmes",
+      "league": "Primera Nacional",
       "preMatchSelection": "Home Win",
-      "preMatchMarket": "Home Win",
-      "entryMinute": "70",
-      "requiredScore": "0-0 or 1-1",
       "liveSelection": "Highest Scoring Half - 2nd Half",
-      "liveMarket": "Highest Scoring Half - 2nd Half",
+      "odds": "1.95",
+      "status": "finished",
+      "statusLabel": "FINISHED",
+      "minute": 90,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT"
+    },
+    {
+      "id": 1508572,
+      "home": "Boston Legacy W",
+      "away": "Racing Louisville W",
+      "match": "Boston Legacy W vs Racing Louisville W",
+      "league": "NWSL Women",
+      "preMatchSelection": "Home Win",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
+      "odds": "1.95",
+      "status": "finished",
+      "statusLabel": "FINISHED",
+      "minute": 90,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT"
+    },
+    {
+      "id": 1619329,
+      "home": "Real Tomayapo",
+      "away": "Gualberto Villarroel SJ",
+      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+      "league": "Primera División",
+      "preMatchSelection": "Home Win",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
+      "odds": "1.95",
+      "status": "finished",
+      "statusLabel": "FINISHED",
+      "minute": 90,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT"
+    },
+    {
+      "id": 1635998,
+      "home": "Chapulineros",
+      "away": "Montañeses",
+      "match": "Chapulineros vs Montañeses",
+      "league": "Primera Premier",
+      "preMatchSelection": "Home Win",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
+      "odds": "1.95",
+      "status": "finished",
+      "statusLabel": "FINISHED",
+      "minute": 90,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT"
+    },
+    {
+      "id": 1639031,
+      "home": "Miramar",
+      "away": "Auckland City",
+      "match": "Miramar vs Auckland City",
+      "league": "National League - National",
+      "preMatchSelection": "Home Win",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
+      "odds": "1.95",
+      "status": "finished",
+      "statusLabel": "FINISHED",
+      "minute": 90,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT"
+    },
+    {
+      "id": 1639868,
+      "home": "Club Nacional de Football W",
+      "away": "Universidad de Chile W",
+      "match": "Club Nacional de Football W vs Universidad de Chile W",
+      "league": "CONMEBOL Libertadores Femenina",
+      "preMatchSelection": "Home Win",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
       "odds": "1.95",
       "status": "upcoming",
-      "preMatchBookmakers": {
-        "bet9ja": {
-          "code": "V78GC8V"
-        }
-      },
-      "liveBookmakers": {
-        "bet9ja": {
-          "code": "YE37UYA"
-        }
-      }
-    },
-    {
-      "id": "hedge-1644472",
-      "match": "Bury vs Harrogate Town",
-      "league": "FA Cup",
-      "kickoffAt": "2026-10-17T06:58:08.437Z",
-      "preMatchSelection": "Over 2.5 Goals",
-      "preMatchMarket": "Over 2.5 Goals",
-      "entryMinute": "70",
-      "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Under 4.5 Goals Live",
-      "liveMarket": "Under 4.5 Goals Live",
-      "odds": "2.10",
-      "status": "upcoming",
-      "preMatchBookmakers": {
-        "bet9ja": {
-          "code": "99H7FH8"
-        }
-      },
-      "liveBookmakers": {
-        "bet9ja": {
-          "code": "38QB59J"
-        }
-      }
-    },
-    {
-      "id": "hedge-1570416",
-      "match": "Espanyol vs Atletico Madrid",
-      "league": "La Liga",
-      "kickoffAt": "2026-10-17T06:58:08.437Z",
-      "preMatchSelection": "BTTS Yes",
-      "preMatchMarket": "BTTS Yes",
-      "entryMinute": "70",
-      "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Over 0.5 Goals 2nd Half",
-      "liveMarket": "Over 0.5 Goals 2nd Half",
-      "odds": "1.37",
-      "status": "upcoming",
-      "preMatchBookmakers": {
-        "bet9ja": {
-          "code": "7V87T48"
-        }
-      },
-      "liveBookmakers": {
-        "bet9ja": {
-          "code": "44MKNUS"
-        }
-      }
-    },
-    {
-      "id": "hedge-1550156",
-      "match": "Venezia vs Napoli",
-      "league": "Serie A",
-      "kickoffAt": "2026-10-17T06:58:08.437Z",
-      "preMatchSelection": "Draw No Bet",
-      "preMatchMarket": "Draw No Bet",
-      "entryMinute": "70",
-      "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Draw No Bet - Away Live",
-      "liveMarket": "Draw No Bet - Away Live",
-      "odds": "1.43",
-      "status": "upcoming",
-      "preMatchBookmakers": {
-        "bet9ja": {
-          "code": "SB4PZAG"
-        }
-      },
-      "liveBookmakers": {
-        "bet9ja": {
-          "code": "WU2YVRT"
-        }
-      }
-    },
-    {
-      "id": "hedge-1575188",
-      "match": "Union Berlin vs Borussia Dortmund",
-      "league": "Bundesliga",
-      "kickoffAt": "2026-10-17T06:58:08.437Z",
-      "preMatchSelection": "Over 9.5 Corners",
-      "preMatchMarket": "Over 9.5 Corners",
-      "entryMinute": "70",
-      "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Over 2.5 Corners Live",
-      "liveMarket": "Over 2.5 Corners Live",
-      "odds": "2.63",
-      "status": "upcoming",
-      "preMatchBookmakers": {
-        "bet9ja": {
-          "code": "8YVHDNN"
-        }
-      },
-      "liveBookmakers": {
-        "bet9ja": {
-          "code": "HSVTX3K"
-        }
-      }
+      "statusLabel": "UPCOMING · 12:00 AM",
+      "minute": 0,
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "NS"
     }
   ],
   "livePredictions": [
     {
-      "id": "live-1528735",
-      "match": "Yanbian Longding vs Dongguan United",
+      "id": 1498885,
+      "home": "Atletico DE Rafaela",
+      "away": "Quilmes",
+      "match": "Atletico DE Rafaela vs Quilmes",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.82",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-0",
+      "minute": 90,
+      "goals": "1-0",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.09",
+        "22bet": "1.92",
+        "1xbet": "1.99"
+      }
+    },
+    {
+      "id": 1508572,
+      "home": "Boston Legacy W",
+      "away": "Racing Louisville W",
+      "match": "Boston Legacy W vs Racing Louisville W",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.30",
+      "status": "finished",
+      "statusLabel": "FINISHED · 2-1",
+      "minute": 90,
+      "goals": "2-1",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.13",
+        "22bet": "2.02",
+        "1xbet": "2.08"
+      }
+    },
+    {
+      "id": 1619329,
+      "home": "Real Tomayapo",
+      "away": "Gualberto Villarroel SJ",
+      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.91",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-0",
+      "minute": 90,
+      "goals": "1-0",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.88",
+        "22bet": "1.96",
+        "1xbet": "2.07"
+      }
+    },
+    {
+      "id": 1635998,
+      "home": "Chapulineros",
+      "away": "Montañeses",
+      "match": "Chapulineros vs Montañeses",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.12",
+      "status": "finished",
+      "statusLabel": "FINISHED · 2-1",
+      "minute": 90,
+      "goals": "2-1",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.01",
+        "22bet": "2.14",
+        "1xbet": "1.94"
+      }
+    },
+    {
+      "id": 1639031,
+      "home": "Miramar",
+      "away": "Auckland City",
+      "match": "Miramar vs Auckland City",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.30",
+      "status": "finished",
+      "statusLabel": "FINISHED · 0-2",
+      "minute": 90,
+      "goals": "0-2",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.95",
+        "22bet": "1.98",
+        "1xbet": "1.98"
+      }
+    },
+    {
+      "id": 1639868,
+      "home": "Club Nacional de Football W",
+      "away": "Universidad de Chile W",
+      "match": "Club Nacional de Football W vs Universidad de Chile W",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.93",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING · 12:00 AM",
+      "minute": 0,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "NS",
+      "bookies": {
+        "melbet": "2.06",
+        "22bet": "1.94",
+        "1xbet": "2.17"
+      }
+    },
+    {
+      "id": 1639872,
+      "home": "Cruzeiro W",
+      "away": "LDU Quito W",
+      "match": "Cruzeiro W vs LDU Quito W",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.31",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING · 12:00 AM",
+      "minute": 0,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T00:00:00+00:00",
+      "short": "NS",
+      "bookies": {
+        "melbet": "1.95",
+        "22bet": "2.10",
+        "1xbet": "2.02"
+      }
+    },
+    {
+      "id": 1493185,
+      "home": "Boca Juniors",
+      "away": "Talleres Cordoba",
+      "match": "Boca Juniors vs Talleres Cordoba",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.24",
+      "status": "finished",
+      "statusLabel": "FINISHED · 2-1",
+      "minute": 90,
+      "goals": "2-1",
+      "kickoffAt": "2026-10-17T00:30:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.02",
+        "22bet": "1.96",
+        "1xbet": "2.07"
+      }
+    },
+    {
+      "id": 1498892,
+      "home": "Gimnasia Y Tiro",
+      "away": "Atlanta",
+      "match": "Gimnasia Y Tiro vs Atlanta",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.29",
+      "status": "finished",
+      "statusLabel": "FINISHED · 3-1",
+      "minute": 90,
+      "goals": "3-1",
+      "kickoffAt": "2026-10-17T01:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.06",
+        "22bet": "1.98",
+        "1xbet": "2.19"
+      }
+    },
+    {
+      "id": 1550993,
+      "home": "Necaxa",
+      "away": "Atlas",
+      "match": "Necaxa vs Atlas",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.83",
+      "status": "finished",
+      "statusLabel": "FINISHED · 0-2",
+      "minute": 90,
+      "goals": "0-2",
+      "kickoffAt": "2026-10-17T01:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.00",
+        "22bet": "2.01",
+        "1xbet": "2.13"
+      }
+    },
+    {
+      "id": 1581452,
+      "home": "Correcaminos Uat",
+      "away": "Dorados",
+      "match": "Correcaminos Uat vs Dorados",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.99",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-2",
+      "minute": 90,
+      "goals": "1-2",
+      "kickoffAt": "2026-10-17T01:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.00",
+        "22bet": "1.95",
+        "1xbet": "1.98"
+      }
+    },
+    {
+      "id": 1600630,
+      "home": "Inter",
+      "away": "Municipal Limeño",
+      "match": "Inter vs Municipal Limeño",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.98",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-2",
+      "minute": 90,
+      "goals": "1-2",
+      "kickoffAt": "2026-10-17T01:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.02",
+        "22bet": "2.14",
+        "1xbet": "2.15"
+      }
+    },
+    {
+      "id": 1601469,
+      "home": "Guadalupe FC",
+      "away": "Cariari Pococi",
+      "match": "Guadalupe FC vs Cariari Pococi",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.22",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-0",
+      "minute": 90,
+      "goals": "1-0",
+      "kickoffAt": "2026-10-17T01:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.88",
+        "22bet": "2.10",
+        "1xbet": "2.14"
+      }
+    },
+    {
+      "id": 1583783,
+      "home": "San Francisco FC",
+      "away": "Deportivo Universitario",
+      "match": "San Francisco FC vs Deportivo Universitario",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.06",
+      "status": "finished",
+      "statusLabel": "FINISHED · 1-0",
+      "minute": 90,
+      "goals": "1-0",
+      "kickoffAt": "2026-10-17T01:30:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.94",
+        "22bet": "2.17",
+        "1xbet": "2.08"
+      }
+    },
+    {
+      "id": 1583789,
+      "home": "CD Arabe Unido",
+      "away": "UMECIT",
+      "match": "CD Arabe Unido vs UMECIT",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.14",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING · 01:30 AM",
+      "minute": 0,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T01:30:00+00:00",
+      "short": "PST",
+      "bookies": {
+        "melbet": "1.95",
+        "22bet": "1.95",
+        "1xbet": "1.93"
+      }
+    },
+    {
+      "id": 1517367,
+      "home": "Vancouver FC",
+      "away": "HFX Wanderers FC",
+      "match": "Vancouver FC vs HFX Wanderers FC",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.22",
+      "status": "finished",
+      "statusLabel": "FINISHED · 2-1",
+      "minute": 90,
+      "goals": "2-1",
+      "kickoffAt": "2026-10-17T02:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.87",
+        "22bet": "2.02",
+        "1xbet": "1.98"
+      }
+    },
+    {
+      "id": 1639032,
+      "home": "Wellington Olympic",
+      "away": "Eastern Suburbs",
+      "match": "Wellington Olympic vs Eastern Suburbs",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.23",
+      "status": "finished",
+      "statusLabel": "FINISHED · 4-0",
+      "minute": 90,
+      "goals": "4-0",
+      "kickoffAt": "2026-10-17T02:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "2.08",
+        "22bet": "1.98",
+        "1xbet": "2.01"
+      }
+    },
+    {
+      "id": 1641833,
+      "home": "Portland Timbers II",
+      "away": "St. Louis City II",
+      "match": "Portland Timbers II vs St. Louis City II",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.89",
+      "status": "finished",
+      "statusLabel": "FINISHED · 2-0",
+      "minute": 90,
+      "goals": "2-0",
+      "kickoffAt": "2026-10-17T02:00:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.93",
+        "22bet": "2.05",
+        "1xbet": "2.10"
+      }
+    },
+    {
+      "id": 1641834,
+      "home": "Ventura County",
+      "away": "Minnesota United II",
+      "match": "Ventura County vs Minnesota United II",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.39",
+      "status": "finished",
+      "statusLabel": "FINISHED · 3-2",
+      "minute": 120,
+      "goals": "3-2",
+      "kickoffAt": "2026-10-17T02:00:00+00:00",
+      "short": "AET",
+      "bookies": {
+        "melbet": "1.98",
+        "22bet": "2.17",
+        "1xbet": "2.02"
+      }
+    },
+    {
+      "id": 1635999,
+      "home": "Tigres de Alica",
+      "away": "Reboceros La Piedad",
+      "match": "Tigres de Alica vs Reboceros La Piedad",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.25",
+      "status": "finished",
+      "statusLabel": "FINISHED · 4-0",
+      "minute": 90,
+      "goals": "4-0",
+      "kickoffAt": "2026-10-17T02:30:00+00:00",
+      "short": "FT",
+      "bookies": {
+        "melbet": "1.98",
+        "22bet": "1.97",
+        "1xbet": "2.06"
+      }
+    },
+    {
+      "id": 1507083,
+      "home": "Ulsan Hyundai FC",
+      "away": "Bucheon FC 1995",
+      "match": "Ulsan Hyundai FC vs Bucheon FC 1995",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.00",
+      "status": "live",
+      "statusLabel": "LIVE · 45' · 0-1",
+      "minute": 45,
+      "goals": "0-1",
+      "kickoffAt": "2026-10-17T07:30:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.87",
+        "22bet": "2.09",
+        "1xbet": "2.14"
+      }
+    },
+    {
+      "id": 1510469,
+      "home": "Gimpo Citizen",
+      "away": "Paju Citizen",
+      "match": "Gimpo Citizen vs Paju Citizen",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.37",
+      "status": "live",
+      "statusLabel": "LIVE · 45' · 1-1",
+      "minute": 45,
+      "goals": "1-1",
+      "kickoffAt": "2026-10-17T07:30:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.07",
+        "22bet": "2.16",
+        "1xbet": "1.99"
+      }
+    },
+    {
+      "id": 1562311,
+      "home": "Táborsko II",
+      "away": "Křimice",
+      "match": "Táborsko II vs Křimice",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.25",
+      "status": "live",
+      "statusLabel": "LIVE · 2' · 0-0",
+      "minute": 2,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:15:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.89",
+        "22bet": "1.97",
+        "1xbet": "2.06"
+      }
+    },
+    {
+      "id": 1562426,
+      "home": "Brandýs nad Labem",
+      "away": "Baník Sokolov",
+      "match": "Brandýs nad Labem vs Baník Sokolov",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.04",
+      "status": "live",
+      "statusLabel": "LIVE · 3' · 0-0",
+      "minute": 3,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:15:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.94",
+        "22bet": "1.97",
+        "1xbet": "1.96"
+      }
+    },
+    {
+      "id": 1562432,
+      "home": "Újezd Praha 4",
+      "away": "Rapid Psáry",
+      "match": "Újezd Praha 4 vs Rapid Psáry",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.20",
+      "status": "live",
+      "statusLabel": "LIVE · 4' · 0-0",
+      "minute": 4,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:15:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.88",
+        "22bet": "1.97",
+        "1xbet": "2.02"
+      }
+    },
+    {
+      "id": 1562671,
+      "home": "Motorlet Praha",
+      "away": "Sparta Praha II",
+      "match": "Motorlet Praha vs Sparta Praha II",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.08",
+      "status": "live",
+      "statusLabel": "LIVE · 3' · 0-0",
+      "minute": 3,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:15:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.88",
+        "22bet": "1.94",
+        "1xbet": "1.93"
+      }
+    },
+    {
+      "id": 1562791,
+      "home": "Chrudim",
+      "away": "Horní Ředice",
+      "match": "Chrudim vs Horní Ředice",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.06",
+      "status": "live",
+      "statusLabel": "LIVE · 2' · 0-0",
+      "minute": 2,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:15:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.90",
+        "22bet": "2.00",
+        "1xbet": "2.13"
+      }
+    },
+    {
+      "id": 1581944,
+      "home": "Viktoriya Mykolaivka",
+      "away": "Chernihiv",
+      "match": "Viktoriya Mykolaivka vs Chernihiv",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.32",
+      "status": "live",
+      "statusLabel": "LIVE · 20' · 1-1",
+      "minute": 20,
+      "goals": "1-1",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.89",
+        "22bet": "2.05",
+        "1xbet": "1.97"
+      }
+    },
+    {
+      "id": 1602508,
+      "home": "Concordia",
+      "away": "Viitorul Şelimbăr",
+      "match": "Concordia vs Viitorul Şelimbăr",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.93",
+      "status": "live",
+      "statusLabel": "LIVE · 19' · 0-0",
+      "minute": 19,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.10",
+        "22bet": "2.06",
+        "1xbet": "1.94"
+      }
+    },
+    {
+      "id": 1602509,
+      "home": "Dumbrăviţa",
+      "away": "Bihor Oradea",
+      "match": "Dumbrăviţa vs Bihor Oradea",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.36",
+      "status": "live",
+      "statusLabel": "LIVE · 19' · 0-0",
+      "minute": 19,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.86",
+        "22bet": "2.02",
+        "1xbet": "2.13"
+      }
+    },
+    {
+      "id": 1602510,
+      "home": "CSM Reşiţa",
+      "away": "Cetatea Suceava",
+      "match": "CSM Reşiţa vs Cetatea Suceava",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.93",
+      "status": "live",
+      "statusLabel": "LIVE · 19' · 0-0",
+      "minute": 19,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.86",
+        "22bet": "2.15",
+        "1xbet": "2.18"
+      }
+    },
+    {
+      "id": 1602511,
+      "home": "Slatina",
+      "away": "Unirea Slobozia",
+      "match": "Slatina vs Unirea Slobozia",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.97",
+      "status": "live",
+      "statusLabel": "LIVE · 20' · 0-0",
+      "minute": 20,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.01",
+        "22bet": "2.08",
+        "1xbet": "1.96"
+      }
+    },
+    {
+      "id": 1602515,
+      "home": "Popești-Leordeni",
+      "away": "CS Afumati",
+      "match": "Popești-Leordeni vs CS Afumati",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.23",
+      "status": "live",
+      "statusLabel": "LIVE · 18' · 1-0",
+      "minute": 18,
+      "goals": "1-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.87",
+        "22bet": "2.15",
+        "1xbet": "2.12"
+      }
+    },
+    {
+      "id": 1602517,
+      "home": "CSA Steaua Bucureşti",
+      "away": "Metaloglobus",
+      "match": "CSA Steaua Bucureşti vs Metaloglobus",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.07",
+      "status": "live",
+      "statusLabel": "LIVE · 17' · 0-0",
+      "minute": 17,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.94",
+        "22bet": "2.14",
+        "1xbet": "2.16"
+      }
+    },
+    {
+      "id": 1602518,
+      "home": "Ştefăneşti",
+      "away": "CS Dinamo București",
+      "match": "Ştefăneşti vs CS Dinamo București",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "1.93",
+      "status": "live",
+      "statusLabel": "LIVE · 18' · 0-1",
+      "minute": 18,
+      "goals": "0-1",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.06",
+        "22bet": "2.09",
+        "1xbet": "1.90"
+      }
+    },
+    {
+      "id": 1607326,
+      "home": "Eastern District",
+      "away": "Eastern",
+      "match": "Eastern District vs Eastern",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.03",
+      "status": "live",
+      "statusLabel": "LIVE · 19' · 0-0",
+      "minute": 19,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.13",
+        "22bet": "1.92",
+        "1xbet": "2.04"
+      }
+    },
+    {
+      "id": 1610570,
+      "home": "CSM Satu Mare",
+      "away": "Metalul Buzău",
+      "match": "CSM Satu Mare vs Metalul Buzău",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.29",
+      "status": "live",
+      "statusLabel": "LIVE · 20' · 0-0",
+      "minute": 20,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.04",
+        "22bet": "2.02",
+        "1xbet": "1.99"
+      }
+    },
+    {
+      "id": 1638477,
+      "home": "Dalian Kewei",
+      "away": "Guizhou Zhucheng",
+      "match": "Dalian Kewei vs Guizhou Zhucheng",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.20",
+      "status": "live",
+      "statusLabel": "LIVE · 19' · 2-0",
+      "minute": 19,
+      "goals": "2-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "2.03",
+        "22bet": "2.17",
+        "1xbet": "2.05"
+      }
+    },
+    {
+      "id": 1640853,
+      "home": "Sekhukhune United U23",
+      "away": "Chippa United U23",
+      "match": "Sekhukhune United U23 vs Chippa United U23",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.33",
+      "status": "live",
+      "statusLabel": "LIVE · 20' · 2-1",
+      "minute": 20,
+      "goals": "2-1",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.99",
+        "22bet": "2.13",
+        "1xbet": "2.09"
+      }
+    },
+    {
+      "id": 1640854,
+      "home": "Polokwane City U23",
+      "away": "AmaZulu U23",
+      "match": "Polokwane City U23 vs AmaZulu U23",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.26",
+      "status": "live",
+      "statusLabel": "LIVE · 20' · 0-0",
+      "minute": 20,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.92",
+        "22bet": "2.11",
+        "1xbet": "2.13"
+      }
+    },
+    {
+      "id": 1640855,
+      "home": "Richards Bay U23",
+      "away": "Golden Arrows U23",
+      "match": "Richards Bay U23 vs Golden Arrows U23",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.09",
+      "status": "live",
+      "statusLabel": "LIVE · 18' · 0-0",
+      "minute": 18,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T08:00:00+00:00",
+      "short": "1H",
+      "bookies": {
+        "melbet": "1.90",
+        "22bet": "1.90",
+        "1xbet": "2.03"
+      }
+    },
+    {
+      "id": 1528735,
       "home": "Yanbian Longding",
       "away": "Dongguan United",
+      "match": "Yanbian Longding vs Dongguan United",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "1.97",
-      "currentScore": "0-0",
-      "minute": 4,
-      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "odds": "2.24",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 62' · 3-0",
+      "minute": 62,
+      "goals": "3-0",
+      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "short": "2H",
+      "bookies": {
+        "melbet": "1.93",
+        "22bet": "2.09",
+        "1xbet": "2.07"
+      }
     },
     {
-      "id": "live-1556096",
-      "match": "Mito Hollyhock vs Urawa",
+      "id": 1556096,
       "home": "Mito Hollyhock",
       "away": "Urawa",
+      "match": "Mito Hollyhock vs Urawa",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "2.29",
-      "currentScore": "0-0",
-      "minute": 1,
-      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "odds": "2.18",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 56' · 0-0",
+      "minute": 56,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "short": "2H",
+      "bookies": {
+        "melbet": "2.11",
+        "22bet": "2.01",
+        "1xbet": "2.16"
+      }
     },
     {
-      "id": "live-1637233",
-      "match": "Pretoria U. W vs Copperbelt Ladies W",
+      "id": 1637233,
       "home": "Pretoria U. W",
       "away": "Copperbelt Ladies W",
+      "match": "Pretoria U. W vs Copperbelt Ladies W",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "2.74",
-      "currentScore": "0-0",
-      "minute": 4,
-      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "odds": "2.34",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 61' · 1-1",
+      "minute": 61,
+      "goals": "1-1",
+      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "short": "2H",
+      "bookies": {
+        "melbet": "2.06",
+        "22bet": "2.18",
+        "1xbet": "2.08"
+      }
     },
     {
-      "id": "live-1638476",
-      "match": "Xi'an Ronghai vs Shenzhen 2028",
+      "id": 1638476,
       "home": "Xi'an Ronghai",
       "away": "Shenzhen 2028",
+      "match": "Xi'an Ronghai vs Shenzhen 2028",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "1.91",
-      "currentScore": "0-0",
-      "minute": 4,
-      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "odds": "2.10",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 62' · 0-0",
+      "minute": 62,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "short": "2H",
+      "bookies": {
+        "melbet": "1.94",
+        "22bet": "2.08",
+        "1xbet": "1.90"
+      }
     },
     {
-      "id": "live-1638524",
-      "match": "Rizhao Yuqi vs Guangzhou Dandelion",
+      "id": 1638524,
       "home": "Rizhao Yuqi",
       "away": "Guangzhou Dandelion",
+      "match": "Rizhao Yuqi vs Guangzhou Dandelion",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "2.20",
-      "currentScore": "0-0",
-      "minute": 4,
-      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "odds": "2.26",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 63' · 0-0",
+      "minute": 63,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T07:00:00+00:00",
+      "short": "2H",
+      "bookies": {
+        "melbet": "2.08",
+        "22bet": "2.01",
+        "1xbet": "2.13"
+      }
     },
     {
-      "id": "live-1593682",
-      "match": "Macarthur vs Perth Glory",
-      "home": "Macarthur",
-      "away": "Perth Glory",
+      "id": 1510470,
+      "home": "Gyeongnam FC",
+      "away": "Asan Mugunghwa",
+      "match": "Gyeongnam FC vs Asan Mugunghwa",
       "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "2.54",
-      "currentScore": "0-0",
-      "minute": 46,
-      "kickoffAt": "2026-10-17T06:00:00+00:00",
+      "odds": "2.12",
       "status": "live",
-      "publishAt": "2026-10-17T07:04:08.437Z"
+      "statusLabel": "LIVE · 45' · 0-0",
+      "minute": 45,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T07:30:00+00:00",
+      "short": "HT",
+      "bookies": {
+        "melbet": "2.13",
+        "22bet": "2.06",
+        "1xbet": "2.20"
+      }
+    },
+    {
+      "id": 1510471,
+      "home": "Yongin City",
+      "away": "Ansan Greeners",
+      "match": "Yongin City vs Ansan Greeners",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.36",
+      "status": "live",
+      "statusLabel": "LIVE · 45' · 0-0",
+      "minute": 45,
+      "goals": "0-0",
+      "kickoffAt": "2026-10-17T07:30:00+00:00",
+      "short": "HT",
+      "bookies": {
+        "melbet": "1.88",
+        "22bet": "1.93",
+        "1xbet": "1.96"
+      }
+    },
+    {
+      "id": 1638525,
+      "home": "Shanghai Second",
+      "away": "Guangdong Mingtu",
+      "match": "Shanghai Second vs Guangdong Mingtu",
+      "pick": "Over 0.5 Goals Live",
+      "odds": "2.22",
+      "status": "live",
+      "statusLabel": "LIVE · 45' · 1-1",
+      "minute": 45,
+      "goals": "1-1",
+      "kickoffAt": "2026-10-17T07:30:00+00:00",
+      "short": "HT",
+      "bookies": {
+        "melbet": "2.02",
+        "22bet": "2.01",
+        "1xbet": "2.07"
+      }
     }
   ],
   "codesOnly": [
