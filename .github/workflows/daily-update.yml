@@ -1,32 +1,37 @@
-name: daily-update
+name: update
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '*/15 * * * *'  # Every 15 mins - so LIVE minute go update real
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  update:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Run generator
-        run: |
-          if [ -f "generate.js" ]; then node generate.js
-          elif [ -f "bettingsite/generate.js" ]; then node bettingsite/generate.js
-          else echo "No generate.js found" && ls -la && exit 1
-          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Run generate.js
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          node generate.js
+          echo "--- Checking generated statuses ---"
+          cat data.json | grep -o '"status":"[^"]*"' | sort | uniq -c
+          cat data.json | grep -o '"statusLabel":"[^"]*"' | head -20
+      
+      - name: Copy to bettingsite
+        run: |
+          cp data.json bettingsite/data.json
+          echo "Copied to bettingsite/data.json"
       
       - name: Commit and push
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add -A
-          git diff --staged --quiet || (git commit -m "auto: update predictions $(date +%Y-%m-%d)" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json bettingsite/data.json
+          git diff --staged --quiet || git commit -m "Update real LIVE status - Upcoming Yellow, Live Red, Finished Green - $(date)"
+          git push
