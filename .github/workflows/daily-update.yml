@@ -1,25 +1,35 @@
 name: daily-update
 on:
   schedule:
-    - cron: '0 6 * * *'  # runs 6am daily
-  workflow_dispatch:  # allow manual run
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm install
+      
+      - name: List files
+        run: |
+          ls -la
+          find . -name "*.js" -o -name "*.json" | head -30
+      
+      - name: Try to run generator
+        run: |
+          if [ -f "scripts/generate.js" ]; then node scripts/generate.js
+          elif [ -f "generate.js" ]; then node generate.js
+          elif [ -f "src/generate.js" ]; then node src/generate.js
+          elif [ -f "bettingsite/generate.js" ]; then node bettingsite/generate.js
+          else echo "Checking bettingsite folder:"; ls -la bettingsite/ 2>&1 || true
+          fi
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-      - run: npm run generate || node scripts/generate.js || node generate.js
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-      - run: |
-          git config user.name "bot"
-          git config user.email "bot@bot.com"
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add .
-          git diff --staged --quiet || (git commit -m "auto update predictions" && git push)
+          git diff --staged --quiet || (git commit -m "auto: update predictions" && git push)
