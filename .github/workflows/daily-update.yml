@@ -2,8 +2,9 @@ name: update
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Every 15 mins so LIVE minute go update real
-  workflow_dispatch:  # So you fit press Run workflow manually like your screenshot
+    - cron: '*/20 * * * *'  # Every 20 mins = 72 req/day = safe for free plan
+    # If you want 15 mins sharp, change to '*/15 * * * *' = 96 req/day (still ok with new code)
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -18,37 +19,30 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps if any
-        run: |
-          npm install || echo "no package.json - ok"
-
       - name: Run generate.js
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: |
-          echo "Starting generate.js..."
+          echo "Starting generate.js with 24hrs limit protection..."
           node generate.js
           echo ""
           echo "--- STATUS CHECK ---"
           cat data.json | grep -o '"status":"[^"]*"' | sort | uniq -c
           echo ""
           echo "--- SAMPLE LABELS ---"
-          cat data.json | grep -o '"statusLabel":"[^"]*"' | head -20
+          cat data.json | grep -o '"statusLabel":"[^"]*"' | head -10
 
       - name: Safe copy to bettingsite folder
         run: |
-          echo "Making sure bettingsite folder exists (fixes ENOENT)..."
           mkdir -p bettingsite
           if [ -f data.json ]; then
             cp data.json bettingsite/data.json
-            echo "✅ Copied data.json -> bettingsite/data.json"
+            echo "✅ Copied"
           else
-            echo "❌ data.json not found!"
-            ls -la
-            exit 1
+            echo "❌ data.json not found - keeping old"
+            exit 0
           fi
-          ls -lh data.json bettingsite/data.json
 
       - name: Commit and Push
         run: |
@@ -56,9 +50,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json bettingsite/data.json || git add data.json
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
           else
-            git commit -m "Auto update: Upcoming Yellow, Live Red, Finished Green - $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "Auto update 24hrs - $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
-            echo "✅ Pushed"
           fi
