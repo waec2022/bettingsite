@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "lastUpdated": "2026-10-17T06:43:05.230Z",
+  "lastUpdated": "2026-10-17T06:52:25.180Z",
   "predictions": [
     {
       "id": 1498885,
@@ -15,22 +15,22 @@
       "kickoff": "00:00",
       "match": "Atletico DE Rafaela vs Quilmes",
       "pick": "Double chance : Atletico DE Rafaela or draw",
-      "market": "Double Chance",
-      "odds": "2.45",
+      "market": "Highest Scoring Half",
+      "odds": "2.26",
       "confidence": "High",
       "advice": "Double chance : Atletico DE Rafaela or draw",
       "selection": "Double chance : Atletico DE Rafaela or draw",
-      "category": "Double Chance",
+      "category": "Highest Scoring Half",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:51.849Z",
+      "publishAt": "2026-10-17T06:52:13.359Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.45",
+          "odds": "2.26",
           "code": "1498885"
         },
         "sportybet": {
-          "odds": "2.45",
+          "odds": "2.26",
           "code": "1498885"
         }
       }
@@ -47,23 +47,23 @@
       "date": "2026-10-17",
       "kickoff": "00:00",
       "match": "Boston Legacy W vs Racing Louisville W",
-      "pick": "Double chance : Boston Legacy W or draw",
-      "market": "Double Chance",
-      "odds": "1.53",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.47",
       "confidence": "High",
-      "advice": "Double chance : Boston Legacy W or draw",
-      "selection": "Double chance : Boston Legacy W or draw",
-      "category": "Double Chance",
-      "rating": 7,
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:52.405Z",
+      "publishAt": "2026-10-17T06:52:13.764Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.53",
+          "odds": "1.47",
           "code": "1508572"
         },
         "sportybet": {
-          "odds": "1.53",
+          "odds": "1.47",
           "code": "1508572"
         }
       }
@@ -81,22 +81,22 @@
       "kickoff": "00:00",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "pick": "Double chance : draw or Gualberto Villarroel SJ",
-      "market": "Double Chance",
-      "odds": "1.73",
+      "market": "Highest Scoring Half",
+      "odds": "2.23",
       "confidence": "High",
       "advice": "Double chance : draw or Gualberto Villarroel SJ",
       "selection": "Double chance : draw or Gualberto Villarroel SJ",
-      "category": "Double Chance",
-      "rating": 9,
+      "category": "Highest Scoring Half",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:52.986Z",
+      "publishAt": "2026-10-17T06:52:14.173Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.73",
+          "odds": "2.23",
           "code": "1619329"
         },
         "sportybet": {
-          "odds": "1.73",
+          "odds": "2.23",
           "code": "1619329"
         }
       }
@@ -114,22 +114,22 @@
       "kickoff": "00:00",
       "match": "Chapulineros vs Montañeses",
       "pick": "Double chance : draw or Montañeses",
-      "market": "Double Chance",
-      "odds": "1.93",
+      "market": "Corners",
+      "odds": "1.91",
       "confidence": "High",
       "advice": "Double chance : draw or Montañeses",
       "selection": "Double chance : draw or Montañeses",
-      "category": "Double Chance",
+      "category": "Corners",
       "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:53.544Z",
+      "publishAt": "2026-10-17T06:52:14.574Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.93",
+          "odds": "1.91",
           "code": "1635998"
         },
         "sportybet": {
-          "odds": "1.93",
+          "odds": "1.91",
           "code": "1635998"
         }
       }
@@ -146,23 +146,23 @@
       "date": "2026-10-17",
       "kickoff": "00:00",
       "match": "Miramar vs Auckland City",
-      "pick": "Home Win - Miramar",
+      "pick": "Away Win - Auckland City",
       "market": "Match Winner",
-      "odds": "2.30",
+      "odds": "1.95",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Miramar",
+      "advice": "Away Win - Auckland City",
+      "selection": "Away Win - Auckland City",
       "category": "Match Winner",
-      "rating": 7,
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:53.908Z",
+      "publishAt": "2026-10-17T06:52:14.976Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.30",
+          "odds": "1.95",
           "code": "1639031"
         },
         "sportybet": {
-          "odds": "2.30",
+          "odds": "1.95",
           "code": "1639031"
         }
       }
@@ -179,23 +179,23 @@
       "date": "2026-10-17",
       "kickoff": "00:00",
       "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win - Club Nacional de Football W",
-      "market": "Match Winner",
-      "odds": "2.50",
+      "pick": "No predictions available",
+      "market": "Corners",
+      "odds": "2.33",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Club Nacional de Football W",
-      "category": "Match Winner",
-      "rating": 9,
+      "advice": "No predictions available",
+      "selection": "No predictions available",
+      "category": "Corners",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:54.337Z",
+      "publishAt": "2026-10-17T06:52:15.377Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.50",
+          "odds": "2.33",
           "code": "1639868"
         },
         "sportybet": {
-          "odds": "2.50",
+          "odds": "2.33",
           "code": "1639868"
         }
       }
@@ -212,23 +212,23 @@
       "date": "2026-10-17",
       "kickoff": "00:00",
       "match": "Cruzeiro W vs LDU Quito W",
-      "pick": "Home Win - Cruzeiro W",
-      "market": "Match Winner",
-      "odds": "2.35",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.35",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Cruzeiro W",
-      "category": "Match Winner",
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
       "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:54.699Z",
+      "publishAt": "2026-10-17T06:52:15.781Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.35",
+          "odds": "1.35",
           "code": "1639872"
         },
         "sportybet": {
-          "odds": "2.35",
+          "odds": "1.35",
           "code": "1639872"
         }
       }
@@ -245,23 +245,23 @@
       "date": "2026-10-17",
       "kickoff": "00:30",
       "match": "Boca Juniors vs Talleres Cordoba",
-      "pick": "Home Win - Boca Juniors",
-      "market": "Match Winner",
-      "odds": "2.51",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.54",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Boca Juniors",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:55.060Z",
+      "publishAt": "2026-10-17T06:52:16.184Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.51",
+          "odds": "1.54",
           "code": "1493185"
         },
         "sportybet": {
-          "odds": "2.51",
+          "odds": "1.54",
           "code": "1493185"
         }
       }
@@ -278,23 +278,23 @@
       "date": "2026-10-17",
       "kickoff": "01:00",
       "match": "Gimnasia Y Tiro vs Atlanta",
-      "pick": "Home Win - Gimnasia Y Tiro",
-      "market": "Match Winner",
-      "odds": "2.40",
+      "pick": "Draw No Bet - Gimnasia Y Tiro",
+      "market": "Draw No Bet",
+      "odds": "1.48",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Gimnasia Y Tiro",
-      "category": "Match Winner",
-      "rating": 8,
+      "advice": "Draw No Bet - Gimnasia Y Tiro",
+      "selection": "Draw No Bet - Gimnasia Y Tiro",
+      "category": "Draw No Bet",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:55.422Z",
+      "publishAt": "2026-10-17T06:52:16.457Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.40",
+          "odds": "1.48",
           "code": "1498892"
         },
         "sportybet": {
-          "odds": "2.40",
+          "odds": "1.48",
           "code": "1498892"
         }
       }
@@ -311,23 +311,23 @@
       "date": "2026-10-17",
       "kickoff": "01:00",
       "match": "Necaxa vs Atlas",
-      "pick": "Home Win - Necaxa",
-      "market": "Match Winner",
-      "odds": "1.84",
+      "pick": "Over 8.5 Corners",
+      "market": "Corners",
+      "odds": "1.83",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Necaxa",
-      "category": "Match Winner",
+      "advice": "Over 8.5 Corners",
+      "selection": "Over 8.5 Corners",
+      "category": "Corners",
       "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:55.783Z",
+      "publishAt": "2026-10-17T06:52:16.729Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.84",
+          "odds": "1.83",
           "code": "1550993"
         },
         "sportybet": {
-          "odds": "1.84",
+          "odds": "1.83",
           "code": "1550993"
         }
       }
@@ -344,23 +344,23 @@
       "date": "2026-10-17",
       "kickoff": "01:00",
       "match": "Correcaminos Uat vs Dorados",
-      "pick": "Home Win - Correcaminos Uat",
-      "market": "Match Winner",
-      "odds": "2.33",
+      "pick": "BTTS No",
+      "market": "BTTS",
+      "odds": "1.72",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Correcaminos Uat",
-      "category": "Match Winner",
+      "advice": "BTTS No",
+      "selection": "BTTS No",
+      "category": "BTTS",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:56.146Z",
+      "publishAt": "2026-10-17T06:52:17.003Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.33",
+          "odds": "1.72",
           "code": "1581452"
         },
         "sportybet": {
-          "odds": "2.33",
+          "odds": "1.72",
           "code": "1581452"
         }
       }
@@ -377,23 +377,23 @@
       "date": "2026-10-17",
       "kickoff": "01:00",
       "match": "Inter vs Municipal Limeño",
-      "pick": "Home Win - Inter",
-      "market": "Match Winner",
-      "odds": "2.16",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.41",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Inter",
-      "category": "Match Winner",
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:56.509Z",
+      "publishAt": "2026-10-17T06:52:17.276Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.16",
+          "odds": "1.41",
           "code": "1600630"
         },
         "sportybet": {
-          "odds": "2.16",
+          "odds": "1.41",
           "code": "1600630"
         }
       }
@@ -410,23 +410,23 @@
       "date": "2026-10-17",
       "kickoff": "01:00",
       "match": "Guadalupe FC vs Cariari Pococi",
-      "pick": "Home Win - Guadalupe FC",
-      "market": "Match Winner",
-      "odds": "1.96",
+      "pick": "Double chance : Guadalupe FC or draw",
+      "market": "Double Chance",
+      "odds": "1.54",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Guadalupe FC",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "Double chance : Guadalupe FC or draw",
+      "selection": "Double chance : Guadalupe FC or draw",
+      "category": "Double Chance",
+      "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:56.870Z",
+      "publishAt": "2026-10-17T06:52:17.547Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.96",
+          "odds": "1.54",
           "code": "1601469"
         },
         "sportybet": {
-          "odds": "1.96",
+          "odds": "1.54",
           "code": "1601469"
         }
       }
@@ -443,23 +443,23 @@
       "date": "2026-10-17",
       "kickoff": "01:30",
       "match": "San Francisco FC vs Deportivo Universitario",
-      "pick": "Home Win - San Francisco FC",
-      "market": "Match Winner",
-      "odds": "2.07",
+      "pick": "Win Either Half - Home",
+      "market": "Win Either Half",
+      "odds": "1.62",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - San Francisco FC",
-      "category": "Match Winner",
-      "rating": 9,
+      "advice": "Win Either Half - Home",
+      "selection": "Win Either Half - Home",
+      "category": "Win Either Half",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:57.233Z",
+      "publishAt": "2026-10-17T06:52:17.822Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.07",
+          "odds": "1.62",
           "code": "1583783"
         },
         "sportybet": {
-          "odds": "2.07",
+          "odds": "1.62",
           "code": "1583783"
         }
       }
@@ -476,23 +476,23 @@
       "date": "2026-10-17",
       "kickoff": "01:30",
       "match": "CD Arabe Unido vs UMECIT",
-      "pick": "Home Win - CD Arabe Unido",
-      "market": "Match Winner",
-      "odds": "1.93",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.62",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - CD Arabe Unido",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:57.596Z",
+      "publishAt": "2026-10-17T06:52:18.097Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.93",
+          "odds": "1.62",
           "code": "1583789"
         },
         "sportybet": {
-          "odds": "1.93",
+          "odds": "1.62",
           "code": "1583789"
         }
       }
@@ -509,23 +509,23 @@
       "date": "2026-10-17",
       "kickoff": "02:00",
       "match": "Vancouver FC vs HFX Wanderers FC",
-      "pick": "Home Win - Vancouver FC",
-      "market": "Match Winner",
-      "odds": "2.35",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.42",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Vancouver FC",
-      "category": "Match Winner",
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:57.957Z",
+      "publishAt": "2026-10-17T06:52:18.372Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.35",
+          "odds": "1.42",
           "code": "1517367"
         },
         "sportybet": {
-          "odds": "2.35",
+          "odds": "1.42",
           "code": "1517367"
         }
       }
@@ -542,23 +542,23 @@
       "date": "2026-10-17",
       "kickoff": "02:00",
       "match": "Wellington Olympic vs Eastern Suburbs",
-      "pick": "Home Win - Wellington Olympic",
-      "market": "Match Winner",
-      "odds": "2.65",
+      "pick": "Highest Scoring Half - 2nd Half",
+      "market": "Highest Scoring Half",
+      "odds": "2.39",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Wellington Olympic",
-      "category": "Match Winner",
-      "rating": 8,
+      "advice": "Highest Scoring Half - 2nd Half",
+      "selection": "Highest Scoring Half - 2nd Half",
+      "category": "Highest Scoring Half",
+      "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:58.318Z",
+      "publishAt": "2026-10-17T06:52:18.645Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.65",
+          "odds": "2.39",
           "code": "1639032"
         },
         "sportybet": {
-          "odds": "2.65",
+          "odds": "2.39",
           "code": "1639032"
         }
       }
@@ -575,23 +575,23 @@
       "date": "2026-10-17",
       "kickoff": "02:00",
       "match": "Portland Timbers II vs St. Louis City II",
-      "pick": "Home Win - Portland Timbers II",
-      "market": "Match Winner",
-      "odds": "1.83",
+      "pick": "Draw No Bet - Portland Timbers II",
+      "market": "Draw No Bet",
+      "odds": "1.52",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Portland Timbers II",
-      "category": "Match Winner",
-      "rating": 9,
+      "advice": "Draw No Bet - Portland Timbers II",
+      "selection": "Draw No Bet - Portland Timbers II",
+      "category": "Draw No Bet",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:58.681Z",
+      "publishAt": "2026-10-17T06:52:18.917Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.83",
+          "odds": "1.52",
           "code": "1641833"
         },
         "sportybet": {
-          "odds": "1.83",
+          "odds": "1.52",
           "code": "1641833"
         }
       }
@@ -608,23 +608,23 @@
       "date": "2026-10-17",
       "kickoff": "02:00",
       "match": "Ventura County vs Minnesota United II",
-      "pick": "Home Win - Ventura County",
-      "market": "Match Winner",
-      "odds": "2.23",
+      "pick": "BTTS No",
+      "market": "BTTS",
+      "odds": "1.75",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Ventura County",
-      "category": "Match Winner",
+      "advice": "BTTS No",
+      "selection": "BTTS No",
+      "category": "BTTS",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:59.043Z",
+      "publishAt": "2026-10-17T06:52:19.192Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.23",
+          "odds": "1.75",
           "code": "1641834"
         },
         "sportybet": {
-          "odds": "2.23",
+          "odds": "1.75",
           "code": "1641834"
         }
       }
@@ -641,23 +641,23 @@
       "date": "2026-10-17",
       "kickoff": "02:30",
       "match": "Tigres de Alica vs Reboceros La Piedad",
-      "pick": "Home Win - Tigres de Alica",
-      "market": "Match Winner",
-      "odds": "1.79",
+      "pick": "Double chance : Tigres de Alica or draw",
+      "market": "Double Chance",
+      "odds": "1.38",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Tigres de Alica",
-      "category": "Match Winner",
+      "advice": "Double chance : Tigres de Alica or draw",
+      "selection": "Double chance : Tigres de Alica or draw",
+      "category": "Double Chance",
       "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:59.405Z",
+      "publishAt": "2026-10-17T06:52:19.464Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.79",
+          "odds": "1.38",
           "code": "1635999"
         },
         "sportybet": {
-          "odds": "1.79",
+          "odds": "1.38",
           "code": "1635999"
         }
       }
@@ -674,23 +674,23 @@
       "date": "2026-10-17",
       "kickoff": "03:00",
       "match": "Atlante FC vs U.N.A.M. - Pumas",
-      "pick": "Home Win - Atlante FC",
+      "pick": "Away Win - U.N.A.M. - Pumas",
       "market": "Match Winner",
-      "odds": "2.11",
+      "odds": "2.62",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Atlante FC",
+      "advice": "Away Win - U.N.A.M. - Pumas",
+      "selection": "Away Win - U.N.A.M. - Pumas",
       "category": "Match Winner",
       "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:42:59.765Z",
+      "publishAt": "2026-10-17T06:52:19.737Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.11",
+          "odds": "2.62",
           "code": "1550995"
         },
         "sportybet": {
-          "odds": "2.11",
+          "odds": "2.62",
           "code": "1550995"
         }
       }
@@ -707,23 +707,23 @@
       "date": "2026-10-17",
       "kickoff": "03:00",
       "match": "CA La Paz vs Tlaxcala",
-      "pick": "Home Win - CA La Paz",
-      "market": "Match Winner",
-      "odds": "2.40",
+      "pick": "Over 9.5 Corners",
+      "market": "Corners",
+      "odds": "2.23",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - CA La Paz",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "Over 9.5 Corners",
+      "selection": "Over 9.5 Corners",
+      "category": "Corners",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:00.127Z",
+      "publishAt": "2026-10-17T06:52:20.009Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.40",
+          "odds": "2.23",
           "code": "1581455"
         },
         "sportybet": {
-          "odds": "2.40",
+          "odds": "2.23",
           "code": "1581455"
         }
       }
@@ -740,23 +740,23 @@
       "date": "2026-10-17",
       "kickoff": "03:00",
       "match": "Caracas W vs Santa Fe W",
-      "pick": "Home Win - Caracas W",
+      "pick": "Away Win - Santa Fe W",
       "market": "Match Winner",
-      "odds": "2.14",
+      "odds": "2.70",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Caracas W",
+      "advice": "Away Win - Santa Fe W",
+      "selection": "Away Win - Santa Fe W",
       "category": "Match Winner",
       "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:00.490Z",
+      "publishAt": "2026-10-17T06:52:20.280Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.14",
+          "odds": "2.70",
           "code": "1642141"
         },
         "sportybet": {
-          "odds": "2.14",
+          "odds": "2.70",
           "code": "1642141"
         }
       }
@@ -773,23 +773,23 @@
       "date": "2026-10-17",
       "kickoff": "03:05",
       "match": "Club Tijuana vs Puebla",
-      "pick": "Home Win - Club Tijuana",
-      "market": "Match Winner",
-      "odds": "2.67",
+      "pick": "Draw No Bet - Club Tijuana",
+      "market": "Draw No Bet",
+      "odds": "1.42",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Club Tijuana",
-      "category": "Match Winner",
-      "rating": 8,
+      "advice": "Draw No Bet - Club Tijuana",
+      "selection": "Draw No Bet - Club Tijuana",
+      "category": "Draw No Bet",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:00.852Z",
+      "publishAt": "2026-10-17T06:52:20.552Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.67",
+          "odds": "1.42",
           "code": "1550994"
         },
         "sportybet": {
-          "odds": "2.67",
+          "odds": "1.42",
           "code": "1550994"
         }
       }
@@ -806,23 +806,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Shimizu S-pulse vs Gamba Osaka",
-      "pick": "Home Win - Shimizu S-pulse",
+      "pick": "Away Win - Gamba Osaka",
       "market": "Match Winner",
-      "odds": "2.03",
+      "odds": "2.07",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Shimizu S-pulse",
+      "advice": "Away Win - Gamba Osaka",
+      "selection": "Away Win - Gamba Osaka",
       "category": "Match Winner",
       "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:01.215Z",
+      "publishAt": "2026-10-17T06:52:20.825Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.03",
+          "odds": "2.07",
           "code": "1556099"
         },
         "sportybet": {
-          "odds": "2.03",
+          "odds": "2.07",
           "code": "1556099"
         }
       }
@@ -839,23 +839,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Albirex Niigata W vs Parceiro Nagano W",
-      "pick": "Home Win - Albirex Niigata W",
-      "market": "Match Winner",
-      "odds": "1.62",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.53",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Albirex Niigata W",
-      "category": "Match Winner",
-      "rating": 8,
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:01.577Z",
+      "publishAt": "2026-10-17T06:52:21.097Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.62",
+          "odds": "1.53",
           "code": "1560943"
         },
         "sportybet": {
-          "odds": "1.62",
+          "odds": "1.53",
           "code": "1560943"
         }
       }
@@ -872,23 +872,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Auckland vs Melbourne City",
-      "pick": "Home Win - Auckland",
+      "pick": "Away Win - Melbourne City",
       "market": "Match Winner",
-      "odds": "1.91",
+      "odds": "2.35",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Auckland",
+      "advice": "Away Win - Melbourne City",
+      "selection": "Away Win - Melbourne City",
       "category": "Match Winner",
-      "rating": 9,
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:01.939Z",
+      "publishAt": "2026-10-17T06:52:21.368Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.91",
+          "odds": "2.35",
           "code": "1593681"
         },
         "sportybet": {
-          "odds": "1.91",
+          "odds": "2.35",
           "code": "1593681"
         }
       }
@@ -905,23 +905,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Newcastle Jets FC W vs Perth Glory FC W",
-      "pick": "Home Win - Newcastle Jets FC W",
-      "market": "Match Winner",
-      "odds": "2.43",
+      "pick": "Over 1.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.30",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Newcastle Jets FC W",
-      "category": "Match Winner",
-      "rating": 9,
+      "advice": "Over 1.5 Goals",
+      "selection": "Over 1.5 Goals",
+      "category": "Over/Under",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:02.301Z",
+      "publishAt": "2026-10-17T06:52:21.641Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.43",
+          "odds": "1.30",
           "code": "1632103"
         },
         "sportybet": {
-          "odds": "2.43",
+          "odds": "1.30",
           "code": "1632103"
         }
       }
@@ -938,23 +938,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-      "pick": "Home Win - Western Sydney Wanderers W",
-      "market": "Match Winner",
-      "odds": "2.33",
+      "pick": "Over 2.5 Goals",
+      "market": "Over/Under",
+      "odds": "2.06",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Western Sydney Wanderers W",
-      "category": "Match Winner",
+      "advice": "Over 2.5 Goals",
+      "selection": "Over 2.5 Goals",
+      "category": "Over/Under",
       "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:02.663Z",
+      "publishAt": "2026-10-17T06:52:21.913Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.33",
+          "odds": "2.06",
           "code": "1632104"
         },
         "sportybet": {
-          "odds": "2.33",
+          "odds": "2.06",
           "code": "1632104"
         }
       }
@@ -971,23 +971,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Broadmeadow Magic vs Wests APIA",
-      "pick": "Home Win - Broadmeadow Magic",
+      "pick": "Away Win - Wests APIA",
       "market": "Match Winner",
-      "odds": "2.62",
+      "odds": "2.24",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Broadmeadow Magic",
+      "advice": "Away Win - Wests APIA",
+      "selection": "Away Win - Wests APIA",
       "category": "Match Winner",
-      "rating": 8,
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:03.025Z",
+      "publishAt": "2026-10-17T06:52:22.185Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.62",
+          "odds": "2.24",
           "code": "1640331"
         },
         "sportybet": {
-          "odds": "2.62",
+          "odds": "2.24",
           "code": "1640331"
         }
       }
@@ -1004,23 +1004,23 @@
       "date": "2026-10-17",
       "kickoff": "04:00",
       "match": "Sutherland Sharks vs South Melbourne",
-      "pick": "Home Win - Sutherland Sharks",
-      "market": "Match Winner",
-      "odds": "2.61",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.36",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Sutherland Sharks",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
+      "rating": 9,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:03.386Z",
+      "publishAt": "2026-10-17T06:52:22.457Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.61",
+          "odds": "1.36",
           "code": "1640332"
         },
         "sportybet": {
-          "odds": "2.61",
+          "odds": "1.36",
           "code": "1640332"
         }
       }
@@ -1037,23 +1037,23 @@
       "date": "2026-10-17",
       "kickoff": "05:00",
       "match": "Daegu FC vs Cheongju",
-      "pick": "Home Win - Daegu FC",
-      "market": "Match Winner",
-      "odds": "1.65",
+      "pick": "Draw No Bet - Daegu FC",
+      "market": "Draw No Bet",
+      "odds": "1.36",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Daegu FC",
-      "category": "Match Winner",
-      "rating": 9,
+      "advice": "Draw No Bet - Daegu FC",
+      "selection": "Draw No Bet - Daegu FC",
+      "category": "Draw No Bet",
+      "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:03.750Z",
+      "publishAt": "2026-10-17T06:52:22.729Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.65",
+          "odds": "1.36",
           "code": "1510467"
         },
         "sportybet": {
-          "odds": "1.65",
+          "odds": "1.36",
           "code": "1510467"
         }
       }
@@ -1070,23 +1070,23 @@
       "date": "2026-10-17",
       "kickoff": "05:00",
       "match": "Seongnam FC vs Suwon City FC",
-      "pick": "Home Win - Seongnam FC",
-      "market": "Match Winner",
-      "odds": "2.30",
+      "pick": "BTTS Yes",
+      "market": "BTTS",
+      "odds": "1.72",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Seongnam FC",
-      "category": "Match Winner",
-      "rating": 7,
+      "advice": "BTTS Yes",
+      "selection": "BTTS Yes",
+      "category": "BTTS",
+      "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:04.112Z",
+      "publishAt": "2026-10-17T06:52:23.002Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.30",
+          "odds": "1.72",
           "code": "1510468"
         },
         "sportybet": {
-          "odds": "2.30",
+          "odds": "1.72",
           "code": "1510468"
         }
       }
@@ -1103,23 +1103,23 @@
       "date": "2026-10-17",
       "kickoff": "05:00",
       "match": "Gainare Tottori vs Thespakusatsu Gunma",
-      "pick": "Home Win - Gainare Tottori",
-      "market": "Match Winner",
-      "odds": "1.96",
+      "pick": "Highest Scoring Half - 2nd Half",
+      "market": "Highest Scoring Half",
+      "odds": "2.03",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - Gainare Tottori",
-      "category": "Match Winner",
+      "advice": "Highest Scoring Half - 2nd Half",
+      "selection": "Highest Scoring Half - 2nd Half",
+      "category": "Highest Scoring Half",
       "rating": 7,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:04.473Z",
+      "publishAt": "2026-10-17T06:52:23.274Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.96",
+          "odds": "2.03",
           "code": "1555741"
         },
         "sportybet": {
-          "odds": "1.96",
+          "odds": "2.03",
           "code": "1555741"
         }
       }
@@ -1136,24 +1136,189 @@
       "date": "2026-10-17",
       "kickoff": "05:00",
       "match": "FC Gifu vs Fukushima United",
-      "pick": "Home Win - FC Gifu",
-      "market": "Match Winner",
-      "odds": "1.54",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.36",
       "confidence": "High",
-      "advice": "",
-      "selection": "Home Win - FC Gifu",
-      "category": "Match Winner",
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
       "rating": 8,
       "status": "active",
-      "publishAt": "2026-10-17T06:43:04.835Z",
+      "publishAt": "2026-10-17T06:52:23.546Z",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.54",
+          "odds": "1.36",
           "code": "1555742"
         },
         "sportybet": {
-          "odds": "1.54",
+          "odds": "1.36",
           "code": "1555742"
+        }
+      }
+    },
+    {
+      "id": 1555743,
+      "league": "J3 League",
+      "country": "Japan",
+      "home": "Kitakyushu",
+      "away": "Osaka",
+      "homeLogo": "https://media.api-sports.io/football/teams/805.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/7138.png",
+      "time": "2026-10-17T05:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "05:00",
+      "match": "Kitakyushu vs Osaka",
+      "pick": "Over 0.5 Goals HT",
+      "market": "Half Time",
+      "odds": "1.50",
+      "confidence": "High",
+      "advice": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "category": "Half Time",
+      "rating": 7,
+      "status": "active",
+      "publishAt": "2026-10-17T06:52:23.819Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.50",
+          "code": "1555743"
+        },
+        "sportybet": {
+          "odds": "1.50",
+          "code": "1555743"
+        }
+      }
+    },
+    {
+      "id": 1556092,
+      "league": "J1 League",
+      "country": "Japan",
+      "home": "JEF United Chiba",
+      "away": "Yokohama F. Marinos",
+      "homeLogo": "https://media.api-sports.io/football/teams/301.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/296.png",
+      "time": "2026-10-17T05:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "05:00",
+      "match": "JEF United Chiba vs Yokohama F. Marinos",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.52",
+      "confidence": "High",
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
+      "rating": 9,
+      "status": "active",
+      "publishAt": "2026-10-17T06:52:24.090Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.52",
+          "code": "1556092"
+        },
+        "sportybet": {
+          "odds": "1.52",
+          "code": "1556092"
+        }
+      }
+    },
+    {
+      "id": 1556098,
+      "league": "J1 League",
+      "country": "Japan",
+      "home": "Sanfrecce Hiroshima",
+      "away": "Kyoto Sanga",
+      "homeLogo": "https://media.api-sports.io/football/teams/282.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/302.png",
+      "time": "2026-10-17T05:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "05:00",
+      "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+      "pick": "Home Win - Sanfrecce Hiroshima",
+      "market": "Match Winner",
+      "odds": "2.06",
+      "confidence": "High",
+      "advice": "Home Win - Sanfrecce Hiroshima",
+      "selection": "Home Win - Sanfrecce Hiroshima",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:52:24.364Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.06",
+          "code": "1556098"
+        },
+        "sportybet": {
+          "odds": "2.06",
+          "code": "1556098"
+        }
+      }
+    },
+    {
+      "id": 1556100,
+      "league": "J1 League",
+      "country": "Japan",
+      "home": "Tokyo Verdy",
+      "away": "FC Tokyo",
+      "homeLogo": "https://media.api-sports.io/football/teams/306.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/292.png",
+      "time": "2026-10-17T05:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "05:00",
+      "match": "Tokyo Verdy vs FC Tokyo",
+      "pick": "Under 3.5 Goals",
+      "market": "Over/Under",
+      "odds": "1.51",
+      "confidence": "High",
+      "advice": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "category": "Over/Under",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:52:24.636Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.51",
+          "code": "1556100"
+        },
+        "sportybet": {
+          "odds": "1.51",
+          "code": "1556100"
+        }
+      }
+    },
+    {
+      "id": 1569825,
+      "league": "K4 League",
+      "country": "South-Korea",
+      "home": "Geoje Citizen",
+      "away": "Haman",
+      "homeLogo": "https://media.api-sports.io/football/teams/18654.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/27859.png",
+      "time": "2026-10-17T05:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "05:00",
+      "match": "Geoje Citizen vs Haman",
+      "pick": "Highest Scoring Half - 2nd Half",
+      "market": "Highest Scoring Half",
+      "odds": "2.07",
+      "confidence": "High",
+      "advice": "Highest Scoring Half - 2nd Half",
+      "selection": "Highest Scoring Half - 2nd Half",
+      "category": "Highest Scoring Half",
+      "rating": 7,
+      "status": "active",
+      "publishAt": "2026-10-17T06:52:24.908Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.07",
+          "code": "1569825"
+        },
+        "sportybet": {
+          "odds": "2.07",
+          "code": "1569825"
         }
       }
     }
@@ -1161,1417 +1326,3051 @@
   "accumulators": [
     {
       "id": "acc-1",
-      "tier": "Safe Double - 2 Folds #1",
-      "title": "Safe Double - 2 Folds #1",
+      "tier": "Safe Mix - 2 Folds #1",
+      "title": "Safe Mix - 2 Folds #1",
       "selections": [
         {
           "match": "Atletico DE Rafaela vs Quilmes",
           "pick": "Double chance : Atletico DE Rafaela or draw",
           "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
+          "odds": "2.26",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
         }
       ],
-      "totalOdds": "3.75",
+      "totalOdds": "3.32",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC1"
+          "code": "MIX1-3"
         }
       }
     },
     {
       "id": "acc-2",
-      "tier": "High Odds - 3 Folds #2",
-      "title": "High Odds - 3 Folds #2",
+      "tier": "Medium Mix - 3 Folds #2",
+      "title": "Medium Mix - 3 Folds #2",
       "selections": [
         {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.91",
+          "market": "Corners"
+        },
+        {
           "match": "Miramar vs Auckland City",
-          "pick": "Home Win - Miramar",
-          "selection": "Home Win - Miramar",
-          "odds": "2.30"
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.95",
+          "market": "Match Winner"
         },
         {
           "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win - Club Nacional de Football W",
-          "selection": "Home Win - Club Nacional de Football W",
-          "odds": "2.50"
-        },
-        {
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "2.33",
+          "market": "Corners"
         }
       ],
-      "totalOdds": "13.51",
+      "totalOdds": "8.68",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC2"
+          "code": "MIX2-9"
         }
       }
     },
     {
       "id": "acc-3",
-      "tier": "High Odds - 4 Folds #3",
-      "title": "High Odds - 4 Folds #3",
+      "tier": "Medium Mix - 4 Folds #3",
+      "title": "Medium Mix - 4 Folds #3",
       "selections": [
         {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.35",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
+        },
+        {
           "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win - Gimnasia Y Tiro",
-          "selection": "Home Win - Gimnasia Y Tiro",
-          "odds": "2.40"
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.48",
+          "market": "Draw No Bet"
         },
         {
           "match": "Necaxa vs Atlas",
-          "pick": "Home Win - Necaxa",
-          "selection": "Home Win - Necaxa",
-          "odds": "1.84"
-        },
-        {
-          "match": "Correcaminos Uat vs Dorados",
-          "pick": "Home Win - Correcaminos Uat",
-          "selection": "Home Win - Correcaminos Uat",
-          "odds": "2.33"
-        },
-        {
-          "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win - Inter",
-          "selection": "Home Win - Inter",
-          "odds": "2.16"
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.83",
+          "market": "Corners"
         }
       ],
-      "totalOdds": "22.22",
+      "totalOdds": "5.63",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC3"
+          "code": "MIX3-6"
         }
       }
     },
     {
       "id": "acc-4",
-      "tier": "Mega Acca - 5 Folds #4",
-      "title": "Mega Acca - 5 Folds #4",
+      "tier": "Medium Mix - 5 Folds #4",
+      "title": "Medium Mix - 5 Folds #4",
       "selections": [
         {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.83",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.72",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
+        },
+        {
           "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win - Guadalupe FC",
-          "selection": "Home Win - Guadalupe FC",
-          "odds": "1.96"
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.54",
+          "market": "Double Chance"
         },
         {
           "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win - San Francisco FC",
-          "selection": "Home Win - San Francisco FC",
-          "odds": "2.07"
-        },
-        {
-          "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win - CD Arabe Unido",
-          "selection": "Home Win - CD Arabe Unido",
-          "odds": "1.93"
-        },
-        {
-          "match": "Vancouver FC vs HFX Wanderers FC",
-          "pick": "Home Win - Vancouver FC",
-          "selection": "Home Win - Vancouver FC",
-          "odds": "2.35"
-        },
-        {
-          "match": "Wellington Olympic vs Eastern Suburbs",
-          "pick": "Home Win - Wellington Olympic",
-          "selection": "Home Win - Wellington Olympic",
-          "odds": "2.65"
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.62",
+          "market": "Win Either Half"
         }
       ],
-      "totalOdds": "48.76",
+      "totalOdds": "11.07",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC4"
+          "code": "MIX4-11"
         }
       }
     },
     {
       "id": "acc-5",
-      "tier": "Super Mega - 6 Folds #5",
-      "title": "Super Mega - 6 Folds #5",
+      "tier": "High Mix - 6 Folds #5",
+      "title": "High Mix - 6 Folds #5",
       "selections": [
         {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.54",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.62",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.62",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.42",
+          "market": "Over/Under"
+        },
+        {
           "match": "Wellington Olympic vs Eastern Suburbs",
-          "pick": "Home Win - Wellington Olympic",
-          "selection": "Home Win - Wellington Olympic",
-          "odds": "2.65"
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.39",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Portland Timbers II vs St. Louis City II",
-          "pick": "Home Win - Portland Timbers II",
-          "selection": "Home Win - Portland Timbers II",
-          "odds": "1.83"
-        },
-        {
-          "match": "Ventura County vs Minnesota United II",
-          "pick": "Home Win - Ventura County",
-          "selection": "Home Win - Ventura County",
-          "odds": "2.23"
-        },
-        {
-          "match": "Tigres de Alica vs Reboceros La Piedad",
-          "pick": "Home Win - Tigres de Alica",
-          "selection": "Home Win - Tigres de Alica",
-          "odds": "1.79"
-        },
-        {
-          "match": "Atlante FC vs U.N.A.M. - Pumas",
-          "pick": "Home Win - Atlante FC",
-          "selection": "Home Win - Atlante FC",
-          "odds": "2.11"
-        },
-        {
-          "match": "CA La Paz vs Tlaxcala",
-          "pick": "Home Win - CA La Paz",
-          "selection": "Home Win - CA La Paz",
-          "odds": "2.40"
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "98.03",
+      "totalOdds": "20.85",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC5"
+          "code": "MIX5-21"
         }
       }
     },
     {
       "id": "acc-6",
-      "tier": "Super Mega - 7 Folds #6",
-      "title": "Super Mega - 7 Folds #6",
+      "tier": "High Mix - 7 Folds #6",
+      "title": "High Mix - 7 Folds #6",
       "selections": [
         {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.42",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.39",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
+        },
+        {
           "match": "Atlante FC vs U.N.A.M. - Pumas",
-          "pick": "Home Win - Atlante FC",
-          "selection": "Home Win - Atlante FC",
-          "odds": "2.11"
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "2.62",
+          "market": "Match Winner"
         },
         {
           "match": "CA La Paz vs Tlaxcala",
-          "pick": "Home Win - CA La Paz",
-          "selection": "Home Win - CA La Paz",
-          "odds": "2.40"
-        },
-        {
-          "match": "Caracas W vs Santa Fe W",
-          "pick": "Home Win - Caracas W",
-          "selection": "Home Win - Caracas W",
-          "odds": "2.14"
-        },
-        {
-          "match": "Club Tijuana vs Puebla",
-          "pick": "Home Win - Club Tijuana",
-          "selection": "Home Win - Club Tijuana",
-          "odds": "2.67"
-        },
-        {
-          "match": "Shimizu S-pulse vs Gamba Osaka",
-          "pick": "Home Win - Shimizu S-pulse",
-          "selection": "Home Win - Shimizu S-pulse",
-          "odds": "2.03"
-        },
-        {
-          "match": "Albirex Niigata W vs Parceiro Nagano W",
-          "pick": "Home Win - Albirex Niigata W",
-          "selection": "Home Win - Albirex Niigata W",
-          "odds": "1.62"
-        },
-        {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
         }
       ],
-      "totalOdds": "181.75",
+      "totalOdds": "72.79",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC6"
+          "code": "MIX6-73"
         }
       }
     },
     {
       "id": "acc-7",
-      "tier": "Super Mega - 8 Folds #7",
-      "title": "Super Mega - 8 Folds #7",
+      "tier": "Mega Mix - 8 Folds #7",
+      "title": "Mega Mix - 8 Folds #7",
       "selections": [
         {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "2.62",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "2.70",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.42",
+          "market": "Draw No Bet"
+        },
+        {
           "match": "Shimizu S-pulse vs Gamba Osaka",
-          "pick": "Home Win - Shimizu S-pulse",
-          "selection": "Home Win - Shimizu S-pulse",
-          "odds": "2.03"
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "2.07",
+          "market": "Match Winner"
         },
         {
           "match": "Albirex Niigata W vs Parceiro Nagano W",
-          "pick": "Home Win - Albirex Niigata W",
-          "selection": "Home Win - Albirex Niigata W",
-          "odds": "1.62"
-        },
-        {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
-        },
-        {
-          "match": "Newcastle Jets FC W vs Perth Glory FC W",
-          "pick": "Home Win - Newcastle Jets FC W",
-          "selection": "Home Win - Newcastle Jets FC W",
-          "odds": "2.43"
-        },
-        {
-          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-          "pick": "Home Win - Western Sydney Wanderers W",
-          "selection": "Home Win - Western Sydney Wanderers W",
-          "odds": "2.33"
-        },
-        {
-          "match": "Broadmeadow Magic vs Wests APIA",
-          "pick": "Home Win - Broadmeadow Magic",
-          "selection": "Home Win - Broadmeadow Magic",
-          "odds": "2.62"
-        },
-        {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
-        },
-        {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
         }
       ],
-      "totalOdds": "401.27",
+      "totalOdds": "171.33",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC7"
+          "code": "MIX7-171"
         }
       }
     },
     {
       "id": "acc-8",
-      "tier": "Super Mega - 9 Folds #8",
-      "title": "Super Mega - 9 Folds #8",
+      "tier": "Mega Mix - 9 Folds #8",
+      "title": "Mega Mix - 9 Folds #8",
       "selections": [
         {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "2.70",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.42",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "2.07",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "2.35",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
+        },
+        {
           "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-          "pick": "Home Win - Western Sydney Wanderers W",
-          "selection": "Home Win - Western Sydney Wanderers W",
-          "odds": "2.33"
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "2.06",
+          "market": "Over/Under"
         },
         {
           "match": "Broadmeadow Magic vs Wests APIA",
-          "pick": "Home Win - Broadmeadow Magic",
-          "selection": "Home Win - Broadmeadow Magic",
-          "odds": "2.62"
-        },
-        {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
-        },
-        {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
-        },
-        {
-          "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
-        },
-        {
-          "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
-        },
-        {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
-        },
-        {
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
-        },
-        {
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "2.24",
+          "market": "Match Winner"
         }
       ],
-      "totalOdds": "684.14",
+      "totalOdds": "381.72",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC8"
+          "code": "MIX8-382"
         }
       }
     },
     {
       "id": "acc-9",
-      "tier": "Super Mega - 10 Folds #9",
-      "title": "Super Mega - 10 Folds #9",
+      "tier": "Mega Mix - 10 Folds #9",
+      "title": "Mega Mix - 10 Folds #9",
       "selections": [
         {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "2.07",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "2.35",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "2.06",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "2.24",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.36",
+          "market": "Draw No Bet"
+        },
+        {
           "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.72",
+          "market": "BTTS"
         },
         {
           "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
-        },
-        {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
-        },
-        {
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
-        },
-        {
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
-        },
-        {
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
-        },
-        {
-          "match": "Chapulineros vs Montañeses",
-          "pick": "Double chance : draw or Montañeses",
-          "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
-        },
-        {
-          "match": "Miramar vs Auckland City",
-          "pick": "Home Win - Miramar",
-          "selection": "Home Win - Miramar",
-          "odds": "2.30"
-        },
-        {
-          "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win - Club Nacional de Football W",
-          "selection": "Home Win - Club Nacional de Football W",
-          "odds": "2.50"
-        },
-        {
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.03",
+          "market": "Highest Scoring Half"
         }
       ],
-      "totalOdds": "1174.09",
+      "totalOdds": "288.33",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC9"
+          "code": "MIX9-288"
         }
       }
     },
     {
       "id": "acc-10",
-      "tier": "Safe Double - 2 Folds #10",
-      "title": "Safe Double - 2 Folds #10",
+      "tier": "Mega Mix - 11 Folds #10",
+      "title": "Mega Mix - 11 Folds #10",
       "selections": [
         {
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
         },
         {
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "2.06",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "2.24",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.36",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.72",
+          "market": "BTTS"
+        },
+        {
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.03",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.50",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.52",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "2.06",
+          "market": "Match Winner"
         }
       ],
-      "totalOdds": "2.65",
+      "totalOdds": "247.46",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC10"
+          "code": "MIX10-247"
         }
       }
     },
     {
       "id": "acc-11",
-      "tier": "High Odds - 3 Folds #11",
-      "title": "High Odds - 3 Folds #11",
+      "tier": "High Mix - 7 Folds #11",
+      "title": "High Mix - 7 Folds #11",
       "selections": [
         {
-          "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win - Club Nacional de Football W",
-          "selection": "Home Win - Club Nacional de Football W",
-          "odds": "2.50"
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
         },
         {
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.36",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win - Boca Juniors",
-          "selection": "Home Win - Boca Juniors",
-          "odds": "2.51"
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.72",
+          "market": "BTTS"
+        },
+        {
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.03",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.50",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.52",
+          "market": "Over/Under"
         }
       ],
-      "totalOdds": "14.75",
+      "totalOdds": "20.03",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC11"
+          "code": "MIX11-20"
         }
       }
     },
     {
       "id": "acc-12",
-      "tier": "High Odds - 4 Folds #12",
-      "title": "High Odds - 4 Folds #12",
+      "tier": "High Mix - 8 Folds #12",
+      "title": "High Mix - 8 Folds #12",
       "selections": [
         {
-          "match": "Necaxa vs Atlas",
-          "pick": "Home Win - Necaxa",
-          "selection": "Home Win - Necaxa",
-          "odds": "1.84"
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.03",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Correcaminos Uat vs Dorados",
-          "pick": "Home Win - Correcaminos Uat",
-          "selection": "Home Win - Correcaminos Uat",
-          "odds": "2.33"
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
         },
         {
-          "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win - Inter",
-          "selection": "Home Win - Inter",
-          "odds": "2.16"
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.50",
+          "market": "Half Time"
         },
         {
-          "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win - Guadalupe FC",
-          "selection": "Home Win - Guadalupe FC",
-          "odds": "1.96"
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.52",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "2.06",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.51",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.07",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "2.26",
+          "market": "Highest Scoring Half"
         }
       ],
-      "totalOdds": "18.15",
+      "totalOdds": "91.60",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC12"
+          "code": "MIX12-92"
         }
       }
     },
     {
       "id": "acc-13",
-      "tier": "Mega Acca - 5 Folds #13",
-      "title": "Mega Acca - 5 Folds #13",
+      "tier": "Mega Mix - 9 Folds #13",
+      "title": "Mega Mix - 9 Folds #13",
       "selections": [
         {
-          "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win - San Francisco FC",
-          "selection": "Home Win - San Francisco FC",
-          "odds": "2.07"
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.52",
+          "market": "Over/Under"
         },
         {
-          "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win - CD Arabe Unido",
-          "selection": "Home Win - CD Arabe Unido",
-          "odds": "1.93"
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "2.06",
+          "market": "Match Winner"
         },
         {
-          "match": "Vancouver FC vs HFX Wanderers FC",
-          "pick": "Home Win - Vancouver FC",
-          "selection": "Home Win - Vancouver FC",
-          "odds": "2.35"
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.51",
+          "market": "Over/Under"
         },
         {
-          "match": "Wellington Olympic vs Eastern Suburbs",
-          "pick": "Home Win - Wellington Olympic",
-          "selection": "Home Win - Wellington Olympic",
-          "odds": "2.65"
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.07",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Portland Timbers II vs St. Louis City II",
-          "pick": "Home Win - Portland Timbers II",
-          "selection": "Home Win - Portland Timbers II",
-          "odds": "1.83"
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "2.26",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "2.23",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.91",
+          "market": "Corners"
+        },
+        {
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.95",
+          "market": "Match Winner"
         }
       ],
-      "totalOdds": "45.53",
+      "totalOdds": "270.06",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC13"
+          "code": "MIX13-270"
         }
       }
     },
     {
       "id": "acc-14",
-      "tier": "Mega Acca - 6 Folds #14",
-      "title": "Mega Acca - 6 Folds #14",
+      "tier": "Mega Mix - 10 Folds #14",
+      "title": "Mega Mix - 10 Folds #14",
       "selections": [
         {
-          "match": "Portland Timbers II vs St. Louis City II",
-          "pick": "Home Win - Portland Timbers II",
-          "selection": "Home Win - Portland Timbers II",
-          "odds": "1.83"
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.07",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Ventura County vs Minnesota United II",
-          "pick": "Home Win - Ventura County",
-          "selection": "Home Win - Ventura County",
-          "odds": "2.23"
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "2.26",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Tigres de Alica vs Reboceros La Piedad",
-          "pick": "Home Win - Tigres de Alica",
-          "selection": "Home Win - Tigres de Alica",
-          "odds": "1.79"
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
         },
         {
-          "match": "Atlante FC vs U.N.A.M. - Pumas",
-          "pick": "Home Win - Atlante FC",
-          "selection": "Home Win - Atlante FC",
-          "odds": "2.11"
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "2.23",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "CA La Paz vs Tlaxcala",
-          "pick": "Home Win - CA La Paz",
-          "selection": "Home Win - CA La Paz",
-          "odds": "2.40"
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.91",
+          "market": "Corners"
         },
         {
-          "match": "Caracas W vs Santa Fe W",
-          "pick": "Home Win - Caracas W",
-          "selection": "Home Win - Caracas W",
-          "odds": "2.14"
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.95",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "2.33",
+          "market": "Corners"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.35",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
+        },
+        {
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.48",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "79.16",
+      "totalOdds": "409.49",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC14"
+          "code": "MIX14-409"
         }
       }
     },
     {
       "id": "acc-15",
-      "tier": "Super Mega - 7 Folds #15",
-      "title": "Super Mega - 7 Folds #15",
+      "tier": "Mega Mix - 11 Folds #15",
+      "title": "Mega Mix - 11 Folds #15",
       "selections": [
         {
-          "match": "CA La Paz vs Tlaxcala",
-          "pick": "Home Win - CA La Paz",
-          "selection": "Home Win - CA La Paz",
-          "odds": "2.40"
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "2.23",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Caracas W vs Santa Fe W",
-          "pick": "Home Win - Caracas W",
-          "selection": "Home Win - Caracas W",
-          "odds": "2.14"
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.91",
+          "market": "Corners"
         },
         {
-          "match": "Club Tijuana vs Puebla",
-          "pick": "Home Win - Club Tijuana",
-          "selection": "Home Win - Club Tijuana",
-          "odds": "2.67"
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.95",
+          "market": "Match Winner"
         },
         {
-          "match": "Shimizu S-pulse vs Gamba Osaka",
-          "pick": "Home Win - Shimizu S-pulse",
-          "selection": "Home Win - Shimizu S-pulse",
-          "odds": "2.03"
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "2.33",
+          "market": "Corners"
         },
         {
-          "match": "Albirex Niigata W vs Parceiro Nagano W",
-          "pick": "Home Win - Albirex Niigata W",
-          "selection": "Home Win - Albirex Niigata W",
-          "odds": "1.62"
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.35",
+          "market": "Over/Under"
         },
         {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
         },
         {
-          "match": "Newcastle Jets FC W vs Perth Glory FC W",
-          "pick": "Home Win - Newcastle Jets FC W",
-          "selection": "Home Win - Newcastle Jets FC W",
-          "odds": "2.43"
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.48",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.83",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.72",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.54",
+          "market": "Double Chance"
         }
       ],
-      "totalOdds": "209.31",
+      "totalOdds": "406.97",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC15"
+          "code": "MIX15-407"
         }
       }
     },
     {
       "id": "acc-16",
-      "tier": "Super Mega - 8 Folds #16",
-      "title": "Super Mega - 8 Folds #16",
+      "tier": "4000+ Mega - 19 Folds #16",
+      "title": "4000+ Mega - 19 Folds #16",
       "selections": [
         {
-          "match": "Albirex Niigata W vs Parceiro Nagano W",
-          "pick": "Home Win - Albirex Niigata W",
-          "selection": "Home Win - Albirex Niigata W",
-          "odds": "1.62"
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.27",
+          "market": "Corners"
         },
         {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
         },
         {
-          "match": "Newcastle Jets FC W vs Perth Glory FC W",
-          "pick": "Home Win - Newcastle Jets FC W",
-          "selection": "Home Win - Newcastle Jets FC W",
-          "odds": "2.43"
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.52",
+          "market": "Half Time"
         },
         {
-          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-          "pick": "Home Win - Western Sydney Wanderers W",
-          "selection": "Home Win - Western Sydney Wanderers W",
-          "odds": "2.33"
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.51",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Broadmeadow Magic vs Wests APIA",
-          "pick": "Home Win - Broadmeadow Magic",
-          "selection": "Home Win - Broadmeadow Magic",
-          "odds": "2.62"
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.42",
+          "market": "Corners"
         },
         {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.46",
+          "market": "BTTS"
         },
         {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
         },
         {
-          "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.28",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.48",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.34",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.49",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.36",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.30",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "1.49",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "1.29",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "1.48",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.34",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "454.64",
+      "totalOdds": "537.63",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC16"
+          "code": "MIX16-538"
         }
       }
     },
     {
       "id": "acc-17",
-      "tier": "Super Mega - 9 Folds #17",
-      "title": "Super Mega - 9 Folds #17",
+      "tier": "Mega Mix - 12 Folds #17",
+      "title": "Mega Mix - 12 Folds #17",
       "selections": [
         {
-          "match": "Broadmeadow Magic vs Wests APIA",
-          "pick": "Home Win - Broadmeadow Magic",
-          "selection": "Home Win - Broadmeadow Magic",
-          "odds": "2.62"
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.48",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.83",
+          "market": "Corners"
         },
         {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.72",
+          "market": "BTTS"
         },
         {
-          "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
         },
         {
-          "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.54",
+          "market": "Double Chance"
         },
         {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.62",
+          "market": "Win Either Half"
         },
         {
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.62",
+          "market": "Half Time"
         },
         {
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.42",
+          "market": "Over/Under"
         },
         {
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.39",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
         }
       ],
-      "totalOdds": "507.97",
+      "totalOdds": "330.72",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC17"
+          "code": "MIX17-331"
         }
       }
     },
     {
       "id": "acc-18",
-      "tier": "Super Mega - 10 Folds #18",
-      "title": "Super Mega - 10 Folds #18",
+      "tier": "4000+ Mega - 13 Folds #18",
+      "title": "4000+ Mega - 13 Folds #18",
       "selections": [
         {
-          "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
         },
         {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.54",
+          "market": "Double Chance"
         },
         {
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.62",
+          "market": "Win Either Half"
         },
         {
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.62",
+          "market": "Half Time"
         },
         {
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.42",
+          "market": "Over/Under"
         },
         {
-          "match": "Chapulineros vs Montañeses",
-          "pick": "Double chance : draw or Montañeses",
-          "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.39",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Miramar vs Auckland City",
-          "pick": "Home Win - Miramar",
-          "selection": "Home Win - Miramar",
-          "odds": "2.30"
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win - Club Nacional de Football W",
-          "selection": "Home Win - Club Nacional de Football W",
-          "odds": "2.50"
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
         },
         {
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
         },
         {
-          "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win - Boca Juniors",
-          "selection": "Home Win - Boca Juniors",
-          "odds": "2.51"
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "2.62",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "2.70",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.42",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "1281.29",
+      "totalOdds": "1590.29",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC18"
+          "code": "MIX18-1590"
         }
       }
     },
     {
       "id": "acc-19",
-      "tier": "Safe Double - 2 Folds #19",
-      "title": "Safe Double - 2 Folds #19",
+      "tier": "4000+ Mega - 14 Folds #19",
+      "title": "4000+ Mega - 14 Folds #19",
       "selections": [
         {
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.62",
+          "market": "Half Time"
         },
         {
-          "match": "Chapulineros vs Montañeses",
-          "pick": "Double chance : draw or Montañeses",
-          "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.42",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.39",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "2.62",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "2.70",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.42",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "2.07",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "2.35",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
         }
       ],
-      "totalOdds": "3.34",
+      "totalOdds": "2851.84",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC19"
+          "code": "MIX19-2852"
         }
       }
     },
     {
       "id": "acc-20",
-      "tier": "High Odds - 3 Folds #20",
-      "title": "High Odds - 3 Folds #20",
+      "tier": "4000+ Mega - 15 Folds #20",
+      "title": "4000+ Mega - 15 Folds #20",
       "selections": [
         {
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.52",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win - Boca Juniors",
-          "selection": "Home Win - Boca Juniors",
-          "odds": "2.51"
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.75",
+          "market": "BTTS"
         },
         {
-          "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win - Gimnasia Y Tiro",
-          "selection": "Home Win - Gimnasia Y Tiro",
-          "odds": "2.40"
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.38",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "2.62",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "2.23",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "2.70",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.42",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "2.07",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "2.35",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "2.06",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "2.24",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.36",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "14.16",
+      "totalOdds": "1302.18",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC20"
+          "code": "MIX20-1302"
         }
       }
     },
     {
       "id": "acc-21",
-      "tier": "High Odds - 4 Folds #21",
-      "title": "High Odds - 4 Folds #21",
+      "tier": "Mega Mix - 16 Folds #21",
+      "title": "Mega Mix - 16 Folds #21",
       "selections": [
         {
-          "match": "Correcaminos Uat vs Dorados",
-          "pick": "Home Win - Correcaminos Uat",
-          "selection": "Home Win - Correcaminos Uat",
-          "odds": "2.33"
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "1.40",
+          "market": "Match Winner"
         },
         {
-          "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win - Inter",
-          "selection": "Home Win - Inter",
-          "odds": "2.16"
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "1.26",
+          "market": "Corners"
         },
         {
-          "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win - Guadalupe FC",
-          "selection": "Home Win - Guadalupe FC",
-          "odds": "1.96"
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "1.54",
+          "market": "Match Winner"
         },
         {
-          "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win - San Francisco FC",
-          "selection": "Home Win - San Francisco FC",
-          "odds": "2.07"
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.53",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "1.27",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.48",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "1.32",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "1.31",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "1.39",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.57",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.56",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.58",
+          "market": "BTTS"
+        },
+        {
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.42",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
         }
       ],
-      "totalOdds": "20.42",
+      "totalOdds": "246.48",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC21"
+          "code": "MIX21-246"
         }
       }
     },
     {
       "id": "acc-22",
-      "tier": "Mega Acca - 5 Folds #22",
-      "title": "Mega Acca - 5 Folds #22",
+      "tier": "4000+ Mega - 17 Folds #22",
+      "title": "4000+ Mega - 17 Folds #22",
       "selections": [
         {
-          "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win - CD Arabe Unido",
-          "selection": "Home Win - CD Arabe Unido",
-          "odds": "1.93"
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.49",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Vancouver FC vs HFX Wanderers FC",
-          "pick": "Home Win - Vancouver FC",
-          "selection": "Home Win - Vancouver FC",
-          "odds": "2.35"
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "1.58",
+          "market": "Match Winner"
         },
         {
-          "match": "Wellington Olympic vs Eastern Suburbs",
-          "pick": "Home Win - Wellington Olympic",
-          "selection": "Home Win - Wellington Olympic",
-          "odds": "2.65"
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.49",
+          "market": "Half Time"
         },
         {
-          "match": "Portland Timbers II vs St. Louis City II",
-          "pick": "Home Win - Portland Timbers II",
-          "selection": "Home Win - Portland Timbers II",
-          "odds": "1.83"
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "1.57",
+          "market": "Match Winner"
         },
         {
-          "match": "Ventura County vs Minnesota United II",
-          "pick": "Home Win - Ventura County",
-          "selection": "Home Win - Ventura County",
-          "odds": "2.23"
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "1.56",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "1.40",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.32",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.35",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.39",
+          "market": "BTTS"
+        },
+        {
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.56",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.30",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.49",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "1.47",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.56",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.54",
+          "market": "Highest Scoring Half"
         }
       ],
-      "totalOdds": "49.05",
+      "totalOdds": "510.73",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC22"
+          "code": "MIX22-511"
         }
       }
     },
     {
       "id": "acc-23",
-      "tier": "Super Mega - 6 Folds #23",
-      "title": "Super Mega - 6 Folds #23",
+      "tier": "4000+ Mega - 18 Folds #23",
+      "title": "4000+ Mega - 18 Folds #23",
       "selections": [
         {
-          "match": "Ventura County vs Minnesota United II",
-          "pick": "Home Win - Ventura County",
-          "selection": "Home Win - Ventura County",
-          "odds": "2.23"
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "1.47",
+          "market": "Match Winner"
         },
         {
-          "match": "Tigres de Alica vs Reboceros La Piedad",
-          "pick": "Home Win - Tigres de Alica",
-          "selection": "Home Win - Tigres de Alica",
-          "odds": "1.79"
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.47",
+          "market": "Over/Under"
         },
         {
-          "match": "Atlante FC vs U.N.A.M. - Pumas",
-          "pick": "Home Win - Atlante FC",
-          "selection": "Home Win - Atlante FC",
-          "odds": "2.11"
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "1.38",
+          "market": "Over/Under"
         },
         {
-          "match": "CA La Paz vs Tlaxcala",
-          "pick": "Home Win - CA La Paz",
-          "selection": "Home Win - CA La Paz",
-          "odds": "2.40"
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "1.46",
+          "market": "Match Winner"
         },
         {
-          "match": "Caracas W vs Santa Fe W",
-          "pick": "Home Win - Caracas W",
-          "selection": "Home Win - Caracas W",
-          "odds": "2.14"
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.58",
+          "market": "Over/Under"
         },
         {
-          "match": "Club Tijuana vs Puebla",
-          "pick": "Home Win - Club Tijuana",
-          "selection": "Home Win - Club Tijuana",
-          "odds": "2.67"
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.43",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.46",
+          "market": "BTTS"
+        },
+        {
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.50",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.57",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.58",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.56",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "1.44",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.30",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.50",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "1.57",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.42",
+          "market": "Half Time"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "1.34",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.26",
+          "market": "Corners"
         }
       ],
-      "totalOdds": "115.50",
+      "totalOdds": "888.05",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC23"
+          "code": "MIX23-888"
         }
       }
     },
     {
       "id": "acc-24",
-      "tier": "Super Mega - 7 Folds #24",
-      "title": "Super Mega - 7 Folds #24",
+      "tier": "4000+ Mega - 19 Folds #24",
+      "title": "4000+ Mega - 19 Folds #24",
       "selections": [
         {
-          "match": "Caracas W vs Santa Fe W",
-          "pick": "Home Win - Caracas W",
-          "selection": "Home Win - Caracas W",
-          "odds": "2.14"
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "1.34",
+          "market": "Match Winner"
         },
         {
-          "match": "Club Tijuana vs Puebla",
-          "pick": "Home Win - Club Tijuana",
-          "selection": "Home Win - Club Tijuana",
-          "odds": "2.67"
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.37",
+          "market": "Over/Under"
         },
         {
-          "match": "Shimizu S-pulse vs Gamba Osaka",
-          "pick": "Home Win - Shimizu S-pulse",
-          "selection": "Home Win - Shimizu S-pulse",
-          "odds": "2.03"
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.43",
+          "market": "Draw No Bet"
         },
         {
-          "match": "Albirex Niigata W vs Parceiro Nagano W",
-          "pick": "Home Win - Albirex Niigata W",
-          "selection": "Home Win - Albirex Niigata W",
-          "odds": "1.62"
+          "match": "Seongnam FC vs Suwon City FC",
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.59",
+          "market": "BTTS"
         },
         {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
+          "match": "Gainare Tottori vs Thespakusatsu Gunma",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.52",
+          "market": "Highest Scoring Half"
         },
         {
-          "match": "Newcastle Jets FC W vs Perth Glory FC W",
-          "pick": "Home Win - Newcastle Jets FC W",
-          "selection": "Home Win - Newcastle Jets FC W",
-          "odds": "2.43"
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.40",
+          "market": "Over/Under"
         },
         {
-          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-          "pick": "Home Win - Western Sydney Wanderers W",
-          "selection": "Home Win - Western Sydney Wanderers W",
-          "odds": "2.33"
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.27",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.27",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "1.46",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.29",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.52",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "1.39",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.30",
+          "market": "Half Time"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "1.45",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.57",
+          "market": "Corners"
+        },
+        {
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.31",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.30",
+          "market": "Corners"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.38",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.51",
+          "market": "Half Time"
         }
       ],
-      "totalOdds": "203.20",
+      "totalOdds": "594.09",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC24"
+          "code": "MIX24-594"
         }
       }
     },
     {
       "id": "acc-25",
-      "tier": "Super Mega - 8 Folds #25",
-      "title": "Super Mega - 8 Folds #25",
+      "tier": "4000+ Mega - 12 Folds #25",
+      "title": "4000+ Mega - 12 Folds #25",
       "selections": [
         {
-          "match": "Auckland vs Melbourne City",
-          "pick": "Home Win - Auckland",
-          "selection": "Home Win - Auckland",
-          "odds": "1.91"
-        },
-        {
-          "match": "Newcastle Jets FC W vs Perth Glory FC W",
-          "pick": "Home Win - Newcastle Jets FC W",
-          "selection": "Home Win - Newcastle Jets FC W",
-          "odds": "2.43"
-        },
-        {
-          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
-          "pick": "Home Win - Western Sydney Wanderers W",
-          "selection": "Home Win - Western Sydney Wanderers W",
-          "odds": "2.33"
-        },
-        {
-          "match": "Broadmeadow Magic vs Wests APIA",
-          "pick": "Home Win - Broadmeadow Magic",
-          "selection": "Home Win - Broadmeadow Magic",
-          "odds": "2.62"
-        },
-        {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
-        },
-        {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
-        },
-        {
           "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
+          "pick": "BTTS Yes",
+          "selection": "BTTS Yes",
+          "odds": "1.72",
+          "market": "BTTS"
         },
         {
           "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.03",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "FC Gifu vs Fukushima United",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.50",
+          "market": "Half Time"
+        },
+        {
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.52",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "2.06",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.51",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "2.07",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "2.26",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "2.23",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.91",
+          "market": "Corners"
         }
       ],
-      "totalOdds": "550.05",
+      "totalOdds": "986.45",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC25"
+          "code": "MIX25-986"
         }
       }
     },
     {
       "id": "acc-26",
-      "tier": "Super Mega - 9 Folds #26",
-      "title": "Super Mega - 9 Folds #26",
+      "tier": "4000+ Mega - 21 Folds #26",
+      "title": "4000+ Mega - 21 Folds #26",
       "selections": [
         {
-          "match": "Sutherland Sharks vs South Melbourne",
-          "pick": "Home Win - Sutherland Sharks",
-          "selection": "Home Win - Sutherland Sharks",
-          "odds": "2.61"
+          "match": "Kitakyushu vs Osaka",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
         },
         {
-          "match": "Daegu FC vs Cheongju",
-          "pick": "Home Win - Daegu FC",
-          "selection": "Home Win - Daegu FC",
-          "odds": "1.65"
+          "match": "JEF United Chiba vs Yokohama F. Marinos",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.58",
+          "market": "Over/Under"
         },
         {
-          "match": "Seongnam FC vs Suwon City FC",
-          "pick": "Home Win - Seongnam FC",
-          "selection": "Home Win - Seongnam FC",
-          "odds": "2.30"
+          "match": "Sanfrecce Hiroshima vs Kyoto Sanga",
+          "pick": "Home Win - Sanfrecce Hiroshima",
+          "selection": "Home Win - Sanfrecce Hiroshima",
+          "odds": "1.34",
+          "market": "Match Winner"
         },
         {
-          "match": "Gainare Tottori vs Thespakusatsu Gunma",
-          "pick": "Home Win - Gainare Tottori",
-          "selection": "Home Win - Gainare Tottori",
-          "odds": "1.96"
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.47",
+          "market": "Over/Under"
         },
         {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.26",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Atletico DE Rafaela vs Quilmes",
           "pick": "Double chance : Atletico DE Rafaela or draw",
           "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
+          "odds": "1.30",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.46",
+          "market": "Half Time"
         },
         {
           "match": "Real Tomayapo vs Gualberto Villarroel SJ",
           "pick": "Double chance : draw or Gualberto Villarroel SJ",
           "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "odds": "1.28",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Chapulineros vs Montañeses",
           "pick": "Double chance : draw or Montañeses",
           "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
+          "odds": "1.55",
+          "market": "Corners"
+        },
+        {
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.48",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.56",
+          "market": "Corners"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.46",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.27",
+          "market": "Half Time"
+        },
+        {
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.27",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.51",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.29",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.30",
+          "market": "Half Time"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.53",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.31",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.59",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.59",
+          "market": "Over/Under"
         }
       ],
-      "totalOdds": "374.19",
+      "totalOdds": "1454.14",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC26"
+          "code": "MIX26-1454"
         }
       }
     },
     {
       "id": "acc-27",
-      "tier": "Super Mega - 10 Folds #27",
-      "title": "Super Mega - 10 Folds #27",
+      "tier": "4000+ Mega - 22 Folds #27",
+      "title": "4000+ Mega - 22 Folds #27",
       "selections": [
         {
-          "match": "FC Gifu vs Fukushima United",
-          "pick": "Home Win - FC Gifu",
-          "selection": "Home Win - FC Gifu",
-          "odds": "1.54"
+          "match": "Tokyo Verdy vs FC Tokyo",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.26",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Geoje Citizen vs Haman",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.53",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Atletico DE Rafaela vs Quilmes",
           "pick": "Double chance : Atletico DE Rafaela or draw",
           "selection": "Double chance : Atletico DE Rafaela or draw",
-          "odds": "2.45"
+          "odds": "1.57",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "selection": "Double chance : Boston Legacy W or draw",
-          "odds": "1.53"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.33",
+          "market": "Half Time"
         },
         {
           "match": "Real Tomayapo vs Gualberto Villarroel SJ",
           "pick": "Double chance : draw or Gualberto Villarroel SJ",
           "selection": "Double chance : draw or Gualberto Villarroel SJ",
-          "odds": "1.73"
+          "odds": "1.56",
+          "market": "Highest Scoring Half"
         },
         {
           "match": "Chapulineros vs Montañeses",
           "pick": "Double chance : draw or Montañeses",
           "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
+          "odds": "1.56",
+          "market": "Corners"
         },
         {
           "match": "Miramar vs Auckland City",
-          "pick": "Home Win - Miramar",
-          "selection": "Home Win - Miramar",
-          "odds": "2.30"
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.38",
+          "market": "Match Winner"
         },
         {
           "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win - Club Nacional de Football W",
-          "selection": "Home Win - Club Nacional de Football W",
-          "odds": "2.50"
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.32",
+          "market": "Corners"
         },
         {
           "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win - Cruzeiro W",
-          "selection": "Home Win - Cruzeiro W",
-          "odds": "2.35"
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.31",
+          "market": "Over/Under"
         },
         {
           "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win - Boca Juniors",
-          "selection": "Home Win - Boca Juniors",
-          "odds": "2.51"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.50",
+          "market": "Half Time"
         },
         {
           "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win - Gimnasia Y Tiro",
-          "selection": "Home Win - Gimnasia Y Tiro",
-          "odds": "2.40"
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.35",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.42",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.46",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.32",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.29",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.41",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.28",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.58",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.50",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.52",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.31",
+          "market": "Double Chance"
         }
       ],
-      "totalOdds": "1568.93",
+      "totalOdds": "2207.33",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC27"
+          "code": "MIX27-2207"
         }
       }
     },
     {
       "id": "acc-28",
-      "tier": "Medium Acca - 2 Folds #28",
-      "title": "Medium Acca - 2 Folds #28",
+      "tier": "4000+ Mega - 23 Folds #28",
+      "title": "4000+ Mega - 23 Folds #28",
       "selections": [
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.53",
+          "market": "Half Time"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "1.54",
+          "market": "Highest Scoring Half"
+        },
         {
           "match": "Chapulineros vs Montañeses",
           "pick": "Double chance : draw or Montañeses",
           "selection": "Double chance : draw or Montañeses",
-          "odds": "1.93"
+          "odds": "1.36",
+          "market": "Corners"
         },
         {
           "match": "Miramar vs Auckland City",
-          "pick": "Home Win - Miramar",
-          "selection": "Home Win - Miramar",
-          "odds": "2.30"
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.57",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.28",
+          "market": "Corners"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.34",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.26",
+          "market": "Half Time"
+        },
+        {
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.43",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.29",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.55",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.45",
+          "market": "Half Time"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.42",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.45",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.36",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.33",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.32",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.28",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.47",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.36",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "1.57",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "1.55",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "1.33",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.58",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "4.44",
+      "totalOdds": "2935.34",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC28"
+          "code": "MIX28-2935"
         }
       }
     },
     {
       "id": "acc-29",
-      "tier": "High Odds - 3 Folds #29",
-      "title": "High Odds - 3 Folds #29",
+      "tier": "4000+ Mega - 24 Folds #29",
+      "title": "4000+ Mega - 24 Folds #29",
       "selections": [
         {
+          "match": "Miramar vs Auckland City",
+          "pick": "Away Win - Auckland City",
+          "selection": "Away Win - Auckland City",
+          "odds": "1.44",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "No predictions available",
+          "selection": "No predictions available",
+          "odds": "1.30",
+          "market": "Corners"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.60",
+          "market": "Over/Under"
+        },
+        {
           "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win - Boca Juniors",
-          "selection": "Home Win - Boca Juniors",
-          "odds": "2.51"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.47",
+          "market": "Half Time"
         },
         {
           "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win - Gimnasia Y Tiro",
-          "selection": "Home Win - Gimnasia Y Tiro",
-          "odds": "2.40"
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.34",
+          "market": "Draw No Bet"
         },
         {
           "match": "Necaxa vs Atlas",
-          "pick": "Home Win - Necaxa",
-          "selection": "Home Win - Necaxa",
-          "odds": "1.84"
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.42",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.27",
+          "market": "BTTS"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.54",
+          "market": "Half Time"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.41",
+          "market": "Double Chance"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.44",
+          "market": "Win Either Half"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.28",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.50",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.47",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.31",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.52",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.36",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "1.53",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "1.25",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "1.46",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.55",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "1.50",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.42",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "1.32",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.55",
+          "market": "Over/Under"
         }
       ],
-      "totalOdds": "11.08",
+      "totalOdds": "2412.15",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC29"
+          "code": "MIX29-2412"
         }
       }
     },
     {
       "id": "acc-30",
-      "tier": "High Odds - 4 Folds #30",
-      "title": "High Odds - 4 Folds #30",
+      "tier": "4000+ Mega - 25 Folds #30",
+      "title": "4000+ Mega - 25 Folds #30",
       "selections": [
         {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.34",
+          "market": "Half Time"
+        },
+        {
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Draw No Bet - Gimnasia Y Tiro",
+          "selection": "Draw No Bet - Gimnasia Y Tiro",
+          "odds": "1.31",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Over 8.5 Corners",
+          "selection": "Over 8.5 Corners",
+          "odds": "1.47",
+          "market": "Corners"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.58",
+          "market": "BTTS"
+        },
+        {
           "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win - Inter",
-          "selection": "Home Win - Inter",
-          "odds": "2.16"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.38",
+          "market": "Half Time"
         },
         {
           "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win - Guadalupe FC",
-          "selection": "Home Win - Guadalupe FC",
-          "odds": "1.96"
+          "pick": "Double chance : Guadalupe FC or draw",
+          "selection": "Double chance : Guadalupe FC or draw",
+          "odds": "1.29",
+          "market": "Double Chance"
         },
         {
           "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win - San Francisco FC",
-          "selection": "Home Win - San Francisco FC",
-          "odds": "2.07"
+          "pick": "Win Either Half - Home",
+          "selection": "Win Either Half - Home",
+          "odds": "1.32",
+          "market": "Win Either Half"
         },
         {
           "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win - CD Arabe Unido",
-          "selection": "Home Win - CD Arabe Unido",
-          "odds": "1.93"
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.57",
+          "market": "Half Time"
+        },
+        {
+          "match": "Vancouver FC vs HFX Wanderers FC",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.25",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Wellington Olympic vs Eastern Suburbs",
+          "pick": "Highest Scoring Half - 2nd Half",
+          "selection": "Highest Scoring Half - 2nd Half",
+          "odds": "1.51",
+          "market": "Highest Scoring Half"
+        },
+        {
+          "match": "Portland Timbers II vs St. Louis City II",
+          "pick": "Draw No Bet - Portland Timbers II",
+          "selection": "Draw No Bet - Portland Timbers II",
+          "odds": "1.50",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Ventura County vs Minnesota United II",
+          "pick": "BTTS No",
+          "selection": "BTTS No",
+          "odds": "1.37",
+          "market": "BTTS"
+        },
+        {
+          "match": "Tigres de Alica vs Reboceros La Piedad",
+          "pick": "Double chance : Tigres de Alica or draw",
+          "selection": "Double chance : Tigres de Alica or draw",
+          "odds": "1.39",
+          "market": "Double Chance"
+        },
+        {
+          "match": "Atlante FC vs U.N.A.M. - Pumas",
+          "pick": "Away Win - U.N.A.M. - Pumas",
+          "selection": "Away Win - U.N.A.M. - Pumas",
+          "odds": "1.37",
+          "market": "Match Winner"
+        },
+        {
+          "match": "CA La Paz vs Tlaxcala",
+          "pick": "Over 9.5 Corners",
+          "selection": "Over 9.5 Corners",
+          "odds": "1.49",
+          "market": "Corners"
+        },
+        {
+          "match": "Caracas W vs Santa Fe W",
+          "pick": "Away Win - Santa Fe W",
+          "selection": "Away Win - Santa Fe W",
+          "odds": "1.53",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Club Tijuana vs Puebla",
+          "pick": "Draw No Bet - Club Tijuana",
+          "selection": "Draw No Bet - Club Tijuana",
+          "odds": "1.44",
+          "market": "Draw No Bet"
+        },
+        {
+          "match": "Shimizu S-pulse vs Gamba Osaka",
+          "pick": "Away Win - Gamba Osaka",
+          "selection": "Away Win - Gamba Osaka",
+          "odds": "1.44",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Albirex Niigata W vs Parceiro Nagano W",
+          "pick": "Over 0.5 Goals HT",
+          "selection": "Over 0.5 Goals HT",
+          "odds": "1.44",
+          "market": "Half Time"
+        },
+        {
+          "match": "Auckland vs Melbourne City",
+          "pick": "Away Win - Melbourne City",
+          "selection": "Away Win - Melbourne City",
+          "odds": "1.25",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Newcastle Jets FC W vs Perth Glory FC W",
+          "pick": "Over 1.5 Goals",
+          "selection": "Over 1.5 Goals",
+          "odds": "1.31",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+          "pick": "Over 2.5 Goals",
+          "selection": "Over 2.5 Goals",
+          "odds": "1.56",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Broadmeadow Magic vs Wests APIA",
+          "pick": "Away Win - Wests APIA",
+          "selection": "Away Win - Wests APIA",
+          "odds": "1.26",
+          "market": "Match Winner"
+        },
+        {
+          "match": "Sutherland Sharks vs South Melbourne",
+          "pick": "Under 3.5 Goals",
+          "selection": "Under 3.5 Goals",
+          "odds": "1.36",
+          "market": "Over/Under"
+        },
+        {
+          "match": "Daegu FC vs Cheongju",
+          "pick": "Draw No Bet - Daegu FC",
+          "selection": "Draw No Bet - Daegu FC",
+          "odds": "1.55",
+          "market": "Draw No Bet"
         }
       ],
-      "totalOdds": "16.91",
+      "totalOdds": "3218.02",
       "bookmakers": {
         "bet9ja": {
-          "code": "ACC30"
+          "code": "MIX30-3218"
         }
       }
     }
@@ -2582,9 +4381,9 @@
       "match": "Atletico DE Rafaela vs Quilmes",
       "pick": "Double chance : Atletico DE Rafaela or draw",
       "selection": "Double chance : Atletico DE Rafaela or draw",
-      "odds": "2.45",
+      "odds": "2.26",
       "rating": 10,
-      "description": "BEST PICK TODAY: Double chance : Atletico DE Rafaela or draw. Primera Nacional - High confidence winner!",
+      "description": "BEST MIXED PICK: Double chance : Atletico DE Rafaela or draw in Primera Nacional - Highest Scoring Half",
       "bookmaker": "bet9ja",
       "photo": ""
     }
@@ -2594,8 +4393,8 @@
       "id": "cs-1498885",
       "match": "Atletico DE Rafaela vs Quilmes",
       "league": "Primera Nacional",
-      "score": "1-1",
-      "odds": "10.37",
+      "score": "0-0",
+      "odds": "8.42",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2607,8 +4406,8 @@
       "id": "cs-1508572",
       "match": "Boston Legacy W vs Racing Louisville W",
       "league": "NWSL Women",
-      "score": "1-1",
-      "odds": "8.93",
+      "score": "2-2",
+      "odds": "9.54",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2620,8 +4419,8 @@
       "id": "cs-1619329",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "league": "Primera División",
-      "score": "1-1",
-      "odds": "6.45",
+      "score": "0-2",
+      "odds": "11.95",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2633,8 +4432,8 @@
       "id": "cs-1635998",
       "match": "Chapulineros vs Montañeses",
       "league": "Primera Premier",
-      "score": "1-0",
-      "odds": "10.24",
+      "score": "0-2",
+      "odds": "10.51",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2647,7 +4446,7 @@
       "match": "Miramar vs Auckland City",
       "league": "National League - National",
       "score": "2-0",
-      "odds": "10.11",
+      "odds": "9.06",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2659,8 +4458,8 @@
       "id": "cs-1639868",
       "match": "Club Nacional de Football W vs Universidad de Chile W",
       "league": "CONMEBOL Libertadores Femenina",
-      "score": "1-0",
-      "odds": "8.22",
+      "score": "0-2",
+      "odds": "11.41",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2673,7 +4472,7 @@
       "match": "Cruzeiro W vs LDU Quito W",
       "league": "CONMEBOL Libertadores Femenina",
       "score": "1-1",
-      "odds": "9.41",
+      "odds": "7.35",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2685,8 +4484,8 @@
       "id": "cs-1493185",
       "match": "Boca Juniors vs Talleres Cordoba",
       "league": "Liga Profesional Argentina",
-      "score": "1-1",
-      "odds": "9.85",
+      "score": "0-2",
+      "odds": "11.28",
       "date": "2026-10-17",
       "bookmakers": {
         "bet9ja": {
@@ -2700,14 +4499,14 @@
       "id": "hedge-1498885",
       "match": "Atletico DE Rafaela vs Quilmes",
       "league": "Primera Nacional",
-      "kickoffAt": "2026-10-17T06:37:05.230Z",
-      "preMatchSelection": "Double chance : Atletico DE Rafaela or draw",
-      "preMatchMarket": "Double Chance",
+      "kickoffAt": "2026-10-17T06:46:25.180Z",
+      "preMatchSelection": "Home Win - Atletico DE Rafaela",
+      "preMatchMarket": "Home Win",
       "entryMinute": "70",
       "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Over 0.5 Goals Live",
-      "liveMarket": "Live Over/Under",
-      "odds": "2.45",
+      "liveSelection": "Highest Scoring Half - 2nd Half",
+      "liveMarket": "Highest Scoring Half - 2nd Half",
+      "odds": "2.26",
       "status": "upcoming",
       "preMatchBookmakers": {
         "bet9ja": {
@@ -2724,14 +4523,14 @@
       "id": "hedge-1508572",
       "match": "Boston Legacy W vs Racing Louisville W",
       "league": "NWSL Women",
-      "kickoffAt": "2026-10-17T06:37:05.230Z",
-      "preMatchSelection": "Double chance : Boston Legacy W or draw",
-      "preMatchMarket": "Double Chance",
+      "kickoffAt": "2026-10-17T06:46:25.180Z",
+      "preMatchSelection": "Over 2.5 Goals - Boston Legacy W",
+      "preMatchMarket": "Over 2.5 Goals",
       "entryMinute": "70",
       "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Over 0.5 Goals Live",
-      "liveMarket": "Live Over/Under",
-      "odds": "1.53",
+      "liveSelection": "Under 4.5 Goals Live",
+      "liveMarket": "Under 4.5 Goals Live",
+      "odds": "1.47",
       "status": "upcoming",
       "preMatchBookmakers": {
         "bet9ja": {
@@ -2748,14 +4547,14 @@
       "id": "hedge-1619329",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "league": "Primera División",
-      "kickoffAt": "2026-10-17T06:37:05.230Z",
-      "preMatchSelection": "Double chance : draw or Gualberto Villarroel SJ",
-      "preMatchMarket": "Double Chance",
+      "kickoffAt": "2026-10-17T06:46:25.180Z",
+      "preMatchSelection": "BTTS Yes - Real Tomayapo",
+      "preMatchMarket": "BTTS Yes",
       "entryMinute": "70",
       "requiredScore": "0-0 or 1-1",
-      "liveSelection": "Over 0.5 Goals Live",
-      "liveMarket": "Live Over/Under",
-      "odds": "1.73",
+      "liveSelection": "Over 0.5 Goals 2nd Half",
+      "liveMarket": "Over 0.5 Goals 2nd Half",
+      "odds": "2.23",
       "status": "upcoming",
       "preMatchBookmakers": {
         "bet9ja": {
@@ -2767,106 +4566,126 @@
           "code": "LIVE1619329"
         }
       }
+    },
+    {
+      "id": "hedge-1635998",
+      "match": "Chapulineros vs Montañeses",
+      "league": "Primera Premier",
+      "kickoffAt": "2026-10-17T06:46:25.180Z",
+      "preMatchSelection": "Draw No Bet - Home - Chapulineros",
+      "preMatchMarket": "Draw No Bet - Home",
+      "entryMinute": "70",
+      "requiredScore": "0-0 or 1-1",
+      "liveSelection": "Draw No Bet - Away Live",
+      "liveMarket": "Draw No Bet - Away Live",
+      "odds": "1.91",
+      "status": "upcoming",
+      "preMatchBookmakers": {
+        "bet9ja": {
+          "code": 1635998
+        }
+      },
+      "liveBookmakers": {
+        "bet9ja": {
+          "code": "LIVE1635998"
+        }
+      }
+    },
+    {
+      "id": "hedge-1639031",
+      "match": "Miramar vs Auckland City",
+      "league": "National League - National",
+      "kickoffAt": "2026-10-17T06:46:25.180Z",
+      "preMatchSelection": "Over 9.5 Corners - Miramar",
+      "preMatchMarket": "Over 9.5 Corners",
+      "entryMinute": "75",
+      "requiredScore": "7 Corners",
+      "liveSelection": "Over 2.5 Corners Live",
+      "liveMarket": "Over 2.5 Corners Live",
+      "odds": "1.95",
+      "status": "upcoming",
+      "preMatchBookmakers": {
+        "bet9ja": {
+          "code": 1639031
+        }
+      },
+      "liveBookmakers": {
+        "bet9ja": {
+          "code": "LIVE1639031"
+        }
+      }
     }
   ],
   "livePredictions": [
     {
-      "id": "live-1556091",
-      "match": "Cerezo Osaka vs Kawasaki Frontale",
-      "home": "Cerezo Osaka",
-      "away": "Kawasaki Frontale",
-      "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "1.97",
-      "currentScore": "0-1",
-      "minute": 40,
-      "kickoffAt": "2026-10-17T06:00:00+00:00",
-      "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
-    },
-    {
-      "id": "live-1556093",
-      "match": "Kashima vs V-varen Nagasaki",
-      "home": "Kashima",
-      "away": "V-varen Nagasaki",
-      "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "1.91",
-      "currentScore": "2-0",
-      "minute": 39,
-      "kickoffAt": "2026-10-17T06:00:00+00:00",
-      "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
-    },
-    {
-      "id": "live-1593682",
-      "match": "Macarthur vs Perth Glory",
-      "home": "Macarthur",
-      "away": "Perth Glory",
-      "pick": "Over 0.5 Goals Live",
-      "selection": "Over 0.5 Goals Live",
-      "odds": "2.04",
+      "id": "live-f-1498885",
+      "match": "Atletico DE Rafaela vs Quilmes",
+      "home": "Atletico DE Rafaela",
+      "away": "Quilmes",
+      "pick": "Over 1.5 Goals",
+      "selection": "Over 1.5 Goals",
+      "odds": "2.22",
       "currentScore": "0-0",
-      "minute": 43,
-      "kickoffAt": "2026-10-17T06:00:00+00:00",
+      "minute": 10,
+      "kickoffAt": "2026-10-17T06:52:25.179Z",
       "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
+      "publishAt": "2026-10-17T06:52:25.179Z"
     },
     {
-      "id": "live-1510467",
-      "match": "Daegu FC vs Cheongju",
-      "home": "Daegu FC",
-      "away": "Cheongju",
-      "pick": "Next Goal - Home",
-      "selection": "Next Goal - Home",
-      "odds": "2.12",
-      "currentScore": "3-1",
-      "minute": 82,
-      "kickoffAt": "2026-10-17T05:00:00+00:00",
+      "id": "live-f-1508572",
+      "match": "Boston Legacy W vs Racing Louisville W",
+      "home": "Boston Legacy W",
+      "away": "Racing Louisville W",
+      "pick": "Over 2.5 Goals",
+      "selection": "Over 2.5 Goals",
+      "odds": "2.62",
+      "currentScore": "1-0",
+      "minute": 25,
+      "kickoffAt": "2026-10-17T06:37:25.179Z",
       "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
+      "publishAt": "2026-10-17T06:52:25.179Z"
     },
     {
-      "id": "live-1510468",
-      "match": "Seongnam FC vs Suwon City FC",
-      "home": "Seongnam FC",
-      "away": "Suwon City FC",
-      "pick": "Next Goal - Home",
-      "selection": "Next Goal - Home",
-      "odds": "1.84",
-      "currentScore": "1-1",
-      "minute": 86,
-      "kickoffAt": "2026-10-17T05:00:00+00:00",
+      "id": "live-f-1619329",
+      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+      "home": "Real Tomayapo",
+      "away": "Gualberto Villarroel SJ",
+      "pick": "BTTS Yes",
+      "selection": "BTTS Yes",
+      "odds": "2.08",
+      "currentScore": "1-0",
+      "minute": 40,
+      "kickoffAt": "2026-10-17T06:22:25.179Z",
       "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
+      "publishAt": "2026-10-17T06:52:25.179Z"
     },
     {
-      "id": "live-1555741",
-      "match": "Gainare Tottori vs Thespakusatsu Gunma",
-      "home": "Gainare Tottori",
-      "away": "Thespakusatsu Gunma",
-      "pick": "Next Goal - Home",
-      "selection": "Next Goal - Home",
-      "odds": "2.70",
-      "currentScore": "1-1",
-      "minute": 84,
-      "kickoffAt": "2026-10-17T05:00:00+00:00",
+      "id": "live-f-1635998",
+      "match": "Chapulineros vs Montañeses",
+      "home": "Chapulineros",
+      "away": "Montañeses",
+      "pick": "BTTS No",
+      "selection": "BTTS No",
+      "odds": "2.29",
+      "currentScore": "1-0",
+      "minute": 55,
+      "kickoffAt": "2026-10-17T06:07:25.179Z",
       "status": "live",
-      "publishAt": "2026-10-17T06:43:05.186Z"
+      "publishAt": "2026-10-17T06:52:25.179Z"
     }
   ],
   "codesOnly": [
     {
       "id": "code-1498885",
       "label": "Atletico DE Rafaela vs Quilmes",
-      "odds": "2.45",
+      "odds": "2.26",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.45",
+          "odds": "2.26",
           "code": "1498885"
         },
         "sportybet": {
-          "odds": "2.45",
+          "odds": "2.26",
           "code": "1498885"
         }
       }
@@ -2874,14 +4693,14 @@
     {
       "id": "code-1508572",
       "label": "Boston Legacy W vs Racing Louisville W",
-      "odds": "1.53",
+      "odds": "1.47",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.53",
+          "odds": "1.47",
           "code": "1508572"
         },
         "sportybet": {
-          "odds": "1.53",
+          "odds": "1.47",
           "code": "1508572"
         }
       }
@@ -2889,14 +4708,14 @@
     {
       "id": "code-1619329",
       "label": "Real Tomayapo vs Gualberto Villarroel SJ",
-      "odds": "1.73",
+      "odds": "2.23",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.73",
+          "odds": "2.23",
           "code": "1619329"
         },
         "sportybet": {
-          "odds": "1.73",
+          "odds": "2.23",
           "code": "1619329"
         }
       }
@@ -2904,14 +4723,14 @@
     {
       "id": "code-1635998",
       "label": "Chapulineros vs Montañeses",
-      "odds": "1.93",
+      "odds": "1.91",
       "bookmakers": {
         "bet9ja": {
-          "odds": "1.93",
+          "odds": "1.91",
           "code": "1635998"
         },
         "sportybet": {
-          "odds": "1.93",
+          "odds": "1.91",
           "code": "1635998"
         }
       }
@@ -2919,14 +4738,14 @@
     {
       "id": "code-1639031",
       "label": "Miramar vs Auckland City",
-      "odds": "2.30",
+      "odds": "1.95",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.30",
+          "odds": "1.95",
           "code": "1639031"
         },
         "sportybet": {
-          "odds": "2.30",
+          "odds": "1.95",
           "code": "1639031"
         }
       }
@@ -2934,14 +4753,14 @@
     {
       "id": "code-1639868",
       "label": "Club Nacional de Football W vs Universidad de Chile W",
-      "odds": "2.50",
+      "odds": "2.33",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.50",
+          "odds": "2.33",
           "code": "1639868"
         },
         "sportybet": {
-          "odds": "2.50",
+          "odds": "2.33",
           "code": "1639868"
         }
       }
@@ -2949,14 +4768,14 @@
     {
       "id": "code-1639872",
       "label": "Cruzeiro W vs LDU Quito W",
-      "odds": "2.35",
+      "odds": "1.35",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.35",
+          "odds": "1.35",
           "code": "1639872"
         },
         "sportybet": {
-          "odds": "2.35",
+          "odds": "1.35",
           "code": "1639872"
         }
       }
@@ -2964,52 +4783,249 @@
     {
       "id": "code-1493185",
       "label": "Boca Juniors vs Talleres Cordoba",
-      "odds": "2.51",
+      "odds": "1.54",
       "bookmakers": {
         "bet9ja": {
-          "odds": "2.51",
+          "odds": "1.54",
           "code": "1493185"
         },
         "sportybet": {
-          "odds": "2.51",
+          "odds": "1.54",
           "code": "1493185"
         }
       }
     }
   ],
-  "results": [],
+  "results": [
+    {
+      "id": "res-1639882",
+      "match": "U. de Deportes W vs Palmeiras W",
+      "league": "CONMEBOL Libertadores Femenina",
+      "home": "U. de Deportes W",
+      "away": "Palmeiras W",
+      "score": "0-1",
+      "result": "Away Win",
+      "pick": "Home Win - U. de Deportes W",
+      "odds": "2.34",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1640555",
+      "match": "Estudiantes L.P. vs Flamengo",
+      "league": "CONMEBOL Libertadores",
+      "home": "Estudiantes L.P.",
+      "away": "Flamengo",
+      "score": "0-0",
+      "result": "Draw",
+      "pick": "Over 1.5 Goals",
+      "odds": "2.12",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1549664",
+      "match": "Quindio vs Real Cartagena",
+      "league": "Primera B",
+      "home": "Quindio",
+      "away": "Real Cartagena",
+      "score": "1-1",
+      "result": "Draw",
+      "pick": "Home Win - Quindio",
+      "odds": "2.49",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1559671",
+      "match": "Suchitepéquez vs Deportivo San Pedro",
+      "league": "Liga Nacional",
+      "home": "Suchitepéquez",
+      "away": "Deportivo San Pedro",
+      "score": "1-1",
+      "result": "Draw",
+      "pick": "Over 1.5 Goals",
+      "odds": "1.99",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1600633",
+      "match": "Firpo vs Inca Aruba",
+      "league": "Primera Division",
+      "home": "Firpo",
+      "away": "Inca Aruba",
+      "score": "2-0",
+      "result": "Home Win",
+      "pick": "Home Win - Firpo",
+      "odds": "1.69",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1645638",
+      "match": "Real Estelí vs Jalapa",
+      "league": "Primera Division",
+      "home": "Real Estelí",
+      "away": "Jalapa",
+      "score": "1-1",
+      "result": "Draw",
+      "pick": "Over 1.5 Goals",
+      "odds": "1.66",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1642287",
+      "match": "CD Olimpia vs Real Espana",
+      "league": "Liga Nacional",
+      "home": "CD Olimpia",
+      "away": "Real Espana",
+      "score": "2-1",
+      "result": "Home Win",
+      "pick": "Over 1.5 Goals",
+      "odds": "1.75",
+      "status": "lost",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1551700",
+      "match": "Deportivo Saprissa vs Sporting San Jose",
+      "league": "Primera División",
+      "home": "Deportivo Saprissa",
+      "away": "Sporting San Jose",
+      "score": "6-0",
+      "result": "Home Win",
+      "pick": "Home Win - Deportivo Saprissa",
+      "odds": "1.60",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1519176",
+      "match": "Ural U20 vs Lokomotiv Moskva U19",
+      "league": "Youth Championship",
+      "home": "Ural U20",
+      "away": "Lokomotiv Moskva U19",
+      "score": "5-7",
+      "result": "Away Win",
+      "pick": "Over 1.5 Goals",
+      "odds": "1.77",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1622791",
+      "match": "PSIM Yogyakarta vs PSM Makassar",
+      "league": "Liga 1",
+      "home": "PSIM Yogyakarta",
+      "away": "PSM Makassar",
+      "score": "1-2",
+      "result": "Away Win",
+      "pick": "Home Win - PSIM Yogyakarta",
+      "odds": "2.30",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1640329",
+      "match": "Adelaide City vs Avondale",
+      "league": "Australian Championship",
+      "home": "Adelaide City",
+      "away": "Avondale",
+      "score": "2-2",
+      "result": "Draw",
+      "pick": "Over 1.5 Goals",
+      "odds": "2.49",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1640330",
+      "match": "Oakleigh Cannons vs Sydney Olympic",
+      "league": "Australian Championship",
+      "home": "Oakleigh Cannons",
+      "away": "Sydney Olympic",
+      "score": "4-2",
+      "result": "Home Win",
+      "pick": "Home Win - Oakleigh Cannons",
+      "odds": "1.53",
+      "status": "lost",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1640113",
+      "match": "City Club vs Bashundhara Kings",
+      "league": "Premier League",
+      "home": "City Club",
+      "away": "Bashundhara Kings",
+      "score": "0-3",
+      "result": "Away Win",
+      "pick": "Over 1.5 Goals",
+      "odds": "1.55",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    },
+    {
+      "id": "res-1640114",
+      "match": "PWD Sports Club vs Mohammedan Dhaka",
+      "league": "Premier League",
+      "home": "PWD Sports Club",
+      "away": "Mohammedan Dhaka",
+      "score": "0-2",
+      "result": "Away Win",
+      "pick": "Home Win - PWD Sports Club",
+      "odds": "2.22",
+      "status": "won",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-17T06:52:13.210Z"
+    }
+  ],
   "news": [
     {
       "id": "news-2026-10-17-1",
-      "title": "Atletico DE Rafaela vs Quilmes: Who will win Primera Nacional clash?",
+      "title": "Atletico DE Rafaela vs Quilmes: Double chance : Atletico DE Rafaela or draw - Primera Nacional Preview",
       "category": "Preview",
       "date": "2026-10-17",
-      "publishAt": "2026-10-17T06:43:05.230Z",
-      "content": "Atletico DE Rafaela vs Quilmes - Double chance : Atletico DE Rafaela or draw @ 2.45"
+      "publishAt": "2026-10-17T06:52:25.180Z",
+      "content": "Atletico DE Rafaela vs Quilmes - Double chance : Atletico DE Rafaela or draw @ 2.26 - Highest Scoring Half"
     },
     {
       "id": "news-2026-10-17-2",
-      "title": "NWSL Women Prediction: Boston Legacy W favored over Racing Louisville W - Odds 1.53",
+      "title": "NWSL Women: Why Over 0.5 Goals HT is best for Boston Legacy W vs Racing Louisville W",
       "category": "Analysis",
       "date": "2026-10-17",
-      "publishAt": "2026-10-17T06:43:05.230Z",
-      "content": "Boston Legacy W vs Racing Louisville W - Double chance : Boston Legacy W or draw @ 1.53"
+      "publishAt": "2026-10-17T06:52:25.180Z",
+      "content": "Boston Legacy W vs Racing Louisville W - Over 0.5 Goals HT @ 1.47 - Half Time"
     },
     {
       "id": "news-2026-10-17-3",
-      "title": "Betting Guide: Real Tomayapo vs Gualberto Villarroel SJ - Best Pick Double chance : draw or Gualberto Villarroel SJ",
+      "title": "Mixed Acca Guide: Real Tomayapo vs Gualberto Villarroel SJ - Corners & Goals",
       "category": "Guide",
       "date": "2026-10-17",
-      "publishAt": "2026-10-17T06:43:05.230Z",
-      "content": "Real Tomayapo vs Gualberto Villarroel SJ - Double chance : draw or Gualberto Villarroel SJ @ 1.73"
+      "publishAt": "2026-10-17T06:52:25.180Z",
+      "content": "Real Tomayapo vs Gualberto Villarroel SJ - Double chance : draw or Gualberto Villarroel SJ @ 2.23 - Highest Scoring Half"
     },
     {
       "id": "news-2026-10-17-4",
-      "title": "Chapulineros vs Montañeses - Head to Head & Form Analysis",
+      "title": "Chapulineros vs Montañeses Form: Highest Scoring Half Stats",
       "category": "Report",
       "date": "2026-10-17",
-      "publishAt": "2026-10-17T06:43:05.230Z",
-      "content": "Chapulineros vs Montañeses - Double chance : draw or Montañeses @ 1.93"
+      "publishAt": "2026-10-17T06:52:25.180Z",
+      "content": "Chapulineros vs Montañeses - Double chance : draw or Montañeses @ 1.91 - Corners"
     }
   ],
   "meta": {
@@ -3060,43 +5076,43 @@
   },
   "betOfDayMore": [
     {
-      "id": "bodm-1619329",
-      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-      "pick": "Double chance : draw or Gualberto Villarroel SJ",
-      "selection": "Double chance : draw or Gualberto Villarroel SJ",
-      "odds": "1.73",
-      "rating": 9,
-      "description": "More pick from Primera División",
-      "bookmaker": "bet9ja"
-    },
-    {
-      "id": "bodm-1639868",
-      "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win - Club Nacional de Football W",
-      "selection": "Home Win - Club Nacional de Football W",
-      "odds": "2.50",
-      "rating": 9,
-      "description": "More pick from CONMEBOL Libertadores Femenina",
-      "bookmaker": "bet9ja"
-    },
-    {
       "id": "bodm-1581452",
       "match": "Correcaminos Uat vs Dorados",
-      "pick": "Home Win - Correcaminos Uat",
-      "selection": "Home Win - Correcaminos Uat",
-      "odds": "2.33",
+      "pick": "BTTS No",
+      "selection": "BTTS No",
+      "odds": "1.72",
       "rating": 9,
-      "description": "More pick from Liga de Expansión MX",
+      "description": "Mixed: BTTS",
       "bookmaker": "bet9ja"
     },
     {
       "id": "bodm-1600630",
       "match": "Inter vs Municipal Limeño",
-      "pick": "Home Win - Inter",
-      "selection": "Home Win - Inter",
-      "odds": "2.16",
+      "pick": "Over 0.5 Goals HT",
+      "selection": "Over 0.5 Goals HT",
+      "odds": "1.41",
       "rating": 9,
-      "description": "More pick from Primera Division",
+      "description": "Mixed: Half Time",
+      "bookmaker": "bet9ja"
+    },
+    {
+      "id": "bodm-1601469",
+      "match": "Guadalupe FC vs Cariari Pococi",
+      "pick": "Double chance : Guadalupe FC or draw",
+      "selection": "Double chance : Guadalupe FC or draw",
+      "odds": "1.54",
+      "rating": 9,
+      "description": "Mixed: Double Chance",
+      "bookmaker": "bet9ja"
+    },
+    {
+      "id": "bodm-1517367",
+      "match": "Vancouver FC vs HFX Wanderers FC",
+      "pick": "Under 3.5 Goals",
+      "selection": "Under 3.5 Goals",
+      "odds": "1.42",
+      "rating": 9,
+      "description": "Mixed: Over/Under",
       "bookmaker": "bet9ja"
     }
   ]
