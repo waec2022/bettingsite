@@ -1914,3 +1914,30 @@ h1, h2, h3, p {
   text-overflow: ellipsis !important;
   font-size: 14px !important;
 }
+/* === FIX YESTERDAY RESULTS - KEEP SAME CARD, ONLY TEXT FIT === */
+.result-card {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+.result-card__team-name {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 85px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  font-size: 13px !important;
+}
+.result-card__score {
+  flex-shrink: 0 !important;
+  padding: 0 8px !important;
+}
+@media (max-width: 600px) {
+  .result-card__team-name {
+    max-width: 70px !important;
+    font-size: 12px !important;
+  }
+  #resultsGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
