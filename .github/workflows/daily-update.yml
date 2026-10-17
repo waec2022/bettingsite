@@ -1,0 +1,25 @@
+name: daily-update
+on:
+  schedule:
+    - cron: '0 6 * * *'  # runs 6am daily
+  workflow_dispatch:  # allow manual run
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      - run: npm run generate || node scripts/generate.js || node generate.js
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      - run: |
+          git config user.name "bot"
+          git config user.email "bot@bot.com"
+          git add .
+          git diff --staged --quiet || (git commit -m "auto update predictions" && git push)
