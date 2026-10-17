@@ -1,5 +1,6 @@
 {
   "date": "2026-10-17",
+  "lastUpdated": "2026-10-17T06:24:30.731Z",
   "predictions": [
     {
       "id": 1498885,
@@ -10,12 +11,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/465.png",
       "awayLogo": "https://media.api-sports.io/football/teams/480.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Atletico DE Rafaela vs Quilmes",
       "pick": "Double chance : Atletico DE Rafaela or draw",
       "market": "Double Chance",
       "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw"
+      "confidence": "High",
+      "advice": "Double chance : Atletico DE Rafaela or draw",
+      "selection": "Double chance : Atletico DE Rafaela or draw",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:18.893Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.45",
+          "code": "1498885"
+        },
+        "sportybet": {
+          "odds": "2.45",
+          "code": "1498885"
+        }
+      }
     },
     {
       "id": 1508572,
@@ -26,12 +44,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
       "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Boston Legacy W vs Racing Louisville W",
       "pick": "Double chance : Boston Legacy W or draw",
       "market": "Double Chance",
-      "odds": "2.01",
-      "confidence": "Medium",
-      "advice": "Double chance : Boston Legacy W or draw"
+      "odds": "2.48",
+      "confidence": "High",
+      "advice": "Double chance : Boston Legacy W or draw",
+      "selection": "Double chance : Boston Legacy W or draw",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:19.466Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.48",
+          "code": "1508572"
+        },
+        "sportybet": {
+          "odds": "2.48",
+          "code": "1508572"
+        }
+      }
     },
     {
       "id": 1619329,
@@ -42,12 +77,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
       "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "pick": "Double chance : draw or Gualberto Villarroel SJ",
       "market": "Double Chance",
       "odds": "1.73",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Gualberto Villarroel SJ"
+      "confidence": "High",
+      "advice": "Double chance : draw or Gualberto Villarroel SJ",
+      "selection": "Double chance : draw or Gualberto Villarroel SJ",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:20.028Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.73",
+          "code": "1619329"
+        },
+        "sportybet": {
+          "odds": "1.73",
+          "code": "1619329"
+        }
+      }
     },
     {
       "id": 1635998,
@@ -58,12 +110,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
       "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Chapulineros vs Montañeses",
       "pick": "Double chance : draw or Montañeses",
       "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses"
+      "odds": "1.98",
+      "confidence": "High",
+      "advice": "Double chance : draw or Montañeses",
+      "selection": "Double chance : draw or Montañeses",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:20.595Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.98",
+          "code": "1635998"
+        },
+        "sportybet": {
+          "odds": "1.98",
+          "code": "1635998"
+        }
+      }
     },
     {
       "id": 1639031,
@@ -74,12 +143,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Miramar vs Auckland City",
       "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
       "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
+      "odds": "1.59",
+      "confidence": "High",
+      "advice": "Combo Double chance : Miramar or draw and +1.5 goals",
+      "selection": "Combo Double chance : Miramar or draw and +1.5 goals",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.060Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.59",
+          "code": "1639031"
+        },
+        "sportybet": {
+          "odds": "1.59",
+          "code": "1639031"
+        }
+      }
     },
     {
       "id": 1639868,
@@ -90,12 +176,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
       "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win",
+      "pick": "Home Win - Club Nacional de Football W",
       "market": "Match Winner",
-      "odds": "1.56",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.38",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Club Nacional de Football W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.433Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.38",
+          "code": "1639868"
+        },
+        "sportybet": {
+          "odds": "2.38",
+          "code": "1639868"
+        }
+      }
     },
     {
       "id": 1639872,
@@ -106,12 +209,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
       "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Cruzeiro W vs LDU Quito W",
-      "pick": "Home Win",
+      "pick": "Home Win - Cruzeiro W",
       "market": "Match Winner",
-      "odds": "2.14",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.53",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Cruzeiro W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.805Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.53",
+          "code": "1639872"
+        },
+        "sportybet": {
+          "odds": "1.53",
+          "code": "1639872"
+        }
+      }
     },
     {
       "id": 1493185,
@@ -122,12 +242,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/451.png",
       "awayLogo": "https://media.api-sports.io/football/teams/456.png",
       "time": "2026-10-17T00:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:30",
       "match": "Boca Juniors vs Talleres Cordoba",
-      "pick": "Home Win",
+      "pick": "Home Win - Boca Juniors",
       "market": "Match Winner",
-      "odds": "1.65",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.22",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Boca Juniors",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.244Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.22",
+          "code": "1493185"
+        },
+        "sportybet": {
+          "odds": "2.22",
+          "code": "1493185"
+        }
+      }
     },
     {
       "id": 1498892,
@@ -138,12 +275,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/1928.png",
       "awayLogo": "https://media.api-sports.io/football/teams/1948.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Gimnasia Y Tiro vs Atlanta",
-      "pick": "Home Win",
+      "pick": "Home Win - Gimnasia Y Tiro",
       "market": "Match Winner",
-      "odds": "2.07",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.79",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Gimnasia Y Tiro",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.612Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.79",
+          "code": "1498892"
+        },
+        "sportybet": {
+          "odds": "1.79",
+          "code": "1498892"
+        }
+      }
     },
     {
       "id": 1550993,
@@ -154,12 +308,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2288.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2283.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Necaxa vs Atlas",
-      "pick": "Home Win",
+      "pick": "Home Win - Necaxa",
       "market": "Match Winner",
-      "odds": "1.94",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.77",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Necaxa",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.981Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.77",
+          "code": "1550993"
+        },
+        "sportybet": {
+          "odds": "1.77",
+          "code": "1550993"
+        }
+      }
     },
     {
       "id": 1581452,
@@ -170,12 +341,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2313.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2297.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Correcaminos Uat vs Dorados",
-      "pick": "Home Win",
+      "pick": "Home Win - Correcaminos Uat",
       "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.82",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Correcaminos Uat",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:23.349Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.82",
+          "code": "1581452"
+        },
+        "sportybet": {
+          "odds": "1.82",
+          "code": "1581452"
+        }
+      }
     },
     {
       "id": 1600630,
@@ -186,12 +374,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/26154.png",
       "awayLogo": "https://media.api-sports.io/football/teams/4306.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Inter vs Municipal Limeño",
-      "pick": "Home Win",
+      "pick": "Home Win - Inter",
       "market": "Match Winner",
-      "odds": "2.16",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.10",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Inter",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:23.719Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.10",
+          "code": "1600630"
+        },
+        "sportybet": {
+          "odds": "2.10",
+          "code": "1600630"
+        }
+      }
     },
     {
       "id": 1601469,
@@ -202,12 +407,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/821.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2052.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Guadalupe FC vs Cariari Pococi",
-      "pick": "Home Win",
+      "pick": "Home Win - Guadalupe FC",
       "market": "Match Winner",
-      "odds": "2.34",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.40",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Guadalupe FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.091Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.40",
+          "code": "1601469"
+        },
+        "sportybet": {
+          "odds": "2.40",
+          "code": "1601469"
+        }
+      }
     },
     {
       "id": 1583783,
@@ -218,12 +440,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2887.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2888.png",
       "time": "2026-10-17T01:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:30",
       "match": "San Francisco FC vs Deportivo Universitario",
-      "pick": "Home Win",
+      "pick": "Home Win - San Francisco FC",
       "market": "Match Winner",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.56",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - San Francisco FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.458Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.56",
+          "code": "1583783"
+        },
+        "sportybet": {
+          "odds": "1.56",
+          "code": "1583783"
+        }
+      }
     },
     {
       "id": 1583789,
@@ -234,12 +473,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2882.png",
       "awayLogo": "https://media.api-sports.io/football/teams/20788.png",
       "time": "2026-10-17T01:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:30",
       "match": "CD Arabe Unido vs UMECIT",
-      "pick": "Home Win",
+      "pick": "Home Win - CD Arabe Unido",
       "market": "Match Winner",
-      "odds": "1.86",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.06",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - CD Arabe Unido",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.835Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.06",
+          "code": "1583789"
+        },
+        "sportybet": {
+          "odds": "2.06",
+          "code": "1583789"
+        }
+      }
     },
     {
       "id": 1517367,
@@ -250,12 +506,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/20881.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2621.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Vancouver FC vs HFX Wanderers FC",
-      "pick": "Home Win",
+      "pick": "Home Win - Vancouver FC",
       "market": "Match Winner",
-      "odds": "2.42",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.55",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Vancouver FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.205Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.55",
+          "code": "1517367"
+        },
+        "sportybet": {
+          "odds": "1.55",
+          "code": "1517367"
+        }
+      }
     },
     {
       "id": 1639032,
@@ -266,12 +539,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/20646.png",
       "awayLogo": "https://media.api-sports.io/football/teams/13977.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Wellington Olympic vs Eastern Suburbs",
-      "pick": "Home Win",
+      "pick": "Home Win - Wellington Olympic",
       "market": "Match Winner",
-      "odds": "2.49",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.64",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Wellington Olympic",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.577Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.64",
+          "code": "1639032"
+        },
+        "sportybet": {
+          "odds": "1.64",
+          "code": "1639032"
+        }
+      }
     },
     {
       "id": 1641833,
@@ -282,12 +572,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/4011.png",
       "awayLogo": "https://media.api-sports.io/football/teams/18740.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Portland Timbers II vs St. Louis City II",
-      "pick": "Home Win",
+      "pick": "Home Win - Portland Timbers II",
       "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.31",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Portland Timbers II",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.945Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.31",
+          "code": "1641833"
+        },
+        "sportybet": {
+          "odds": "2.31",
+          "code": "1641833"
+        }
+      }
     },
     {
       "id": 1641834,
@@ -298,12 +605,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/3997.png",
       "awayLogo": "https://media.api-sports.io/football/teams/18814.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Ventura County vs Minnesota United II",
-      "pick": "Home Win",
+      "pick": "Home Win - Ventura County",
       "market": "Match Winner",
-      "odds": "2.31",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.05",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Ventura County",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:26.314Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.05",
+          "code": "1641834"
+        },
+        "sportybet": {
+          "odds": "2.05",
+          "code": "1641834"
+        }
+      }
     },
     {
       "id": 1635999,
@@ -314,336 +638,780 @@
       "homeLogo": "https://media.api-sports.io/football/teams/24952.png",
       "awayLogo": "https://media.api-sports.io/football/teams/15937.png",
       "time": "2026-10-17T02:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:30",
       "match": "Tigres de Alica vs Reboceros La Piedad",
-      "pick": "Home Win",
+      "pick": "Home Win - Tigres de Alica",
       "market": "Match Winner",
-      "odds": "1.64",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.49",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Tigres de Alica",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:26.683Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.49",
+          "code": "1635999"
+        },
+        "sportybet": {
+          "odds": "2.49",
+          "code": "1635999"
+        }
+      }
+    },
+    {
+      "id": 1550995,
+      "league": "Liga MX",
+      "country": "Mexico",
+      "home": "Atlante FC",
+      "away": "U.N.A.M. - Pumas",
+      "homeLogo": "https://media.api-sports.io/football/teams/2312.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/2286.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "Atlante FC vs U.N.A.M. - Pumas",
+      "pick": "Home Win - Atlante FC",
+      "market": "Match Winner",
+      "odds": "1.74",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Atlante FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.051Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.74",
+          "code": "1550995"
+        },
+        "sportybet": {
+          "odds": "1.74",
+          "code": "1550995"
+        }
+      }
+    },
+    {
+      "id": 1581455,
+      "league": "Liga de Expansión MX",
+      "country": "Mexico",
+      "home": "CA La Paz",
+      "away": "Tlaxcala",
+      "homeLogo": "https://media.api-sports.io/football/teams/19024.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/14280.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "CA La Paz vs Tlaxcala",
+      "pick": "Home Win - CA La Paz",
+      "market": "Match Winner",
+      "odds": "2.31",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - CA La Paz",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.420Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.31",
+          "code": "1581455"
+        },
+        "sportybet": {
+          "odds": "2.31",
+          "code": "1581455"
+        }
+      }
+    },
+    {
+      "id": 1642141,
+      "league": "CONMEBOL Libertadores Femenina",
+      "country": "World",
+      "home": "Caracas W",
+      "away": "Santa Fe W",
+      "homeLogo": "https://media.api-sports.io/football/teams/22546.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/15730.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "Caracas W vs Santa Fe W",
+      "pick": "Home Win - Caracas W",
+      "market": "Match Winner",
+      "odds": "1.50",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Caracas W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.793Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.50",
+          "code": "1642141"
+        },
+        "sportybet": {
+          "odds": "1.50",
+          "code": "1642141"
+        }
+      }
+    },
+    {
+      "id": 1550994,
+      "league": "Liga MX",
+      "country": "Mexico",
+      "home": "Club Tijuana",
+      "away": "Puebla",
+      "homeLogo": "https://media.api-sports.io/football/teams/2280.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/2291.png",
+      "time": "2026-10-17T03:05:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:05",
+      "match": "Club Tijuana vs Puebla",
+      "pick": "Home Win - Club Tijuana",
+      "market": "Match Winner",
+      "odds": "1.81",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Club Tijuana",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.161Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.81",
+          "code": "1550994"
+        },
+        "sportybet": {
+          "odds": "1.81",
+          "code": "1550994"
+        }
+      }
+    },
+    {
+      "id": 1556099,
+      "league": "J1 League",
+      "country": "Japan",
+      "home": "Shimizu S-pulse",
+      "away": "Gamba Osaka",
+      "homeLogo": "https://media.api-sports.io/football/teams/283.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/293.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Shimizu S-pulse vs Gamba Osaka",
+      "pick": "Home Win - Shimizu S-pulse",
+      "market": "Match Winner",
+      "odds": "1.58",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Shimizu S-pulse",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.532Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.58",
+          "code": "1556099"
+        },
+        "sportybet": {
+          "odds": "1.58",
+          "code": "1556099"
+        }
+      }
+    },
+    {
+      "id": 1560943,
+      "league": "WE League",
+      "country": "Japan",
+      "home": "Albirex Niigata W",
+      "away": "Parceiro Nagano W",
+      "homeLogo": "https://media.api-sports.io/football/teams/16953.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/16954.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Albirex Niigata W vs Parceiro Nagano W",
+      "pick": "Home Win - Albirex Niigata W",
+      "market": "Match Winner",
+      "odds": "1.53",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Albirex Niigata W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.901Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.53",
+          "code": "1560943"
+        },
+        "sportybet": {
+          "odds": "1.53",
+          "code": "1560943"
+        }
+      }
+    },
+    {
+      "id": 1593681,
+      "league": "A-League",
+      "country": "Australia",
+      "home": "Auckland",
+      "away": "Melbourne City",
+      "homeLogo": "https://media.api-sports.io/football/teams/24608.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/945.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Auckland vs Melbourne City",
+      "pick": "Home Win - Auckland",
+      "market": "Match Winner",
+      "odds": "2.03",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Auckland",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:29.270Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.03",
+          "code": "1593681"
+        },
+        "sportybet": {
+          "odds": "2.03",
+          "code": "1593681"
+        }
+      }
+    },
+    {
+      "id": 1632103,
+      "league": "A-League Women",
+      "country": "Australia",
+      "home": "Newcastle Jets FC W",
+      "away": "Perth Glory FC W",
+      "homeLogo": "https://media.api-sports.io/football/teams/1975.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/1969.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Newcastle Jets FC W vs Perth Glory FC W",
+      "pick": "Home Win - Newcastle Jets FC W",
+      "market": "Match Winner",
+      "odds": "1.67",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Newcastle Jets FC W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:29.640Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.67",
+          "code": "1632103"
+        },
+        "sportybet": {
+          "odds": "1.67",
+          "code": "1632103"
+        }
+      }
+    },
+    {
+      "id": 1632104,
+      "league": "A-League Women",
+      "country": "Australia",
+      "home": "Western Sydney Wanderers W",
+      "away": "Melbourne Victory W",
+      "homeLogo": "https://media.api-sports.io/football/teams/1974.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/1976.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+      "pick": "Home Win - Western Sydney Wanderers W",
+      "market": "Match Winner",
+      "odds": "2.45",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Western Sydney Wanderers W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:30.007Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.45",
+          "code": "1632104"
+        },
+        "sportybet": {
+          "odds": "2.45",
+          "code": "1632104"
+        }
+      }
+    },
+    {
+      "id": 1640331,
+      "league": "Australian Championship",
+      "country": "Australia",
+      "home": "Broadmeadow Magic",
+      "away": "Wests APIA",
+      "homeLogo": "https://media.api-sports.io/football/teams/10202.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/26874.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Broadmeadow Magic vs Wests APIA",
+      "pick": "Home Win - Broadmeadow Magic",
+      "market": "Match Winner",
+      "odds": "1.86",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Broadmeadow Magic",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:30.380Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.86",
+          "code": "1640331"
+        },
+        "sportybet": {
+          "odds": "1.86",
+          "code": "1640331"
+        }
+      }
     }
   ],
-  "count": 20,
-  "lastUpdated": "2026-10-17T06:13:57.425Z",
-  "topPicks": [
+  "accumulators": [
     {
-      "id": 1498885,
-      "league": "Primera Nacional",
-      "country": "Argentina",
-      "home": "Atletico DE Rafaela",
-      "away": "Quilmes",
-      "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-      "time": "2026-10-17T00:00:00+00:00",
+      "id": "acc1",
+      "tier": "Safe Acca - 4 Folds",
+      "title": "Safe Acca - 4 Folds",
+      "selections": [
+        {
+          "match": "Atletico DE Rafaela vs Quilmes",
+          "pick": "Double chance : Atletico DE Rafaela or draw",
+          "selection": "Double chance : Atletico DE Rafaela or draw",
+          "odds": "2.45"
+        },
+        {
+          "match": "Boston Legacy W vs Racing Louisville W",
+          "pick": "Double chance : Boston Legacy W or draw",
+          "selection": "Double chance : Boston Legacy W or draw",
+          "odds": "2.48"
+        },
+        {
+          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+          "pick": "Double chance : draw or Gualberto Villarroel SJ",
+          "selection": "Double chance : draw or Gualberto Villarroel SJ",
+          "odds": "1.73"
+        },
+        {
+          "match": "Chapulineros vs Montañeses",
+          "pick": "Double chance : draw or Montañeses",
+          "selection": "Double chance : draw or Montañeses",
+          "odds": "1.98"
+        }
+      ],
+      "totalOdds": "20.81",
+      "bookmakers": {
+        "bet9ja": {
+          "code": "ACC1"
+        }
+      }
+    },
+    {
+      "id": "acc2",
+      "tier": "Medium Acca - 5 Folds",
+      "title": "Medium Acca - 5 Folds",
+      "selections": [
+        {
+          "match": "Miramar vs Auckland City",
+          "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
+          "odds": "1.59"
+        },
+        {
+          "match": "Club Nacional de Football W vs Universidad de Chile W",
+          "pick": "Home Win - Club Nacional de Football W",
+          "odds": "2.38"
+        },
+        {
+          "match": "Cruzeiro W vs LDU Quito W",
+          "pick": "Home Win - Cruzeiro W",
+          "odds": "1.53"
+        },
+        {
+          "match": "Boca Juniors vs Talleres Cordoba",
+          "pick": "Home Win - Boca Juniors",
+          "odds": "2.22"
+        },
+        {
+          "match": "Gimnasia Y Tiro vs Atlanta",
+          "pick": "Home Win - Gimnasia Y Tiro",
+          "odds": "1.79"
+        }
+      ],
+      "totalOdds": "23.01",
+      "bookmakers": {
+        "bet9ja": {
+          "code": "ACC2"
+        }
+      }
+    },
+    {
+      "id": "acc3",
+      "tier": "High Odds - 6 Folds",
+      "title": "High Odds - 6 Folds",
+      "selections": [
+        {
+          "match": "Necaxa vs Atlas",
+          "pick": "Home Win - Necaxa",
+          "odds": "1.77"
+        },
+        {
+          "match": "Correcaminos Uat vs Dorados",
+          "pick": "Home Win - Correcaminos Uat",
+          "odds": "1.82"
+        },
+        {
+          "match": "Inter vs Municipal Limeño",
+          "pick": "Home Win - Inter",
+          "odds": "2.10"
+        },
+        {
+          "match": "Guadalupe FC vs Cariari Pococi",
+          "pick": "Home Win - Guadalupe FC",
+          "odds": "2.40"
+        },
+        {
+          "match": "San Francisco FC vs Deportivo Universitario",
+          "pick": "Home Win - San Francisco FC",
+          "odds": "1.56"
+        },
+        {
+          "match": "CD Arabe Unido vs UMECIT",
+          "pick": "Home Win - CD Arabe Unido",
+          "odds": "2.06"
+        }
+      ],
+      "totalOdds": "52.18",
+      "bookmakers": {
+        "bet9ja": {
+          "code": "ACC3"
+        }
+      }
+    }
+  ],
+  "betOfDay": [
+    {
+      "id": "bod-1498885",
       "match": "Atletico DE Rafaela vs Quilmes",
       "pick": "Double chance : Atletico DE Rafaela or draw",
-      "market": "Double Chance",
+      "selection": "Double chance : Atletico DE Rafaela or draw",
       "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw"
+      "rating": 10,
+      "description": "Best pick today: Double chance : Atletico DE Rafaela or draw - Primera Nacional. High confidence!",
+      "bookmaker": "bet9ja",
+      "photo": ""
+    }
+  ],
+  "correctScores": [
+    {
+      "id": "cs-1498885",
+      "match": "Atletico DE Rafaela vs Quilmes",
+      "league": "Primera Nacional",
+      "score": "2-0",
+      "odds": "8.05",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1498885
+        }
+      }
     },
     {
-      "id": 1508572,
+      "id": "cs-1508572",
+      "match": "Boston Legacy W vs Racing Louisville W",
       "league": "NWSL Women",
-      "country": "USA",
-      "home": "Boston Legacy W",
-      "away": "Racing Louisville W",
-      "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-      "time": "2026-10-17T00:00:00+00:00",
+      "score": "1-0",
+      "odds": "8.36",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1508572
+        }
+      }
+    },
+    {
+      "id": "cs-1619329",
+      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
+      "league": "Primera División",
+      "score": "1-0",
+      "odds": "8.86",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1619329
+        }
+      }
+    },
+    {
+      "id": "cs-1635998",
+      "match": "Chapulineros vs Montañeses",
+      "league": "Primera Premier",
+      "score": "1-0",
+      "odds": "6.62",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1635998
+        }
+      }
+    },
+    {
+      "id": "cs-1639031",
+      "match": "Miramar vs Auckland City",
+      "league": "National League - National",
+      "score": "2-1",
+      "odds": "6.08",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1639031
+        }
+      }
+    },
+    {
+      "id": "cs-1639868",
+      "match": "Club Nacional de Football W vs Universidad de Chile W",
+      "league": "CONMEBOL Libertadores Femenina",
+      "score": "1-0",
+      "odds": "6.99",
+      "date": "2026-10-17",
+      "bookmakers": {
+        "bet9ja": {
+          "code": 1639868
+        }
+      }
+    }
+  ],
+  "hedgeStrategies": [
+    {
+      "id": "hedge-1498885",
+      "match": "Atletico DE Rafaela vs Quilmes",
+      "league": "Primera Nacional",
+      "kickoffAt": "2026-10-17T06:24:30.731Z",
+      "preMatchSelection": "Double chance : Atletico DE Rafaela or draw",
+      "preMatchMarket": "Double Chance",
+      "entryMinute": "70",
+      "requiredScore": "0-0",
+      "liveSelection": "Over 0.5 Goals",
+      "liveMarket": "Live Over/Under",
+      "odds": "2.45",
+      "status": "upcoming",
+      "preMatchBookmakers": {
+        "bet9ja": {
+          "code": 1498885
+        }
+      },
+      "liveBookmakers": {
+        "bet9ja": {
+          "code": "LIVE1498885"
+        }
+      }
+    },
+    {
+      "id": "hedge-1508572",
+      "match": "Boston Legacy W vs Racing Louisville W",
+      "league": "NWSL Women",
+      "kickoffAt": "2026-10-17T06:24:30.731Z",
+      "preMatchSelection": "Double chance : Boston Legacy W or draw",
+      "preMatchMarket": "Double Chance",
+      "entryMinute": "70",
+      "requiredScore": "0-0",
+      "liveSelection": "Over 0.5 Goals",
+      "liveMarket": "Live Over/Under",
+      "odds": "2.48",
+      "status": "upcoming",
+      "preMatchBookmakers": {
+        "bet9ja": {
+          "code": 1508572
+        }
+      },
+      "liveBookmakers": {
+        "bet9ja": {
+          "code": "LIVE1508572"
+        }
+      }
+    }
+  ],
+  "livePredictions": [],
+  "codesOnly": [
+    {
+      "id": "code-1498885",
+      "label": "Atletico DE Rafaela vs Quilmes",
+      "odds": "2.45",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.45",
+          "code": "1498885"
+        },
+        "sportybet": {
+          "odds": "2.45",
+          "code": "1498885"
+        }
+      }
+    },
+    {
+      "id": "code-1508572",
+      "label": "Boston Legacy W vs Racing Louisville W",
+      "odds": "2.48",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.48",
+          "code": "1508572"
+        },
+        "sportybet": {
+          "odds": "2.48",
+          "code": "1508572"
+        }
+      }
+    },
+    {
+      "id": "code-1619329",
+      "label": "Real Tomayapo vs Gualberto Villarroel SJ",
+      "odds": "1.73",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.73",
+          "code": "1619329"
+        },
+        "sportybet": {
+          "odds": "1.73",
+          "code": "1619329"
+        }
+      }
+    },
+    {
+      "id": "code-1635998",
+      "label": "Chapulineros vs Montañeses",
+      "odds": "1.98",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.98",
+          "code": "1635998"
+        },
+        "sportybet": {
+          "odds": "1.98",
+          "code": "1635998"
+        }
+      }
+    },
+    {
+      "id": "code-1639031",
+      "label": "Miramar vs Auckland City",
+      "odds": "1.59",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.59",
+          "code": "1639031"
+        },
+        "sportybet": {
+          "odds": "1.59",
+          "code": "1639031"
+        }
+      }
+    }
+  ],
+  "results": [],
+  "news": [],
+  "meta": {
+    "bookmakers": [
+      {
+        "key": "bet9ja",
+        "name": "Bet9ja",
+        "color": "#2ecc58",
+        "affiliateUrl": "https://bet9ja.com",
+        "mainUrl": "https://bet9ja.com",
+        "order": 1
+      },
+      {
+        "key": "sportybet",
+        "name": "SportyBet",
+        "color": "#ff0000",
+        "affiliateUrl": "",
+        "mainUrl": "",
+        "order": 2
+      },
+      {
+        "key": "betpawa",
+        "name": "BetPawa",
+        "color": "#2f7bff",
+        "affiliateUrl": "",
+        "mainUrl": "",
+        "order": 3
+      },
+      {
+        "key": "betway",
+        "name": "Betway",
+        "color": "#000000",
+        "affiliateUrl": "",
+        "mainUrl": "",
+        "order": 4
+      }
+    ],
+    "overview": {
+      "statTotal": 20,
+      "statWinners": "15",
+      "statLosers": "5",
+      "statHitRate": "75%",
+      "date": "2026-10-17"
+    },
+    "branding": {
+      "siteName": "MatchForecast"
+    }
+  },
+  "betOfDayMore": [
+    {
+      "id": "bodm-1508572",
       "match": "Boston Legacy W vs Racing Louisville W",
       "pick": "Double chance : Boston Legacy W or draw",
-      "market": "Double Chance",
-      "odds": "2.01",
-      "confidence": "Medium",
-      "advice": "Double chance : Boston Legacy W or draw"
+      "selection": "Double chance : Boston Legacy W or draw",
+      "odds": "2.48",
+      "rating": 9,
+      "description": "Top pick from NWSL Women",
+      "bookmaker": "bet9ja"
     },
     {
-      "id": 1619329,
-      "league": "Primera División",
-      "country": "Bolivia",
-      "home": "Real Tomayapo",
-      "away": "Gualberto Villarroel SJ",
-      "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
-      "time": "2026-10-17T00:00:00+00:00",
+      "id": "bodm-1619329",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "pick": "Double chance : draw or Gualberto Villarroel SJ",
-      "market": "Double Chance",
+      "selection": "Double chance : draw or Gualberto Villarroel SJ",
       "odds": "1.73",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Gualberto Villarroel SJ"
+      "rating": 9,
+      "description": "Top pick from Primera División",
+      "bookmaker": "bet9ja"
     },
     {
-      "id": 1635998,
-      "league": "Primera Premier",
-      "country": "Mexico",
-      "home": "Chapulineros",
-      "away": "Montañeses",
-      "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-      "time": "2026-10-17T00:00:00+00:00",
+      "id": "bodm-1635998",
       "match": "Chapulineros vs Montañeses",
       "pick": "Double chance : draw or Montañeses",
-      "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses"
-    },
-    {
-      "id": 1639031,
-      "league": "National League - National",
-      "country": "New-Zealand",
-      "home": "Miramar",
-      "away": "Auckland City",
-      "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Miramar vs Auckland City",
-      "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
-    },
-    {
-      "id": 1639868,
-      "league": "CONMEBOL Libertadores Femenina",
-      "country": "World",
-      "home": "Club Nacional de Football W",
-      "away": "Universidad de Chile W",
-      "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.56",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1639872,
-      "league": "CONMEBOL Libertadores Femenina",
-      "country": "World",
-      "home": "Cruzeiro W",
-      "away": "LDU Quito W",
-      "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Cruzeiro W vs LDU Quito W",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.14",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1493185,
-      "league": "Liga Profesional Argentina",
-      "country": "Argentina",
-      "home": "Boca Juniors",
-      "away": "Talleres Cordoba",
-      "homeLogo": "https://media.api-sports.io/football/teams/451.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/456.png",
-      "time": "2026-10-17T00:30:00+00:00",
-      "match": "Boca Juniors vs Talleres Cordoba",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.65",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1498892,
-      "league": "Primera Nacional",
-      "country": "Argentina",
-      "home": "Gimnasia Y Tiro",
-      "away": "Atlanta",
-      "homeLogo": "https://media.api-sports.io/football/teams/1928.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/1948.png",
-      "time": "2026-10-17T01:00:00+00:00",
-      "match": "Gimnasia Y Tiro vs Atlanta",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.07",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1550993,
-      "league": "Liga MX",
-      "country": "Mexico",
-      "home": "Necaxa",
-      "away": "Atlas",
-      "homeLogo": "https://media.api-sports.io/football/teams/2288.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2283.png",
-      "time": "2026-10-17T01:00:00+00:00",
-      "match": "Necaxa vs Atlas",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.94",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1581452,
-      "league": "Liga de Expansión MX",
-      "country": "Mexico",
-      "home": "Correcaminos Uat",
-      "away": "Dorados",
-      "homeLogo": "https://media.api-sports.io/football/teams/2313.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2297.png",
-      "time": "2026-10-17T01:00:00+00:00",
-      "match": "Correcaminos Uat vs Dorados",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1600630,
-      "league": "Primera Division",
-      "country": "El-Salvador",
-      "home": "Inter",
-      "away": "Municipal Limeño",
-      "homeLogo": "https://media.api-sports.io/football/teams/26154.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/4306.png",
-      "time": "2026-10-17T01:00:00+00:00",
-      "match": "Inter vs Municipal Limeño",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.16",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1601469,
-      "league": "Liga de Ascenso",
-      "country": "Costa-Rica",
-      "home": "Guadalupe FC",
-      "away": "Cariari Pococi",
-      "homeLogo": "https://media.api-sports.io/football/teams/821.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2052.png",
-      "time": "2026-10-17T01:00:00+00:00",
-      "match": "Guadalupe FC vs Cariari Pococi",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.34",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1583783,
-      "league": "Liga Panameña de Fútbol",
-      "country": "Panama",
-      "home": "San Francisco FC",
-      "away": "Deportivo Universitario",
-      "homeLogo": "https://media.api-sports.io/football/teams/2887.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2888.png",
-      "time": "2026-10-17T01:30:00+00:00",
-      "match": "San Francisco FC vs Deportivo Universitario",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1583789,
-      "league": "Liga Panameña de Fútbol",
-      "country": "Panama",
-      "home": "CD Arabe Unido",
-      "away": "UMECIT",
-      "homeLogo": "https://media.api-sports.io/football/teams/2882.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/20788.png",
-      "time": "2026-10-17T01:30:00+00:00",
-      "match": "CD Arabe Unido vs UMECIT",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.86",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1517367,
-      "league": "Canadian Premier League",
-      "country": "Canada",
-      "home": "Vancouver FC",
-      "away": "HFX Wanderers FC",
-      "homeLogo": "https://media.api-sports.io/football/teams/20881.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2621.png",
-      "time": "2026-10-17T02:00:00+00:00",
-      "match": "Vancouver FC vs HFX Wanderers FC",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.42",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1639032,
-      "league": "National League - National",
-      "country": "New-Zealand",
-      "home": "Wellington Olympic",
-      "away": "Eastern Suburbs",
-      "homeLogo": "https://media.api-sports.io/football/teams/20646.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/13977.png",
-      "time": "2026-10-17T02:00:00+00:00",
-      "match": "Wellington Olympic vs Eastern Suburbs",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.49",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1641833,
-      "league": "MLS Next Pro",
-      "country": "USA",
-      "home": "Portland Timbers II",
-      "away": "St. Louis City II",
-      "homeLogo": "https://media.api-sports.io/football/teams/4011.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/18740.png",
-      "time": "2026-10-17T02:00:00+00:00",
-      "match": "Portland Timbers II vs St. Louis City II",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1641834,
-      "league": "MLS Next Pro",
-      "country": "USA",
-      "home": "Ventura County",
-      "away": "Minnesota United II",
-      "homeLogo": "https://media.api-sports.io/football/teams/3997.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/18814.png",
-      "time": "2026-10-17T02:00:00+00:00",
-      "match": "Ventura County vs Minnesota United II",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.31",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1635999,
-      "league": "Primera Premier",
-      "country": "Mexico",
-      "home": "Tigres de Alica",
-      "away": "Reboceros La Piedad",
-      "homeLogo": "https://media.api-sports.io/football/teams/24952.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/15937.png",
-      "time": "2026-10-17T02:30:00+00:00",
-      "match": "Tigres de Alica vs Reboceros La Piedad",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.64",
-      "confidence": "Medium",
-      "advice": ""
+      "selection": "Double chance : draw or Montañeses",
+      "odds": "1.98",
+      "rating": 9,
+      "description": "Top pick from Primera Premier",
+      "bookmaker": "bet9ja"
     }
   ],
   "todaysTopPicks": [
@@ -656,12 +1424,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/465.png",
       "awayLogo": "https://media.api-sports.io/football/teams/480.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Atletico DE Rafaela vs Quilmes",
       "pick": "Double chance : Atletico DE Rafaela or draw",
       "market": "Double Chance",
       "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw"
+      "confidence": "High",
+      "advice": "Double chance : Atletico DE Rafaela or draw",
+      "selection": "Double chance : Atletico DE Rafaela or draw",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:18.893Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.45",
+          "code": "1498885"
+        },
+        "sportybet": {
+          "odds": "2.45",
+          "code": "1498885"
+        }
+      }
     },
     {
       "id": 1508572,
@@ -672,12 +1457,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
       "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Boston Legacy W vs Racing Louisville W",
       "pick": "Double chance : Boston Legacy W or draw",
       "market": "Double Chance",
-      "odds": "2.01",
-      "confidence": "Medium",
-      "advice": "Double chance : Boston Legacy W or draw"
+      "odds": "2.48",
+      "confidence": "High",
+      "advice": "Double chance : Boston Legacy W or draw",
+      "selection": "Double chance : Boston Legacy W or draw",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:19.466Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.48",
+          "code": "1508572"
+        },
+        "sportybet": {
+          "odds": "2.48",
+          "code": "1508572"
+        }
+      }
     },
     {
       "id": 1619329,
@@ -688,12 +1490,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
       "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Real Tomayapo vs Gualberto Villarroel SJ",
       "pick": "Double chance : draw or Gualberto Villarroel SJ",
       "market": "Double Chance",
       "odds": "1.73",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Gualberto Villarroel SJ"
+      "confidence": "High",
+      "advice": "Double chance : draw or Gualberto Villarroel SJ",
+      "selection": "Double chance : draw or Gualberto Villarroel SJ",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:20.028Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.73",
+          "code": "1619329"
+        },
+        "sportybet": {
+          "odds": "1.73",
+          "code": "1619329"
+        }
+      }
     },
     {
       "id": 1635998,
@@ -704,12 +1523,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
       "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Chapulineros vs Montañeses",
       "pick": "Double chance : draw or Montañeses",
       "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses"
+      "odds": "1.98",
+      "confidence": "High",
+      "advice": "Double chance : draw or Montañeses",
+      "selection": "Double chance : draw or Montañeses",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:20.595Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.98",
+          "code": "1635998"
+        },
+        "sportybet": {
+          "odds": "1.98",
+          "code": "1635998"
+        }
+      }
     },
     {
       "id": 1639031,
@@ -720,12 +1556,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Miramar vs Auckland City",
       "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
       "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
+      "odds": "1.59",
+      "confidence": "High",
+      "advice": "Combo Double chance : Miramar or draw and +1.5 goals",
+      "selection": "Combo Double chance : Miramar or draw and +1.5 goals",
+      "category": "Double Chance",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.060Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.59",
+          "code": "1639031"
+        },
+        "sportybet": {
+          "odds": "1.59",
+          "code": "1639031"
+        }
+      }
     },
     {
       "id": 1639868,
@@ -736,12 +1589,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
       "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win",
+      "pick": "Home Win - Club Nacional de Football W",
       "market": "Match Winner",
-      "odds": "1.56",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.38",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Club Nacional de Football W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.433Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.38",
+          "code": "1639868"
+        },
+        "sportybet": {
+          "odds": "2.38",
+          "code": "1639868"
+        }
+      }
     },
     {
       "id": 1639872,
@@ -752,12 +1622,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
       "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
       "time": "2026-10-17T00:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:00",
       "match": "Cruzeiro W vs LDU Quito W",
-      "pick": "Home Win",
+      "pick": "Home Win - Cruzeiro W",
       "market": "Match Winner",
-      "odds": "2.14",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.53",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Cruzeiro W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:21.805Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.53",
+          "code": "1639872"
+        },
+        "sportybet": {
+          "odds": "1.53",
+          "code": "1639872"
+        }
+      }
     },
     {
       "id": 1493185,
@@ -768,12 +1655,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/451.png",
       "awayLogo": "https://media.api-sports.io/football/teams/456.png",
       "time": "2026-10-17T00:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "00:30",
       "match": "Boca Juniors vs Talleres Cordoba",
-      "pick": "Home Win",
+      "pick": "Home Win - Boca Juniors",
       "market": "Match Winner",
-      "odds": "1.65",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.22",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Boca Juniors",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.244Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.22",
+          "code": "1493185"
+        },
+        "sportybet": {
+          "odds": "2.22",
+          "code": "1493185"
+        }
+      }
     },
     {
       "id": 1498892,
@@ -784,12 +1688,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/1928.png",
       "awayLogo": "https://media.api-sports.io/football/teams/1948.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Gimnasia Y Tiro vs Atlanta",
-      "pick": "Home Win",
+      "pick": "Home Win - Gimnasia Y Tiro",
       "market": "Match Winner",
-      "odds": "2.07",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.79",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Gimnasia Y Tiro",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.612Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.79",
+          "code": "1498892"
+        },
+        "sportybet": {
+          "odds": "1.79",
+          "code": "1498892"
+        }
+      }
     },
     {
       "id": 1550993,
@@ -800,12 +1721,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2288.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2283.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Necaxa vs Atlas",
-      "pick": "Home Win",
+      "pick": "Home Win - Necaxa",
       "market": "Match Winner",
-      "odds": "1.94",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.77",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Necaxa",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:22.981Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.77",
+          "code": "1550993"
+        },
+        "sportybet": {
+          "odds": "1.77",
+          "code": "1550993"
+        }
+      }
     },
     {
       "id": 1581452,
@@ -816,12 +1754,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2313.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2297.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Correcaminos Uat vs Dorados",
-      "pick": "Home Win",
+      "pick": "Home Win - Correcaminos Uat",
       "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.82",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Correcaminos Uat",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:23.349Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.82",
+          "code": "1581452"
+        },
+        "sportybet": {
+          "odds": "1.82",
+          "code": "1581452"
+        }
+      }
     },
     {
       "id": 1600630,
@@ -832,12 +1787,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/26154.png",
       "awayLogo": "https://media.api-sports.io/football/teams/4306.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Inter vs Municipal Limeño",
-      "pick": "Home Win",
+      "pick": "Home Win - Inter",
       "market": "Match Winner",
-      "odds": "2.16",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.10",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Inter",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:23.719Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.10",
+          "code": "1600630"
+        },
+        "sportybet": {
+          "odds": "2.10",
+          "code": "1600630"
+        }
+      }
     },
     {
       "id": 1601469,
@@ -848,12 +1820,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/821.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2052.png",
       "time": "2026-10-17T01:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:00",
       "match": "Guadalupe FC vs Cariari Pococi",
-      "pick": "Home Win",
+      "pick": "Home Win - Guadalupe FC",
       "market": "Match Winner",
-      "odds": "2.34",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.40",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Guadalupe FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.091Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.40",
+          "code": "1601469"
+        },
+        "sportybet": {
+          "odds": "2.40",
+          "code": "1601469"
+        }
+      }
     },
     {
       "id": 1583783,
@@ -864,12 +1853,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2887.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2888.png",
       "time": "2026-10-17T01:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:30",
       "match": "San Francisco FC vs Deportivo Universitario",
-      "pick": "Home Win",
+      "pick": "Home Win - San Francisco FC",
       "market": "Match Winner",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.56",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - San Francisco FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.458Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.56",
+          "code": "1583783"
+        },
+        "sportybet": {
+          "odds": "1.56",
+          "code": "1583783"
+        }
+      }
     },
     {
       "id": 1583789,
@@ -880,12 +1886,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/2882.png",
       "awayLogo": "https://media.api-sports.io/football/teams/20788.png",
       "time": "2026-10-17T01:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "01:30",
       "match": "CD Arabe Unido vs UMECIT",
-      "pick": "Home Win",
+      "pick": "Home Win - CD Arabe Unido",
       "market": "Match Winner",
-      "odds": "1.86",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.06",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - CD Arabe Unido",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:24.835Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.06",
+          "code": "1583789"
+        },
+        "sportybet": {
+          "odds": "2.06",
+          "code": "1583789"
+        }
+      }
     },
     {
       "id": 1517367,
@@ -896,12 +1919,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/20881.png",
       "awayLogo": "https://media.api-sports.io/football/teams/2621.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Vancouver FC vs HFX Wanderers FC",
-      "pick": "Home Win",
+      "pick": "Home Win - Vancouver FC",
       "market": "Match Winner",
-      "odds": "2.42",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.55",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Vancouver FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.205Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.55",
+          "code": "1517367"
+        },
+        "sportybet": {
+          "odds": "1.55",
+          "code": "1517367"
+        }
+      }
     },
     {
       "id": 1639032,
@@ -912,12 +1952,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/20646.png",
       "awayLogo": "https://media.api-sports.io/football/teams/13977.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Wellington Olympic vs Eastern Suburbs",
-      "pick": "Home Win",
+      "pick": "Home Win - Wellington Olympic",
       "market": "Match Winner",
-      "odds": "2.49",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "1.64",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Wellington Olympic",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.577Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.64",
+          "code": "1639032"
+        },
+        "sportybet": {
+          "odds": "1.64",
+          "code": "1639032"
+        }
+      }
     },
     {
       "id": 1641833,
@@ -928,12 +1985,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/4011.png",
       "awayLogo": "https://media.api-sports.io/football/teams/18740.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Portland Timbers II vs St. Louis City II",
-      "pick": "Home Win",
+      "pick": "Home Win - Portland Timbers II",
       "market": "Match Winner",
-      "odds": "1.84",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.31",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Portland Timbers II",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:25.945Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.31",
+          "code": "1641833"
+        },
+        "sportybet": {
+          "odds": "2.31",
+          "code": "1641833"
+        }
+      }
     },
     {
       "id": 1641834,
@@ -944,12 +2018,29 @@
       "homeLogo": "https://media.api-sports.io/football/teams/3997.png",
       "awayLogo": "https://media.api-sports.io/football/teams/18814.png",
       "time": "2026-10-17T02:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:00",
       "match": "Ventura County vs Minnesota United II",
-      "pick": "Home Win",
+      "pick": "Home Win - Ventura County",
       "market": "Match Winner",
-      "odds": "2.31",
-      "confidence": "Medium",
-      "advice": ""
+      "odds": "2.05",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Ventura County",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:26.314Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.05",
+          "code": "1641834"
+        },
+        "sportybet": {
+          "odds": "2.05",
+          "code": "1641834"
+        }
+      }
     },
     {
       "id": 1635999,
@@ -960,860 +2051,359 @@
       "homeLogo": "https://media.api-sports.io/football/teams/24952.png",
       "awayLogo": "https://media.api-sports.io/football/teams/15937.png",
       "time": "2026-10-17T02:30:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "02:30",
       "match": "Tigres de Alica vs Reboceros La Piedad",
-      "pick": "Home Win",
+      "pick": "Home Win - Tigres de Alica",
       "market": "Match Winner",
-      "odds": "1.64",
-      "confidence": "Medium",
-      "advice": ""
-    }
-  ],
-  "betOfTheDay": [
+      "odds": "2.49",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Tigres de Alica",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:26.683Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.49",
+          "code": "1635999"
+        },
+        "sportybet": {
+          "odds": "2.49",
+          "code": "1635999"
+        }
+      }
+    },
     {
-      "id": 1498885,
-      "league": "Primera Nacional",
-      "country": "Argentina",
-      "home": "Atletico DE Rafaela",
-      "away": "Quilmes",
-      "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Atletico DE Rafaela vs Quilmes",
-      "pick": "Double chance : Atletico DE Rafaela or draw",
-      "market": "Double Chance",
-      "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw"
-    }
-  ],
-  "moreBetOfTheDay": [
-    {
-      "id": 1635998,
-      "league": "Primera Premier",
+      "id": 1550995,
+      "league": "Liga MX",
       "country": "Mexico",
-      "home": "Chapulineros",
-      "away": "Montañeses",
-      "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Chapulineros vs Montañeses",
-      "pick": "Double chance : draw or Montañeses",
-      "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses"
+      "home": "Atlante FC",
+      "away": "U.N.A.M. - Pumas",
+      "homeLogo": "https://media.api-sports.io/football/teams/2312.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/2286.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "Atlante FC vs U.N.A.M. - Pumas",
+      "pick": "Home Win - Atlante FC",
+      "market": "Match Winner",
+      "odds": "1.74",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Atlante FC",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.051Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.74",
+          "code": "1550995"
+        },
+        "sportybet": {
+          "odds": "1.74",
+          "code": "1550995"
+        }
+      }
     },
     {
-      "id": 1639031,
-      "league": "National League - National",
-      "country": "New-Zealand",
-      "home": "Miramar",
-      "away": "Auckland City",
-      "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Miramar vs Auckland City",
-      "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
+      "id": 1581455,
+      "league": "Liga de Expansión MX",
+      "country": "Mexico",
+      "home": "CA La Paz",
+      "away": "Tlaxcala",
+      "homeLogo": "https://media.api-sports.io/football/teams/19024.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/14280.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "CA La Paz vs Tlaxcala",
+      "pick": "Home Win - CA La Paz",
+      "market": "Match Winner",
+      "odds": "2.31",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - CA La Paz",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.420Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.31",
+          "code": "1581455"
+        },
+        "sportybet": {
+          "odds": "2.31",
+          "code": "1581455"
+        }
+      }
     },
     {
-      "id": 1639868,
+      "id": 1642141,
       "league": "CONMEBOL Libertadores Femenina",
       "country": "World",
-      "home": "Club Nacional de Football W",
-      "away": "Universidad de Chile W",
-      "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Club Nacional de Football W vs Universidad de Chile W",
-      "pick": "Home Win",
+      "home": "Caracas W",
+      "away": "Santa Fe W",
+      "homeLogo": "https://media.api-sports.io/football/teams/22546.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/15730.png",
+      "time": "2026-10-17T03:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:00",
+      "match": "Caracas W vs Santa Fe W",
+      "pick": "Home Win - Caracas W",
       "market": "Match Winner",
-      "odds": "1.56",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1639872,
-      "league": "CONMEBOL Libertadores Femenina",
-      "country": "World",
-      "home": "Cruzeiro W",
-      "away": "LDU Quito W",
-      "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Cruzeiro W vs LDU Quito W",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "2.14",
-      "confidence": "Medium",
-      "advice": ""
-    },
-    {
-      "id": 1493185,
-      "league": "Liga Profesional Argentina",
-      "country": "Argentina",
-      "home": "Boca Juniors",
-      "away": "Talleres Cordoba",
-      "homeLogo": "https://media.api-sports.io/football/teams/451.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/456.png",
-      "time": "2026-10-17T00:30:00+00:00",
-      "match": "Boca Juniors vs Talleres Cordoba",
-      "pick": "Home Win",
-      "market": "Match Winner",
-      "odds": "1.65",
-      "confidence": "Medium",
-      "advice": ""
-    }
-  ],
-  "accumulators": [
-    {
-      "name": "Safe Acca - 4 Folds",
-      "games": [
-        {
-          "id": 1498885,
-          "league": "Primera Nacional",
-          "country": "Argentina",
-          "home": "Atletico DE Rafaela",
-          "away": "Quilmes",
-          "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "market": "Double Chance",
-          "odds": "2.45",
-          "confidence": "Medium",
-          "advice": "Double chance : Atletico DE Rafaela or draw"
+      "odds": "1.50",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Caracas W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:27.793Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.50",
+          "code": "1642141"
         },
-        {
-          "id": 1508572,
-          "league": "NWSL Women",
-          "country": "USA",
-          "home": "Boston Legacy W",
-          "away": "Racing Louisville W",
-          "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "market": "Double Chance",
-          "odds": "2.01",
-          "confidence": "Medium",
-          "advice": "Double chance : Boston Legacy W or draw"
-        },
-        {
-          "id": 1619329,
-          "league": "Primera División",
-          "country": "Bolivia",
-          "home": "Real Tomayapo",
-          "away": "Gualberto Villarroel SJ",
-          "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "market": "Double Chance",
-          "odds": "1.73",
-          "confidence": "Medium",
-          "advice": "Double chance : draw or Gualberto Villarroel SJ"
-        },
-        {
-          "id": 1635998,
-          "league": "Primera Premier",
-          "country": "Mexico",
-          "home": "Chapulineros",
-          "away": "Montañeses",
-          "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Chapulineros vs Montañeses",
-          "pick": "Double chance : draw or Montañeses",
-          "market": "Double Chance",
-          "odds": "1.95",
-          "confidence": "Medium",
-          "advice": "Double chance : draw or Montañeses"
+        "sportybet": {
+          "odds": "1.50",
+          "code": "1642141"
         }
-      ],
-      "totalOdds": "16.61"
+      }
     },
     {
-      "name": "Medium Acca - 5 Folds",
-      "games": [
-        {
-          "id": 1639031,
-          "league": "National League - National",
-          "country": "New-Zealand",
-          "home": "Miramar",
-          "away": "Auckland City",
-          "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Miramar vs Auckland City",
-          "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-          "market": "Double Chance",
-          "odds": "2.32",
-          "confidence": "Medium",
-          "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
-        },
-        {
-          "id": 1639868,
-          "league": "CONMEBOL Libertadores Femenina",
-          "country": "World",
-          "home": "Club Nacional de Football W",
-          "away": "Universidad de Chile W",
-          "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.56",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1639872,
-          "league": "CONMEBOL Libertadores Femenina",
-          "country": "World",
-          "home": "Cruzeiro W",
-          "away": "LDU Quito W",
-          "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.14",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1493185,
-          "league": "Liga Profesional Argentina",
-          "country": "Argentina",
-          "home": "Boca Juniors",
-          "away": "Talleres Cordoba",
-          "homeLogo": "https://media.api-sports.io/football/teams/451.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/456.png",
-          "time": "2026-10-17T00:30:00+00:00",
-          "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.65",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1498892,
-          "league": "Primera Nacional",
-          "country": "Argentina",
-          "home": "Gimnasia Y Tiro",
-          "away": "Atlanta",
-          "homeLogo": "https://media.api-sports.io/football/teams/1928.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/1948.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.07",
-          "confidence": "Medium",
-          "advice": ""
-        }
-      ],
-      "totalOdds": "26.45"
-    },
-    {
-      "name": "High Odds - 6 Folds",
-      "games": [
-        {
-          "id": 1550993,
-          "league": "Liga MX",
-          "country": "Mexico",
-          "home": "Necaxa",
-          "away": "Atlas",
-          "homeLogo": "https://media.api-sports.io/football/teams/2288.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2283.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Necaxa vs Atlas",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.94",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1581452,
-          "league": "Liga de Expansión MX",
-          "country": "Mexico",
-          "home": "Correcaminos Uat",
-          "away": "Dorados",
-          "homeLogo": "https://media.api-sports.io/football/teams/2313.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2297.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Correcaminos Uat vs Dorados",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.84",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1600630,
-          "league": "Primera Division",
-          "country": "El-Salvador",
-          "home": "Inter",
-          "away": "Municipal Limeño",
-          "homeLogo": "https://media.api-sports.io/football/teams/26154.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/4306.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.16",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1601469,
-          "league": "Liga de Ascenso",
-          "country": "Costa-Rica",
-          "home": "Guadalupe FC",
-          "away": "Cariari Pococi",
-          "homeLogo": "https://media.api-sports.io/football/teams/821.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2052.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.34",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1583783,
-          "league": "Liga Panameña de Fútbol",
-          "country": "Panama",
-          "home": "San Francisco FC",
-          "away": "Deportivo Universitario",
-          "homeLogo": "https://media.api-sports.io/football/teams/2887.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2888.png",
-          "time": "2026-10-17T01:30:00+00:00",
-          "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.95",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1583789,
-          "league": "Liga Panameña de Fútbol",
-          "country": "Panama",
-          "home": "CD Arabe Unido",
-          "away": "UMECIT",
-          "homeLogo": "https://media.api-sports.io/football/teams/2882.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/20788.png",
-          "time": "2026-10-17T01:30:00+00:00",
-          "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.86",
-          "confidence": "Medium",
-          "advice": ""
-        }
-      ],
-      "totalOdds": "65.44"
-    }
-  ],
-  "todaysAccumulators": [
-    {
-      "name": "Safe Acca - 4 Folds",
-      "games": [
-        {
-          "id": 1498885,
-          "league": "Primera Nacional",
-          "country": "Argentina",
-          "home": "Atletico DE Rafaela",
-          "away": "Quilmes",
-          "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Atletico DE Rafaela vs Quilmes",
-          "pick": "Double chance : Atletico DE Rafaela or draw",
-          "market": "Double Chance",
-          "odds": "2.45",
-          "confidence": "Medium",
-          "advice": "Double chance : Atletico DE Rafaela or draw"
-        },
-        {
-          "id": 1508572,
-          "league": "NWSL Women",
-          "country": "USA",
-          "home": "Boston Legacy W",
-          "away": "Racing Louisville W",
-          "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Boston Legacy W vs Racing Louisville W",
-          "pick": "Double chance : Boston Legacy W or draw",
-          "market": "Double Chance",
-          "odds": "2.01",
-          "confidence": "Medium",
-          "advice": "Double chance : Boston Legacy W or draw"
-        },
-        {
-          "id": 1619329,
-          "league": "Primera División",
-          "country": "Bolivia",
-          "home": "Real Tomayapo",
-          "away": "Gualberto Villarroel SJ",
-          "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-          "pick": "Double chance : draw or Gualberto Villarroel SJ",
-          "market": "Double Chance",
-          "odds": "1.73",
-          "confidence": "Medium",
-          "advice": "Double chance : draw or Gualberto Villarroel SJ"
-        },
-        {
-          "id": 1635998,
-          "league": "Primera Premier",
-          "country": "Mexico",
-          "home": "Chapulineros",
-          "away": "Montañeses",
-          "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Chapulineros vs Montañeses",
-          "pick": "Double chance : draw or Montañeses",
-          "market": "Double Chance",
-          "odds": "1.95",
-          "confidence": "Medium",
-          "advice": "Double chance : draw or Montañeses"
-        }
-      ],
-      "totalOdds": "16.61"
-    },
-    {
-      "name": "Medium Acca - 5 Folds",
-      "games": [
-        {
-          "id": 1639031,
-          "league": "National League - National",
-          "country": "New-Zealand",
-          "home": "Miramar",
-          "away": "Auckland City",
-          "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Miramar vs Auckland City",
-          "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-          "market": "Double Chance",
-          "odds": "2.32",
-          "confidence": "Medium",
-          "advice": "Combo Double chance : Miramar or draw and +1.5 goals"
-        },
-        {
-          "id": 1639868,
-          "league": "CONMEBOL Libertadores Femenina",
-          "country": "World",
-          "home": "Club Nacional de Football W",
-          "away": "Universidad de Chile W",
-          "homeLogo": "https://media.api-sports.io/football/teams/22549.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/20523.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Club Nacional de Football W vs Universidad de Chile W",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.56",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1639872,
-          "league": "CONMEBOL Libertadores Femenina",
-          "country": "World",
-          "home": "Cruzeiro W",
-          "away": "LDU Quito W",
-          "homeLogo": "https://media.api-sports.io/football/teams/9980.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/28426.png",
-          "time": "2026-10-17T00:00:00+00:00",
-          "match": "Cruzeiro W vs LDU Quito W",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.14",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1493185,
-          "league": "Liga Profesional Argentina",
-          "country": "Argentina",
-          "home": "Boca Juniors",
-          "away": "Talleres Cordoba",
-          "homeLogo": "https://media.api-sports.io/football/teams/451.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/456.png",
-          "time": "2026-10-17T00:30:00+00:00",
-          "match": "Boca Juniors vs Talleres Cordoba",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.65",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1498892,
-          "league": "Primera Nacional",
-          "country": "Argentina",
-          "home": "Gimnasia Y Tiro",
-          "away": "Atlanta",
-          "homeLogo": "https://media.api-sports.io/football/teams/1928.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/1948.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Gimnasia Y Tiro vs Atlanta",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.07",
-          "confidence": "Medium",
-          "advice": ""
-        }
-      ],
-      "totalOdds": "26.45"
-    },
-    {
-      "name": "High Odds - 6 Folds",
-      "games": [
-        {
-          "id": 1550993,
-          "league": "Liga MX",
-          "country": "Mexico",
-          "home": "Necaxa",
-          "away": "Atlas",
-          "homeLogo": "https://media.api-sports.io/football/teams/2288.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2283.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Necaxa vs Atlas",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.94",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1581452,
-          "league": "Liga de Expansión MX",
-          "country": "Mexico",
-          "home": "Correcaminos Uat",
-          "away": "Dorados",
-          "homeLogo": "https://media.api-sports.io/football/teams/2313.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2297.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Correcaminos Uat vs Dorados",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.84",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1600630,
-          "league": "Primera Division",
-          "country": "El-Salvador",
-          "home": "Inter",
-          "away": "Municipal Limeño",
-          "homeLogo": "https://media.api-sports.io/football/teams/26154.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/4306.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Inter vs Municipal Limeño",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.16",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1601469,
-          "league": "Liga de Ascenso",
-          "country": "Costa-Rica",
-          "home": "Guadalupe FC",
-          "away": "Cariari Pococi",
-          "homeLogo": "https://media.api-sports.io/football/teams/821.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2052.png",
-          "time": "2026-10-17T01:00:00+00:00",
-          "match": "Guadalupe FC vs Cariari Pococi",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "2.34",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1583783,
-          "league": "Liga Panameña de Fútbol",
-          "country": "Panama",
-          "home": "San Francisco FC",
-          "away": "Deportivo Universitario",
-          "homeLogo": "https://media.api-sports.io/football/teams/2887.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/2888.png",
-          "time": "2026-10-17T01:30:00+00:00",
-          "match": "San Francisco FC vs Deportivo Universitario",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.95",
-          "confidence": "Medium",
-          "advice": ""
-        },
-        {
-          "id": 1583789,
-          "league": "Liga Panameña de Fútbol",
-          "country": "Panama",
-          "home": "CD Arabe Unido",
-          "away": "UMECIT",
-          "homeLogo": "https://media.api-sports.io/football/teams/2882.png",
-          "awayLogo": "https://media.api-sports.io/football/teams/20788.png",
-          "time": "2026-10-17T01:30:00+00:00",
-          "match": "CD Arabe Unido vs UMECIT",
-          "pick": "Home Win",
-          "market": "Match Winner",
-          "odds": "1.86",
-          "confidence": "Medium",
-          "advice": ""
-        }
-      ],
-      "totalOdds": "65.44"
-    }
-  ],
-  "correctScore": [
-    {
-      "id": 1498885,
-      "league": "Primera Nacional",
-      "country": "Argentina",
-      "home": "Atletico DE Rafaela",
-      "away": "Quilmes",
-      "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Atletico DE Rafaela vs Quilmes",
-      "pick": "Double chance : Atletico DE Rafaela or draw",
-      "market": "Double Chance",
-      "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw",
-      "score": "2-0",
-      "scoreOdds": "6.57"
-    },
-    {
-      "id": 1508572,
-      "league": "NWSL Women",
-      "country": "USA",
-      "home": "Boston Legacy W",
-      "away": "Racing Louisville W",
-      "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Boston Legacy W vs Racing Louisville W",
-      "pick": "Double chance : Boston Legacy W or draw",
-      "market": "Double Chance",
-      "odds": "2.01",
-      "confidence": "Medium",
-      "advice": "Double chance : Boston Legacy W or draw",
-      "score": "2-0",
-      "scoreOdds": "7.28"
-    },
-    {
-      "id": 1619329,
-      "league": "Primera División",
-      "country": "Bolivia",
-      "home": "Real Tomayapo",
-      "away": "Gualberto Villarroel SJ",
-      "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-      "pick": "Double chance : draw or Gualberto Villarroel SJ",
-      "market": "Double Chance",
-      "odds": "1.73",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Gualberto Villarroel SJ",
-      "score": "2-0",
-      "scoreOdds": "7.62"
-    },
-    {
-      "id": 1635998,
-      "league": "Primera Premier",
+      "id": 1550994,
+      "league": "Liga MX",
       "country": "Mexico",
-      "home": "Chapulineros",
-      "away": "Montañeses",
-      "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Chapulineros vs Montañeses",
-      "pick": "Double chance : draw or Montañeses",
-      "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses",
-      "score": "1-0",
-      "scoreOdds": "8.75"
+      "home": "Club Tijuana",
+      "away": "Puebla",
+      "homeLogo": "https://media.api-sports.io/football/teams/2280.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/2291.png",
+      "time": "2026-10-17T03:05:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "03:05",
+      "match": "Club Tijuana vs Puebla",
+      "pick": "Home Win - Club Tijuana",
+      "market": "Match Winner",
+      "odds": "1.81",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Club Tijuana",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.161Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.81",
+          "code": "1550994"
+        },
+        "sportybet": {
+          "odds": "1.81",
+          "code": "1550994"
+        }
+      }
     },
     {
-      "id": 1639031,
-      "league": "National League - National",
-      "country": "New-Zealand",
-      "home": "Miramar",
-      "away": "Auckland City",
-      "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Miramar vs Auckland City",
-      "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "score": "1-0",
-      "scoreOdds": "6.80"
-    }
-  ],
-  "correctScorePicks": [
+      "id": 1556099,
+      "league": "J1 League",
+      "country": "Japan",
+      "home": "Shimizu S-pulse",
+      "away": "Gamba Osaka",
+      "homeLogo": "https://media.api-sports.io/football/teams/283.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/293.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Shimizu S-pulse vs Gamba Osaka",
+      "pick": "Home Win - Shimizu S-pulse",
+      "market": "Match Winner",
+      "odds": "1.58",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Shimizu S-pulse",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.532Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.58",
+          "code": "1556099"
+        },
+        "sportybet": {
+          "odds": "1.58",
+          "code": "1556099"
+        }
+      }
+    },
     {
-      "id": 1498885,
-      "league": "Primera Nacional",
-      "country": "Argentina",
-      "home": "Atletico DE Rafaela",
-      "away": "Quilmes",
-      "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Atletico DE Rafaela vs Quilmes",
-      "pick": "Double chance : Atletico DE Rafaela or draw",
-      "market": "Double Chance",
+      "id": 1560943,
+      "league": "WE League",
+      "country": "Japan",
+      "home": "Albirex Niigata W",
+      "away": "Parceiro Nagano W",
+      "homeLogo": "https://media.api-sports.io/football/teams/16953.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/16954.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Albirex Niigata W vs Parceiro Nagano W",
+      "pick": "Home Win - Albirex Niigata W",
+      "market": "Match Winner",
+      "odds": "1.53",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Albirex Niigata W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:28.901Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.53",
+          "code": "1560943"
+        },
+        "sportybet": {
+          "odds": "1.53",
+          "code": "1560943"
+        }
+      }
+    },
+    {
+      "id": 1593681,
+      "league": "A-League",
+      "country": "Australia",
+      "home": "Auckland",
+      "away": "Melbourne City",
+      "homeLogo": "https://media.api-sports.io/football/teams/24608.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/945.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Auckland vs Melbourne City",
+      "pick": "Home Win - Auckland",
+      "market": "Match Winner",
+      "odds": "2.03",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Auckland",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:29.270Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.03",
+          "code": "1593681"
+        },
+        "sportybet": {
+          "odds": "2.03",
+          "code": "1593681"
+        }
+      }
+    },
+    {
+      "id": 1632103,
+      "league": "A-League Women",
+      "country": "Australia",
+      "home": "Newcastle Jets FC W",
+      "away": "Perth Glory FC W",
+      "homeLogo": "https://media.api-sports.io/football/teams/1975.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/1969.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Newcastle Jets FC W vs Perth Glory FC W",
+      "pick": "Home Win - Newcastle Jets FC W",
+      "market": "Match Winner",
+      "odds": "1.67",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Newcastle Jets FC W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:29.640Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.67",
+          "code": "1632103"
+        },
+        "sportybet": {
+          "odds": "1.67",
+          "code": "1632103"
+        }
+      }
+    },
+    {
+      "id": 1632104,
+      "league": "A-League Women",
+      "country": "Australia",
+      "home": "Western Sydney Wanderers W",
+      "away": "Melbourne Victory W",
+      "homeLogo": "https://media.api-sports.io/football/teams/1974.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/1976.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Western Sydney Wanderers W vs Melbourne Victory W",
+      "pick": "Home Win - Western Sydney Wanderers W",
+      "market": "Match Winner",
       "odds": "2.45",
-      "confidence": "Medium",
-      "advice": "Double chance : Atletico DE Rafaela or draw",
-      "score": "2-0",
-      "scoreOdds": "6.57"
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Western Sydney Wanderers W",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:30.007Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "2.45",
+          "code": "1632104"
+        },
+        "sportybet": {
+          "odds": "2.45",
+          "code": "1632104"
+        }
+      }
     },
     {
-      "id": 1508572,
-      "league": "NWSL Women",
-      "country": "USA",
-      "home": "Boston Legacy W",
-      "away": "Racing Louisville W",
-      "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Boston Legacy W vs Racing Louisville W",
-      "pick": "Double chance : Boston Legacy W or draw",
-      "market": "Double Chance",
-      "odds": "2.01",
-      "confidence": "Medium",
-      "advice": "Double chance : Boston Legacy W or draw",
-      "score": "2-0",
-      "scoreOdds": "7.28"
-    },
-    {
-      "id": 1619329,
-      "league": "Primera División",
-      "country": "Bolivia",
-      "home": "Real Tomayapo",
-      "away": "Gualberto Villarroel SJ",
-      "homeLogo": "https://media.api-sports.io/football/teams/15708.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/22266.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Real Tomayapo vs Gualberto Villarroel SJ",
-      "pick": "Double chance : draw or Gualberto Villarroel SJ",
-      "market": "Double Chance",
-      "odds": "1.73",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Gualberto Villarroel SJ",
-      "score": "2-0",
-      "scoreOdds": "7.62"
-    },
-    {
-      "id": 1635998,
-      "league": "Primera Premier",
-      "country": "Mexico",
-      "home": "Chapulineros",
-      "away": "Montañeses",
-      "homeLogo": "https://media.api-sports.io/football/teams/26525.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/17788.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Chapulineros vs Montañeses",
-      "pick": "Double chance : draw or Montañeses",
-      "market": "Double Chance",
-      "odds": "1.95",
-      "confidence": "Medium",
-      "advice": "Double chance : draw or Montañeses",
-      "score": "1-0",
-      "scoreOdds": "8.75"
-    },
-    {
-      "id": 1639031,
-      "league": "National League - National",
-      "country": "New-Zealand",
-      "home": "Miramar",
-      "away": "Auckland City",
-      "homeLogo": "https://media.api-sports.io/football/teams/2373.png",
-      "awayLogo": "https://media.api-sports.io/football/teams/2537.png",
-      "time": "2026-10-17T00:00:00+00:00",
-      "match": "Miramar vs Auckland City",
-      "pick": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "market": "Double Chance",
-      "odds": "2.32",
-      "confidence": "Medium",
-      "advice": "Combo Double chance : Miramar or draw and +1.5 goals",
-      "score": "1-0",
-      "scoreOdds": "6.80"
+      "id": 1640331,
+      "league": "Australian Championship",
+      "country": "Australia",
+      "home": "Broadmeadow Magic",
+      "away": "Wests APIA",
+      "homeLogo": "https://media.api-sports.io/football/teams/10202.png",
+      "awayLogo": "https://media.api-sports.io/football/teams/26874.png",
+      "time": "2026-10-17T04:00:00+00:00",
+      "date": "2026-10-17",
+      "kickoff": "04:00",
+      "match": "Broadmeadow Magic vs Wests APIA",
+      "pick": "Home Win - Broadmeadow Magic",
+      "market": "Match Winner",
+      "odds": "1.86",
+      "confidence": "High",
+      "advice": "",
+      "selection": "Home Win - Broadmeadow Magic",
+      "category": "Match Winner",
+      "rating": 8,
+      "status": "active",
+      "publishAt": "2026-10-17T06:24:30.380Z",
+      "bookmakers": {
+        "bet9ja": {
+          "odds": "1.86",
+          "code": "1640331"
+        },
+        "sportybet": {
+          "odds": "1.86",
+          "code": "1640331"
+        }
+      }
     }
-  ],
-  "hedgeStrategy": [
-    {
-      "mainPick": {
-        "id": 1498885,
-        "league": "Primera Nacional",
-        "country": "Argentina",
-        "home": "Atletico DE Rafaela",
-        "away": "Quilmes",
-        "homeLogo": "https://media.api-sports.io/football/teams/465.png",
-        "awayLogo": "https://media.api-sports.io/football/teams/480.png",
-        "time": "2026-10-17T00:00:00+00:00",
-        "match": "Atletico DE Rafaela vs Quilmes",
-        "pick": "Double chance : Atletico DE Rafaela or draw",
-        "market": "Double Chance",
-        "odds": "2.45",
-        "confidence": "Medium",
-        "advice": "Double chance : Atletico DE Rafaela or draw"
-      },
-      "hedgePick": "Double Chance - X2",
-      "strategy": "Place Double chance : Atletico DE Rafaela or draw before kickoff. If match level at 70min, hedge with Draw."
-    },
-    {
-      "mainPick": {
-        "id": 1508572,
-        "league": "NWSL Women",
-        "country": "USA",
-        "home": "Boston Legacy W",
-        "away": "Racing Louisville W",
-        "homeLogo": "https://media.api-sports.io/football/teams/27377.png",
-        "awayLogo": "https://media.api-sports.io/football/teams/16488.png",
-        "time": "2026-10-17T00:00:00+00:00",
-        "match": "Boston Legacy W vs Racing Louisville W",
-        "pick": "Double chance : Boston Legacy W or draw",
-        "market": "Double Chance",
-        "odds": "2.01",
-        "confidence": "Medium",
-        "advice": "Double chance : Boston Legacy W or draw"
-      },
-      "hedgePick": "Double Chance - X2",
-      "strategy": "Place Double chance : Boston Legacy W or draw before kickoff. If match level at 70min, hedge with Draw."
-    }
-  ],
-  "yesterdayResults": [],
-  "totalSelections": 20
+  ]
 }
