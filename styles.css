@@ -1941,3 +1941,34 @@ h1, h2, h3, p {
     grid-template-columns: 1fr !important;
   }
 }
+/* FIX LATEST NEWS - make am fit phone */
+.latest-news-card, [class*="news"] div, [class*="LATEST"] div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.latest-news-card a, .news-item {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.latest-news-card a div:first-child,
+.news-item div:first-child {
+  flex: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  text-align: left !important;
+  padding-right: 10px !important;
+}
+
+/* The title "Everton vs Chelsea..." */
+.latest-news-card h3, .news-item h3, .news-item div {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  line-height: 1.4 !important;
+}
