@@ -5,13 +5,12 @@ permissions:
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'  # Every 30 mins AUTOMATIC - no need to press
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -23,39 +22,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps if any
-        run: |
-          npm install || echo "no package.json - ok"
-
       - name: Run generate.js
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: |
-          echo "Starting generate.js..."
-          node generate.js
-          echo ""
-          echo "--- STATUS CHECK ---"
-          cat data.json | grep -o '"status":"[^"]*"' | sort | uniq -c
-          echo ""
-          echo "--- SAMPLE LABELS ---"
-          cat data.json | grep -o '"statusLabel":"[^"]*"' | head -20
-
-      - name: Safe copy to bettingsite folder
-        run: |
-          mkdir -p bettingsite
-          cp data.json bettingsite/data.json
-          ls -lh data.json bettingsite/data.json
+        run: node generate.js
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p bettingsite
+          cp data.json bettingsite/data.json 2>/dev/null || true
           git add data.json bettingsite/data.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto update: Upcoming Yellow, Live Red, Finished Green - $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-            echo "✅ Pushed"
-          fi
+          git diff --staged --quiet || (git commit -m "auto update $(date -u)" && git push)
