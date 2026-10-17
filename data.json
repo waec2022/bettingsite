@@ -5733,10 +5733,10 @@
     {
       "id": "code-1557430",
       "label": "CODES ONLY FOR THE WEEKEND",
-      "odds": "1000",
+      "odds": "999.99",
       "bookmakers": {
         "sportybet": {
-          "odds": "1.95",
+          "odds": "200",
           "code": "YMH7SK"
         }
       },
