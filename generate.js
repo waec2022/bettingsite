@@ -16,7 +16,16 @@ function api(p) {
       let d = '';
       rs.on('data', c => d += c);
       rs.on('end', () => {
-        try { res(JSON.parse(d)); } catch (e) { rej(e); }
+        try { 
+          const json = JSON.parse(d);
+          // LIMIT PROTECTION - if limit reached, return null
+          if (json.errors && (json.errors.requests || JSON.stringify(json).toLowerCase().includes('limit'))) {
+            console.log('⚠️ API LIMIT REACHED - keeping old data.json');
+            res(null);
+          } else {
+            res(json);
+          }
+        } catch (e) { rej(e); }
       });
     });
     r.on('error', rej);
@@ -36,113 +45,156 @@ function getRealStatus(f) {
   if (['1H', '2H', 'HT', 'ET', 'BT', 'P', 'SUSP', 'INT'].includes(short)) {
     return { status: 'live', label: `LIVE · ${elapsed}' · ${goals}`, minute: elapsed, goals };
   }
-  // NS, PST, CANC, ABD, etc = upcoming
   return { status: 'upcoming', label: `UPCOMING · ${kickTime}`, minute: 0, goals };
 }
 
 async function main() {
   const today = new Date().toISOString().split('T')[0];
   
-  console.log('Fetching fixtures for', today);
-  let fx = await api(`/fixtures?date=${today}`);
-  let fixtures = fx.response || [];
-  
-  console.log('Fetching real LIVE fixtures');
-  let liveResp = await api(`/fixtures?live=all`);
-  let liveFixtures = liveResp.response || [];
-  
-  console.log(`Today: ${fixtures.length}, Real Live Now: ${liveFixtures.length}`);
-
-  // === 1. LIVE PREDICTIONS ===
-  let livePredictions = [];
-  for (let f of fixtures.slice(0, 20)) {
-    const real = getRealStatus(f);
-    
-    // If this fixture is actually live in live API, use live API data
-    const realLive = liveFixtures.find(l => l.fixture.id === f.fixture.id);
-    let finalStatus = real;
-    if (realLive) {
-      finalStatus = {
-        status: 'live',
-        label: `LIVE · ${realLive.fixture.status.elapsed || 0}' · ${realLive.goals.home}-${realLive.goals.away}`,
-        minute: realLive.fixture.status.elapsed || 0,
-        goals: `${realLive.goals.home}-${realLive.goals.away}`
-      };
+  // LOAD EXISTING DATA FIRST - for 24hrs logic
+  let existing = {};
+  let existingRaw = null;
+  try {
+    if (fs.existsSync('data.json')) {
+      existingRaw = fs.readFileSync('data.json', 'utf8');
+      existing = JSON.parse(existingRaw);
     }
+  } catch(e) { console.log('No existing data.json, starting fresh'); }
 
-    livePredictions.push({
-      id: f.fixture.id,
-      home: f.teams.home.name,
-      away: f.teams.away.name,
-      match: `${f.teams.home.name} vs ${f.teams.away.name}`,
-      pick: "Over 0.5 Goals Live",
-      odds: (1.8 + Math.random() * 0.6).toFixed(2),
-      status: finalStatus.status, // upcoming / live / finished
-      statusLabel: finalStatus.label,
-      minute: finalStatus.minute,
-      goals: finalStatus.goals,
-      kickoffAt: f.fixture.date,
-      short: f.fixture.status.short,
-      // Odds from different bookies
-      bookies: {
-        melbet: (1.85 + Math.random()*0.3).toFixed(2),
-        "22bet": (1.88 + Math.random()*0.3).toFixed(2),
-        "1xbet": (1.90 + Math.random()*0.3).toFixed(2)
-      }
-    });
+  const isNewDay = !existing.date || existing.date !== today;
+  console.log(`Today: ${today}, Existing date: ${existing.date}, isNewDay: ${isNewDay}`);
+
+  let fixtures = [];
+  let liveFixtures = [];
+
+  if (isNewDay) {
+    // NEW DAY: Need full fixtures (1 request)
+    console.log('Fetching fixtures for', today);
+    let fx = await api(`/fixtures?date=${today}`);
+    if (!fx) { console.log('Limit hit, keep old'); return; } // keep old
+    fixtures = fx.response || [];
+    console.log(`Today fixtures: ${fixtures.length}`);
+  } else {
+    // SAME DAY: Use cached fixtures from existing livePredictions to save request
+    console.log('Same day - using cached fixtures from data.json');
+    // Reconstruct fixtures from existing if possible, else fetch live only
+    fixtures = []; // we will not re-fetch date
   }
 
-  // Add extra real live fixtures not in today list
-  for (let f of liveFixtures) {
-    if (!livePredictions.find(x => x.id === f.fixture.id)) {
+  // ALWAYS fetch LIVE (1 request per run - this is the 24hrs update)
+  console.log('Fetching real LIVE fixtures');
+  let liveResp = await api(`/fixtures?live=all`);
+  if (!liveResp) { console.log('Limit hit on live, keep old'); return; }
+  liveFixtures = liveResp.response || [];
+  console.log(`Real Live Now: ${liveFixtures.length}`);
+
+  // If isNewDay = false, we need fixtures list - build from existing
+  if (!isNewDay && existing.livePredictions) {
+    // Convert existing predictions back to fixtures-like for processing
+    // But easier: just use liveFixtures to update existing
+  }
+
+  let livePredictions = [];
+
+  if (isNewDay) {
+    // Build from fresh fixtures
+    for (let f of fixtures.slice(0, 20)) {
+      const real = getRealStatus(f);
+      const realLive = liveFixtures.find(l => l.fixture.id === f.fixture.id);
+      let finalStatus = real;
+      if (realLive) {
+        finalStatus = {
+          status: 'live',
+          label: `LIVE · ${realLive.fixture.status.elapsed || 0}' · ${realLive.goals.home}-${realLive.goals.away}`,
+          minute: realLive.fixture.status.elapsed || 0,
+          goals: `${realLive.goals.home}-${realLive.goals.away}`
+        };
+      }
       livePredictions.push({
         id: f.fixture.id,
         home: f.teams.home.name,
         away: f.teams.away.name,
         match: `${f.teams.home.name} vs ${f.teams.away.name}`,
         pick: "Over 0.5 Goals Live",
-        odds: (1.9 + Math.random()*0.5).toFixed(2),
-        status: 'live',
-        statusLabel: `LIVE · ${f.fixture.status.elapsed || 0}' · ${f.goals.home}-${f.goals.away}`,
-        minute: f.fixture.status.elapsed || 0,
-        goals: `${f.goals.home}-${f.goals.away}`,
+        odds: "",
+        status: finalStatus.status,
+        statusLabel: finalStatus.label,
+        minute: finalStatus.minute,
+        goals: finalStatus.goals,
         kickoffAt: f.fixture.date,
         short: f.fixture.status.short,
-        bookies: {
-          melbet: (1.85 + Math.random()*0.3).toFixed(2),
-          "22bet": (1.88 + Math.random()*0.3).toFixed(2),
-          "1xbet": (1.90 + Math.random()*0.3).toFixed(2)
-        }
+        bookies: {} // EMPTY - you go put your own original codes
       });
+    }
+  } else {
+    // SAME DAY: Update existing livePredictions with live scores only (no new fetch)
+    livePredictions = (existing.livePredictions || []).map(p => {
+      const realLive = liveFixtures.find(l => l.fixture.id === p.id);
+      if (realLive) {
+        return {
+          ...p,
+          status: 'live',
+          statusLabel: `LIVE · ${realLive.fixture.status.elapsed || 0}' · ${realLive.goals.home}-${realLive.goals.away}`,
+          minute: realLive.fixture.status.elapsed || 0,
+          goals: `${realLive.goals.home}-${realLive.goals.away}`,
+          short: realLive.fixture.status.short,
+          bookies: p.bookies || {} // keep empty
+        };
+      }
+      // If match time don pass 3hrs and still upcoming, mark finished
+      const matchTime = new Date(p.kickoffAt).getTime();
+      if (Date.now() - matchTime > 3*60*60*1000 && p.status === 'upcoming') {
+        return { ...p, status: 'finished', statusLabel: 'FINISHED' };
+      }
+      return p;
+    });
+
+    // Add extra real live fixtures not in today list
+    for (let f of liveFixtures) {
+      if (!livePredictions.find(x => x.id === f.fixture.id)) {
+        livePredictions.push({
+          id: f.fixture.id,
+          home: f.teams.home.name,
+          away: f.teams.away.name,
+          match: `${f.teams.home.name} vs ${f.teams.away.name}`,
+          pick: "Over 0.5 Goals Live",
+          odds: "",
+          status: 'live',
+          statusLabel: `LIVE · ${f.fixture.status.elapsed || 0}' · ${f.goals.home}-${f.goals.away}`,
+          minute: f.fixture.status.elapsed || 0,
+          goals: `${f.goals.home}-${f.goals.away}`,
+          kickoffAt: f.fixture.date,
+          short: f.fixture.status.short,
+          bookies: {}
+        });
+      }
     }
   }
 
-  // === 2. HEDGE STRATEGY ===
-  let hedgeStrategies = fixtures.slice(0, 6).map(f => {
-    const real = getRealStatus(f);
-    return {
-      id: f.fixture.id,
-      home: f.teams.home.name,
-      away: f.teams.away.name,
-      match: `${f.teams.home.name} vs ${f.teams.away.name}`,
-      league: f.league.name,
-      preMatchSelection: "Home Win",
-      liveSelection: "Highest Scoring Half - 2nd Half",
-      odds: "1.95",
-      status: real.status,
-      statusLabel: real.status === 'finished' ? 'FINISHED' : real.label,
-      minute: real.minute,
-      kickoffAt: f.fixture.date,
-      short: f.fixture.status.short
-    };
-  });
-
-  // === LOAD EXISTING DATA TO KEEP YESTERDAY RESULTS ===
-  let existing = {};
-  try {
-    if (fs.existsSync('data.json')) existing = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-    else if (fs.existsSync('bettingsite/data.json')) existing = JSON.parse(fs.readFileSync('bettingsite/data.json', 'utf8'));
-  } catch(e) { console.log('No existing data.json, starting fresh'); }
+  // HEDGE - only rebuild on new day
+  let hedgeStrategies = [];
+  if (isNewDay) {
+    hedgeStrategies = fixtures.slice(0, 6).map(f => {
+      const real = getRealStatus(f);
+      return {
+        id: f.fixture.id,
+        home: f.teams.home.name,
+        away: f.teams.away.name,
+        match: `${f.teams.home.name} vs ${f.teams.away.name}`,
+        league: f.league.name,
+        preMatchSelection: "Home Win",
+        liveSelection: "Highest Scoring Half - 2nd Half",
+        odds: "",
+        status: real.status,
+        statusLabel: real.status === 'finished' ? 'FINISHED' : real.label,
+        minute: real.minute,
+        kickoffAt: f.fixture.date,
+        short: f.fixture.status.short
+      };
+    });
+  } else {
+    hedgeStrategies = existing.hedgeStrategies || [];
+  }
 
   const finalData = {
     ...existing,
@@ -156,34 +208,18 @@ async function main() {
     meta: existing.meta || { site: "ddtoday" }
   };
 
-  // === FIX FOR YOUR ENOENT ERROR - SAFE WRITE ===
   try {
     fs.writeFileSync('data.json', JSON.stringify(finalData, null, 2));
     console.log('✅ Wrote data.json');
   } catch(e) { console.log('Failed data.json:', e.message); }
 
   try {
-    // Create bettingsite folder if not exist - stops ENOENT
-    if (!fs.existsSync('bettingsite')) {
-      fs.mkdirSync('bettingsite', { recursive: true });
-      console.log('Created bettingsite folder');
-    }
+    if (!fs.existsSync('bettingsite')) fs.mkdirSync('bettingsite', { recursive: true });
     fs.writeFileSync('bettingsite/data.json', JSON.stringify(finalData, null, 2));
     console.log('✅ Wrote bettingsite/data.json');
-  } catch(e) {
-    console.log('Skip bettingsite/data.json write (ok for root):', e.message);
-  }
+  } catch(e) { console.log('Skip bettingsite write:', e.message); }
 
-  // For nested runner path bettingsite/bettingsite
-  try {
-    const nestedDir = path.join(__dirname, 'bettingsite');
-    if (fs.existsSync(nestedDir)) {
-      fs.writeFileSync(path.join(nestedDir, 'data.json'), JSON.stringify(finalData, null, 2));
-      console.log('✅ Wrote nested bettingsite/data.json');
-    }
-  } catch(e) {}
-
-  console.log(`DONE: ${livePredictions.length} predictions (Upcoming/Live/Finished) + ${hedgeStrategies.length} hedge | Upcoming: ${livePredictions.filter(x=>x.status==='upcoming').length}, Live: ${livePredictions.filter(x=>x.status==='live').length}, Finished: ${livePredictions.filter(x=>x.status==='finished').length}`);
+  console.log(`DONE: ${livePredictions.length} predictions | Upcoming: ${livePredictions.filter(x=>x.status==='upcoming').length}, Live: ${livePredictions.filter(x=>x.status==='live').length}, Finished: ${livePredictions.filter(x=>x.status==='finished').length}`);
 }
 
 main().catch(err => {
