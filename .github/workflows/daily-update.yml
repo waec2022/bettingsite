@@ -1,37 +1,32 @@
-name: update
+name: daily-update
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-on:
-  schedule:
-    - cron: '*/30 * * * *'  # Every 30 mins AUTOMATIC - no need to press
-  workflow_dispatch:
-
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Run generate.js
+      
+      - name: Run generator
+        run: |
+          if [ -f "generate.js" ]; then node generate.js
+          elif [ -f "bettingsite/generate.js" ]; then node bettingsite/generate.js
+          else echo "No generate.js found" && ls -la && exit 1
+          fi
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: node generate.js
-
-      - name: Commit and Push
+      
+      - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          mkdir -p bettingsite
-          cp data.json bettingsite/data.json 2>/dev/null || true
-          git add data.json bettingsite/data.json
-          git diff --staged --quiet || (git commit -m "auto update $(date -u)" && git push)
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          git diff --staged --quiet || (git commit -m "auto: update predictions $(date +%Y-%m-%d)" && git push)
