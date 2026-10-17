@@ -1,0 +1,7 @@
+# Local environment variables (do NOT commit .env)
+.env
+node_modules/
+dist/
+.vite/
+.DS_Store
+coverage/
