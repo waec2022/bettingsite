@@ -1,32 +1,64 @@
-name: daily-update
+name: update
+
 on:
   schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '*/15 * * * *'  # Every 15 mins so LIVE minute go update real
+  workflow_dispatch:  # So you fit press Run workflow manually like your screenshot
 
 jobs:
-  update:
+  generate:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Run generator
+          node-version: '20'
+
+      - name: Install deps if any
         run: |
-          if [ -f "generate.js" ]; then node generate.js
-          elif [ -f "bettingsite/generate.js" ]; then node bettingsite/generate.js
-          else echo "No generate.js found" && ls -la && exit 1
-          fi
+          npm install || echo "no package.json - ok"
+
+      - name: Run generate.js
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-      
-      - name: Commit and push
+          API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add -A
-          git diff --staged --quiet || (git commit -m "auto: update predictions $(date +%Y-%m-%d)" && git push)
+          echo "Starting generate.js..."
+          node generate.js
+          echo ""
+          echo "--- STATUS CHECK ---"
+          cat data.json | grep -o '"status":"[^"]*"' | sort | uniq -c
+          echo ""
+          echo "--- SAMPLE LABELS ---"
+          cat data.json | grep -o '"statusLabel":"[^"]*"' | head -20
+
+      - name: Safe copy to bettingsite folder
+        run: |
+          echo "Making sure bettingsite folder exists (fixes ENOENT)..."
+          mkdir -p bettingsite
+          if [ -f data.json ]; then
+            cp data.json bettingsite/data.json
+            echo "✅ Copied data.json -> bettingsite/data.json"
+          else
+            echo "❌ data.json not found!"
+            ls -la
+            exit 1
+          fi
+          ls -lh data.json bettingsite/data.json
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json bettingsite/data.json || git add data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto update: Upcoming Yellow, Live Red, Finished Green - $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ Pushed"
+          fi
