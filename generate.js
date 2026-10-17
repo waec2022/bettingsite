@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 
 // ===== TOP LEAGUES PRIORITY - THESE MUST COME FIRST =====
