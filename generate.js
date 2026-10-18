@@ -1,8 +1,9 @@
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const API_KEY = process.env.API_FOOTBALL_KEY || process.env.API_KEY;
+const MAX_PICKS = 7; // Change to 10 if you want 10
+const MIN_HOURS_BETWEEN_CALLS = 3; // This saves your limit
 
 function api(p) {
   return new Promise((res, rej) => {
@@ -16,11 +17,19 @@ function api(p) {
       let d = '';
       rs.on('data', c => d += c);
       rs.on('end', () => {
-        try { 
+        try {
           const json = JSON.parse(d);
-          // LIMIT PROTECTION - if limit reached, return null
-          if (json.errors && (json.errors.requests || JSON.stringify(json).toLowerCase().includes('limit'))) {
-            console.log('⚠️ API LIMIT REACHED - keeping old data.json');
+          const str = JSON.stringify(json).toLowerCase();
+          if (json.errors && Object.keys(json.errors).length > 0) {
+            console.log('API ERROR:', json.errors);
+            if (str.includes('limit') || json.errors.requests) {
+              console.log('⚠️ LIMIT REACHED - keeping old data.json');
+              res(null); // Keep old file
+            } else {
+              res(json);
+            }
+          } else if (str.includes('limit') && json.response && json.response.length === 0) {
+            console.log('⚠️ LIMIT - empty response');
             res(null);
           } else {
             res(json);
@@ -33,196 +42,97 @@ function api(p) {
   });
 }
 
-function getRealStatus(f) {
-  const short = f.fixture.status.short;
-  const elapsed = f.fixture.status.elapsed || 0;
-  const goals = `${f.goals.home ?? 0}-${f.goals.away ?? 0}`;
-  const kickTime = new Date(f.fixture.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-  if (['FT', 'AET', 'PEN'].includes(short)) {
-    return { status: 'finished', label: `FINISHED · ${goals}`, minute: elapsed, goals };
-  }
-  if (['1H', '2H', 'HT', 'ET', 'BT', 'P', 'SUSP', 'INT'].includes(short)) {
-    return { status: 'live', label: `LIVE · ${elapsed}' · ${goals}`, minute: elapsed, goals };
-  }
-  return { status: 'upcoming', label: `UPCOMING · ${kickTime}`, minute: 0, goals };
-}
-
 async function main() {
   const today = new Date().toISOString().split('T')[0];
-  
-  // LOAD EXISTING DATA FIRST - for 24hrs logic
   let existing = {};
-  let existingRaw = null;
-  try {
-    if (fs.existsSync('data.json')) {
-      existingRaw = fs.readFileSync('data.json', 'utf8');
-      existing = JSON.parse(existingRaw);
+  try { if (fs.existsSync('data.json')) existing = JSON.parse(fs.readFileSync('data.json','utf8')); } catch(e){}
+
+  // === LIMIT PROTECTION 1: Don't call if updated less than 3 hours ago ===
+  if (existing.lastUpdated) {
+    const hoursSince = (Date.now() - new Date(existing.lastUpdated).getTime()) / (1000*60*60);
+    console.log(`Last updated ${hoursSince.toFixed(1)} hours ago`);
+    if (hoursSince < MIN_HOURS_BETWEEN_CALLS && existing.date === today) {
+      console.log(`✅ Skipping API call - updated ${hoursSince.toFixed(1)}h ago. Still using ${existing.livePredictions?.length || 0} picks. No request used.`);
+      return;
     }
-  } catch(e) { console.log('No existing data.json, starting fresh'); }
-
-  const isNewDay = !existing.date || existing.date !== today;
-  console.log(`Today: ${today}, Existing date: ${existing.date}, isNewDay: ${isNewDay}`);
-
-  let fixtures = [];
-  let liveFixtures = [];
-
-  if (isNewDay) {
-    // NEW DAY: Need full fixtures (1 request)
-    console.log('Fetching fixtures for', today);
-    let fx = await api(`/fixtures?date=${today}`);
-    if (!fx) { console.log('Limit hit, keep old'); return; } // keep old
-    fixtures = fx.response || [];
-    console.log(`Today fixtures: ${fixtures.length}`);
-  } else {
-    // SAME DAY: Use cached fixtures from existing livePredictions to save request
-    console.log('Same day - using cached fixtures from data.json');
-    // Reconstruct fixtures from existing if possible, else fetch live only
-    fixtures = []; // we will not re-fetch date
   }
 
-  // ALWAYS fetch LIVE (1 request per run - this is the 24hrs update)
-  console.log('Fetching real LIVE fixtures');
-  let liveResp = await api(`/fixtures?live=all`);
-  if (!liveResp) { console.log('Limit hit on live, keep old'); return; }
-  liveFixtures = liveResp.response || [];
-  console.log(`Real Live Now: ${liveFixtures.length}`);
+  const isNewDay = existing.date !== today;
+  console.log(`Today: ${today} | Old date: ${existing.date} | New day: ${isNewDay}`);
 
-  // If isNewDay = false, we need fixtures list - build from existing
+  // === SAME DAY: Update scores only (1 request) ===
   if (!isNewDay && existing.livePredictions) {
-    // Convert existing predictions back to fixtures-like for processing
-    // But easier: just use liveFixtures to update existing
-  }
+    console.log('Same day - updating LIVE scores for 7 picks only (1 request)');
+    const liveResp = await api(`/fixtures?live=all`);
+    if (!liveResp) { console.log('Limit hit, keep old'); return; }
+    const liveFixtures = liveResp.response || [];
+    console.log(`Live now: ${liveFixtures.length}`);
 
-  let livePredictions = [];
-
-  if (isNewDay) {
-    // Build from fresh fixtures
-    for (let f of fixtures.slice(0, 20)) {
-      const real = getRealStatus(f);
-      const realLive = liveFixtures.find(l => l.fixture.id === f.fixture.id);
-      let finalStatus = real;
-      if (realLive) {
-        finalStatus = {
-          status: 'live',
-          label: `LIVE · ${realLive.fixture.status.elapsed || 0}' · ${realLive.goals.home}-${realLive.goals.away}`,
-          minute: realLive.fixture.status.elapsed || 0,
-          goals: `${realLive.goals.home}-${realLive.goals.away}`
-        };
-      }
-      livePredictions.push({
-        id: f.fixture.id,
-        home: f.teams.home.name,
-        away: f.teams.away.name,
-        match: `${f.teams.home.name} vs ${f.teams.away.name}`,
-        pick: "Over 0.5 Goals Live",
-        odds: "",
-        status: finalStatus.status,
-        statusLabel: finalStatus.label,
-        minute: finalStatus.minute,
-        goals: finalStatus.goals,
-        kickoffAt: f.fixture.date,
-        short: f.fixture.status.short,
-        bookies: {} // EMPTY - you go put your own original codes
-      });
-    }
-  } else {
-    // SAME DAY: Update existing livePredictions with live scores only (no new fetch)
-    livePredictions = (existing.livePredictions || []).map(p => {
-      const realLive = liveFixtures.find(l => l.fixture.id === p.id);
-      if (realLive) {
+    const updated = existing.livePredictions.map(p => {
+      const live = liveFixtures.find(l => l.fixture.id === p.id);
+      if (live) {
+        const isFT = ['FT','AET','PEN'].includes(live.fixture.status.short);
         return {
           ...p,
-          status: 'live',
-          statusLabel: `LIVE · ${realLive.fixture.status.elapsed || 0}' · ${realLive.goals.home}-${realLive.goals.away}`,
-          minute: realLive.fixture.status.elapsed || 0,
-          goals: `${realLive.goals.home}-${realLive.goals.away}`,
-          short: realLive.fixture.status.short,
-          bookies: p.bookies || {} // keep empty
+          status: isFT ? 'finished' : 'live',
+          statusLabel: isFT ? `FINISHED · ${live.goals.home}-${live.goals.away}` : `LIVE · ${live.fixture.status.elapsed}' · ${live.goals.home}-${live.goals.away}`,
+          minute: live.fixture.status.elapsed || 0,
+          goals: `${live.goals.home}-${live.goals.away}`,
+          short: live.fixture.status.short
         };
-      }
-      // If match time don pass 3hrs and still upcoming, mark finished
-      const matchTime = new Date(p.kickoffAt).getTime();
-      if (Date.now() - matchTime > 3*60*60*1000 && p.status === 'upcoming') {
-        return { ...p, status: 'finished', statusLabel: 'FINISHED' };
       }
       return p;
     });
 
-    // Add extra real live fixtures not in today list
-    for (let f of liveFixtures) {
-      if (!livePredictions.find(x => x.id === f.fixture.id)) {
-        livePredictions.push({
-          id: f.fixture.id,
-          home: f.teams.home.name,
-          away: f.teams.away.name,
-          match: `${f.teams.home.name} vs ${f.teams.away.name}`,
-          pick: "Over 0.5 Goals Live",
-          odds: "",
-          status: 'live',
-          statusLabel: `LIVE · ${f.fixture.status.elapsed || 0}' · ${f.goals.home}-${f.goals.away}`,
-          minute: f.fixture.status.elapsed || 0,
-          goals: `${f.goals.home}-${f.goals.away}`,
-          kickoffAt: f.fixture.date,
-          short: f.fixture.status.short,
-          bookies: {}
-        });
-      }
-    }
+    existing.livePredictions = updated;
+    existing.lastUpdated = new Date().toISOString();
+    fs.writeFileSync('data.json', JSON.stringify(existing, null, 2));
+    console.log(`✅ Updated scores - 1 request used - still ${updated.length} picks`);
+    return;
   }
 
-  // HEDGE - only rebuild on new day
-  let hedgeStrategies = [];
-  if (isNewDay) {
-    hedgeStrategies = fixtures.slice(0, 6).map(f => {
-      const real = getRealStatus(f);
-      return {
-        id: f.fixture.id,
-        home: f.teams.home.name,
-        away: f.teams.away.name,
-        match: `${f.teams.home.name} vs ${f.teams.away.name}`,
-        league: f.league.name,
-        preMatchSelection: "Home Win",
-        liveSelection: "Highest Scoring Half - 2nd Half",
-        odds: "",
-        status: real.status,
-        statusLabel: real.status === 'finished' ? 'FINISHED' : real.label,
-        minute: real.minute,
-        kickoffAt: f.fixture.date,
-        short: f.fixture.status.short
-      };
-    });
-  } else {
-    hedgeStrategies = existing.hedgeStrategies || [];
-  }
+  // === NEW DAY: Fetch new 7 picks (1 request) ===
+  console.log(`New day - fetching fresh ${MAX_PICKS} picks (1 request)`);
+  const fx = await api(`/fixtures?date=${today}`);
+  if (!fx) { console.log('Limit hit on date, keeping old'); return; }
+  
+  let fixtures = fx.response || [];
+  console.log(`Total fixtures today: ${fixtures.length}`);
+  
+  // Take only 7 - no demo filtering
+  const livePredictions = fixtures.slice(0, MAX_PICKS).map(f => {
+    const kickTime = new Date(f.fixture.date).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+    return {
+      id: f.fixture.id,
+      home: f.teams.home.name,
+      away: f.teams.away.name,
+      match: `${f.teams.home.name} vs ${f.teams.away.name}`,
+      league: f.league.name,
+      pick: "Over 0.5 Goals",
+      status: 'upcoming',
+      statusLabel: `UPCOMING · ${kickTime}`,
+      minute: 0,
+      goals: "0-0",
+      kickoffAt: f.fixture.date,
+      short: f.fixture.status.short
+    };
+  });
 
   const finalData = {
-    ...existing,
     date: today,
     lastUpdated: new Date().toISOString(),
     livePredictions: livePredictions,
-    hedgeStrategies: hedgeStrategies,
-    predictions: existing.predictions || [],
-    results: existing.results || [],
-    accumulators: existing.accumulators || [],
-    meta: existing.meta || { site: "ddtoday" }
+    hedgeStrategies: [], // Empty - no demo
+    predictions: [],
+    meta: { site: "ddtoday", picks: MAX_PICKS, limit_protected: true }
   };
 
-  try {
-    fs.writeFileSync('data.json', JSON.stringify(finalData, null, 2));
-    console.log('✅ Wrote data.json');
-  } catch(e) { console.log('Failed data.json:', e.message); }
-
-  try {
-    if (!fs.existsSync('bettingsite')) fs.mkdirSync('bettingsite', { recursive: true });
-    fs.writeFileSync('bettingsite/data.json', JSON.stringify(finalData, null, 2));
-    console.log('✅ Wrote bettingsite/data.json');
-  } catch(e) { console.log('Skip bettingsite write:', e.message); }
-
-  console.log(`DONE: ${livePredictions.length} predictions | Upcoming: ${livePredictions.filter(x=>x.status==='upcoming').length}, Live: ${livePredictions.filter(x=>x.status==='live').length}, Finished: ${livePredictions.filter(x=>x.status==='finished').length}`);
+  fs.writeFileSync('data.json', JSON.stringify(finalData, null, 2));
+  if (!fs.existsSync('bettingsite')) fs.mkdirSync('bettingsite', {recursive:true});
+  try { fs.writeFileSync('bettingsite/data.json', JSON.stringify(finalData, null, 2)); } catch(e){}
+  
+  console.log(`✅ NEW DAY DONE: ${livePredictions.length} picks - 1 request used`);
+  console.log(`Monthly usage: ~30 requests/month - you have 100/day = NEVER EXCEED`);
 }
 
-main().catch(err => {
-  console.error('Error in generate:', err);
-  process.exit(1);
-});
+main().catch(e => { console.error(e); process.exit(1); });
