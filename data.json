@@ -1,12 +1,76 @@
 {
   "date": "2026-10-19",
-  "lastUpdated": "2026-10-19T00:01:01.868Z",
-  "livePredictions": [],
-  "hedgeStrategies": [],
-  "predictions": [],
-  "meta": {
-    "site": "ddtoday",
-    "picks": 7,
-    "limit_protected": true
-  }
+  "lastUpdated": "2026-10-19T00:34:38.072Z",
+  "livePredictions": [
+    {
+      "id": 1,
+      "home": "Man City",
+      "away": "Arsenal",
+      "match": "Man City vs Arsenal",
+      "league": "Premier League",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 2,
+      "home": "Barcelona",
+      "away": "Real Madrid",
+      "match": "Barcelona vs Real Madrid",
+      "league": "La Liga",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 3,
+      "home": "Bayern",
+      "away": "Dortmund",
+      "match": "Bayern vs Dortmund",
+      "league": "Bundesliga",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 4,
+      "home": "PSG",
+      "away": "Marseille",
+      "match": "PSG vs Marseille",
+      "league": "Ligue 1",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 5,
+      "home": "Inter",
+      "away": "Milan",
+      "match": "Inter vs Milan",
+      "league": "Serie A",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 6,
+      "home": "Ajax",
+      "away": "PSV",
+      "match": "Ajax vs PSV",
+      "league": "Eredivisie",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    },
+    {
+      "id": 7,
+      "home": "Benfica",
+      "away": "Porto",
+      "match": "Benfica vs Porto",
+      "league": "Primeira Liga",
+      "pick": "Over 0.5",
+      "status": "upcoming",
+      "statusLabel": "UPCOMING"
+    }
+  ]
 }
