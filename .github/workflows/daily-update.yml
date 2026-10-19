@@ -2,7 +2,7 @@ name: update
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Every 3 hours = 8 requests/day = 240/month (free plan na 3000/month) - FOREVER SAFE
+    - cron: '0 5 * * *'  # Once daily 6am WAT = 1 request per day ONLY
   workflow_dispatch:
 
 jobs:
@@ -21,21 +21,17 @@ jobs:
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           API_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: |
-          node generate.js
-          echo "--- TOTAL PICKS ---"
-          cat data.json | grep -o '"match":' | wc -l
-          echo "--- LAST UPDATED ---"
-          cat data.json | grep lastUpdated
+        run: node generate.js
 
       - name: Copy to bettingsite
         run: |
           mkdir -p bettingsite
-          [ -f data.json ] && cp data.json bettingsite/data.json
+          cp data.json bettingsite/data.json
+          echo "Copied"
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json bettingsite/data.json
-          git diff --staged --quiet || (git commit -m "auto update ${{ github.run_id }}" && git push)
+          git diff --staged --quiet || (git commit -m "new 7 picks $(date -u +%F)" && git push)
