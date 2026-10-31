@@ -12,6 +12,6 @@ binding = "S2O"
 id = "fd0dc174894f4aa8a4a6ac3f2b2283e3"
 
 [vars]
-ALLOWED_ORIGIN = "https://REPLACE-WITH-YOUR-EDITOR-ORIGIN"   # e.g. https://sure2oddtoday.online (comma separate several)
+ALLOWED_ORIGIN = "https://REPLACE-WITH-YOUR-EDITOR-ORIGIN"   # e.g. https://sure2oddtoday.online" (comma separate several)
 GITHUB_BRANCH = "main"
 DATA_PATH = "data.json"
