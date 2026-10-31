@@ -1,0 +1,15 @@
+name = "bettingsite"
+main = "worker/src/index.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[kv_namespaces]]
+binding = "S2O"
+id = "fd0ac1748944aa8a4a6ac3f2b2283e3"
+
+[vars]
+ALLOWED_ORIGIN = "https://sure2oddtoday.online"
+GITHUB_BRANCH = "main"
+DATA_FILE = "data.json"
