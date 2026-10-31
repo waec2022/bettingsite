@@ -7,7 +7,7 @@ name = "bettingsite"
 
    [[kv_namespaces]]
    binding = "S2O"
-   id = "fd0dc174894f4aa8a4a6ac3f2b2283e3"
+   id = "2dd1fa65ba0347079850778ab2e3594d"
 
    [vars]
    ALLOWED_ORIGIN = "https://sure2oddtoday.online"
