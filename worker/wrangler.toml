@@ -1,6 +1,6 @@
 # Sure2OddToday automation Worker. Deploy with Cloudflare "Workers Builds" (import this GitHub repo, root directory: worker)
 # or with `npx wrangler deploy` from this folder. Secrets are set in the Cloudflare dashboard, never in this file.
-name = "sure2oddtoday-automation"
+name = "bettingsite"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 
@@ -9,8 +9,12 @@ crons = ["*/15 * * * *"]      # one cheap tick every 15 minutes; the editor sche
 
 [[kv_namespaces]]
 binding = "S2O"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "2dd1fa65ba0347079850778ab2e3594d"
 
 # Nothing else to configure here. After deploy, only ONE Cloudflare secret is needed: ADMIN_TOKEN.
 # The GitHub token/owner/repo and the API key are entered in the editor and stored encrypted by the Worker.
 # Optional variables (rarely needed): ALLOWED_ORIGIN (restrict which site may call the Worker), DATA_PATH (default data.json).
+
+
+
+
