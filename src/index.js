@@ -1,4 +1,5 @@
-// ESM
+// ESM.  your-repo/
+
 /* Sure2OddToday automation Worker.
    Cron tick (every 15 min) -> decides what is due from the editor schedule -> fetches API-Football within a strict
    request budget -> builds odds-comparison (arbitrage) events + rollover tickets -> grades results -> commits data.json.
