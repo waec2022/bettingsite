@@ -1,0 +1,5 @@
+bcdedit
+format
+clean
+diskpart
+del
